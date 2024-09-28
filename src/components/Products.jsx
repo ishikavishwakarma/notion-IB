@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MdVerifiedUser } from 'react-icons/md';
 import { RxCross2 } from "react-icons/rx";
+import DialogButton from './insuranceModel/DialogButton';
+import InsuranceModel from './insuranceModel/InsuranceModel';
 
 const Products = () => {
     const [showForm, setShowForm] = useState('none');
@@ -13,7 +15,10 @@ const Products = () => {
         setActiveButton(type);
         setAnimateForm(true);
     };
+    const [open, setOpen] = useState(false);
 
+    const handleOpen = () => setOpen(!open);
+  
     
     const handleCategory = (type) => {
 
@@ -87,7 +92,7 @@ const Products = () => {
                                     <option value="healthInsurance">Health Insurance</option>
                                     <option value="homeInsurance">Home Insurance</option>
                                 </select>
-                                <button class="rounded-md relative flex px-4 py-2 items-center justify-center overflow-hidden bg-[#7166F5] hover:text-black text-white shadow-2xl transition-all before:absolute before:-bottom-10 before:h-10 before:w-10 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56">
+                                <button className="rounded-md relative flex px-4 py-2 items-center justify-center overflow-hidden bg-[#7166F5] hover:text-black text-white shadow-2xl transition-all before:absolute before:-bottom-10 before:h-10 before:w-10 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56">
                                     <span class="relative z-10">Get a Quote Now</span>
                                 </button>
                             </form>
@@ -666,6 +671,11 @@ const Products = () => {
 
                     )}
                 </div>
+                <div>
+      {/* Passing state and handler to both components */}
+      <DialogButton handleOpen={handleOpen} />
+      <InsuranceModel open={open} handleOpen={handleOpen} />
+    </div>
 
 
             </div>
