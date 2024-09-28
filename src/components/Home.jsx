@@ -5,6 +5,7 @@ import Estimate from './Estimate'
 import Products from './Products'
 import Partners from './Partners'
 import Exam from './Exam'
+import InsuranceModel from './InsuranceModel'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <Products />
       <Estimate />
       <Exam />
+      <InsuranceModel/>
 
     </div>
   )
