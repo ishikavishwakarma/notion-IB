@@ -21,14 +21,9 @@ const Products = () => {
     }
 
     return (
-        <div className='flex flex-col items-center gap-2 max-sm:px-2'>
-            <div className='flex flex-col items-center gap-2 py-10'>
-                <p className='text-sm'><span className='inline-block text-[#7166F5]'><MdVerifiedUser /></span>Our Products</p>
-                <h1 className='text-[3vw] font-semibold text-center'>Get an Insurance Quote to <br />
-                    Get Standard!</h1>
-            </div>
+        <div className='flex flex-col items-center justify-center py-10 gap-2 max-sm:px-2'>
 
-            <div className='relative flex flex-wrap items-center justify-center max-sm:gap-3 gap-8 w-4/5 max-sm:w-full border rounded-xl py-10 shadow-lg'>
+            <div className='relative flex flex-wrap items-center justify-center max-sm:gap-3 gap-8 w-4/5 max-sm:w-full  py-10 '>
 
                 <div>
                     <button className={`rounded-lg border relat flex flex-col max-sm:w-24 max-sm:h-28 w-32 h-28 shadow-xl outline-none items-center justify-center overflow-hidden ${activeButton === 'lifeInsurance' ? 'hover:scale-90' : 'scale-100'} ${activeButton === 'lifeInsurance' ? 'border-blue-200' : 'bg-[#ffffff]'} ${activeButton === 'lifeInsurance' ? 'text-black' : 'text-gray-800'}  transition-all hover:scale-110 `}
