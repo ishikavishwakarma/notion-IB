@@ -1,14 +1,28 @@
-import React from "react";
-import { Dialog, DialogHeader, DialogBody, DialogFooter, Button } from "@material-tailwind/react";
-
+import React, { useState } from "react";
+import { Dialog, DialogHeader, DialogBody, DialogFooter, Button,Typography } from "@material-tailwind/react";
+import { RxCross2 } from 'react-icons/rx';
+import Tabs from "./ProductTabs";
 const InsuranceModel = ({ open, handleOpen }) => {
+  const [category, setCategory] = useState('generalInsurance');
+
+  const handleCategory = (cat) => {
+    setCategory(cat);
+  };
+
   return (
-    <Dialog open={open} handler={handleOpen}>
-      <DialogHeader>Its a simple dialog.</DialogHeader>
-      <DialogBody>
-        The key to more success is to have a lot of pillows. Put it this way, it
-        took me twenty-five years to get these plants, twenty-five years of
-        blood, sweat, and tears, and I'm never giving up; I'm just getting started.
+    <Dialog open={open} size={"lg"} handler={handleOpen}>
+      <DialogHeader>
+        <div className="flex items-center justify-between w-full">
+          <h1 className="text-lg font-semibold">More Products</h1>
+          <span
+            onClick={handleOpen}
+            className="p-2 font-bold rounded-full bg-orange-100 text-lg cursor-pointer">
+            <RxCross2 />
+          </span>
+        </div>
+      </DialogHeader >
+      <DialogBody className="h-[32rem] ">
+      <Tabs/>
       </DialogBody>
       <DialogFooter>
         <Button variant="text" color="red" onClick={handleOpen} className="mr-1">
