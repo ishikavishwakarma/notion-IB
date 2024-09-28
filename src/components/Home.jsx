@@ -4,7 +4,7 @@ import Hero from './Hero'
 import Products from './Products'
 import Partners from './Partners'
 import Exam from './Exam'
-import InsuranceModel from './InsuranceModel'
+import InsuranceModel from './insuranceModel/InsuranceModel'
 
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
       <Products />
       <Partners />
       <Exam />
-      <InsuranceModel/>
 
     </div>
   )
