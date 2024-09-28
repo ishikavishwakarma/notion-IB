@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.buttonbg {
+    /* background-image: url("./assets/images/header/image.png"); */
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logobg {
+    clip-path: polygon(0 0%, 100% 0%, 77% 100%, 0% 100%);
+    background-color: rgb(195, 221, 230);
+    height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.logowrap {
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.embla {
+  overflow: hidden;
+
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  background-position: bottom right;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+
+}
+
+
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes circle {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(3)
+    }
+  }
+  
+  .circle {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border: 2px solid CadetBlue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .one {
+    animation: circle 4s infinite linear;
+  }
+  
+  .two {
+    animation: circle 3s infinite linear;
+  }
+  
+  .three {
+    animation: circle 2s infinite linear;
+  }
+
+
+
+         
+.wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.video-main {
+  position: relative;
+  display: inline-block;
+}
+
+.video {
+  height: 50px;
+  width: 50px;
+  /* line-height: 50px; */
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  background: #383838;
+  z-index: 999;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.icon:before {
+  content: "\f04b";
+}
+
+.waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+   -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+}
+        
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
+.blur-bg-blocks {
+  overflow-x: hidden;
+  overflow-y: hidden
+}
+.blur-bg {
+  z-index: -999;
+  border-radius: 50%;
+  position: absolute;
+  width: 90%;
+  height: 500px;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  opacity: 20%
+}
+.blur-bg-a {
+  left: -4%;
+  top: -10%;
+  background: #ffb600
+}
+.blur-bg-b {
+  background: #e04446;
+  margin: 0 auto;
+  left: -20%;
+  top: 30%
+}
+
+.blur-bg-c {
+  right: 0;
+  top: -10%;
+  background: #00ffb8
+}
