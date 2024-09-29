@@ -210,3 +210,9 @@
   background: #00ffb8
 }
 
+.contact{
+  background-image: url("assets/contact us.jpg");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: top;
+}

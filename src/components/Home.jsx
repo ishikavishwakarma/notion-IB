@@ -6,7 +6,7 @@ import Partners from './Partners'
 import Exam from './Exam'
 import Footer from './footer'
 import Workflow from './Workflow'
-import Contact from './Contact'
+import Contact2 from './Contact2'
 
 
 const Home = () => {
@@ -19,6 +19,10 @@ const Home = () => {
       <Partners />
       <Exam />
       <Workflow />
+ ishika/feature
+
+      <Contact2 />
+ master
       <Footer />
 
     </div>
