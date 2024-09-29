@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
     {
         title: "Licence ",
-        items: ["Licence No. 619 ,", "IRDA Direct Broker Code: IRDA/ DB 693/17 ,", "Valid till: 02/10/2026,", "CIN: U66010MP2016PTC041677"],
+        items: ["Licence No. 619 ,", "IRDA Direct Broker Code:  IRDA/ DB 693/17,", "Valid till: 02/10/2026,", "CIN: U66010MP2016PTC041677"],
     },
     {
         title: "Our Links",
@@ -25,8 +25,8 @@ const Footer = () => {
         <div>
             <footer className="mt-20 relative w-full">
                 <div className="mx-auto w-full max-w-7xl px-8">
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <Typography className="w-56 my-6 flex flex-col gap-10">
+                    <div className="grid grid-cols-1   items-center md:grid-cols-3">
+                        <Typography className="w-56 my-6  flex flex-col gap-10">
                             <img src="assets/images/header/logo.png" alt="NIB" />
                             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
                                 <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
@@ -72,7 +72,7 @@ const Footer = () => {
                                 </Typography>
                             </div>
                         </Typography>
-                        <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2 ">
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
                                     <Typography

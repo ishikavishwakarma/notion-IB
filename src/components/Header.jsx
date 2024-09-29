@@ -202,7 +202,7 @@ function NavList() {
       </Typography>
       <Typography
         as="a"
-        href="#"
+        href="/contact"
         variant="small"
         color="blue-gray"
         className="font-medium"

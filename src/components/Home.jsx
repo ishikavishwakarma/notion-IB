@@ -19,7 +19,6 @@ const Home = () => {
       <Partners />
       <Exam />
       <Workflow />
-      <Contact />
       <Footer />
 
     </div>
