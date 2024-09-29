@@ -25,7 +25,7 @@ const Footer = () => {
         <div>
             <footer className="mt-20 relative w-full">
                 <div className="mx-auto w-full max-w-7xl px-8">
-                    <div className="grid grid-cols-2 items-center md:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
                         <Typography className="w-56 my-6 flex flex-col gap-10">
                             <img src="assets/images/header/logo.png" alt="NIB" />
                             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
@@ -72,7 +72,7 @@ const Footer = () => {
                                 </Typography>
                             </div>
                         </Typography>
-                        <div className="grid grid-cols-3 justify-between gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
                                     <Typography
