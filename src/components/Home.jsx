@@ -19,10 +19,9 @@ const Home = () => {
       <Partners />
       <Exam />
       <Workflow />
- ishika/feature
 
       <Contact2 />
- master
+
       <Footer />
 
     </div>
