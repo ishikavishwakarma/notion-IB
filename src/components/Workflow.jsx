@@ -1,36 +1,121 @@
-import React from 'react';
+import React from 'react'
+import { FcSurvey } from "react-icons/fc";
+import { FcCollaboration } from "react-icons/fc";
+import { FcBusinessman } from "react-icons/fc";
+import { FcBriefcase } from "react-icons/fc";
+
 
 const Workflow = () => {
-  const steps = [
-    { number: '01', title: 'Select insurance', description: 'Lorem Ipsum is simply free dummy text of the printing and amet picing', icon: '' },
-    { number: '02', title: 'Schedule meeting', description: 'Lorem Ipsum is simply free dummy text of the printing and amet picing', icon: '' },
-    { number: '03', title: 'Meet agent', description: 'Lorem Ipsum is simply free dummy text of the printing and amet picing', icon: '' },
-    { number: '04', title: 'Get insurance', description: 'Lorem Ipsum is simply free dummy text of the printing and amet picing', icon: '' },
-  ];
+    return (
+        <div className="custom-cursor">
+            <div className="page-wrapper">
+                <section className="process">
+                    <div className="container">
+                        <div className="section-title text-center">
+                            <div className="section-sub-title-box">
+                                <p className="section-sub-title text-blue-900">work process</p>
+                               
+                            </div>
+                            <h2 className="section-title__title">Our easy work process <br/> in 4 steps</h2>
+                        </div>
+                        <div className="process__inner">
+                            <div className="process-shape-1 w-full">
+                                <img src="src\assets\image\shapes\process-shape-1.png" alt=""/>
+                            </div>
+                            <div className="row">
+                                
+                                <div className="col-xl-3 col-lg-3 col-md-6">
+                                    <div className="process__single">
+                                        <div className="process__icon-box">
+                                            <div className="process__icon">
+                                                <span><FcSurvey /></span>
+                                            </div>
+                                            <div className="process__count"></div>
+                                        </div>
+                                        <div className="process__content">
+                                            <h3 className="process__title">Select insurance</h3>
+                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
+                                                amet piscing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                                <div className="col-xl-3 col-lg-3 col-md-6">
+                                    <div className="process__single process__single-2">
+                                        <div className="process__icon-box">
+                                            <div className="process__icon">
+                                                <span><FcCollaboration /></span>
+                                            </div>
+                                            <div className="process__count"></div>
+                                        </div>
+                                        <div className="process__content">
+                                            <h3 className="process__title">Schedule meeting</h3>
+                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
+                                                amet piscing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                                <div className="col-xl-3 col-lg-3 col-md-6">
+                                    <div className="process__single process__single-3">
+                                        <div className="process__icon-box">
+                                            <div className="process__icon">
+                                                <span><FcBusinessman /></span>
+                                            </div>
+                                            <div className="process__count"></div>
+                                        </div>
+                                        <div className="process__content">
+                                            <h3 className="process__title">Meet agent</h3>
+                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
+                                                amet piscing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                                <div className="col-xl-3 col-lg-3 col-md-6">
+                                    <div className="process__single process__single-4">
+                                        <div className="process__icon-box">
+                                            <div className="process__icon">
+                                                <span><FcBriefcase /></span>
+                                            </div>
+                                            <div className="process__count"></div>
+                                        </div>
+                                        <div className="process__content">
+                                            <h3 className="process__title">Get insurance</h3>
+                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
+                                                amet piscing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
 
-  return (
-    <div className="mx-auto p-6 w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/2 flex flex-col gap-20 items-center justify-center">
-      <h2 className="text-center text-3xl font-bold py-5">Our easy work process in 4 steps</h2>
-      <div className="w-full flex relative items-center justify-between flex-wrap md:flex-nowrap">
-        {steps.map((step, index) => (
-          <div key={index} className="flex flex-col items-center text-center w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-6 md:mb-0">
-            <div className="relative flex justify-center items-center w-28 h-28 bg-blue-500 text-white rounded-full mb-4">
-              {step.icon}
-              <div className='p-1 border rounded-full text-xs absolute top-0 right-0 bg-orange-700'>
-                {step.number}
-              </div>
+                        <div className="process__bottom">
+                            <div className="row">
+                                <div className="col-xl-12">
+                                    <div className="process__contact">
+                                        <div className="process__input-box">
+                                            <input type="text" placeholder="Dont hesitate, contact us for better future life."/>
+                                                <button type="submit" className="process__btn">Get a Quote</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
             </div>
-            <div className="text-lg font-semibold mb-2">{step.title}</div>
-            {/* <p className="text-gray-500 text-sm">{step.description}</p> */}
-          </div>
-        ))}
-      </div>
-      <div className='w-3/4 pl-3  border rounded-xl flex items-center justify-between overflow-hidden'>
-        <input className='outline-none pl-5' type="text" placeholder='Do not hesitate, contact us for better future life.' />
-        <button className='px-5 py-2 bg-blue-700 text-white font-semibold'>Get a Quote</button>
-      </div>
-    </div>
-  );
-};
 
-export default Workflow;
+
+        </div>
+    )
+}
+
+export default Workflow
