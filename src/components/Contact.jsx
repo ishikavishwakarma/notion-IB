@@ -1,5 +1,8 @@
 import React from "react";
 import { Button, Input, Card, CardHeader, Tooltip, CardFooter, CardBody, Textarea, Typography } from "@material-tailwind/react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BsFillTicketDetailedFill } from "react-icons/bs";
 
 export function Contact() {
   return (
@@ -12,6 +15,7 @@ export function Contact() {
         >
           Customer Care
         </Typography>
+
         <Typography
           variant="h1"
           color="blue-gray"
@@ -19,12 +23,14 @@ export function Contact() {
         >
           We&apos;re Here to Help
         </Typography>
+
         <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
           Whether it&apos;s a question about our services, a request for
           technical assistance, or suggestions for improvement, our team is
           eager to hear from you.
         </Typography>
-        <div className="flex items-center justify-center gap-10">
+
+        <div className="w-3/2 flex flex-wrap py-10 rounded-xl shadow-xl bg-gray-200 items-center justify-center gap-10">
 
           <form
             action="#"
@@ -122,7 +128,7 @@ export function Contact() {
             </Button>
           </form>
 
-          <Card className="w-96 bg-gray-400">
+          <Card className="w-96 border py-5">
 
             <CardBody className="text-center">
               <Typography variant="h4" color="blue-gray" className="mb-2">
@@ -132,40 +138,29 @@ export function Contact() {
                 Fill up the form and our Team will get back to you within 24 hours.
               </Typography>
 
-              <CardBody className="p-0">
-                <ul className="flex flex-col gap-4">
+              <CardBody className="py-10">
+                <ul className="flex flex-col items-start px-8 justify-center gap-4 ">
                   <li className="flex items-center gap-4">
-                    <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    
+                    <span className="text-xl">
+                      <FaPhoneAlt />
                     </span>
-                    <Typography className="font-normal">5 team members</Typography>
+                    <Typography className="font-normal text-xl">+91 11005540121</Typography>
                   </li>
+
                   <li className="flex items-center gap-4">
-                    <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    
+                    <span className="text-2xl">
+                      <MdEmail />
                     </span>
-                    <Typography className="font-normal">200+ components</Typography>
+                    <Typography className="font-normal text-xl">nib@notion.ac.in</Typography>
                   </li>
+
                   <li className="flex items-center gap-4">
-                    <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    
+                    <span className="text-2xl">
+                      <BsFillTicketDetailedFill />
                     </span>
-                    <Typography className="font-normal">40+ built-in pages</Typography>
+                    <Typography className="font-normal text-xl">Open Support Ticket</Typography>
                   </li>
-                  <li className="flex items-center gap-4">
-                    <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    
-                    </span>
-                    <Typography className="font-normal">1 year free updates</Typography>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <span className="rounded-full border border-white/20 bg-white/20 p-1">
-                    
-                    </span>
-                    <Typography className="font-normal">
-                      Life time technical support
-                    </Typography>
-                  </li>
+
                 </ul>
               </CardBody>
 
@@ -217,7 +212,13 @@ export function Contact() {
 
           </Card>
 
+        <div id="map" class="flex w-[95vw] items-center justify-center mt-10 relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+            width="60%" height="480" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        </div>
+
       </div>
     </section>
   );
