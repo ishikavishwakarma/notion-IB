@@ -185,7 +185,7 @@ function NavList() {
       <NavListMenu />
       <Typography
         as="a"
-        href="/"
+        href="/aboutUs"
         variant="small"
         color="blue-gray"
         className="font-medium"
