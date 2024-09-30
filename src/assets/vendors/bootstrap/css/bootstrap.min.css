@@ -324,9 +324,7 @@ select:disabled {
 [type="button"],
 [type="reset"],
 [type="submit"],
-button {
-  -webkit-appearance: button;
-}
+
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
@@ -374,10 +372,7 @@ legend + * {
 ::-webkit-inner-spin-button {
   height: auto;
 }
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield;
-}
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -2044,6 +2039,7 @@ textarea.form-control-lg {
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
+/* <<<<<<< ishika/feature */
 .form-check .form-check-input {
   float: left;
   margin-left: -1.5em;
@@ -2129,6 +2125,8 @@ textarea.form-control-lg {
   display: inline-block;
   margin-right: 1rem;
 }
+
+/* >>>>>>> master */
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -2433,25 +2431,6 @@ textarea.form-control.is-valid {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
-.form-check-input.is-valid,
-.was-validated .form-check-input:valid {
-  border-color: #198754;
-}
-.form-check-input.is-valid:checked,
-.was-validated .form-check-input:valid:checked {
-  background-color: #198754;
-}
-.form-check-input.is-valid:focus,
-.was-validated .form-check-input:valid:focus {
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
-}
-.form-check-input.is-valid ~ .form-check-label,
-.was-validated .form-check-input:valid ~ .form-check-label {
-  color: #198754;
-}
-.form-check-inline .form-check-input ~ .valid-feedback {
-  margin-left: 0.5em;
-}
 .input-group .form-control.is-valid,
 .input-group .form-select.is-valid,
 .was-validated .input-group .form-control:valid,
@@ -2517,25 +2496,6 @@ textarea.form-control.is-invalid {
 .was-validated .form-select:invalid:focus {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-}
-.form-check-input.is-invalid,
-.was-validated .form-check-input:invalid {
-  border-color: #dc3545;
-}
-.form-check-input.is-invalid:checked,
-.was-validated .form-check-input:invalid:checked {
-  background-color: #dc3545;
-}
-.form-check-input.is-invalid:focus,
-.was-validated .form-check-input:invalid:focus {
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-}
-.form-check-input.is-invalid ~ .form-check-label,
-.was-validated .form-check-input:invalid ~ .form-check-label {
-  color: #dc3545;
-}
-.form-check-inline .form-check-input ~ .invalid-feedback {
-  margin-left: 0.5em;
 }
 .input-group .form-control.is-invalid,
 .input-group .form-select.is-invalid,
