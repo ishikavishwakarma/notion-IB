@@ -25,6 +25,7 @@ import {
   Bars4Icon,
 
 } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const nestedMenuItems = [
   {
@@ -110,11 +111,11 @@ function NavListMenu() {
           </MenuItem>
 
           {sublink.map((sublinkItem, sublinkKey) => (
-              <a href={sublinkItem.link} key={sublinkKey} className="text-sm text-blue-gray-500">
+              <Link to={sublinkItem.link} key={sublinkKey} className="text-sm text-blue-gray-500">
             <MenuItem  className="flex items-center cursor-pointer gap-3 rounded-lg">
                 {sublinkItem.name}
             </MenuItem>
-              </a>
+              </Link>
           ))}
 
         </div>
@@ -175,53 +176,64 @@ function NavList() {
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
-        href="/"
+       
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
+        <Link to="/" >
         <ListItem className="flex items-center text-base gap-2 py-2 pr-4">Home</ListItem>
+        </Link>
       </Typography>
       <NavListMenu />
       <Typography
         as="a"
-        href="/aboutUs"
+       
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
+         <Link to="/aboutUs" >
+
         <ListItem className="flex items-center text-base gap-2 py-2 pr-4">About Us</ListItem>
+         </Link>
       </Typography>
       <Typography
         as="a"
-        href="/ourPartner"
+       
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
+         <Link to="/ourPartner" >
         <ListItem className="flex items-center text-base gap-2 py-2 pr-4">Our Partner</ListItem>
+         </Link>
       </Typography>
       <Typography
         as="a"
-        href="/claim"
+        
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
+        <Link to="/claim" >
         <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
           Claim
         </ListItem>
+        </Link>
       </Typography>
       <Typography
         as="a"
-        href="/contact"
+       
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
+        <Link to="/contact" >
         <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
           Contact Us
         </ListItem>
+        </Link>
       </Typography>
     </List>
   );

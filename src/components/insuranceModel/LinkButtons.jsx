@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@material-tailwind/react'; // Make sure you have the correct import for Material Tailwind
+import { Link } from 'react-router-dom';
 
 const LinkButtons = ({ text, subtext, imgSrc, link }) => {
   return (
