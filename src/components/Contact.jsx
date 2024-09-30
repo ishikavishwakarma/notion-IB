@@ -7,8 +7,10 @@ import { BsFillTicketDetailedFill } from "react-icons/bs";
 
 export function Contact() {
   return (
+
     <>
   
+
     <section className="px-8 py-8 lg:py-16">
       <div className="container mx-auto text-center">
         <Typography

@@ -194,7 +194,7 @@ function NavList() {
       </Typography>
       <Typography
         as="a"
-        href="/"
+        href="/ourPartner"
         variant="small"
         color="blue-gray"
         className="font-medium"

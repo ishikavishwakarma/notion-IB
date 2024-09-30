@@ -5,7 +5,11 @@ import CarInsurance from '../components/AllProducts/GeneralInsurance/CarInsuranc
 import Contact from '../components/Contact'
 import BikeInsurance from '../components/AllProducts/GeneralInsurance/BikeInsurance'
 import About from '../components/aboutUs/About'
+
+import OurPartner from '../components/OurPartner'
+
 import Claim from '../components/Claim/Claim'
+
 
 const Routing = () => {
   return (
@@ -15,7 +19,11 @@ const Routing = () => {
         
     <Route path="/" element={<Home/>} />
     <Route path="/contact" element={<Contact/>} />
+
+    <Route path="/ourPartner" element={<OurPartner/>} />
+
     <Route path="/claim" element={<Claim/>} />
+
     <Route path="/aboutUs" element={<About/>} />
     <Route path="/carInsurance" element={<CarInsurance/>} />
     <Route path="/bikeInsurance" element={<BikeInsurance/>} />
