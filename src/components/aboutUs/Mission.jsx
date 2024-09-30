@@ -1,42 +1,84 @@
-import React from 'react'
 import {
-    Card,
-    CardBody,
-    Typography,
-
+    Tabs,
+    TabsHeader,
+    TabsBody,
+    Tab,
+    TabPanel,
 } from "@material-tailwind/react";
+import { useState } from "react";
+
 
 const Mission = () => {
+    const [activeTab, setActiveTab] = useState("ourMission");
+    const data = [
+        {
+            label: "Our Mission",
+
+            value: "ourMission",
+            desc: (
+                <div
+                    className={`flex-col ourMission flex gap-2 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
+                >
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ipsa natus aut quod, quibusdam iste hic quasi nisi dolorum minima id quidem aspernatur incidunt corporis. Nobis asperiores labore quibusdam corrupti.</p>
+                </div>
+            ),
+        },
+        {
+            label: "Our vision",
+            value: "ourVission",
+            desc: (
+                <div
+                    className={`ourVission flex flex-wrap max-sm:gap-2 max-sm:p-5 items-start justify-between w-full px-5 py-2 max-sm:px-5`}
+                >
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi libero inventore eius dignissimos? Quasi delectus, quod ad, quis similique vel sint nobis aliquam nulla eum voluptatibus quibusdam fugiat asperiores vero impedit nemo ratione consectetur, neque accusantium maxime rem saepe sequi! Error a doloribus nobis cum ullam voluptatibus architecto blanditiis beatae?</p>
+                </div>
+            ),
+        },
+        {
+            label: "Our Goal",
+            value: "ourGoal",
+            desc: (
+                <div
+                    className={`flex-col ourGoal flex gap-10 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
+                >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat at eius, debitis fugit exercitationem velit neque sunt, facilis magni dolore voluptatum vitae nostrum? Consectetur amet minima nisi nam veritatis!</p>
+                </div>
+            ),
+        },
+    ];
     return (
-        <div className="flex flex-col items-center py-10">
-            <Card className=" py-10 flex flex-row-reverse w-4/5 px-5">
-                <CardBody className="px-10">
-                    <Typography variant="h2" color="blue-gray" className="mb-2">
-                        Our vision
-                    </Typography>
-                    <Typography className="py-3">
-                        <i></i>
-                        Our vision is to set the standard of excellence among Insurance providers by being innovative, being financially strong, and exceeding customer expectations. We will attract and retain the very best employees and POSP (Point of Sales Persons) to help us achieve this goal.
-                    </Typography>
-                    <Typography variant="h5" color="blue-gray" className="mb-2">
-                   <i>
-                   Notion Insurance Broker Pvt. Ltd.
-                   </i>
-                    </Typography>
-                </CardBody>
+        <div className="flex flex-col items-center justify-center mt-5">
 
-                <img
-                    className="w-[30vw] rounded-xl"
-                    src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                    alt="card-image"
-                />
-
-
-
-            </Card>
+            <Tabs value={activeTab} className="mission w-4/5 flex flex-col items-center justify-center rounded-xl shadow-xl py-3 px-6">
+                <TabsHeader
+                    className="rounded-none border-b border-blue-gray-50 bg-transparent w-[40vw] "
+                    indicatorProps={{
+                        className:
+                            "bg-transparent border-b-2 border-gray-800 shadow-none rounded-none",
+                    }}
+                >
+                    {data.map(({ label, value }) => (
+                        <Tab
+                            key={value}
+                            value={value}
+                            onClick={() => setActiveTab(value)}
+                            className={activeTab === value ? "text-gray-900 font-semibold text-2xl" : "font-semibold text-gray-600 text-2xl"}
+                        >
+                            {label}
+                        </Tab>
+                    ))}
+                </TabsHeader>
+                <TabsBody>
+                    {data.map(({ value, desc }) => (
+                        <TabPanel key={value} value={value} className="text-md">
+                            {desc}
+                        </TabPanel>
+                    ))}
+                </TabsBody>
+            <p className="text-md text-gray-900 font-semibold"><i>Notion Insurance Broker Pvt. Ltd.</i></p>
+            </Tabs>
         </div>
+    );
+};
 
-    )
-}
-
-export default Mission
+export default Mission;
