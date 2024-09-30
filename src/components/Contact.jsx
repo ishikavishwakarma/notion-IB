@@ -3,12 +3,12 @@ import { Button, Input, Card, CardHeader, Tooltip, CardFooter, CardBody, Textare
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTicketDetailedFill } from "react-icons/bs";
-import Header from "./Header";
+
 
 export function Contact() {
   return (
     <>
-    <Header />
+  
     <section className="px-8 py-8 lg:py-16">
       <div className="container mx-auto text-center">
         <Typography

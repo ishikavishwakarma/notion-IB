@@ -12,7 +12,7 @@ import {
   TabPanel,
   CardHeader,
 } from "@material-tailwind/react";
-import Header from '../Header'
+import Header from '../../Header'
 function InsuranceCard({ logo, insurerName, price, keyFeatures }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mb-4">
