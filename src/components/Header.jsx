@@ -203,6 +203,17 @@ function NavList() {
       </Typography>
       <Typography
         as="a"
+        href="/claim"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          Claim
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
         href="/contact"
         variant="small"
         color="blue-gray"

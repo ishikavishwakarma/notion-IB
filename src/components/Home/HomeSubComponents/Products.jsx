@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { MdVerifiedUser } from 'react-icons/md';
 import { RxCross2 } from "react-icons/rx";
-import DialogButton from './insuranceModel/DialogButton';
-import InsuranceModel from './insuranceModel/InsuranceModel';
-import LinkButtons from './insuranceModel/LinkButtons';
+import DialogButton from '../../insuranceModel/DialogButton';
+import InsuranceModel from '../../insuranceModel/InsuranceModel';
+import LinkButtons from '../../insuranceModel/LinkButtons';
 
 const Products = () => {
    
