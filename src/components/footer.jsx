@@ -24,8 +24,8 @@ const Footer = () => {
     return (
         <div className='footer'>
             <footer className="mt-20 relative w-full">
-                <div className="mx-auto w-full max-w-7xl px-8">
-                    <div className="grid grid-cols-1   items-center md:grid-cols-3">
+                <div className="mx-auto w-full ">
+                    <div className="grid grid-cols-1 items-center md:grid-cols-3 px-10">
                         <Typography className="w-56 my-6  flex flex-col gap-10">
                             <img src="assets/images/header/logo.png" alt="NIB" />
                             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
@@ -87,8 +87,8 @@ const Footer = () => {
                                             <Typography
                                                 as="a"
                                                 href="#"
-                                                color="gray"
-                                                className="py-1.5 min-w-60 text-sm transition-colors hover:text-blue-gray-900"
+                                            
+                                                className="py-1.5 min-w-60 text-sm transition-colors text-gray-900 hover:text-blue-gray-900"
                                             >
                                                 {link}
                                             </Typography>
@@ -98,10 +98,10 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="mt-12 flex items-center justify-center w-full border-t border-blue-gray-50 py-4 ">
+                    <div className="mt-12 flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
                         <Typography
                             variant="small"
-                            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+                            className=" text-center font-normal text-blue-gray-100 md:mb-0"
                         >
                             &copy; {currentYear} <a href="/"> Notion Insurance Broker</a>. All
                             Rights Reserved.
