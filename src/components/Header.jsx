@@ -45,10 +45,11 @@ const navListMenuItems = [
     title: "General Insurance",
 
     sublink: [
-      { name: "Car Insurance", link: "/web" },
-      { name: "Brand Car Insurance", link: "/tru" },
+      { name: "Car Insurance", link: "/carInsurance" },
+      { name: "Two Wheeler Insurance", link: "/bikeInsurance" },
+      { name: "Brand Car Insurance", link: "/bikeInsurance" },
       { name: "Travel Insurance", link: "/hh" },
-      { name: "Two Wheeler Insurance", link: "/kk" },
+     
       { name: "Commercial Vehicle", link: "/kk" },
       { name: "Taxi Insurance", link: "/kk" },
 
@@ -109,11 +110,11 @@ function NavListMenu() {
           </MenuItem>
 
           {sublink.map((sublinkItem, sublinkKey) => (
-            <MenuItem key={sublinkKey} className="flex items-center cursor-pointer gap-3 rounded-lg">
-              <a href={sublinkItem.link} className="text-sm text-blue-gray-500">
+              <a href={sublinkItem.link} key={sublinkKey} className="text-sm text-blue-gray-500">
+            <MenuItem  className="flex items-center cursor-pointer gap-3 rounded-lg">
                 {sublinkItem.name}
-              </a>
             </MenuItem>
+              </a>
           ))}
 
         </div>
