@@ -7,8 +7,7 @@ import Header from "./Header";
 
 export function Contact() {
   return (
-    <>
-    <Header />
+    <> 
     <section className="px-8 py-8 lg:py-16">
       <div className="container mx-auto text-center">
         <Typography
