@@ -74,7 +74,7 @@ const CarInsurance = () => {
   ];
   return (
     <div>
-      <Header />
+     
       <Card className="mt-6 bg-white w-full">
       
       

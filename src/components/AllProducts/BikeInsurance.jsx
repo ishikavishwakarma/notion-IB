@@ -4,7 +4,7 @@ import Header from '../Header'
 const BikeInsurance = () => {
   return (
     <>
-    <Header />
+   
     <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 max-w-md mx-auto">  
       <div className="text-center mb-5">  
         <h2 className="text-2xl font-bold">New India Bike Insurance</h2>  
