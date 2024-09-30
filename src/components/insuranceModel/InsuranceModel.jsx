@@ -21,17 +21,10 @@ const InsuranceModel = ({ open, handleOpen }) => {
           </span>
         </div>
       </DialogHeader >
-      <DialogBody className="h-[32rem] ">
+      <DialogBody className="h-[32rem] px-2 overflow-y-scroll">
       <Tabs/>
       </DialogBody>
-      <DialogFooter>
-        <Button variant="text" color="red" onClick={handleOpen} className="mr-1">
-          <span>Cancel</span>
-        </Button>
-        <Button variant="gradient" color="green" onClick={handleOpen}>
-          <span>Confirm</span>
-        </Button>
-      </DialogFooter>
+     
     </Dialog>
   )
 }

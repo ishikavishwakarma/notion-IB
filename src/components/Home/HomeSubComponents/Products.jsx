@@ -14,7 +14,7 @@ const Products = () => {
     return (
         <div className='flex flex-col items-center justify-center py-10 gap-2 max-sm:px-2'>
 
-            <div className='relative flex flex-wrap items-center justify-center max-sm:gap-3 gap-8 w-4/5 max-sm:w-full  py-10 '>
+            <div className='relative flex flex-wrap items-center justify-center max-sm:gap-3 gap-8 sm:w-4/5 max-sm:w-full  py-10 '>
 
                 <div>
                    

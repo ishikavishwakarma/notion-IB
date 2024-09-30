@@ -16,9 +16,9 @@ const ProductTabs = () => {
       value: "generalInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex gap-2 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex gap-2 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
-          <div className="flex flex-wrap max-sm:gap-1 items-start justify-center gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5  max-sm:gap-1 items-start gap-2 justify-center lg:gap-3">
             <ModalBox
               text="Car Insurance"
               imgSrc="assets/images/Products/general/sport-car.png"
@@ -53,11 +53,11 @@ const ProductTabs = () => {
       value: "nonGeneralInsurance",
       desc: (
         <div
-          className={`nongeneralInsuranceOption flex flex-wrap max-sm:gap-2 max-sm:p-5 items-start justify-between w-full px-5 py-2 max-sm:px-5`}
+          className={`nongeneralInsuranceOption grid grid-cols-1 lg:grid-cols-2 max-sm:gap-2 max-sm:p-5 items-start justify-between w-full lg:px-5 py-2 max-sm:px-5`}
         >
-          <div className="w-2/5 py-5">
+          <div className="pb-3 lg:py-5">
             <h1 className="font-semibold mb-3">Marine & Property Insurance:</h1>
-            <div className="flex flex-wrap max-sm:w-[90vw] max-sm:gap-1 items-center gap-4">
+            <div className="flex flex-wrap max-sm:w-[90vw] max-sm:gap-1 items-center gap-2">
               <ModalBox
                 text="Marine Insurance"
                 imgSrc="assets/images/Products/non-general/ship.png"
@@ -83,9 +83,9 @@ const ProductTabs = () => {
               />
             </div>
           </div>
-          <div className="w-3/5 py-5">
+          <div className="pb-3 lg:py-5">
             <h1 className="font-semibold mb-2">Liability:</h1>
-            <div className="flex flex-wrap max-sm:w-[90vw] max-sm:gap-1 items-center gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3 max-sm:w-[90vw] max-sm:gap-1 items-center gap-2">
               <ModalBox
                 text="Professional Indemnity for Doctors"
                 imgSrc="assets/images/Products/non-general/medical.png"
@@ -123,7 +123,7 @@ const ProductTabs = () => {
               />
             </div>
           </div>
-          <div className="w-3/5 py-5">
+          <div className=" lg:py-5">
             <h1 className="font-semibold">Engineering:</h1>
             <div className="flex max-sm:w-[90vw] flex-wrap max-sm:gap-1 items-center gap-4">
               <ModalBox
@@ -153,9 +153,9 @@ const ProductTabs = () => {
       value: "lifeInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex gap-10 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
-          <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-5">
+          <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-2">
             <ModalBox
               text="Term Insurance"
               imgSrc="assets/images/Products/health/medicine.png"
@@ -188,9 +188,9 @@ const ProductTabs = () => {
       value: "healthInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex gap-10 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
-          <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-5">
+          <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-2">
             <ModalBox
               text="Health"
               imgSrc="assets/images/Products/health/heart-rate.png"
@@ -226,28 +226,30 @@ const ProductTabs = () => {
     },
   ];
   return (
-    <Tabs value={activeTab}>
-      <TabsHeader
-        className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
-        indicatorProps={{
-          className:
-            "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none",
-        }}
-      >
-        {data.map(({ label, value }) => (
-          <Tab
-            key={value}
-            value={value}
-            onClick={() => setActiveTab(value)}
-            className={activeTab === value ? "text-gray-900" : ""}
-          >
-            {label}
-          </Tab>
-        ))}
-      </TabsHeader>
-      <TabsBody>
+    <Tabs id="custom-animation" value={activeTab}>
+    <TabsHeader
+  className="bg-blue-gray-100 flex flex-wrap sm:flex-nowrap justify-center"
+>
+  {data.map(({ label, value }) => (
+    <Tab
+      key={value}
+      value={value}
+      onClick={() => setActiveTab(value)}
+      className={`${
+        activeTab === value ? "text-gray-900" : ""
+      } w-full sm:w-auto sm:flex-auto text-center max-sm:basis-1/2`} // Full width on mobile, auto width on larger screens
+    >
+      {label}
+    </Tab>
+  ))}
+</TabsHeader>
+      <TabsBody  animate={{
+          initial: { y: 250 },
+          mount: { y: 0 },
+          unmount: { y: 250 },
+        }}>
         {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value}>
+          <TabPanel className="px-1 lg:px-2" key={value} value={value}>
             {desc}
           </TabPanel>
         ))}
