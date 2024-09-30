@@ -7,6 +7,7 @@ import Exam from './Exam'
 import Footer from './footer'
 import Workflow from './Workflow'
 import Contact2 from './Contact2'
+import About from './aboutUs/About'
 
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
       <Contact2 />
 
       <Footer />
-
+      
     </div>
   )
 }
