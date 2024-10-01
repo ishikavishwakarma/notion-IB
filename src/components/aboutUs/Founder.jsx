@@ -1,130 +1,110 @@
-import React from 'react'
+import React, { useState } from 'react';
 import {
     Card,
-    CardHeader,
     CardBody,
-    CardFooter,
-    Typography,
-    Tooltip,
+    Typography
 } from "@material-tailwind/react";
 
+const cards = [
+    {
+        name: 'Mr. John Doe',
+        experience: '15 years of Experience',
+        img: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+        name: 'Ms. Jane Doe',
+        experience: '10 years of Experience',
+        img: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+        name: 'Mr. Richard Roe',
+        experience: '20 years of Experience',
+        img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+        name: 'Ms. Jane Roe',
+        experience: '12 years of Experience',
+        img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+        name: 'Mr. John Smith',
+        experience: '18 years of Experience',
+        img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    }
+];
 
 const Founder = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? cards.length - 1 : prevIndex - 1
+        );
+    };
+
+    const getVisibleCards = () => {
+        const visibleCards = [];
+        for (let i = 0; i < 3; i++) {
+            visibleCards.push(cards[(currentIndex + i) % cards.length]);
+        }
+        return visibleCards;
+    };
+
     return (
-        <div className="flex flex-col items-center py-10 mt-5">
-            <CardBody className="px-10">
-                <Typography variant="h2" color="blue-gray" className="mb-2">
-                    Our experts
+        <div className="flex flex-col items-center py-10 mt-5 w-full">
+            <CardBody className="px-10 text-center">
+                <Typography variant="h2" color="blue-gray" className="mb-5">
+                    Our Experts
                 </Typography>
             </CardBody>
-            <Card className="founder py-10 flex flex-row flex-wrap items-center justify-center gap-5 px-5 w-4/5">
 
-                        <Card className=" p-3 flex bg-gray-50 w-[300px]">
-
-                            <div className='overflow-hidden rounded-xl'>
-                            <img
-                                className='h-72 rounded-xl hover:scale-125 duration-150'
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="card-image" />
-
+            <div className="relative w-full max-w-6xl px-5">
+                {/* Slider */}
+                <div className="flex overflow-hidden justify-center">
+                    {getVisibleCards().map((card, index) => (
+                        <Card key={index} className="p-3 mx-3 bg-gray-50 w-[300px]">
+                            <div className="overflow-hidden rounded-xl">
+                                <img
+                                    className="h-72 rounded-xl hover:scale-125 transition-transform duration-150"
+                                    src={card.img}
+                                    alt={card.name}
+                                />
                             </div>
                             <CardBody className="px-2 flex flex-col">
-                            <Typography variant="h6" color="blue-gray" >
-                                    <i>
-                                        ~Founder
-                                    </i>
+                                <Typography variant="h6" color="blue-gray">
+                                    <i>~Founder</i>
                                 </Typography>
-                                <Typography variant="h4" color="blue-gray" >
-                                    Mr.John Doe
+                                <Typography variant="h4" color="blue-gray">
+                                    {card.name}
                                 </Typography>
-
-                                <Typography >
-                                    15 year of Experience
-                                </Typography>
-
-                               
+                                <Typography>{card.experience}</Typography>
                             </CardBody>
                         </Card>
-                        <Card className=" p-3 flex bg-gray-50 w-[300px]">
+                    ))}
+                </div>
 
-                            <div className='overflow-hidden rounded-xl'>
-                            <img
-                                className='h-72 rounded-xl hover:scale-125 duration-150'
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="card-image" />
-
-                            </div>
-                            <CardBody className="px-2 flex flex-col">
-                            <Typography variant="h6" color="blue-gray" >
-                                    <i>
-                                        ~Founder
-                                    </i>
-                                </Typography>
-                                <Typography variant="h4" color="blue-gray" >
-                                    Mr.John Doe
-                                </Typography>
-
-                                <Typography >
-                                    15 year of Experience
-                                </Typography>
-
-                               
-                            </CardBody>
-                        </Card>
-                        <Card className=" p-3 flex bg-gray-50 w-[300px]">
-
-                            <div className='overflow-hidden rounded-xl'>
-                            <img
-                                className='h-72 rounded-xl hover:scale-125 duration-150'
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="card-image" />
-
-                            </div>
-                            <CardBody className="px-2 flex flex-col">
-                            <Typography variant="h6" color="blue-gray" >
-                                    <i>
-                                        ~Founder
-                                    </i>
-                                </Typography>
-                                <Typography variant="h4" color="blue-gray" >
-                                    Mr.John Doe
-                                </Typography>
-
-                                <Typography >
-                                    15 year of Experience
-                                </Typography>
-
-                               
-                            </CardBody>
-                        </Card>
-                        <Card className=" p-3 flex bg-gray-50 w-[300px]">
-
-                            <div className='overflow-hidden rounded-xl'>
-                            <img
-                                className='h-72 rounded-xl hover:scale-125 duration-150'
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="card-image" />
-
-                            </div>
-                            <CardBody className="px-2 flex flex-col">
-                            <Typography variant="h6" color="blue-gray" >
-                                    <i>
-                                        ~Founder
-                                    </i>
-                                </Typography>
-                                <Typography variant="h4" color="blue-gray" >
-                                    Mr.John Doe
-                                </Typography>
-
-                                <Typography >
-                                    15 year of Experience
-                                </Typography>
-
-                               
-                            </CardBody>
-                        </Card>
-                    
-
-            </Card>
+                {/* Buttons */}
+                <div className="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full px-5">
+                    <button
+                        className="text-3xl p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
+                        onClick={prevSlide}
+                    >
+                        &#8249;
+                    </button>
+                    <button
+                        className="text-3xl p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
+                        onClick={nextSlide}
+                    >
+                        &#8250;
+                    </button>
+                </div>
+            </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default Founder
+export default Founder;
