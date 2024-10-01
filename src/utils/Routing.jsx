@@ -9,16 +9,23 @@ import About from '../components/aboutUs/About'
 import OurPartner from '../components/OurPartner'
 
 import Claim from '../components/Claim/Claim'
+import ScrollTop from '../components/ScrollTop'
 
 
 const Routing = () => {
   return (
     <div>
-      <Routes>
+
+       <ScrollTop/>
+       <Routes>
+        
+    <Route path="/" element={<Home/>} />
+    <Route path="/contact" element={<Contact/>} />
 
 
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+
+    <Route path="/UnderProcess" element={<Claim/>} />
+
 
         <Route path="/ourPartner" element={<OurPartner />} />
 
