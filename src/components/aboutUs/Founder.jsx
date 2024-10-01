@@ -85,7 +85,7 @@ const Founder = () => {
                     className={`flex overflow-hidden justify-center ${transitioning ? 'transition-all duration-500' : ''}`}
                 >
                     {getVisibleCards().map((card, index) => (
-                        <Card key={index} className="p-3 mx-3 bg-gray-50 md:w-[300px] img_card">
+                        <Card key={index} className="p-3 mx-3 bg-gray-50 md:w-[300px] img_card_new">
                             <div className="overflow-hidden rounded-xl">
                                 <img
                                     className="h-72 w-full object-cover rounded-xl hover:scale-125 transition-transform duration-150"
