@@ -228,7 +228,7 @@ const ProductTabs = () => {
   return (
     <Tabs id="custom-animation" value={activeTab}>
     <TabsHeader
-  className="bg-gray-400 flex flex-wrap sm:flex-nowrap justify-center"
+  className="bg-gray-400  flex flex-wrap sm:flex-nowrap justify-center"
 >
   {data.map(({ label, value }) => (
     <Tab
