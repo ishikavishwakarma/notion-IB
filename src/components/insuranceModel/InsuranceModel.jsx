@@ -11,7 +11,7 @@ const InsuranceModel = ({ open, handleOpen }) => {
 
   return (
     <Dialog open={open} size={"lg"} handler={handleOpen}>
-      <DialogHeader>
+      <DialogHeader className="py-2">
         <div className="flex items-center justify-between w-full">
           <h1 className="text-lg font-semibold">More Products</h1>
           <span
@@ -21,7 +21,7 @@ const InsuranceModel = ({ open, handleOpen }) => {
           </span>
         </div>
       </DialogHeader >
-      <DialogBody className="h-[32rem] px-2 overflow-y-scroll">
+      <DialogBody className="h-[28rem] py-1 px-2 overflow-y-scroll">
       <Tabs/>
       </DialogBody>
      

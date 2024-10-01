@@ -6,7 +6,7 @@ const InsuranceCard = ({ logo, insurerName, price, keyFeatures ,link}) => {
       <div className="div grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
       <div className="flex items-center">
 
-        <img src={logo} alt={insurerName} className="h-10 w-20 mr-4" />
+        <img src={logo} alt={insurerName} className="h-16 w-20 mr-4" />
       <div className="flex items-center justify-center">
         <h3 className="text-lg font-semibold">{insurerName}</h3>
       </div>

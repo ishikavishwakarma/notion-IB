@@ -13,11 +13,11 @@ import {
   CardHeader,
 } from "@material-tailwind/react";
 import Header from '../../Header'
-import TableComponent from "./tables/TableComponent";
+import TableComponent from "./RelativeComponents/TableComponent";
 import { Link } from "react-router-dom";
-import InsuranceCard from "./tables/InsuranceCard";
-import ImageTextCard from "./tables/ImageText";
-import InsuranceTypes from "./tables/TypesInsurance";
+import InsuranceCard from "./RelativeComponents/InsuranceCard";
+import ImageTextCard from "./RelativeComponents/ImageText";
+import InsuranceTypes from "./RelativeComponents/TypesInsurance";
 const TABLE_HEADERS_PAGE_1 = [
   "Feature/Type",
   "Comprehensive Insurance",
@@ -63,7 +63,7 @@ const COLUMN_WIDTHS = [
 const BikeInsurance = () => {
   const insuranceOptions = [
     {
-      logo: 'https://pimwp.s3-accelerate.amazonaws.com/2023/03/icici.jpg', // Replace with actual image URLs
+      logo: '/assets/images/company/icicibank.jpg', // Replace with actual image URLs
       insurerName: 'Bike Insurance',
       price: '-',
       keyFeatures: ['No Inspection Needed', 'Immediate Policy Issurance'],
@@ -91,7 +91,7 @@ const BikeInsurance = () => {
    <div>
      
      <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
-     <CardBody>
+     <CardBody className="px-1">
      <Typography variant="h4" color="blue-gray" className="mb-2 ">
        Top Bike Insurance Plans
      </Typography>
