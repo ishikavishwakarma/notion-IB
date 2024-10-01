@@ -94,18 +94,7 @@ const Workflow = () => {
                             </div>
                         </div>
 
-                        <div className="process__bottom">
-                            <div className="row">
-                                <div className="col-xl-12">
-                                    <div className="process__contact">
-                                        <div className="process__input-box">
-                                            <input type="text" placeholder="Dont hesitate, contact us for better future life." />
-                                            <button type="submit" className="process__btn">Get a Quote</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                     
                     </div>
                 </section>
 
