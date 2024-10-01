@@ -14,16 +14,16 @@ const Workflow = () => {
                         <div className="section-title text-center">
                             <div className="section-sub-title-box">
                                 <p className="section-sub-title text-blue-900">work process</p>
-                               
+
                             </div>
-                            <h2 className="section-title__title">Our easy work process <br/> in 4 steps</h2>
+                            <h2 className="section-title__title">Our easy work process <br /> in 4 steps</h2>
                         </div>
                         <div className="process__inner">
                             <div className="process-shape-1 w-full">
-                                <img src="src\assets\image\shapes\process-shape-1.png" alt=""/>
+                                <img src="assets/image/shapes/process-shape-1.png" alt="" />
                             </div>
                             <div className="row">
-                                
+
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="process__single">
                                         <div className="process__icon-box">
@@ -39,8 +39,8 @@ const Workflow = () => {
                                         </div>
                                     </div>
                                 </div>
-                               
-                                
+
+
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="process__single process__single-2">
                                         <div className="process__icon-box">
@@ -56,8 +56,8 @@ const Workflow = () => {
                                         </div>
                                     </div>
                                 </div>
-                               
-                                
+
+
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="process__single process__single-3">
                                         <div className="process__icon-box">
@@ -73,8 +73,8 @@ const Workflow = () => {
                                         </div>
                                     </div>
                                 </div>
-                               
-                                
+
+
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="process__single process__single-4">
                                         <div className="process__icon-box">
@@ -90,7 +90,7 @@ const Workflow = () => {
                                         </div>
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
 
@@ -99,8 +99,8 @@ const Workflow = () => {
                                 <div className="col-xl-12">
                                     <div className="process__contact">
                                         <div className="process__input-box">
-                                            <input type="text" placeholder="Dont hesitate, contact us for better future life."/>
-                                                <button type="submit" className="process__btn">Get a Quote</button>
+                                            <input type="text" placeholder="Dont hesitate, contact us for better future life." />
+                                            <button type="submit" className="process__btn">Get a Quote</button>
                                         </div>
                                     </div>
                                 </div>

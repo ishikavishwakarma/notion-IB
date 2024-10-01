@@ -210,7 +210,7 @@
 }
 
 .contact{
-  background-image: url("assets/contact us.jpg");
+  background-image: url("assets/images/contact/contact us.jpg");
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: top;
@@ -243,6 +243,7 @@
   background-size:cover;
   background-position: center;
 }
+
 
 /* Add this media query to your CSS file */
 @media only screen and (max-width: 768px) {
