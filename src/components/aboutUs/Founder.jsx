@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Card,
     CardBody,
@@ -14,7 +14,7 @@ const cards = [
     {
         name: 'Ms. Jane Doe',
         experience: '10 years of Experience',
-        img: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        img: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
     },
     {
         name: 'Mr. Richard Roe',
@@ -35,15 +35,24 @@ const cards = [
 
 const Founder = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [transitioning, setTransitioning] = useState(false);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+        setTransitioning(true);
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+            setTransitioning(false);
+        }, 500); // adjust the transition duration
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? cards.length - 1 : prevIndex - 1
-        );
+        setTransitioning(true);
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === 0 ? cards.length - 1 : prevIndex - 1
+            );
+            setTransitioning(false);
+        }, 500); // adjust the transition duration
     };
 
     const getVisibleCards = () => {
@@ -54,31 +63,41 @@ const Founder = () => {
         return visibleCards;
     };
 
+    useEffect(() => {
+        const intervalId = setInterval(nextSlide, 3000); // call nextSlide every 2 seconds
+        return () => clearInterval(intervalId); // clean up the interval when the component unmounts
+    }, [nextSlide]);
+
     return (
         <div className="flex flex-col items-center py-10 mt-5 w-full">
             <CardBody className="px-10 text-center">
-                <Typography variant="h2" color="blue-gray" className="mb-5">
+                <Typography variant="h2" color="blue-gray" className="mb-1">
                     Our Experts
+                </Typography>
+                <Typography variant="p" color="blue-gray" className="mb-3">
+                    With over 100 years of combined experience, we've got a well-seasoned team at the helm.
                 </Typography>
             </CardBody>
 
             <div className="relative w-full max-w-6xl px-5">
                 {/* Slider */}
-                <div className="flex overflow-hidden justify-center">
+                <div
+                    className={`flex overflow-hidden justify-center ${transitioning ? 'transition-all duration-500' : ''}`}
+                >
                     {getVisibleCards().map((card, index) => (
-                        <Card key={index} className="p-3 mx-3 bg-gray-50 w-[300px]">
+                        <Card key={index} className="p-3 mx-3 bg-gray-50 md:w-[300px] img_card">
                             <div className="overflow-hidden rounded-xl">
                                 <img
-                                    className="h-72 rounded-xl hover:scale-125 transition-transform duration-150"
+                                    className="h-72 w-full object-cover rounded-xl hover:scale-125 transition-transform duration-150"
                                     src={card.img}
                                     alt={card.name}
                                 />
                             </div>
-                            <CardBody className="px-2 flex flex-col">
+                            <CardBody className="px-2 flex flex-col mb-0">
                                 <Typography variant="h6" color="blue-gray">
                                     <i>~Founder</i>
                                 </Typography>
-                                <Typography variant="h4" color="blue-gray">
+                                <Typography variant="h4" color="blue-gray" className='py-2'>
                                     {card.name}
                                 </Typography>
                                 <Typography>{card.experience}</Typography>
@@ -88,7 +107,7 @@ const Founder = () => {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full px-5">
+                <div className="flex justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5">
                     <button
                         className="text-3xl p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
                         onClick={prevSlide}

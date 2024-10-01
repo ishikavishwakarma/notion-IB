@@ -243,3 +243,16 @@
   background-size:cover;
   background-position: center;
 }
+
+/* Add this media query to your CSS file */
+@media only screen and (max-width: 768px) {
+  .img_card {
+    width: 100%!important; /* Make the card take full width */
+  }
+  .flex.overflow-hidden.justify-center {
+    flex-wrap: nowrap; /* Make the cards stack vertically */
+  }
+  .flex.overflow-hidden.justify-center > * {
+    flex: 0 0 100%!important; /* Make each card take full width */
+  }
+}
