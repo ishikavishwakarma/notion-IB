@@ -11,7 +11,7 @@ const Information = () => {
         <div className="flex flex-col items-center pb-10">
             <h1 className="text-5xl pl-20 font-semibold bg-red-50 w-full text-start text-white py-5 h-52 about_top">Know <br /> More About Us</h1>
             
-            <Card className="information py-10 mt-5 flex flex-row w-4/5 px-5">
+            <Card className="information py-10 mt-5 flex md:flex-row md:w-4/5 md:px-5">
                 <CardBody className="px-10">
                     <Typography variant="h3" color="blue-gray" className="mb-2">
                     About Us
@@ -21,7 +21,7 @@ const Information = () => {
                 </CardBody>
 
                 <img
-                    className="w-[30vw] rounded-xl"
+                    className="md:w-[30vw] rounded-xl"
                     src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                     alt="card-image"
                 />

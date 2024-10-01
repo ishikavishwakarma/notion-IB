@@ -11,7 +11,7 @@ export function Contact() {
     <>
 
 
-      <section className="px-8 py-8 lg:py-16">
+      <section className="md:px-8 py-8 lg:py-16">
         <div className="container mx-auto text-center">
           <Typography
             variant="h5"
@@ -29,16 +29,16 @@ export function Contact() {
             We&apos;re Here to Help
           </Typography>
 
-          <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl">
+          <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto md:max-w-3xl">
             Whether it&apos;s a question about our services, a request for
             technical assistance, or suggestions for improvement, our team is
             eager to hear from you.
           </Typography>
 
-          <div className="w-3/2 border flex flex-col pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
+          <div className="md:w-3/2 border flex flex-col pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
 
-            <div className="flex items-center justify-between gap-20 px-5">
-              <Card className="w-1/2 shadow-none location">
+            <div className="md:flex items-center justify-between md:gap-20 md:px-5">
+              <Card className="md:w-1/2 shadow-none location">
 
                 <CardBody className="flex flex-col items-center gap-2 ">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
@@ -80,7 +80,7 @@ export function Contact() {
 
               <form
                 action="#"
-                className="flex flex-col gap-5 w-3/4 "
+                className="flex flex-col gap-5 md:w-3/4 "
               >
 
                 <div className="grid grid-cols-2 gap-4">

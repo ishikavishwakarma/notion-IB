@@ -49,9 +49,9 @@ const Mission = () => {
     return (
         <div className="flex flex-col items-center justify-center mt-5">
 
-            <Tabs value={activeTab} className="mission w-4/5 flex flex-col items-center justify-center rounded-xl shadow-xl py-3 px-6">
+            <Tabs value={activeTab} className="mission md:w-4/5 flex flex-col items-center justify-center rounded-xl shadow-xl py-3 md:px-6">
                 <TabsHeader
-                    className="rounded-none border-b border-blue-gray-50 bg-transparent w-[40vw] "
+                    className="rounded-none border-b border-blue-gray-50 bg-transparent md:w-[40vw] w-screen"
                     indicatorProps={{
                         className:
                             "bg-transparent border-b-2 border-gray-800 shadow-none rounded-none",
@@ -62,7 +62,7 @@ const Mission = () => {
                             key={value}
                             value={value}
                             onClick={() => setActiveTab(value)}
-                            className={activeTab === value ? "text-gray-900 font-semibold text-2xl" : "font-semibold text-gray-600 text-2xl"}
+                            className={activeTab === value ? "text-gray-900 font-semibold md:text-2xl" : "font-semibold text-gray-600 md:text-2xl"}
                         >
                             {label}
                         </Tab>
