@@ -52,7 +52,7 @@ const Products = () => {
                     text="Car" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/jeep.gif" 
-                    link="/"
+                    link="/carInsurance"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const Products = () => {
                     text="2 Wheeler" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/bike.gif" 
-                    link="/"
+                    link="/bikeInsurance"
                     />
                 </div>
 
