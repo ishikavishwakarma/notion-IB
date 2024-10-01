@@ -22,7 +22,7 @@ const Products = () => {
                     text="Life" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/life-balance.gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -32,7 +32,7 @@ const Products = () => {
                     text="Health" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/heartbeat .gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -42,7 +42,7 @@ const Products = () => {
                     text="Investment Plans" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/advance.gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -52,7 +52,7 @@ const Products = () => {
                     text="Car" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/jeep.gif" 
-                    link="/carInsurance"
+                    link="/car-insurance"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const Products = () => {
                     text="2 Wheeler" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/bike.gif" 
-                    link="/bikeInsurance"
+                    link="/bike-insurance"
                     />
                 </div>
 
@@ -72,7 +72,7 @@ const Products = () => {
                     text="Family Health" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/family.gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -82,7 +82,7 @@ const Products = () => {
                     text="Travel" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/airplane.gif" 
-                    link="/"
+                    link="/under-process"
                     />
 
                 </div>
@@ -93,7 +93,7 @@ const Products = () => {
                     text="Home" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/home.gif" 
-                    link="/"
+                    link="/under-process"
                     />
 
                 </div>
@@ -104,7 +104,7 @@ const Products = () => {
                     text="Employee Health" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/employee.gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -114,7 +114,7 @@ const Products = () => {
                     text="Child" 
                     subtext="Savings Plans" 
                     imgSrc="assets/images/Products/piggy-bank.gif" 
-                    link="/"
+                    link="/under-process"
                     />
                 </div>
 
@@ -124,7 +124,7 @@ const Products = () => {
                     text="Free of Cost" 
                     subtext="Term Plan" 
                     imgSrc="assets/images/Products/freeterm.svg" 
-                    link="/"
+                    link="/under-process"
                     />
 
                 </div>
