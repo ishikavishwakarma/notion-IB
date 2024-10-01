@@ -6725,7 +6725,7 @@ ul {
   bottom: 0;
   content: "";
   border-radius: 50%;
-  background-color: var(--insur-base);
+  /* background-color: rgb(0.0.0.); */
   transform: scale(0);
   transform-origin: center;
   transform-style: preserve-3d;

@@ -14,20 +14,20 @@ import Claim from '../components/Claim/Claim'
 const Routing = () => {
   return (
     <div>
-       <Routes>
-       
-        
-    <Route path="/" element={<Home/>} />
-    <Route path="/contact" element={<Contact/>} />
+      <Routes>
 
-    <Route path="/ourPartner" element={<OurPartner/>} />
 
-    <Route path="/claim" element={<Claim/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
 
-    <Route path="/aboutUs" element={<About/>} />
-    <Route path="/carInsurance" element={<CarInsurance/>} />
-    <Route path="/bikeInsurance" element={<BikeInsurance/>} />
-       </Routes>
+        <Route path="/ourPartner" element={<OurPartner />} />
+
+        <Route path="/claim" element={<Claim />} />
+
+        <Route path="/aboutUs" element={<About />} />
+        <Route path="/carInsurance" element={<CarInsurance />} />
+        <Route path="/bikeInsurance" element={<BikeInsurance />} />
+      </Routes>
     </div>
   )
 }
