@@ -47,25 +47,25 @@ const navListMenuItems = [
     title: "General Insurance",
 
     sublink: [
-      { name: "Car Insurance", link: "/carInsurance" },
-      { name: "Two Wheeler Insurance", link: "/bikeInsurance" },
-      { name: "Brand Car Insurance", link: "/bikeInsurance" },
-      { name: "Travel Insurance", link: "/UnderProcess" },
+      { name: "Car Insurance", link: "/car-insurance" },
+      { name: "Two Wheeler Insurance", link: "/bike-insurance" },
+      { name: "Brand Car Insurance", link: "/bike-insurance" },
+      { name: "Travel Insurance", link: "/under-process" },
 
-      { name: "Commercial Vehicle", link: "/UnderProcess" },
-      { name: "Taxi Insurance", link: "/UnderProcess" },
+      { name: "Commercial Vehicle", link: "/under-process" },
+      { name: "Taxi Insurance", link: "/under-process" },
     ],
   },
   {
     title: "Non-General Insurance",
 
     sublink: [
-      { name: "Marine Insurance", link: "/UnderProcess" },
-      { name: "Fire & Burglary", link: "/UnderProcess" },
-      { name: "Shop Owner Insurance", link: "/UnderProcess" },
-      { name: "Workmen Compensation", link: "/UnderProcess" },
-      { name: "General Liability", link: "/UnderProcess" },
-      { name: "Cyber Insurance", link: "/UnderProcess" },
+      { name: "Marine Insurance", link: "/under-process" },
+      { name: "Fire & Burglary", link: "/under-process" },
+      { name: "Shop Owner Insurance", link: "/under-process" },
+      { name: "Workmen Compensation", link: "/under-process" },
+      { name: "General Liability", link: "/under-process" },
+      { name: "Cyber Insurance", link: "/under-process" },
     ],
   },
   {
@@ -73,19 +73,19 @@ const navListMenuItems = [
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
     sublink: [
-      { name: "Life Insurance Plans", link: "/UnderProcess" },
-      { name: "Postal Life Insurance", link: "/UnderProcess" },
+      { name: "Life Insurance Plans", link: "/under-process" },
+      { name: "Postal Life Insurance", link: "/under-process" },
     ],
   },
   {
     title: "Health Insurance",
 
     sublink: [
-      { name: "Heart ", link: "/UnderProcess" },
-      { name: "1 Cr Health Cover", link: "/UnderProcess" },
-      { name: "Cancer Insurance", link: "/UnderProcess" },
-      { name: "Family Health Insurance", link: "/UnderProcess" },
-      { name: "Employee Group Health Insurance", link: "/UnderProcess" },
+      { name: "Heart ", link: "/under-process" },
+      { name: "1 Cr Health Cover", link: "/under-process" },
+      { name: "Cancer Insurance", link: "/under-process" },
+      { name: "Family Health Insurance", link: "/under-process" },
+      { name: "Employee Group Health Insurance", link: "/under-process" },
     ],
   },
 ];
@@ -290,7 +290,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/aboutUs" onClick={closeMenu}>
+        <Link to="/about-us" onClick={closeMenu}>
           <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
             About Us
           </ListItem>
@@ -302,7 +302,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/ourPartner" onClick={closeMenu}>
+        <Link to="/our-partner" onClick={closeMenu}>
           <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
             Our Partner
           </ListItem>
@@ -314,7 +314,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/UnderProcess" onClick={closeMenu}>
+        <Link to="/under-process" onClick={closeMenu}>
           <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
             Claim
           </ListItem>

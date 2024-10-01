@@ -15,26 +15,20 @@ import ScrollTop from '../components/ScrollTop'
 const Routing = () => {
   return (
     <div>
-
        <ScrollTop/>
        <Routes>
         
     <Route path="/" element={<Home/>} />
     <Route path="/contact" element={<Contact/>} />
 
+    <Route path="/our-partner" element={<OurPartner/>} />
 
+    <Route path="/under-process" element={<Claim/>} />
 
-    <Route path="/UnderProcess" element={<Claim/>} />
-
-
-        <Route path="/ourPartner" element={<OurPartner />} />
-
-        <Route path="/claim" element={<Claim />} />
-
-        <Route path="/aboutUs" element={<About />} />
-        <Route path="/carInsurance" element={<CarInsurance />} />
-        <Route path="/bikeInsurance" element={<BikeInsurance />} />
-      </Routes>
+    <Route path="/about-us" element={<About/>} />
+    <Route path="/car-insurance" element={<CarInsurance/>} />
+    <Route path="/bike-insurance" element={<BikeInsurance/>} />
+       </Routes>
     </div>
   )
 }
