@@ -82,7 +82,7 @@ const Founder = () => {
             <div className="relative w-full max-w-6xl px-5">
                 {/* Slider */}
                 <div
-                    className={`flex overflow-hidden justify-center ${transitioning ? 'transition-all duration-500' : ''}`}
+                    className={`flex overflow-hidden justify-center mobile1 ${transitioning ? 'transition-all duration-500' : ''}`}
                 >
                     {getVisibleCards().map((card, index) => (
                         <Card key={index} className="p-3 mx-3 bg-gray-50 md:w-[300px] img_card_new">

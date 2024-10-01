@@ -250,10 +250,10 @@
   .img_card_new {
     width: 100%!important; /* Make the card take full width */
   }
-  /* .img_card_new_flex{
-    flex-wrap: nowrap; 
+  .mobile1 {
+    flex-wrap: nowrap; /* Make the cards stack vertically */
   }
-  .img_card_new_flex > * {
-    flex: 0 0 100%!important; 
-  } */
+  .mobile1 > * {
+    flex: 0 0 100%!important; /* Make each card take full width */
+  }
 }
