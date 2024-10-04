@@ -22,7 +22,7 @@ const Products = () => {
                     text="Life" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/life-balance.gif" 
-                    link="/"
+                    link="/life-insurance"
                     />
                 </div>
 
@@ -32,7 +32,7 @@ const Products = () => {
                     text="Health" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/heartbeat .gif" 
-                    link="/"
+                    link="/health-insurance"
                     />
                 </div>
 
@@ -52,7 +52,7 @@ const Products = () => {
                     text="Car" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/jeep.gif" 
-                    link="/carInsurance"
+                    link="/car-insurance"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const Products = () => {
                     text="2 Wheeler" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/bike.gif" 
-                    link="/bikeInsurance"
+                    link="/bike-insurance"
                     />
                 </div>
 

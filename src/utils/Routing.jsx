@@ -10,6 +10,9 @@ import OurPartner from '../components/OurPartner'
 
 import Claim from '../components/Claim/Claim'
 import ScrollTop from '../components/ScrollTop'
+import LifeInsurance from '../components/AllProducts/LifeInsurance/LifeInsurance'
+import HealthInsurance from '../components/AllProducts/HealthInsurance/HealthInsurance'
+import MarineInsurance from '../components/AllProducts/Non-GeneralInsurance/MarineInsurance'
 
 
 const Routing = () => {
@@ -28,6 +31,9 @@ const Routing = () => {
     <Route path="/about-us" element={<About/>} />
     <Route path="/car-insurance" element={<CarInsurance/>} />
     <Route path="/bike-insurance" element={<BikeInsurance/>} />
+    <Route path="/life-insurance" element={<LifeInsurance/>} />
+    <Route path="/health-insurance" element={<HealthInsurance/>} />
+    <Route path="/marine-insurance" element={<MarineInsurance/>} />
        </Routes>
     </div>
   )

@@ -60,7 +60,7 @@ const navListMenuItems = [
     title: "Non-General Insurance",
 
     sublink: [
-      { name: "Marine Insurance", link: "/under-process" },
+      { name: "Marine Insurance", link: "/marine-insurance" },
       { name: "Fire & Burglary", link: "/under-process" },
       { name: "Shop Owner Insurance", link: "/under-process" },
       { name: "Workmen Compensation", link: "/under-process" },
@@ -73,7 +73,7 @@ const navListMenuItems = [
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
     sublink: [
-      { name: "Life Insurance Plans", link: "/under-process" },
+      { name: "Life Insurance Plans", link: "/life-insurance" },
       { name: "Postal Life Insurance", link: "/under-process" },
     ],
   },
@@ -81,7 +81,7 @@ const navListMenuItems = [
     title: "Health Insurance",
 
     sublink: [
-      { name: "Heart ", link: "/under-process" },
+      { name: "Health Insurance ", link: "/health-insurance" },
       { name: "1 Cr Health Cover", link: "/under-process" },
       { name: "Cancer Insurance", link: "/under-process" },
       { name: "Family Health Insurance", link: "/under-process" },
