@@ -7,29 +7,34 @@ import {
 
 const cards = [
     {
-        name: 'Mr. John Doe',
+        post: 'Director',
+        name: 'Suresh G Malviya',
         experience: '15 years of Experience',
-        img: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+        img: 'assets/images/founder/img4.png'
     },
     {
-        name: 'Ms. Jane Doe',
+        post: 'Managing Director',
+        name: 'Arun Gupta',
         experience: '10 years of Experience',
-        img: 'https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+        img: 'assets/images/founder/img2.jpg'
     },
     {
-        name: 'Mr. Richard Roe',
+        post: 'Director',
+        name: 'Kanchan S Malviya',
         experience: '20 years of Experience',
-        img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        img: 'assets/images/founder/img1.jpg'
     },
     {
-        name: 'Ms. Jane Roe',
-        experience: '12 years of Experience',
-        img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        post: 'Chief Operating Officer(C.O.O)',
+        name: 'Avinash Gupta',
+        experience: '10+ years of qualitative and enriching experience in service sector.',
+        img: 'assets/images/founder/img5.png '
     },
     {
-        name: 'Mr. John Smith',
+        post: 'Principal Officer & C.E.O',
+        name: 'Bharat Shrivastava',
         experience: '18 years of Experience',
-        img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        img: 'assets/images/founder/img3.jpg'
     }
 ];
 
@@ -93,14 +98,14 @@ const Founder = () => {
                                     alt={card.name}
                                 />
                             </div>
-                            <CardBody className="px-2 flex flex-col mb-0">
+                            <CardBody className="px-2 p-2 flex flex-col mb-0">
                                 <Typography variant="h6" color="blue-gray">
-                                    <i>~Founder</i>
+                                    <i>{card.post}</i>
                                 </Typography>
                                 <Typography variant="h4" color="blue-gray" className='py-2'>
                                     {card.name}
                                 </Typography>
-                                <Typography>{card.experience}</Typography>
+                               
                             </CardBody>
                         </Card>
                     ))}
