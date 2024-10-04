@@ -11,12 +11,12 @@ const TableComponent = ({ headers, rows, columnWidths }) => {
               {headers.map((head, index) => (
                 <th
                   key={index}
-                  className={`border-b border-blue-gray-100 bg-blue-gray-50 p-4 ${columnWidths[index]}`}
+                  className={`border-b border-blue-gray-100 bg-theme  p-4 ${columnWidths[index]}`}
                 >
                   <Typography
                     variant="small"
-                    color="blue-gray"
-                    className="font-bold leading-none"
+                    color="white"
+                    className="font-medium leading-none"
                   >
                     {head}
                   </Typography>
@@ -38,7 +38,10 @@ const TableComponent = ({ headers, rows, columnWidths }) => {
                       key={cellIndex}
                       className={`${classes} ${columnWidths[cellIndex]} break-words`}
                     >
-                      <Typography variant="small" className="font-normal">
+                       <Typography
+                        variant="small"
+                        className={`font-normal ${cellIndex === 0 ? 'font-semibold' : ''}`}
+                      >
                         {value}
                       </Typography>
                     </td>

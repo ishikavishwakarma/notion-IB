@@ -17,6 +17,9 @@
     display: flex;
     align-items: center;
 }
+.bg-theme{
+  background-color: #293250;
+}
 
 .logowrap {
     height: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, Typography, Button } from '@material-tailwind/react'; // Adjust according to your imports
 
-function InsuranceTypes({ title, description, insuranceOptions }) {
+function InsuranceTypes({ title, description, insuranceOptions,showButton = true }) {
   return (
     <div className="pt-8">
       <Typography variant="h3" color="blue-gray" className="mb-2 text-center">
@@ -21,9 +21,11 @@ function InsuranceTypes({ title, description, insuranceOptions }) {
                 {option.description}
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
-              <Button className="bg-light-blue-700">Check Premium</Button>
-            </CardFooter>
+            {showButton && (
+              <CardFooter className="pt-0">
+                <Button className="bg-light-blue-700">Check Premium</Button>
+              </CardFooter>
+            )}
           </Card>
         ))}
       </div>
