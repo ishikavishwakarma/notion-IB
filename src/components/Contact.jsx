@@ -10,9 +10,8 @@ export function Contact() {
 
     <>
 
-
-      <section className="md:px-8 py-8 lg:py-16">
-        <div className="container mx-auto text-center">
+      <section className="md:px-8 py-8 lg:py-16 w-screen">
+        <div className="container px-0 mx-auto text-center  rounded-xl">
           <Typography
             variant="h5"
             color="blue-gray"
@@ -29,46 +28,46 @@ export function Contact() {
             We&apos;re Here to Help
           </Typography>
 
-          <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto md:max-w-3xl">
+          <Typography className="mb-10 font-normal text-md lg:mb-20 mx-auto md:max-w-3xl">
             Whether it&apos;s a question about our services, a request for
             technical assistance, or suggestions for improvement, our team is
             eager to hear from you.
           </Typography>
 
-          <div className="md:w-3/2 border flex flex-col pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
+          <div className="md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
 
-            <div className="md:flex items-center justify-between md:gap-20 md:px-5">
-              <Card className="md:w-1/2 shadow-none location">
+            <div className="md:flex items-center justify-between md:gap-20 md:px-5 ">
+              <Card className=" w-[600px] p-0 shadow-none location ">
 
                 <CardBody className="flex flex-col items-center gap-2 ">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
                     Contact Information
                   </Typography>
-                  <Typography color="blue-gray" className="font-medium" textGradient>
+                  <Typography color="blue-gray" className="font-medium text-sm" textGradient>
                     Fill up the form and our Team will get back to you within 24 hours.
                   </Typography>
 
-                  <CardBody className="py-10">
-                    <ul className="flex flex-col items-center px-2 justify-center gap-4 ">
+                  <CardBody className="md:py-10 p-0">
+                    <ul className="flex flex-col items-center p-2  justify-center gap-4 ">
                       <li className="flex flex-col items-center gap-2">
                         <span className="text-xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <FaPhoneAlt />
                         </span>
-                        <Typography className="font-normal text-xl ">+91 11005540121</Typography>
+                        <Typography className="font-normal text-lg text-gray-900 ">+91 11005540121</Typography>
                       </li>
 
                       <li className="flex flex-col items-center gap-2">
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <MdEmail />
                         </span>
-                        <Typography className="font-normal text-xl ">nib@notion.ac.in</Typography>
+                        <Typography className="font-normal text-lg text-gray-900">info@notioninsurance.com</Typography>
                       </li>
 
                       <li className="flex flex-col items-center gap-2">
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                         <IoLocation />
                         </span>
-                        <Typography className="font-normal text-xl">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
+                        <Typography className="font-normal text-md text-gray-900">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
                       </li>
 
                     </ul>
@@ -80,7 +79,7 @@ export function Contact() {
 
               <form
                 action="#"
-                className="flex flex-col gap-5 md:w-3/4 "
+                className="flex flex-col gap-4 md:w-3/4 px-2 py-4"
               >
 
                 <div className="grid grid-cols-2 gap-4">
@@ -169,7 +168,7 @@ export function Contact() {
                     }}
                   />
                 </div>
-                <Button className="w-full bg-blue-800 border-none">
+                <Button className="bg-blue-800 border-none p-0 w-[150px] h-[38px] ">
                   Send message
                 </Button>
               </form>

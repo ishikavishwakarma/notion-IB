@@ -19,7 +19,7 @@ const Mission = () => {
                 <div
                     className={`flex-col ourMission flex gap-2 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
                 >
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ipsa natus aut quod, quibusdam iste hic quasi nisi dolorum minima id quidem aspernatur incidunt corporis. Nobis asperiores labore quibusdam corrupti.</p>
+                    <p>"Our Endeavour is to formulate risk-based insurance program by conducting insurance audits & selecting the best combination of insurance coverages at an optimum cost of the customers."</p>
                 </div>
             ),
         },
@@ -30,7 +30,7 @@ const Mission = () => {
                 <div
                     className={`ourVission flex flex-wrap max-sm:gap-2 max-sm:p-5 items-start justify-between w-full px-5 py-2 max-sm:px-5`}
                 >
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi libero inventore eius dignissimos? Quasi delectus, quod ad, quis similique vel sint nobis aliquam nulla eum voluptatibus quibusdam fugiat asperiores vero impedit nemo ratione consectetur, neque accusantium maxime rem saepe sequi! Error a doloribus nobis cum ullam voluptatibus architecto blanditiis beatae?</p>
+                    <p>"Our vision is to set the standard of excellence among Insurance providers by being innovative, being financially strong, and exceeding customer expectations. We will attract and retain the very best employees and POSP (Point of Sales Persons) to help us achieve this goal."</p>
                 </div>
             ),
         },
@@ -41,7 +41,7 @@ const Mission = () => {
                 <div
                     className={`flex-col ourGoal flex gap-10 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full px-5 py-2 max-sm:px-5`}
                 >
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat at eius, debitis fugit exercitationem velit neque sunt, facilis magni dolore voluptatum vitae nostrum? Consectetur amet minima nisi nam veritatis!</p>
+                    <p>We use our knowledge to help clients optimize their insurability and reduce costs across the full spectrum of risk. The upside is the advantage of risk well managed.</p>
                 </div>
             ),
         },
@@ -54,7 +54,7 @@ const Mission = () => {
                     className="rounded-none border-b border-blue-gray-50 bg-transparent md:w-[40vw] w-screen"
                     indicatorProps={{
                         className:
-                            "bg-transparent border-b-2 border-gray-800 shadow-none rounded-none",
+                            "bg-transparent border-b-2 border-gray-800 shadow-none rounded-none ",
                     }}
                 >
                     {data.map(({ label, value }) => (
@@ -68,7 +68,7 @@ const Mission = () => {
                         </Tab>
                     ))}
                 </TabsHeader>
-                <TabsBody>
+                <TabsBody className="h-[20vw]">
                     {data.map(({ value, desc }) => (
                         <TabPanel key={value} value={value} className="text-md">
                             {desc}
