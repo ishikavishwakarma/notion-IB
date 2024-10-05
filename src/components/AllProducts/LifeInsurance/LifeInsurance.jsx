@@ -83,7 +83,7 @@ const LifeInsurance = () => {
         <Typography variant="h5" color="blue-gray" className="mb-2">
         What Are the Mechanics of Life Insurance?
         </Typography>
-        <Typography className='px-5'>
+        <Typography className='md:px-5'>
         Life insurance is a popular choice for those looking to secure their financial future and provide for their family in case of an untimely passing. A term life insurance policy, for example, can offer essential financial protection to your loved ones. Before purchasing life insurance, it's crucial to understand how the policy works and how your beneficiaries can receive the insurance payout.
         <br />
         <br />
