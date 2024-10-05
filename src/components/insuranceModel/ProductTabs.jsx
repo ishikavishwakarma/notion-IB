@@ -67,7 +67,7 @@ const ProductTabs = () => {
               <ModalBox
                 text="Fire & Burglary"
                 imgSrc="assets/images/Products/non-general/burning-building.png"
-                link="/"
+                link="/fire-insurance"
               />
 
               <ModalBox

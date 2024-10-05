@@ -14,7 +14,7 @@ const Products = () => {
     return (
         <div className='flex flex-col items-center justify-center py-10 gap-2 max-sm:px-2'>
 
-            <div className='relative flex flex-wrap items-center justify-center max-sm:gap-3 gap-8 sm:w-4/5 max-sm:w-full  py-10 '>
+            <div className='relative flex flex-wrap items-center  justify-center max-sm:gap-3 min-md:gap-8 gap-2 sm:w-4/5 max-sm:w-full  py-10 '>
 
                 <div>
                    
@@ -72,7 +72,7 @@ const Products = () => {
                     text="Family Health" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/family.gif" 
-                    link="/"
+                    link="/family-health-insurance"
                     />
                 </div>
 
@@ -82,31 +82,31 @@ const Products = () => {
                     text="Travel" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/airplane.gif" 
-                    link="/"
+                    link="/travel-insurance"
                     />
 
                 </div>
-
+                <div>
+                    
+                    <LinkButtons
+                    text="Fire & Burglary" 
+                    subtext="Insurance" 
+                    imgSrc="assets/images/Products/non-general/burning-building.png" 
+                    link="/fire-insurance"
+                    />
+                </div>
                 <div>
                    
                     <LinkButtons
                     text="Home" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/home.gif" 
-                    link="/"
+                    link="/home-insurance"
                     />
 
                 </div>
 
-                <div>
-                    
-                    <LinkButtons
-                    text="Employee Health" 
-                    subtext="Insurance" 
-                    imgSrc="assets/images/Products/employee.gif" 
-                    link="/"
-                    />
-                </div>
+                
 
                 <div>
                   

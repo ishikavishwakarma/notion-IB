@@ -59,9 +59,9 @@ const TABLE_ROWS_PAGE_1 = [
   },
 ];
 const COLUMN_WIDTHS = [
-  "w-20", // 25% width for Point of Difference
-  "w-24", // 40% width for Comprehensive Insurance
-  "w-24", // 40% width for Third-party Insurance
+ "w-[15vw]", 
+    "w-[30vw]", // 40% width for Third-party Insurance
+    "w-[30vw]",// 40% width for Third-party Insurance
 ];
 const CarInsurance = () => {
   const insuranceOptions = [
