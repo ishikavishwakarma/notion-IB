@@ -25,7 +25,7 @@ const Footer = () => {
         <div className='footer'>
             <footer className="mt-20 relative w-full">
                 <div className="mx-auto w-full ">
-                    <div className="grid grid-cols-1 items-center md:grid-cols-3 px-10">
+                    <div className="grid grid-cols-1  md:bg-white items-center md:grid-cols-2 lg:grid-cols-3 px-10">
                         <Typography className="w-56 my-6  flex flex-col gap-10">
                             <img src="assets/images/header/logo.png" alt="NIB" />
                             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

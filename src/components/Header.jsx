@@ -49,8 +49,9 @@ const navListMenuItems = [
     sublink: [
       { name: "Car Insurance", link: "/car-insurance" },
       { name: "Two Wheeler Insurance", link: "/bike-insurance" },
+      { name: "Home Insurance", link: "/home-insurance" },
       { name: "Brand Car Insurance", link: "/bike-insurance" },
-      { name: "Travel Insurance", link: "/under-process" },
+      { name: "Travel Insurance", link: "/travel-insurance" },
 
       { name: "Commercial Vehicle", link: "/commercial-vehicle" },
       { name: "Taxi Insurance", link: "/taxi-insurance" },
@@ -61,7 +62,7 @@ const navListMenuItems = [
 
     sublink: [
       { name: "Marine Insurance", link: "/marine-insurance" },
-      { name: "Fire & Burglary", link: "/under-process" },
+      { name: "Fire & Burglary", link: "/fire-insurance" },
       { name: "Shop Owner Insurance", link: "/under-process" },
       { name: "Workmen Compensation", link: "/under-process" },
       { name: "General Liability", link: "/under-process" },
@@ -74,6 +75,8 @@ const navListMenuItems = [
     icon: Bars4Icon,
     sublink: [
       { name: "Life Insurance Plans", link: "/life-insurance" },
+      { name: "Term Plans", link: "/under-process" },
+      { name: "Child Saving Plan", link: "/under-process" },
       { name: "Postal Life Insurance", link: "/under-process" },
     ],
   },
@@ -84,7 +87,7 @@ const navListMenuItems = [
       { name: "Health Insurance ", link: "/health-insurance" },
       { name: "1 Cr Health Cover", link: "/under-process" },
       { name: "Cancer Insurance", link: "/under-process" },
-      { name: "Family Health Insurance", link: "/under-process" },
+      { name: "Family Health Insurance", link: "/family-health-insurance" },
       { name: "Employee Group Health Insurance", link: "/under-process" },
     ],
   },
@@ -110,8 +113,8 @@ function NavListMenu({closeMenu }) {
             key={sublinkKey}
             className="text-sm text-blue-gray-500"
             onClick={() => {
-              setIsMobileMenuOpen(false); // Close menu when sublink is clicked
-              closeMenu(); // Close mobile menu
+              setIsMobileMenuOpen(false); 
+              closeMenu();
             }}
           
           >
@@ -211,7 +214,7 @@ function NavListMenuDesktop() {
       <Menu
         open={isMenuOpen}
         handler={setIsMenuOpen}
-        offset={{ mainAxis: 20 }}
+        // offset={{ mainAxis: 30 }}
         placement="bottom"
         allowHover={true}
       >
