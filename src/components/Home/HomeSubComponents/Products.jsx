@@ -42,7 +42,7 @@ const Products = () => {
                     text="Investment Plans" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/advance.gif" 
-                    link="/"
+                    link="/investment-plans"
                     />
                 </div>
 
@@ -133,7 +133,6 @@ const Products = () => {
                      <DialogButton handleOpen={handleOpen} />
                      <InsuranceModel open={open} handleOpen={handleOpen} />
                 </div>
-
 
             </div>
 

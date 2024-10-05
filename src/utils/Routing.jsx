@@ -13,6 +13,9 @@ import ScrollTop from '../components/ScrollTop'
 import LifeInsurance from '../components/AllProducts/LifeInsurance/LifeInsurance'
 import HealthInsurance from '../components/AllProducts/HealthInsurance/HealthInsurance'
 import MarineInsurance from '../components/AllProducts/Non-GeneralInsurance/MarineInsurance'
+import TaxiInsurance from '../components/AllProducts/GeneralInsurance/TaxiInsurance'
+import CommercialVehicle from '../components/AllProducts/GeneralInsurance/CommercialVehicle'
+import Investmentplans from '../components/AllProducts/GeneralInsurance/Investmentplans'
 
 
 const Routing = () => {
@@ -31,9 +34,13 @@ const Routing = () => {
     <Route path="/about-us" element={<About/>} />
     <Route path="/car-insurance" element={<CarInsurance/>} />
     <Route path="/bike-insurance" element={<BikeInsurance/>} />
+    <Route path="/taxi-insurance" element={<TaxiInsurance/>} />
+    <Route path="/commercial-vehicle" element={<CommercialVehicle />} />
     <Route path="/life-insurance" element={<LifeInsurance/>} />
     <Route path="/health-insurance" element={<HealthInsurance/>} />
     <Route path="/marine-insurance" element={<MarineInsurance/>} />
+    <Route path="/investment-plans" element={<Investmentplans />} />
+    
        </Routes>
     </div>
   )

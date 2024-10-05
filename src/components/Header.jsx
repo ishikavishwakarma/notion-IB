@@ -52,8 +52,8 @@ const navListMenuItems = [
       { name: "Brand Car Insurance", link: "/bike-insurance" },
       { name: "Travel Insurance", link: "/under-process" },
 
-      { name: "Commercial Vehicle", link: "/under-process" },
-      { name: "Taxi Insurance", link: "/under-process" },
+      { name: "Commercial Vehicle", link: "/commercial-vehicle" },
+      { name: "Taxi Insurance", link: "/taxi-insurance" },
     ],
   },
   {

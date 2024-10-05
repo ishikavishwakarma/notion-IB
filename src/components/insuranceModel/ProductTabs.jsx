@@ -22,27 +22,27 @@ const ProductTabs = () => {
             <ModalBox
               text="Car Insurance"
               imgSrc="assets/images/Products/general/sport-car.png"
-              link="/"
+              link="/car-insurance"
             />
             <ModalBox
               text="Travel Insurance"
               imgSrc="assets/images/Products/general/airplane.png"
-              link="/"
+              link="/travel-insurance"
             />
             <ModalBox
               text="2 Wheeler Insurance"
               imgSrc="assets/images/Products/general/bycicle.png"
-              link="/"
+              link="/bike-insurance"
             />
             <ModalBox
               text="Commercial Vehicle"
               imgSrc="assets/images/Products/general/ads.png"
-              link="/"
+              link="/commercial-vehicle"
             />
             <ModalBox
               text="Taxi Insurance"
               imgSrc="assets/images/Products/general/taxi.png"
-              link="/"
+              link="/taxi-insurance"
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ const ProductTabs = () => {
               <ModalBox
                 text="Fire & Burglary"
                 imgSrc="assets/images/Products/non-general/burning-building.png"
-                link="/"
+                link="/fire-insurance"
               />
 
               <ModalBox
@@ -212,7 +212,7 @@ const ProductTabs = () => {
             <ModalBox
               text="Family Health Insurance"
               imgSrc="assets/images/Products/health/medicine.png"
-              link="/"
+              link="/family-health-insurance"
             />
 
             <ModalBox
