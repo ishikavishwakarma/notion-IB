@@ -338,7 +338,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <section className="backdrop-saturate-100 border-b-gray-300 border-b min-h-[40px] hidden px-4 py-2 sm:px-10 md:flex items-center max-sm:hidden">
+      <section className="backdrop-saturate-100 min-h-[40px] border-b bg-white hidden px-4 py-2 sm:px-10 md:flex items-center max-sm:hidden">
         <button type="button" className="text-gray-800 text-xs">
           <p className="flex items-center gap-2  ">
             <span className="text-blue-700">
@@ -372,13 +372,13 @@ const Header = () => {
         </div>  
       </section>
 
-      <Navbar className="max-w-full bg-transparent backdrop-saturate-100 border-none rounded-none px-4 py-1">
+      <Navbar className="max-w-full border-none rounded-none px-4 py-0 navbg">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/'>
           <img
-            src="assets/images/header/NIB Logo.png"
-            alt="Nib Logo"
-            className="mr-4 py-0 bg- cursor-pointer h-10 sm:h-24 lg:ml-2"
+            src="assets/images/header/logo.png"
+            alt="Notion insurance "
+            className="mr-4 py-0 cursor-pointer md:h-28 h-16  lg:ml-2"
           />
           </Link>
           <div className="hidden lg:block">

@@ -7,16 +7,16 @@ import { FcBriefcase } from "react-icons/fc";
 
 const Workflow = () => {
     return (
-        <div className="custom-cursor">
+      
             <div className="page-wrapper">
-                <section className="process">
+                <section className="process py-5">
                     <div className="container">
-                        <div className="section-title text-center">
+                        <div className="section-title text-center ">
                             <div className="section-sub-title-box">
-                                <p className="section-sub-title text-blue-900">work process</p>
+                                <p className="section-sub-title text-blue-gray-800">work process</p>
 
                             </div>
-                            <h2 className="section-title__title">Our easy work process <br /> in 4 steps</h2>
+                            <h2 className="section-title__title text-3xl text-gray-700 font-normal">Our easy work process <br /> in 4 steps</h2>
                         </div>
                         <div className="process__inner">
                             <div className="process-shape-1 w-full">
@@ -28,7 +28,7 @@ const Workflow = () => {
                                     <div className="process__single">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><img src="assets/images/workflow/NIB img6.png" alt="" /></span>
+                                                <span><FcSurvey /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
@@ -41,10 +41,10 @@ const Workflow = () => {
 
 
                                 <div className="col-xl-3 col-lg-3 col-md-6">
-                                    <div className="process__single process__single-2">
+                                    <div className="process__single md:mt-[120px]">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><img src="assets/images/workflow/Schedule meeting.png" alt="" /></span>
+                                                <span><FcCollaboration /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
@@ -60,7 +60,7 @@ const Workflow = () => {
                                     <div className="process__single process__single-3">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><img src="assets/images/workflow/Meet agent.png" alt="" /></span>
+                                                <span><FcBusinessman /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
@@ -76,7 +76,7 @@ const Workflow = () => {
                                     <div className="process__single process__single-4">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><img src="assets/images/workflow/NIB img6.png" alt="" />" </span>
+                                                <span><FcBriefcase /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
@@ -97,9 +97,6 @@ const Workflow = () => {
 
 
             </div>
-
-
-        </div>
     )
 }
 
