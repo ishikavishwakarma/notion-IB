@@ -34,12 +34,13 @@ export function Contact() {
             eager to hear from you.
           </Typography>
 
-          <div className="md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
+          <div className="location md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
 
-            <div className="md:flex items-center justify-between md:gap-20 md:px-5 ">
-              <Card className=" w-[600px] p-0 shadow-none location ">
+            <div className="md:flex items-center justify-between md:gap-20 md:px-5 w-full ">
 
-                <CardBody className="flex flex-col items-center gap-2 ">
+              <Card className=" md:w-[600px] p-0 shadow-none  ">
+
+                <CardBody className="flex flex-col items-center gap-2 bg-gray-100 border rounded-xl shadow-xl">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
                     Contact Information
                   </Typography>
@@ -79,7 +80,7 @@ export function Contact() {
 
               <form
                 action="#"
-                className="flex flex-col gap-4 md:w-3/4 px-2 py-4"
+                className="flex flex-col gap-4 md:w-3/4  px-2 py-4"
               >
 
                 <div className="grid grid-cols-2 gap-4">

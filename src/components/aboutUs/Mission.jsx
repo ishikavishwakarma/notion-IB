@@ -70,7 +70,7 @@ const Mission = () => {
                 </TabsHeader>
                 <TabsBody className="h-[20vw]">
                     {data.map(({ value, desc }) => (
-                        <TabPanel key={value} value={value} className="text-md">
+                        <TabPanel key={value} value={value} className="text-md text-gray-800">
                             {desc}
                         </TabPanel>
                     ))}

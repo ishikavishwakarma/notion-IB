@@ -28,14 +28,13 @@ const Workflow = () => {
                                     <div className="process__single">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><FcSurvey /></span>
+                                                <span><img src="assets/images/workflow/NIB img6.png" alt="" /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
                                         <div className="process__content">
                                             <h3 className="process__title">Select insurance</h3>
-                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
-                                                amet piscing</p>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -45,14 +44,13 @@ const Workflow = () => {
                                     <div className="process__single process__single-2">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><FcCollaboration /></span>
+                                                <span><img src="assets/images/workflow/Schedule meeting.png" alt="" /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
                                         <div className="process__content">
                                             <h3 className="process__title">Schedule meeting</h3>
-                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
-                                                amet piscing</p>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -62,14 +60,13 @@ const Workflow = () => {
                                     <div className="process__single process__single-3">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><FcBusinessman /></span>
+                                                <span><img src="assets/images/workflow/Meet agent.png" alt="" /></span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
                                         <div className="process__content">
                                             <h3 className="process__title">Meet agent</h3>
-                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
-                                                amet piscing</p>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -79,14 +76,13 @@ const Workflow = () => {
                                     <div className="process__single process__single-4">
                                         <div className="process__icon-box">
                                             <div className="process__icon">
-                                                <span><FcBriefcase /></span>
+                                                <span><img src="assets/images/workflow/NIB img6.png" alt="" />" </span>
                                             </div>
                                             <div className="process__count"></div>
                                         </div>
                                         <div className="process__content">
                                             <h3 className="process__title">Get insurance</h3>
-                                            <p className="process__text">Lorem Ipsum is simply free dumy text of the printing and
-                                                amet piscing</p>
+                                            
                                         </div>
                                     </div>
                                 </div>

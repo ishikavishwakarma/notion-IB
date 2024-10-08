@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import  { Fragment, useEffect, useState } from "react";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import {
   TiSocialFacebook,
@@ -28,20 +28,7 @@ import {
 import { Bars4Icon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
-const nestedMenuItems = [
-  {
-    title: "Hero",
-  },
-  {
-    title: "Features",
-  },
-  {
-    title: "Testimonials",
-  },
-  {
-    title: "Ecommerce",
-  },
-];
+
 const navListMenuItems = [
   {
     title: "General Insurance",
@@ -382,16 +369,18 @@ const Header = () => {
               <TiSocialYoutube />
             </span>
           </div>
-        </div>
+        </div>  
       </section>
 
       <Navbar className="max-w-full bg-transparent backdrop-saturate-100 border-none rounded-none px-4 py-1">
         <div className="flex items-center justify-between text-blue-gray-900">
+          <Link to='/'>
           <img
-            src="../../assets/images/header/logoNew.png"
-            alt="Material Tailwind"
-            className="mr-4 py-0 bg- cursor-pointer h-10 sm:h-16  lg:ml-2"
+            src="assets/images/header/NIB Logo.png"
+            alt="Nib Logo"
+            className="mr-4 py-0 bg- cursor-pointer h-10 sm:h-24 lg:ml-2"
           />
+          </Link>
           <div className="hidden lg:block">
             <NavList />
           </div>

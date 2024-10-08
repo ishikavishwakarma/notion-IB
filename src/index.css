@@ -227,7 +227,8 @@ html {
 }
 .information{
   background-image: url("assets/images/about/about.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .about_top{
   background-image: url("assets/images/about/about_top.jpg");
@@ -240,15 +241,17 @@ html {
   background-position: center;
 }
 .location{
-  background-image: url("assets/images/about/corner.png");
+  background-image: url("assets/images/about/about.png");
   background-size:cover;
   background-position: center;
 }
 .footer{
-  background-image: url("assets/images/footer/footer.jpg");
+  background-image: url("assets/images/footer/footer.png");
   background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
+
 
 
 /* Add this media query to your CSS file */

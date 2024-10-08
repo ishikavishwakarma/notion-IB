@@ -76,7 +76,7 @@ const Founder = () => {
     return (
         <div className="flex flex-col items-center py-10 mt-5 w-full">
             <CardBody className="px-10 text-center">
-                <Typography variant="h2" color="blue-gray" className="mb-1">
+                <Typography variant="h3" color="blue-gray" className="mb-1">
                     Our Experts
                 </Typography>
                 <Typography variant="p" color="blue-gray" className="mb-3">
@@ -84,10 +84,10 @@ const Founder = () => {
                 </Typography>
             </CardBody>
 
-            <div className="relative w-full max-w-6xl px-5">
+            <div className="relative w-full px-5">
                 {/* Slider */}
                 <div
-                    className={`flex overflow-hidden justify-center mobile1 ${transitioning ? 'transition-all duration-500' : ''}`}
+                    className={`flex overflow-hidden justify-center gap-5 mobile1 ${transitioning ? 'transition-all duration-500' : ''}`}
                 >
                     {getVisibleCards().map((card, index) => (
                         <Card key={index} className="p-3 mx-3 bg-gray-50 md:w-[300px] img_card_new">

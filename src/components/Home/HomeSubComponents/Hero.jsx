@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
 
                     <div className=' p-5 h-[35vw] align-middle w-auto md:w-[40vw] relative justify-center flex flex-col max-sm:hidden '>
-                        <img className='md:h-[30vw] h-[60vw]   w-auto sm:h-[90%] sm:w-[90%] md:w-full' src="assets/images/hero/beautiful-curly-girl.png" alt="" />
+                        <img className='md:h-[30vw] h-[60vw]   w-auto sm:h-[90%] sm:w-[90%] md:w-full' src="assets/images/hero/NIB file 5.png" alt="" />
 
                         <span className='absolute z-9999 top-[50%] left-[50%] '>
                             <div className="wrapper">
