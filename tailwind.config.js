@@ -21,6 +21,9 @@ module.exports = withMT({
           },
         },
       },
+      fontFamily: {
+        sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],  // Replace 'Roboto' with your preferred font
+      },
     },
   },
   plugins: [], 

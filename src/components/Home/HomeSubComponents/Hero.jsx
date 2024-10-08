@@ -3,8 +3,6 @@ import React, { useEffect } from 'react'
 import { MdOutlinePlayCircle, MdOutlinePlayCircleFilled } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
-
-
 const Hero = () => {
 
     const handlePlayClick = () => {
@@ -19,7 +17,7 @@ const Hero = () => {
                     <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-5  lg:pl-10'>
                     <h1 className="mb-3 md:text-3xl lg:text-6xl  hidden md:block font-semibold" >Buy Insurance, <span className="font-light">The <br /> Smart Way.</span></h1>
                     <h1 className="mb-3 text-2xl mt-2 text-center md:hidden font-semibold" >Buy Insurance, <span className="font-light">The Smart Way.</span></h1>
-                        <p className='text-lg md:text-start font-medium text-gray-600'>Insurance provides financial protection, offering peace of mind during unexpected events. Safeguard your future today with coverage tailored to your needs. Ensure security for you and your loved ones.</p>
+                        <p className='text-lg  md:text-start font-medium text-gray-600'>Insurance provides financial protection, offering peace of mind during unexpected events. Safeguard your future today with coverage tailored to your needs. Ensure security for you and your loved ones.</p>
                         <button className="rounded-md  max-sm:text-sm relative flex max-sm:py-1 px-3 py-1.5 items-center justify-center overflow-hidden bg-[#7166F5] hover:text-black text-white shadow-2xl transition-all before:absolute before:-bottom-10 before:h-10 before:w-10 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56">
                             <span className="relative z-10 max-sm:py-0 max-sm:px-0 py-2 px-3 font-semibold">Discover More</span>
                         </button>
