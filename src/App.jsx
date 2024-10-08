@@ -8,7 +8,7 @@ import Footer from './components/footer'
 
 const App = () => {
   return (
-    <div>
+    <div  className="font-roboto">
     
     <Header />
     <Routing/>
