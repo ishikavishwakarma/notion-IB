@@ -73,7 +73,7 @@ const ProductTabs = () => {
               <ModalBox
                 text="Shop Owner Insurance"
                 imgSrc="assets/images/Products/non-general/seller.png"
-                link="/"
+                link="/shop-insurance"
               />
 
               <ModalBox

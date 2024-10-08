@@ -50,10 +50,10 @@ const navListMenuItems = [
     sublink: [
       { name: "Marine Insurance", link: "/marine-insurance" },
       { name: "Fire & Burglary", link: "/fire-insurance" },
-      { name: "Shop Owner Insurance", link: "/under-process" },
-      { name: "Workmen Compensation", link: "/under-process" },
-      { name: "General Liability", link: "/under-process" },
-      { name: "Cyber Insurance", link: "/under-process" },
+      { name: "Shop Owner Insurance", link: "/shop-insurance" },
+      { name: "Workers' Compensation", link: "/workers-insurance" },
+      { name: "General Liability", link: "/general-liability-insurance" },
+      { name: "Cyber Insurance", link: "/cyber-insurance" },
     ],
   },
   {
@@ -62,9 +62,11 @@ const navListMenuItems = [
     icon: Bars4Icon,
     sublink: [
       { name: "Life Insurance Plans", link: "/life-insurance" },
-      { name: "Term Plans", link: "/under-process" },
+      { name: "Term Plans", link: "/term-insurance" },
       { name: "Child Saving Plan", link: "/under-process" },
-      { name: "Postal Life Insurance", link: "/under-process" },
+      { name: "Endowment Plan", link: "/endowment-insurance" },
+      { name: "ULIP Plan", link: "/under-process" },
+     
     ],
   },
   {

@@ -22,6 +22,12 @@ import TravelInsurance from '../components/AllProducts/GeneralInsurance/TravelIn
 import Fire from '../components/AllProducts/Non-GeneralInsurance/Fire'
 import FamilyHealthInsurance from '../components/AllProducts/HealthInsurance/FamilyHealthInsurance'
 import HomeInsurance from '../components/AllProducts/GeneralInsurance/HomeInsurance'
+import ShopOwnerInsurance from '../components/AllProducts/Non-GeneralInsurance/ShopOwnerInsurance'
+import WorkerCompensationInsurance from '../components/AllProducts/Non-GeneralInsurance/WorkerCompensationInsurance'
+import GeneralLiability from '../components/AllProducts/Non-GeneralInsurance/GeneralLiability'
+import CyberInsurance from '../components/AllProducts/Non-GeneralInsurance/CyberInsurance'
+import TermLifeInsurance from '../components/AllProducts/LifeInsurance/TermLifeInsurance'
+import EndowmentInsurance from '../components/AllProducts/LifeInsurance/EndowmentInsurance'
 
 
 
@@ -53,6 +59,12 @@ const Routing = () => {
     <Route path="/fire-insurance" element={<Fire/>} />
     <Route path="/family-health-insurance" element={<FamilyHealthInsurance/>} />
     <Route path="/home-insurance" element={<HomeInsurance/>} />
+    <Route path="/shop-insurance" element={<ShopOwnerInsurance/>} />
+    <Route path="/workers-insurance" element={<WorkerCompensationInsurance/>} />
+    <Route path="/general-liability-insurance" element={<GeneralLiability/>} />
+    <Route path="/cyber-insurance" element={<CyberInsurance/>} />
+    <Route path="/term-insurance" element={<TermLifeInsurance/>} />
+    <Route path="/endowment-insurance" element={<EndowmentInsurance/>} />
     </Routes>
 
     </div>
