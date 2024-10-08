@@ -16,18 +16,24 @@ const Hero = () => {
         <div className="px-10" >
             <div className="h-full w-full">
                 <div className="grid gap-20 lg:gap-20 md:gap-10 grid-cols-1 md:grid-cols-2   ">
-                    <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-5  lg:pl-10'>
-                    <h1 className="mb-3 md:text-3xl lg:text-6xl  hidden md:block font-semibold" >Buy Insurance, <span className="font-light">The <br /> Smart Way.</span></h1>
-                    <h1 className="mb-3 text-2xl mt-2 text-center md:hidden font-semibold" >Buy Insurance, <span className="font-light">The Smart Way.</span></h1>
-                        <p className='text-lg text-center md:text-start font-medium text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt voluptatibus facere iure molestias sequi quo nulla quam nam ex molestiae?</p>
-                        <button className="rounded-md  max-sm:text-sm relative flex max-sm:py-1 px-3 py-1.5 items-center justify-center overflow-hidden bg-[#7166F5] hover:text-black text-white shadow-2xl transition-all before:absolute before:-bottom-10 before:h-10 before:w-10 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56">
-                            <span className="relative z-10 max-sm:py-0 max-sm:px-0 py-2 px-3 font-semibold">Discover More</span>
-                        </button>
+                    <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-4  lg:pl-10'>
+                        <div>
+                        <h1 className="py-3 text-4xl lg:text-6xl font-semibold " >Buy Insurance,</h1>
+                        <span className="text-3xl lg:text-5xl text-orange-900">The Smart Way.</span>
+                        </div>
+                        <p className='text-lg font-medium text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt voluptatibus facere iure molestias sequi quo nulla quam nam ex molestiae?</p>
+                       
                     </div>
 
                     <div className=' p-5 h-[35vw] align-middle w-auto md:w-[40vw] relative justify-center flex flex-col max-sm:hidden '>
-                        <img className='md:h-[30vw] h-[60vw]   w-auto sm:h-[90%] sm:w-[90%] md:w-full' src="assets/images/hero/NIB file 5.png" alt="" />
-
+                        <img
+                            className='md:h-[30vw] h-[60vw] shadow-xl  w-auto sm:h-[90%] sm:w-[90%] md:w-full'
+                            src="assets/images/hero/hero2.webp"
+                            alt=""
+                            style={{
+                                clipPath: 'polygon(29% 0%, 100% 0%, 100% 100%, 25% 100%, 0 50%)'
+                            }}
+                        />
                         <span className='absolute z-9999 top-[50%] left-[50%] '>
                             <div className="wrapper">
                                 <div className="video-main">

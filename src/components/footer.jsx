@@ -23,11 +23,11 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
     return (
 
-        <footer className="mt-20 relative w-full footer">
+        <footer className="mt-20 relative w-full footer pt-3">
             <div className="mx-auto w-full ">
                 <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 px-10">
                     <Typography className="w-56 my-6  flex flex-col gap-10">
-                        <img src="assets/images/header/NIB Logo.png" alt="NIB" />
+                            <img src="assets/images/header/logo.png" alt="NIB" />
                         <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
                             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
                                 <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

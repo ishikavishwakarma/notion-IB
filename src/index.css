@@ -153,7 +153,7 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(66, 25, 0, 0.3);
   opacity: 0;
   /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
   border-radius: 100%;
@@ -222,11 +222,11 @@
 .mission{
   background-image: url("assets/images/hero/slider-bg.png");
 }
-.information{
+/* .information{
   background-image: url("assets/images/about/about.png");
   background-size: cover;
   background-position: center;
-}
+} */
 .about_top{
   background-image: url("assets/images/about/about_top.jpg");
   background-size: cover;
@@ -238,15 +238,26 @@
   background-position: center;
 }
 .location{
-  background-image: url("assets/images/about/about.png");
+  background-image: url("assets/images/about/corner.png");
   background-size:cover;
   background-position: center;
 }
 .footer{
   background-image: url("assets/images/footer/footer.png");
   background-size:cover;
-  background-repeat: no-repeat;
   background-position: center;
+}
+.navbg{
+  background-image: url("assets/images/footer/footer.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-wrapper{
+  background-image: url("assets/images/about/about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
