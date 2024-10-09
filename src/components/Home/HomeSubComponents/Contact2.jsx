@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Contact2 = () => {
     return (
         
-            <div class="contact md:flex gap-x-24 md:mb-16 mb-10">
+            <div class="bg-blue-gray-700 md:flex gap-x-24 md:mb-16 mb-10">
                 <div class="md:flex items-center gap-5 px-5 py-2">
                     <h2 class="text-white font-manrope text-4xl font-semibold leading-10 md:text-left text-center">Find Your Insurance Agent</h2>
                     <div class="flex md:items-center md:justify-start justify-center py-2">

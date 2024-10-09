@@ -1,4 +1,4 @@
-import  { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import {
   TiSocialFacebook,
@@ -66,7 +66,7 @@ const navListMenuItems = [
       { name: "Child Saving Plan", link: "/under-process" },
       { name: "Endowment Plan", link: "/endowment-insurance" },
       { name: "ULIP Plan", link: "/under-process" },
-     
+
     ],
   },
   {
@@ -81,7 +81,7 @@ const navListMenuItems = [
     ],
   },
 ];
-function NavListMenu({closeMenu }) {
+function NavListMenu({ closeMenu }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const renderItems = navListMenuItems.map(({ title, sublink }, key) => (
@@ -90,7 +90,7 @@ function NavListMenu({closeMenu }) {
         <MenuItem
           variant="h4"
           color="blue-gray"
-         
+
           className="flex items-center text-black bg-transparent hover:bg-transparent text-lg cursor-pointer font-bold"
         >
           {title}
@@ -102,10 +102,10 @@ function NavListMenu({closeMenu }) {
             key={sublinkKey}
             className="text-sm text-blue-gray-500"
             onClick={() => {
-              setIsMobileMenuOpen(false); 
+              setIsMobileMenuOpen(false);
               closeMenu();
             }}
-          
+
           >
             <MenuItem className="flex items-center cursor-pointer gap-3 rounded-lg">
               {sublinkItem.name}
@@ -135,15 +135,13 @@ function NavListMenu({closeMenu }) {
               Insurances
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
+                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                  }`}
               />
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
-                }`}
+                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                  }`}
               />
             </ListItem>
           </Typography>
@@ -158,9 +156,9 @@ function NavListMenu({closeMenu }) {
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
-      <Collapse open={isMobileMenuOpen}>
+        <Collapse open={isMobileMenuOpen}>
           {renderItems}
-          
+
         </Collapse>
       </div>
     </Fragment>
@@ -175,7 +173,7 @@ function NavListMenuDesktop() {
         <MenuItem
           variant="h4"
           color="blue-gray"
-         
+
           className="flex items-center text-black bg-transparent hover:bg-transparent text-lg cursor-pointer font-bold"
         >
           {title}
@@ -186,8 +184,8 @@ function NavListMenuDesktop() {
             to={sublinkItem.link}
             key={sublinkKey}
             className="text-sm text-blue-gray-500"
-           
-          
+
+
           >
             <MenuItem className="flex items-center cursor-pointer gap-3 rounded-lg">
               {sublinkItem.name}
@@ -217,15 +215,13 @@ function NavListMenuDesktop() {
               Insurances
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
+                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                  }`}
               />
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
-                }`}
+                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                  }`}
               />
             </ListItem>
           </Typography>
@@ -240,7 +236,7 @@ function NavListMenuDesktop() {
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
-      <Collapse open={isMobileMenuOpen}>
+        <Collapse open={isMobileMenuOpen}>
           {renderItems}
           <div className="flex w-full flex-nowrap items-center gap-2">
             <Button variant="outlined" size="sm" color="blue-gray" fullWidth className="size">
@@ -369,30 +365,30 @@ const Header = () => {
               <TiSocialYoutube />
             </span>
           </div>
-        </div>  
+        </div>
       </section>
 
-      <Navbar className="max-w-full border-none rounded-none px-4 py-0 navbg">
+      <Navbar className="max-w-full border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/'>
-          <img
-            src="assets/images/header/logo.png"
-            alt="Notion insurance "
-            className="mr-4 py-0 cursor-pointer md:h-28 h-16  lg:ml-2"
-          />
+            <img
+              src="assets/images/header/logo.png"
+              alt="Notion insurance "
+              className="mr-4 py-0 cursor-pointer md:h-28 h-16  lg:ml-2"
+            />
           </Link>
           <div className="hidden lg:block">
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
             <Button
-              className="text-base py-2"
+              className="text-base py-0"
               variant="outlined"
-              color="blue-gray"
+              color="blue"
             >
               Log In
             </Button>
-            <Button variant="gradient" className="text-base">
+            <Button variant="gradient" color="blue" className="text-base">
               Become a POSP
             </Button>
           </div>
