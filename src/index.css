@@ -56,6 +56,17 @@ html {
 }
 
 
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+
   
   @keyframes slideInFromBottom {
     0% {
@@ -200,10 +211,10 @@ html {
 .blur-bg-a {
   left: -4%;
   top: -10%;
-  background: #ffb600
+  background: #0077ffc2
 }
 .blur-bg-b {
-  background: #e04446;
+  background: #ff8800;
   margin: 0 auto;
   left: -20%;
   top: 30%
@@ -212,60 +223,18 @@ html {
 .blur-bg-c {
   right: 0;
   top: -10%;
-  background: #00ffb8
-}
-
-.contact{
-  background-image: url("assets/images/contact/contact us.jpg");
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position: top;
+  background: #0077ffb7
 }
 
 .mission{
-  background-image: url("assets/images/hero/slider-bg.png");
+  background-color: white;
 }
-/* .information{
-  background-image: url("assets/images/about/about.png");
-  background-size: cover;
-  background-position: center;
-} */
-.about_top{
-  background-image: url("assets/images/about/about_top.jpg");
-  background-size: cover;
-  background-position: top;
-}
-.founder{
-  background-image: url("assets/images/about/corner.png");
-  background-size:cover;
-  background-position: center;
-}
-.location{
-  background-image: url("assets/images/about/corner.png");
-  background-size:cover;
-  background-position: center;
-}
-.footer{
-  background-image: url("assets/images/footer/footer.png");
-  background-size:cover;
-  background-position: center;
-}
-.navbg{
-  background-image: url("assets/images/footer/footer.png");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.page-wrapper{
-  background-image: url("assets/images/about/about.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 
 
 /* Add this media query to your CSS file */
+
 @media only screen and (max-width: 768px) {
   .img_card_new {
     width: 100%!important; /* Make the card take full width */
@@ -275,5 +244,12 @@ html {
   }
   .mobile1 > * {
     flex: 0 0 100%!important; /* Make each card take full width */
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .iframe{
+    height: 300px;
   }
 }

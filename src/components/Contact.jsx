@@ -12,16 +12,9 @@ export function Contact() {
 
       <section className="md:px-8 py-8 lg:py-16 w-screen">
         <div className="container px-0 mx-auto text-center  rounded-xl">
-          <Typography
-            variant="h5"
-            color="blue-gray"
-            className="mb-4 !text-base lg:!text-2xl"
-          >
-            Customer Care
-          </Typography>
 
           <Typography
-            variant="h1"
+            variant="h2"
             color="blue-gray"
             className="mb-4 !text-3xl lg:!text-5xl"
           >
@@ -29,18 +22,16 @@ export function Contact() {
           </Typography>
 
           <Typography className="mb-10 font-normal text-md lg:mb-20 mx-auto md:max-w-3xl">
-            Whether it&apos;s a question about our services, a request for
-            technical assistance, or suggestions for improvement, our team is
-            eager to hear from you.
+          Whether you have questions about our services Requesting technical assistance or suggestions for improvement Our team looks forward to hearing from you.
           </Typography>
 
-          <div className="location md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
+          <div className="bg-white md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
 
-            <div className="md:flex items-center justify-between md:gap-20 md:px-5 w-full ">
+            <div className="md:flex items-center justify-between md:gap-10 md:px-5 w-full ">
 
-              <Card className=" md:w-[600px] p-0 shadow-none  ">
+              <Card className=" md:w-[600px] p-0 shadow-none ">
 
-                <CardBody className="flex flex-col items-center gap-2 bg-gray-100 border rounded-xl shadow-xl">
+                <CardBody className="flex flex-col items-center gap-3  py-10  border rounded-xl shadow-xl">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
                     Contact Information
                   </Typography>
@@ -49,26 +40,26 @@ export function Contact() {
                   </Typography>
 
                   <CardBody className="md:py-10 p-0">
-                    <ul className="flex flex-col items-center p-2  justify-center gap-4 ">
-                      <li className="flex flex-col items-center gap-2">
+                    <ul className="flex flex-col items-start p-2  justify-center gap-4 ">
+                      <li className="flex items-center gap-4">
                         <span className="text-xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <FaPhoneAlt />
                         </span>
-                        <Typography className="font-normal text-lg text-gray-900 ">+91 11005540121</Typography>
+                        <Typography className="font-normal text-lg text-gray-900 ">+91 9302182475 <br /> +91 755-4911343</Typography>
                       </li>
 
-                      <li className="flex flex-col items-center gap-2">
+                      <li className="flex items-center gap-4">
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <MdEmail />
                         </span>
-                        <Typography className="font-normal text-lg text-gray-900">info@notioninsurance.com</Typography>
+                        <Typography className="font-normal text-lg text-start text-gray-900">info@notioninsurance.com <br /> pospsupports@notioninsurance.com </Typography>
                       </li>
 
-                      <li className="flex flex-col items-center gap-2">
+                      <li className="flex items-center gap-4">
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                         <IoLocation />
                         </span>
-                        <Typography className="font-normal text-md text-gray-900">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
+                        <Typography className="font-normal text-md text-gray-900 text-start">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
                       </li>
 
                     </ul>
@@ -82,6 +73,11 @@ export function Contact() {
                 action="#"
                 className="flex flex-col gap-4 md:w-3/4  px-2 py-4"
               >
+                
+                <Typography variant="h2" color="blue-gray" className="py-2 ">
+                    Fill  Up The Form 
+
+                  </Typography>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
