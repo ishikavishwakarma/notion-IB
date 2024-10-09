@@ -9,7 +9,7 @@ import Footer from './components/footer'
 const App = () => {
   return (
 
-    <div className='bg-[#e0f1fb60] font-roboto'>
+    <div className='bg-[#F1F8FF] font-roboto'>
     
     <Header />
     <Routing/>
