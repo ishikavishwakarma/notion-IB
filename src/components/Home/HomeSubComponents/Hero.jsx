@@ -1,15 +1,9 @@
 import React, { useEffect } from 'react'
-import Typical from 'react-typical';
-import {
-    Button,
-    Dialog,
-    DialogHeader,
-    DialogBody,
-    DialogFooter,
-  } from "@material-tailwind/react";
+import { Dialog } from "@material-tailwind/react";
 
 import { MdOutlinePlayCircle, MdOutlinePlayCircleFilled } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
 
@@ -27,16 +21,14 @@ const Hero = () => {
                         <div>
                             <h1 className="py-3 text-5xl lg:text-6xl font-semibold " >Buy Insurance,</h1>
                             <span className="text-4xl lg:text-5xl text-orange-900">
-                                <Typical
-                                    steps={[
-                                        'The Smart Way', 4000,
-                                        'Fast & Easy', 4000,
-                                        'Digital', 4000,
-                                       
-                                    ]}
-                                    loop={Infinity}
-                                
-                                    wrapper="span"
+                                <Typewriter
+                                    words={['Smart Way', 'Simple and Easy']}
+                                    loop={5}
+                                    cursor
+                                    cursorStyle='|'
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
                                 />
                             </span>
                         </div>
@@ -55,7 +47,7 @@ const Hero = () => {
                             }}
                         />
                         <span className='absolute z-9999 top-[50%] left-[50%] '>
-                           
+
                             <div onClick={handleOpen} className="wrapper">
                                 <div className="video-main">
                                     <div className="promo-video">
@@ -69,7 +61,7 @@ const Hero = () => {
 
                                 </div>
                             </div>
-                            
+
                             <Dialog
                                 open={open}
                                 handler={handleOpen}
@@ -79,9 +71,9 @@ const Hero = () => {
                                 }}
                                 className='object-contain overflow-hidden'
                             >
-                                
+
                                 <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/NkH_RjW_4Vs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe>
-                                
+
                             </Dialog>
                         </span>
                     </div>

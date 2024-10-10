@@ -12,8 +12,8 @@ function InsuranceTypes({ title, description, insuranceOptions,showButton = true
       </Typography>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {insuranceOptions.map((option, index) => (
-          <Card key={index} className="mt-6 justify-between xl:w-96">
-            <CardBody>
+          <Card key={index} className="mt-6 justify-between xl:w-96 md:hover:scale-105 duration-300">
+            <CardBody >
             {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ function InsuranceTypes({ title, description, insuranceOptions,showButton = true
               <Typography variant="h5" color="blue-gray" className="mb-2">
                 {option.name}
               </Typography>
-              <Typography>
+              <Typography  className="text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                 {option.description}
               </Typography>
             </CardBody>

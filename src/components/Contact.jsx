@@ -88,7 +88,7 @@ export function Contact() {
                       First Name
                     </Typography>
                     <Input
-                      color="gray"
+                      color="blue"
                       size="lg"
                       placeholder="First Name"
                       name="first-name"
@@ -109,7 +109,7 @@ export function Contact() {
                       Last Name
                     </Typography>
                     <Input
-                      color="gray"
+                      color="blue"
                       size="lg"
                       placeholder="Last Name"
                       name="last-name"
@@ -131,7 +131,7 @@ export function Contact() {
                     Your Email
                   </Typography>
                   <Input
-                    color="gray"
+                    color="blue"
                     size="lg"
                     placeholder="name@email.com"
                     name="email"

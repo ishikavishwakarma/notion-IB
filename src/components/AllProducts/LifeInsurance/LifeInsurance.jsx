@@ -53,24 +53,24 @@ const LifeInsurance = () => {
    
     <div>
       
-      <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
+      <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
       <CardBody className="px-1">
       <Typography variant="h4" color="blue-gray" className="mb-2 ">
         Top Life Insurance Plans
       </Typography>
       
-      <div className="mt-4 grid w-full px-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+      <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
         {insuranceOptions.map((option, index) => (
           <InsuranceCard key={index} {...option} />
         ))}
       </div>
       <br />
-      <Card className="mt-6 w-full text-center">
+      <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
         A Guide to Life Insurance
         </Typography>
-        <Typography className='px-5'>
+        <Typography className='text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md md:px-2'>
         Life insurance is the backbone of financial security for millions of Indians, safeguarding families against the uncertainties of life. The life insurance sector in India has evolved significantly over the past few decades, with private and public companies playing crucial roles in enhancing awareness and offering innovative solutions. <br />
         <br />
          In this article, we delve into the responsibilities and contributions of the top 10 life insurance companies in India: ICICI Prudential Life, HDFC Life, Max Life Insurance, TATA AIA, Bajaj Allianz, PnB MetLife, Canara HSBC Life Insurance, Aditya Birla Sun Life Insurance, SBI Life, and the Life Insurance Corporation of India (LIC).
@@ -78,12 +78,12 @@ const LifeInsurance = () => {
       </CardBody>
      
     </Card>
-      <Card className="mt-6 w-full text-center">
+      <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
         What Are the Mechanics of Life Insurance?
         </Typography>
-        <Typography className='md:px-5'>
+        <Typography className='text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md md:px-3'>
         Life insurance is a popular choice for those looking to secure their financial future and provide for their family in case of an untimely passing. A term life insurance policy, for example, can offer essential financial protection to your loved ones. Before purchasing life insurance, it's crucial to understand how the policy works and how your beneficiaries can receive the insurance payout.
         <br />
         <br />
