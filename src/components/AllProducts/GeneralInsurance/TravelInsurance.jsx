@@ -51,7 +51,7 @@ const TravelInsurance = () => {
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Travel Insurance
                 </Typography>
-                <Typography className="md:px-5">
+                <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                 Travel insurance is insurance that is intended to cover medical expenses, trip cancellation, lost luggage, flight accident and other losses incurred while traveling, either internationally or domestically. Travel insurance can usually be arranged at the time of the booking of a trip to cover exactly the duration of that trip, or a 'multi-trip' policy can cover an unlimited number of trips within a set time frame. There are many travel insurance policies available in the market place, but care must be taken of what events are covered by each policy, and what exclusions, exceptions and limits apply, besides other issues.
                 
                 </Typography>

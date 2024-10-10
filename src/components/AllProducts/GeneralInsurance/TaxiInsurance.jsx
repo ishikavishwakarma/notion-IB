@@ -103,17 +103,17 @@ No matter how careful you are on the road, accidents happen, and repair expenses
                         <br />
 
 
-                        <Card className="mt-6 w-full text-center">
+                        <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300">
                             <Typography variant="h5" color="blue-gray" className="mb-2">
                                 Types of Taxi Insurance
                             </Typography>
                             <CardBody>
                                 <Typography className='md:px-5'>
                                     <ul className="list-disc text-start flex flex-col items-start gap-2">
-                                        <li><span className="text-gray-800 font-semibold">Public Hire Taxi Insurance: </span> For drivers who can pick up passengers from the street without prior booking (e.g., black cabs).</li>
-                                        <li><span className="text-gray-800 font-semibold">Private Hire Taxi Insurance: </span> For drivers who only transport passengers who have booked in advance (e.g., Uber or minicab drivers).</li>
-                                        <li><span className="text-gray-800 font-semibold">Comprehensive Coverage: </span> Includes third-party, fire, and theft protection plus damage to your vehicle.</li>
-                                        <li><span className="text-gray-800 font-semibold">Third-Party Only: </span> Covers damages or injuries caused to others, but not your vehicle.</li>
+                                        <li><span className="text-gray-800 font-semibold mr-1">Public Hire Taxi Insurance : </span> For drivers who can pick up passengers from the street without prior booking (e.g., black cabs).</li>
+                                        <li><span className="text-gray-800 font-semibold mr-1">Private Hire Taxi Insurance : </span> For drivers who only transport passengers who have booked in advance (e.g., Uber or minicab drivers).</li>
+                                        <li><span className="text-gray-800 font-semibold mr-1">Comprehensive Coverage : </span> Includes third-party, fire, and theft protection plus damage to your vehicle.</li>
+                                        <li><span className="text-gray-800 font-semibold mr-1">Third-Party Only : </span> Covers damages or injuries caused to others, but not your vehicle.</li>
                                     </ul>
                                 </Typography>
                             </CardBody>

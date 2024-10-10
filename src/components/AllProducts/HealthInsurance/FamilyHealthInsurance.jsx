@@ -59,13 +59,13 @@ const FamilyHealthInsurance = () => {
   return (
     <>
     <div>
-      <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
+      <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
         <CardBody className="px-1">
           <Typography variant="h4" color="blue-gray" className="mb-2 ">
             Top Family Insurance Plans
           </Typography>
 
-          <div className="mt-4 grid w-full px-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+          <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
             {insuranceOptions.map((option, index) => (
               <InsuranceCard key={index} {...option} />
             ))}

@@ -4,7 +4,7 @@ import { Card, Typography } from "@material-tailwind/react";
 const TableComponent = ({ headers, rows, columnWidths }) => {
   return (
     <div className="container px-0 py-8">
-      <Card className="overflow-x-auto lg:overflow-x-hidden">
+      <Card className="overflow-x-auto lg:overflow-x-hidden md:hover:scale-[1.02] duration-300">
         <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>

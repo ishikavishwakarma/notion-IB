@@ -16,24 +16,24 @@ const ShopOwnerInsurance = () => {
   return (
     <>
       <div>
-        <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
+        <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Shop Owner Insurance Plans
             </Typography>
 
-            <div className="mt-4 grid w-full px-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
               {insuranceOptions.map((option, index) => (
                 <InsuranceCard key={index} {...option} />
               ))}
             </div>
             <br />
-            <Card className="mt-6 w-full md:text-center">
+            <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Shop Owner Insurance
                 </Typography>
-                <Typography className="md:px-5">
+                <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                   Shop Owner Insurance provides financial protection to retail
                   businesses against various risks, ensuring business continuity
                   and minimizing financial losses.
@@ -63,12 +63,12 @@ const ShopOwnerInsurance = () => {
               Key Features That Protect Retail Businesses from Common Risks and
               Financial Losses
             </Typography>
-            <Card className="mt-6 md:px-10 w-full ">
+            <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                   <li>
                     <Typography>
-                      <span className="font-bold">
+                      <span className="font-bold ">
                         Property Damage Coverage (Building, Contents, Equipment)
                       </span>
                       This coverage protects the physical assets of your retail
