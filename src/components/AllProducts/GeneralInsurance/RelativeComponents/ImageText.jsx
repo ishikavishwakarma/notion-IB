@@ -23,7 +23,7 @@ function ImageTextCard({ heading,subheading ,imageSrc, altText, description }) {
         />
       </CardHeader>
       <CardBody>
-        <Typography className="mb-8 text-gray-700 font-normal">
+        <Typography className="mb-8 text-gray-700 font-normal text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
           {description}
         </Typography>
       </CardBody>

@@ -49,7 +49,7 @@ const Mission = () => {
     return (
         <div className="flex flex-col items-center justify-center mt-5">
 
-            <Tabs value={activeTab} className="mission md:w-4/5 flex flex-col items-center justify-center rounded-xl shadow-xl py-3 md:px-6">
+            <Tabs value={activeTab} className="bg-white md:w-4/5 flex flex-col items-center justify-center rounded-xl shadow-xl md:hover:scale-105 duration-300 py-3 md:px-6">
                 <TabsHeader
                     className="rounded-none border-b border-blue-gray-50 bg-transparent md:w-[40vw] w-screen"
                     indicatorProps={{
@@ -68,14 +68,13 @@ const Mission = () => {
                         </Tab>
                     ))}
                 </TabsHeader>
-                <TabsBody className="h-[20vw]">
+                <TabsBody>
                     {data.map(({ value, desc }) => (
-                        <TabPanel key={value} value={value} className="text-md text-gray-800">
+                        <TabPanel key={value} value={value} className="text-md text-gray-800 px-0 text-justify">
                             {desc}
                         </TabPanel>
                     ))}
                 </TabsBody>
-            <p className="text-md text-gray-900 font-semibold"><i>Notion Insurance Broker Pvt. Ltd.</i></p>
             </Tabs>
         </div>
     );
