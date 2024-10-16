@@ -1,20 +1,52 @@
 import React from 'react'
 import { Typography } from "@material-tailwind/react";
+import {Link} from 'react-router-dom';
+
+// const LINKS = [
+//     {
+//         title: "Licence ",
+//         items: ["Licence No. 619 ,", "IRDA Direct Broker Code:  IRDA/ DB 693/17,", "Valid till: 02/10/2026,", "CIN: U66010MP2016PTC041677"],
+//     },
+//     {
+//         title: "Our Links",
+//         items: ["Home ", "Insurance ", "About Us ", "Our Partner", "Contact Us "],
+//     },
+//     {
+//         title: "Legal and Admin Policies",
+//         items: ["Privacy Policy ", "Terms & Conditions ", "FAQ's ", "Career",],
+//     },
+
+// ];
 
 const LINKS = [
     {
-        title: "Licence ",
-        items: ["Licence No. 619 ,", "IRDA Direct Broker Code:  IRDA/ DB 693/17,", "Valid till: 02/10/2026,", "CIN: U66010MP2016PTC041677"],
+        title: "Licence",
+        items: [
+            { text: "Licence No. 619", url: "/" },
+            { text: "IRDA Direct Broker Code: IRDA/ DB 693/17", url: "/" },
+            { text: "Valid till: 02/10/2026", url: "/" },
+            { text: "CIN: U66010MP2016PTC041677", url: "/" },
+        ],
     },
     {
         title: "Our Links",
-        items: ["Home ", "Insurance ", "About Us ", "Our Partner", "Contact Us "],
+        items: [
+            { text: "Home", url: "/" },
+            { text: "Insurance", url: "/" },
+            { text: "About Us", url: "/about-us" },
+            { text: "Our Partner", url: "/" },
+            { text: "Contact Us", url: "/contact" },
+        ],
     },
     {
         title: "Legal and Admin Policies",
-        items: ["Privacy Policy ", "Terms & Conditions ", "FAQ's ", "Career",],
+        items: [
+            { text: "Privacy Policy", url: "/privacy-policy" },
+            { text: "Terms & Conditions", url: "/" },
+            { text: "FAQ's", url: "/" },
+            { text: "Career", url: "/" },
+        ],
     },
-
 ];
 
 const currentYear = new Date().getFullYear();
@@ -72,7 +104,7 @@ const Footer = () => {
                             </Typography>
                         </div>
                     </Typography>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2 ">
+                    {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2 ">
                         {LINKS.map(({ title, items }) => (
                             <ul key={title}>
                                 <Typography
@@ -95,8 +127,43 @@ const Footer = () => {
                                 ))}
                             </ul>
                         ))}
-                    </div>
+                    </div> */}
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2">
+    {LINKS.map(({ title, items }) => (
+        <ul key={title}>
+            <Typography 
+                variant="h6"
+                color="blue-gray"
+                className="mb-3 max-w-max opacity-90"
+            >
+                {title}
+            </Typography>
+            {items.map(({ text, url }) => (
+                <li key={text}>
+                    <Typography
+                        as="a"
+                        // href={url}
+                        className="py-1.5 text-sm transition-colors text-gray-900 hover:text-blue-gray-900"
+                    >
+                       <Link to={url}> {text} </Link> 
+                    </Typography>
+                </li>
+            ))}
+        </ul>
+    ))}
+</div>
+
+
+
                 </div>
+
+
+
+
+
+
+
                 <div className="mt-12 flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
                     <Typography
                         variant="small"
