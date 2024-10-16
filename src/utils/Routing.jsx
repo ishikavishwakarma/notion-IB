@@ -28,6 +28,8 @@ import GeneralLiability from '../components/AllProducts/Non-GeneralInsurance/Gen
 import CyberInsurance from '../components/AllProducts/Non-GeneralInsurance/CyberInsurance'
 import TermLifeInsurance from '../components/AllProducts/LifeInsurance/TermLifeInsurance'
 import EndowmentInsurance from '../components/AllProducts/LifeInsurance/EndowmentInsurance'
+import ChildInsurance from '../components/AllProducts/LifeInsurance/ChildInsurance'
+import ULPInsurance from '../components/AllProducts/LifeInsurance/ULPInsurance'
 
 
 
@@ -65,6 +67,8 @@ const Routing = () => {
     <Route path="/cyber-insurance" element={<CyberInsurance/>} />
     <Route path="/term-insurance" element={<TermLifeInsurance/>} />
     <Route path="/endowment-insurance" element={<EndowmentInsurance/>} />
+    <Route path="/child-insurance" element={<ChildInsurance/>} />
+    <Route path="/ulip-insurance" element={<ULPInsurance/>} />
     </Routes>
 
     </div>

@@ -54,6 +54,8 @@ const navListMenuItems = [
       { name: "Workers' Compensation", link: "/workers-insurance" },
       { name: "General Liability", link: "/general-liability-insurance" },
       { name: "Cyber Insurance", link: "/cyber-insurance" },
+      { name: "Contractor's Plant & Machinery", link: "/cyber-insurance" },
+      { name: "Professional Indemnity for Doctors", link: "/cyber-insurance" },
     ],
   },
   {
@@ -63,9 +65,9 @@ const navListMenuItems = [
     sublink: [
       { name: "Life Insurance Plans", link: "/life-insurance" },
       { name: "Term Plans", link: "/term-insurance" },
-      { name: "Child Saving Plan", link: "/under-process" },
+      { name: "Child Saving Plan", link: "/child-insurance" },
       { name: "Endowment Plan", link: "/endowment-insurance" },
-      { name: "ULIP Plan", link: "/under-process" },
+      { name: "ULIP Plan", link: "/ulip-insurance" },
 
     ],
   },
@@ -370,7 +372,7 @@ const Header = () => {
 
       <Navbar className="max-w-full sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Link to='/' className="h-16 w-fit md:w-44">
+          <Link to='/' className="h-16 w-32 md:w-44">
             <img
               src="assets/images/header/logo.png"
               alt="Notion insurance "
