@@ -14,16 +14,21 @@ const Contact2 = () => {
                         </Link>
                     </div>
                 </div>
+
                 <div class="md:border-indigo-600 border-white  py-6 md:flex items-center gap-4">
-                    <div class="mb-2">
-                        <h6 class="text-gray-100 text-sm font-medium leading-5 pb-2 md:text-start text-center">Email Address</h6>
+                    <div >
+                        <h6 class="text-gray-100 text-l font-medium leading-5 pb-2 md:text-start text-center">Email Address</h6>
                         <h3 class="text-blue-400 text-xl font-semibold leading-8 md:text-start text-center">pagedone@gmail.com</h3>
                     </div>
-                    <div>
-                        <h6 class="text-gray-100 text-sm font-medium leading-5 pb-2 md:text-start text-center">Phone Number</h6>
+                    <div class='md:ml-10'>
+                        <h6 class="text-gray-100 text-l font-medium leading-5 pb-2 md:text-start text-center">Phone Number</h6>
                         <h3 class="text-white text-xl font-semibold leading-8 md:text-start text-center">+91 470-601-1911</h3>
                     </div>
                 </div>
+
+
+
+
             </div>
        
     )

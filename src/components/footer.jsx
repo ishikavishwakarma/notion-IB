@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography } from "@material-tailwind/react";
+import {Link} from 'react-router-dom';
 
 // const LINKS = [
 //     {
@@ -131,7 +132,7 @@ const Footer = () => {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2">
     {LINKS.map(({ title, items }) => (
         <ul key={title}>
-            <Typography
+            <Typography 
                 variant="h6"
                 color="blue-gray"
                 className="mb-3 max-w-max opacity-90"
@@ -142,10 +143,10 @@ const Footer = () => {
                 <li key={text}>
                     <Typography
                         as="a"
-                        href={url}
+                        // href={url}
                         className="py-1.5 text-sm transition-colors text-gray-900 hover:text-blue-gray-900"
                     >
-                        {text}
+                       <Link to={url}> {text} </Link> 
                     </Typography>
                 </li>
             ))}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input, Card, CardHeader, Tooltip, CardFooter, CardBody, Textarea, Typography } from "@material-tailwind/react";
+import { Button, Input,  CardHeader, Tooltip, Card, Checkbox, CardFooter, CardBody, Textarea, Typography } from "@material-tailwind/react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
@@ -29,26 +29,27 @@ export function Contact() {
 
             <div className="md:flex items-center justify-between md:gap-10 md:px-5 w-full ">
 
-              <Card className=" md:w-[600px] p-0 shadow-none ">
+              <Card className=" md:w-[700px] p-0 shadow-none ">
 
-                <CardBody className="flex flex-col items-center gap-3  py-10  border rounded-xl shadow-xl">
+                <CardBody className="flex flex-col items-center gap-3  py-20  border rounded-xl shadow-xl">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
                     Contact Information
-                  </Typography>
-                  <Typography color="blue-gray" className="font-medium text-sm" textGradient>
+                    <Typography color="blue-gray" className="font-medium text-sm" textGradient>
                     Fill up the form and our Team will get back to you within 24 hours.
                   </Typography>
+                  </Typography>
+                 
 
                   <CardBody className="md:py-10 p-0">
                     <ul className="flex flex-col items-start p-2  justify-center gap-4 ">
-                      <li className="flex items-center gap-4">
+                      <li className="flex items-center gap-6">
                         <span className="text-xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <FaPhoneAlt />
                         </span>
                         <Typography className="font-normal text-lg text-gray-900 ">+91 9302182475 <br /> +91 755-4911343</Typography>
                       </li>
 
-                      <li className="flex items-center gap-4">
+                      <li className="flex items-center gap-6">
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                           <MdEmail />
                         </span>
@@ -59,7 +60,7 @@ export function Contact() {
                         <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
                         <IoLocation />
                         </span>
-                        <Typography className="font-normal text-md text-gray-900 text-start">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
+                        <Typography className="font-normal text-lg text-gray-900 text-start">3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal, Madhya Pradesh 462026</Typography>
                       </li>
 
                     </ul>
@@ -68,6 +69,9 @@ export function Contact() {
                 </CardBody>
 
               </Card>
+           
+
+  
 
               <form
                 action="#"
@@ -86,43 +90,51 @@ export function Contact() {
                       className="mb-2 text-left font-medium !text-gray-900"
                     >
                       First Name
-                    </Typography>
-                    <Input
-                      color="blue"
+                    </Typography> 
+                    <input class="border rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
+                    {/* <Input
+                      // color="blue"
                       size="lg"
                       placeholder="First Name"
                       name="first-name"
-                      className="focus:border-t-gray-900"
+                       className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      // className=" focus:!border-t-blue-900"
+                      // className="focus:border-t-gray-900"
                       containerProps={{
                         className: "min-w-full",
                       }}
                       labelProps={{
                         className: "hidden",
                       }}
-                    />
+                    /> */}
                   </div>
                   <div>
                     <Typography
                       variant="small"
+                      
                       className="mb-2 text-left font-medium !text-gray-900"
                     >
                       Last Name
                     </Typography>
-                    <Input
-                      color="blue"
+                    <input class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="Last Name"/>
+                    {/* <Input
+                      // color="blue"
                       size="lg"
                       placeholder="Last Name"
                       name="last-name"
-                      className="focus:border-t-gray-900"
+                      // className=" focus:!border-t-blue-900"
+ className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      // className="focus:border-t-gray-900"
                       containerProps={{
                         className: "!min-w-full",
                       }}
                       labelProps={{
                         className: "hidden",
                       }}
-                    />
+                    /> */}
                   </div>
                 </div>
+                
                 <div>
                   <Typography
                     variant="small"
@@ -130,19 +142,22 @@ export function Contact() {
                   >
                     Your Email
                   </Typography>
-                  <Input
-                    color="blue"
+                  <input class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="Your Email"/>
+                  {/* <Input
+                    // color="blue"
                     size="lg"
                     placeholder="name@email.com"
                     name="email"
-                    className="focus:border-t-gray-900"
+ className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+
+                    // className="focus:border-t-gray-900"
                     containerProps={{
                       className: "!min-w-full",
                     }}
                     labelProps={{
                       className: "hidden",
                     }}
-                  />
+                  /> */}
                 </div>
                 <div>
                   <Typography
@@ -153,10 +168,12 @@ export function Contact() {
                   </Typography>
                   <Textarea
                     rows={6}
-                    color="blue"
-                    placeholder="Message"
+                    // color="blue"
+                    placeholder="Message....." 
                     name="message"
-                    className="focus:border-t-gray-900"
+                   className="border rounded w-full py-2.5  px-3 text-gray-900   !border-t-blue-gray-100 leading-tight  focus:!border-t-gray-900"
+// class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900"
+                    // className="focus:border-t-gray-900"
                     containerProps={{
                       className: "!min-w-full",
                     }}
@@ -165,7 +182,7 @@ export function Contact() {
                     }}
                   />
                 </div>
-                <Button className="bg-blue-800 border-none p-0 w-[150px] h-[38px] ">
+                <Button className="bg-blue-800 border-none p-0 w-[100%] h-[38px] ">
                   Send message
                 </Button>
               </form>

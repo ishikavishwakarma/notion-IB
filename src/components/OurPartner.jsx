@@ -28,7 +28,7 @@ const OurPartner = () => {
         { name: 'Company 4', logo: 'assets/images/company/Future generali.jpg' },
       ];
     
-
+  
   return (
     <section className="bg-white py-16">
     <div className="container mx-auto text-center">
