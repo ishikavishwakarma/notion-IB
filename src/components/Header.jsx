@@ -254,7 +254,7 @@ function NavListMenuDesktop() {
 function NavList({ closeMenu }) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className=" mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
         variant="small"
@@ -370,25 +370,25 @@ const Header = () => {
 
       <Navbar className="max-w-full sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Link to='/' className="h-16 w-fit">
+          <Link to='/' className="h-16 w-fit md:w-44">
             <img
               src="assets/images/header/logo.png"
               alt="Notion insurance "
-              className="mr-4 py-0 cursor-pointer object-cover h-full  w-full  lg:ml-2"
+              className="mr-4 py-0 cursor-pointer object-cover  h-full w-full  lg:ml-2"
             />
           </Link>
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex">
+          <div className="hidden h-10 gap-2 lg:flex">
             <Button
-              className="text-base py-0"
+              className="text-sm py-0"
               variant="outlined"
               color="blue"
             >
               Log In
             </Button>
-            <Button variant="gradient" color="blue" className="text-base">
+            <Button variant="gradient" color="blue" className="py-0 text-sm">
               Become a POSP
             </Button>
           </div>
@@ -407,7 +407,7 @@ const Header = () => {
         </div>
         <Collapse open={openNav}>
           <NavList closeMenu={() => setOpenNav(false)} />
-          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+          <div className="flex w-full pb-3 flex-nowrap items-center gap-2 lg:hidden">
             <Button
               variant="outlined"
               size="sm"
