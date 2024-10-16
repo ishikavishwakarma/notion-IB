@@ -129,11 +129,9 @@ const Products = () => {
 
                 </div>
 
-                <div>
                      <DialogButton handleOpen={handleOpen} />
                      <InsuranceModel open={open} handleOpen={handleOpen} />
-                </div>
-
+                
             </div>
 
 
