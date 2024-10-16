@@ -91,7 +91,7 @@ export function Contact() {
                     >
                       First Name
                     </Typography> 
-                    <input class="border rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
+                    <input className="border rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
                     {/* <Input
                       // color="blue"
                       size="lg"
