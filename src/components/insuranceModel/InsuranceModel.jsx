@@ -22,7 +22,7 @@ const InsuranceModel = ({ open, handleOpen }) => {
           </span>
         </div>
       </DialogHeader >
-      <DialogBody className="h-[32rem]   py-1 px-2 overflow-y-scroll">
+      <DialogBody className="h-[33rem]   py-1 px-2 overflow-y-scroll">
       <Tabs/>
       </DialogBody>
      

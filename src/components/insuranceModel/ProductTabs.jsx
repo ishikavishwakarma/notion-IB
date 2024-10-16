@@ -16,7 +16,7 @@ const ProductTabs = () => {
       value: "generalInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex gap-2 max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex gap-2 max-sm:gap-2 max-sm:p-1 items-center justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5  max-sm:gap-1 items-start gap-2 justify-center lg:gap-3">
             <ModalBox
@@ -53,11 +53,11 @@ const ProductTabs = () => {
       value: "nonGeneralInsurance",
       desc: (
         <div
-          className={`nongeneralInsuranceOption grid grid-cols-1 lg:grid-cols-2 max-sm:gap-2 max-sm:p-5 items-start justify-between w-full lg:px-5 py-2 max-sm:px-5`}
+          className={` flex gap-5 flex-wrap max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
-          <div className="pb-3 lg:py-5">
+          <div className="pb-2 flex flex-col items-center lg:py-2">
             <h1 className="font-semibold mb-3">Marine & Property Insurance:</h1>
-            <div className="flex flex-wrap max-sm:w-[90vw] max-sm:gap-1 items-center gap-2">
+            <div className="flex flex-wrap justify-center max-sm:gap-1 items-center gap-2">
               <ModalBox
                 text="Marine Insurance"
                 imgSrc="assets/images/Products/non-general/ship.png"
@@ -83,9 +83,9 @@ const ProductTabs = () => {
               />
             </div>
           </div>
-          <div className="pb-3 lg:py-5">
+          <div className="pb-2 flex flex-col items-center lg:py-2">
             <h1 className="font-semibold mb-2">Liability:</h1>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3 max-sm:w-[90vw] max-sm:gap-1 items-center gap-2">
+            <div className="flex flex-wrap justify-center  items-center gap-2">
               <ModalBox
                 text="Professional Indemnity for Doctors"
                 imgSrc="assets/images/Products/non-general/medical.png"
@@ -123,9 +123,9 @@ const ProductTabs = () => {
               />
             </div>
           </div>
-          <div className=" lg:py-5">
+          <div className=" flex flex-col items-center lg:py-2">
             <h1 className="font-semibold">Engineering:</h1>
-            <div className="flex max-sm:w-[90vw] flex-wrap max-sm:gap-1 items-center gap-2 ">
+            <div className="flex  flex-wrap max-sm:gap-1 items-center justify-center gap-2 ">
               <ModalBox
                 text="Contractor's All Risk"
                 imgSrc="assets/images/Products/non-general/worker.png"
@@ -153,7 +153,7 @@ const ProductTabs = () => {
       value: "lifeInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-center justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
           <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-2">
             <ModalBox
@@ -188,7 +188,7 @@ const ProductTabs = () => {
       value: "healthInsurance",
       desc: (
         <div
-          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-start justify-center w-full lg:px-5 py-2 max-sm:px-5`}
+          className={`flex-col generalInsuranceOption flex  max-sm:gap-2 max-sm:p-5 items-center justify-center w-full lg:px-5 py-2 max-sm:px-5`}
         >
           <div className="flex flex-wrap max-sm:gap-1 items-center justify-center gap-2">
             <ModalBox
@@ -243,13 +243,13 @@ const ProductTabs = () => {
     </Tab>
   ))}
 </TabsHeader>
-      <TabsBody  animate={{
+      <TabsBody className="pb-5"  animate={{
           initial: { y: 250 },
           mount: { y: 0 },
           unmount: { y: 250 },
         }}>
         {data.map(({ value, desc }) => (
-          <TabPanel className="px-1 lg:px-2" key={value} value={value}>
+          <TabPanel className="px-1  lg:px-2" key={value} value={value}>
             {desc}
           </TabPanel>
         ))}

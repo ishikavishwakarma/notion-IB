@@ -40,7 +40,7 @@ const EndowmentInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Term Life Insurance ",
+      insurerName: "Endowment Plan ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
