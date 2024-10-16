@@ -11,7 +11,7 @@ const App = () => {
 
     <div className='bg-[#F1F8FF] font-roboto'>
     
-    <Header />
+    <Header/>
     <Routing/>
     <Footer />
     </div>
