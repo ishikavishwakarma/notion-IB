@@ -7,7 +7,7 @@ import { IoLocation } from "react-icons/io5";
 
 export function Contact() {
   return (
-
+// am 
     <>
 
       <section className="md:px-8 py-8 lg:py-16 w-screen">
