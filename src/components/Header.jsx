@@ -368,13 +368,13 @@ const Header = () => {
         </div>
       </section>
 
-      <Navbar className="max-w-full border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
+      <Navbar className="max-w-full sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Link to='/'>
+          <Link to='/' className="h-16 w-fit">
             <img
               src="assets/images/header/logo.png"
               alt="Notion insurance "
-              className="mr-4 py-0 cursor-pointer md:h-28 h-16  lg:ml-2"
+              className="mr-4 py-0 cursor-pointer object-cover h-full  w-full  lg:ml-2"
             />
           </Link>
           <div className="hidden lg:block">

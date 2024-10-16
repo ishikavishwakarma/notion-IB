@@ -125,7 +125,7 @@ const ProductTabs = () => {
           </div>
           <div className=" lg:py-5">
             <h1 className="font-semibold">Engineering:</h1>
-            <div className="flex max-sm:w-[90vw] flex-wrap max-sm:gap-1 items-center gap-4">
+            <div className="flex max-sm:w-[90vw] flex-wrap max-sm:gap-1 items-center gap-2 ">
               <ModalBox
                 text="Contractor's All Risk"
                 imgSrc="assets/images/Products/non-general/worker.png"
