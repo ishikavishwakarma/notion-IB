@@ -189,7 +189,7 @@ const Footer = () => {
             <h6 className="text-black leading-6 mb-2">
               Subscribe to get the latest news from us
             </h6>
-            <input className="border-2 bg-gray-100 border-blue-400 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
+            <input className="border-1 bg-gray-100 border-blue-400 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
 
             {/* <a className="flex items-center justify-center gap-2 border border-blue-700 rounded-full py-3 px-6 w-fit lg:mx-0  text-sm text-blue-700 font-semibold transition-all duration-500 hover:bg-indigo-50">
               Subscribe
