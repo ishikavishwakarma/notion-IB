@@ -3,6 +3,7 @@ import React from 'react'
 import InsuranceCard from '../GeneralInsurance/RelativeComponents/InsuranceCard'
 import ImageTextCard from '../GeneralInsurance/RelativeComponents/ImageText';
 import TableComponent from '../GeneralInsurance/RelativeComponents/TableComponent';
+import { Helmet } from 'react-helmet';
 const TABLE_HEADERS_PAGE_1 = [
     "Key Features",
     "Benefits Offered",
@@ -50,6 +51,19 @@ const LifeInsurance = () => {
       ];
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Life Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Secure your family's future with comprehensive life insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide financial protection and peace of mind, ensuring your loved ones are taken care of in any circumstance."
+  />
+  <meta
+    name="keywords"
+    content="life insurance, NIB life insurance, Notion Insurance Broker life insurance, term life insurance, whole life insurance, family protection, financial security, insurance plans, life coverage, peace of mind"
+  />
+</Helmet>
+
    
     <div>
       

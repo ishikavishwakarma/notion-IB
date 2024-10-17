@@ -18,6 +18,8 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
+import {Helmet} from "react-helmet";
+
 const TABLE_HEADERS_PAGE_1 = [
   "Feature/Type",
   "Comprehensive Insurance",
@@ -61,7 +63,7 @@ const COLUMN_WIDTHS = [
   "w-20", // 40% width for Third-party Insurance
   "w-20", // 20% width for Own Damage Insurance
 ];
-const BikeInsurance = () => {
+const TwoWheelerInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
@@ -91,6 +93,19 @@ const BikeInsurance = () => {
   return (
     <>
       <div>
+      <Helmet>
+  <meta charSet="utf-8" />
+  <title>Two-Wheeler Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Get comprehensive two-wheeler insurance from Notion Insurance Broker Pvt. Ltd. Safeguard your bike or scooter with extensive coverage against accidents, theft, and damage. Enjoy peace of mind on every ride."
+  />
+  <meta
+    name="keywords"
+    content="two-wheeler insurance, bike insurance, scooter insurance, NIB two-wheeler insurance, Notion Insurance Broker two-wheeler insurance, two-wheeler insurance coverage, bike accident insurance, scooter theft protection, two-wheeler damage coverage, motorcycle insurance policies"
+  />
+</Helmet>
+
         <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
@@ -141,4 +156,4 @@ const BikeInsurance = () => {
   );
 };
 
-export default BikeInsurance;
+export default TwoWheelerInsurance;

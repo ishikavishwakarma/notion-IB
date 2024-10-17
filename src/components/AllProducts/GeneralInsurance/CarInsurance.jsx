@@ -18,6 +18,8 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
+import {Helmet} from "react-helmet";
+
 
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
@@ -93,6 +95,19 @@ const CarInsurance = () => {
   return (
     <>
       <div>
+      <Helmet>
+  <meta charSet="utf-8" />
+  <title>Car Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Protect your vehicle with comprehensive car insurance from Notion Insurance Broker Pvt. Ltd. Our car insurance policies provide extensive coverage, ensuring financial security in case of accidents, theft, or damage."
+  />
+  <meta
+    name="keywords"
+    content="car insurance, vehicle insurance, NIB car insurance, Notion Insurance Broker car insurance, car insurance coverage, auto insurance, accident coverage, theft protection, vehicle damage insurance, car insurance policies"
+  />
+</Helmet>
+
         <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">

@@ -1,7 +1,7 @@
 import { Card, CardBody, Typography } from '@material-tailwind/react';
 import React from 'react'
 import InsuranceCard from './RelativeComponents/InsuranceCard';
-
+import { Helmet } from 'react-helmet';
 const HomeInsurance = () => {
   const insuranceOptions = [
     {
@@ -17,7 +17,19 @@ const HomeInsurance = () => {
     <>
    
     <div>
-      
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Home Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Protect your home and valuables with comprehensive home insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover damage, theft, and natural disasters, ensuring financial security and peace of mind for your property."
+  />
+  <meta
+    name="keywords"
+    content="home insurance, property insurance, NIB home insurance, Notion Insurance Broker home insurance, house insurance, home coverage, home protection, theft protection, damage coverage, natural disaster insurance, home insurance policies"
+  />
+</Helmet>
+
       <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
       <CardBody className="px-1">
       <Typography variant="h4" color="blue-gray" className="mb-2 ">

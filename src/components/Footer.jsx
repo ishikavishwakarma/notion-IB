@@ -37,9 +37,9 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="mt-20 relative w-full bg-[url('assets/images/footer/footer.png')] bg-cover bg-center pt-3">
+    <footer className="mt-1 relative w-full bg-[url('assets/images/footer/footer.png')] bg-cover bg-center pt-3">
       <div className="mx-auto w-full ">
-        <div className="grid grid-cols-1 justify-center  md:grid-cols-2 lg:grid-cols-5 px-10">
+        <div className="grid grid-cols-1 justify-center gap-3 md:grid-cols-2 lg:grid-cols-5 px-10">
           <Typography className="w-56 my-6  flex flex-col gap-10">
             <img src="assets/images/header/logo.png" alt="NIB" />
             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
@@ -160,7 +160,7 @@ const Footer = () => {
           {LINKS.map(({ title, items }) => (
             <ul key={title}>
               <Typography
-                variant="h5"
+                variant="h6"
                 className="mb-3 max-w-max text-black opacity-90"
               >
                 {title}
@@ -169,9 +169,9 @@ const Footer = () => {
                 <li key={text}>
                   <Typography
                     as="a"
-                    variant="h6"
+                   
                     // href={url}
-                    className="py-1.5 text-sm transition-colors font-medium text-gray-900 hover:text-blue-gray-900"
+                    className="py-1.5 text-xs transition-colors font-medium text-gray-900 hover:text-blue-gray-900"
                   >
                     <Link to={url}> {text} </Link>
                   </Typography>
@@ -181,14 +181,14 @@ const Footer = () => {
           ))}
           <div className="lg:mx-auto text-left ">
             <Typography
-              variant="h5"
+              variant="h6"
               className="mb-3 max-w-max text-black opacity-90"
             >
               Contact Us
             </Typography>
-            <h6 className="text-black leading-6 mb-2">
+            <p className="text-black text-xs leading-6 mb-2">
               Subscribe to get the latest news from us
-            </h6>
+            </p>
             <input className="border-1 bg-gray-100 border-blue-400 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
 
             {/* <a className="flex items-center justify-center gap-2 border border-blue-700 rounded-full py-3 px-6 w-fit lg:mx-0  text-sm text-blue-700 font-semibold transition-all duration-500 hover:bg-indigo-50">
@@ -213,7 +213,7 @@ const Footer = () => {
         </div>
         {/* </div> */}
 
-        <div className="mt-12 flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
+        <div className=" flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
           <Typography
             variant="small"
             className=" text-center font-normal text-blue-gray-100 md:mb-0"

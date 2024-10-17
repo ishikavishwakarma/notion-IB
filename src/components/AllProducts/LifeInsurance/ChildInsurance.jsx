@@ -2,6 +2,7 @@ import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
+import { Helmet } from "react-helmet";
 
 const ChildInsurance = () => {
   const insuranceOptions = [
@@ -15,6 +16,18 @@ const ChildInsurance = () => {
   ];
   return (
     <>
+     <Helmet>
+  <meta charSet="utf-8" />
+  <title>Child Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
+  />
+  <meta
+    name="keywords"
+    content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
+  />
+</Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
