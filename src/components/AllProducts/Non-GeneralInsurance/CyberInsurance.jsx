@@ -2,7 +2,7 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-
+import { Helmet } from "react-helmet";
 const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -48,6 +48,19 @@ const CyberInsurance = () => {
   ];
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cyber Insurance - NIB</title>
+        <meta
+          name="description"
+          content="Protect your business from cyber threats with comprehensive cyber insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover data breaches, cyber-attacks, and liability, ensuring your business is secure in the digital landscape."
+        />
+        <meta
+          name="keywords"
+          content="cyber insurance, NIB cyber insurance, Notion Insurance Broker cyber insurance, data breach insurance, cyber attack coverage, liability insurance, digital security insurance, risk management, business protection from cyber threats"
+        />
+      </Helmet>
+
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">

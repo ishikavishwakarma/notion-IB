@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
-
+import { Helmet } from "react-helmet";
 const TABLE_HEADERS_PAGE_1 = [
     "Point of Difference",
     "Comprehensive Insurance",
@@ -76,6 +76,19 @@ const TaxiInsurance = () => {
     
     return (
         <>
+        <Helmet>
+  <meta charSet="utf-8" />
+  <title>Taxi Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Get specialized taxi insurance from Notion Insurance Broker Pvt. Ltd. Our comprehensive policies provide coverage for accidents, liability, and passenger protection, ensuring your taxi business is secure and compliant."
+  />
+  <meta
+    name="keywords"
+    content="taxi insurance, NIB taxi insurance, Notion Insurance Broker taxi insurance, taxi coverage, passenger insurance, commercial vehicle insurance, liability coverage, taxi business insurance, accident protection, taxi fleet insurance"
+  />
+</Helmet>
+
             <div>
                 <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
                     <CardBody className="px-1">

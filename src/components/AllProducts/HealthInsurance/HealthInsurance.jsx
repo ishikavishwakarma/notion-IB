@@ -3,7 +3,7 @@ import InsuranceCard from '../GeneralInsurance/RelativeComponents/InsuranceCard'
 import { Card, CardBody, Typography } from '@material-tailwind/react';
 import ImageTextCard from '../GeneralInsurance/RelativeComponents/ImageText';
 import InsuranceTypes from '../GeneralInsurance/RelativeComponents/TypesInsurance';
-
+import { Helmet } from 'react-helmet';
 const HealthInsurance = () => {
   const insurancetypes = [
     {
@@ -28,6 +28,19 @@ const HealthInsurance = () => {
       ];
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Health Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Secure your health and financial well-being with comprehensive health insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover medical expenses, hospitalization, and preventive care, ensuring you and your family receive the best healthcare."
+  />
+  <meta
+    name="keywords"
+    content="health insurance, NIB health insurance, Notion Insurance Broker health insurance, medical insurance, family health cover, hospitalization coverage, preventive care, health protection, affordable health plans, comprehensive health coverage"
+  />
+</Helmet>
+
    
     <div>
       

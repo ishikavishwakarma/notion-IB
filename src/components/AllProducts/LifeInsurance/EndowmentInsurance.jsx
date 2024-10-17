@@ -2,7 +2,7 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-
+import { Helmet } from "react-helmet";
 const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -40,7 +40,7 @@ const EndowmentInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Endowment Plan ",
+      insurerName: "Term Life Insurance ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
@@ -48,6 +48,19 @@ const EndowmentInsurance = () => {
   ];
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Endowment Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Achieve your financial goals with endowment insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide a combination of life cover and savings, ensuring you receive a lump sum amount at maturity or to secure your family's future."
+  />
+  <meta
+    name="keywords"
+    content="endowment insurance, NIB endowment insurance, Notion Insurance Broker endowment insurance, savings plan, life cover, financial security, investment insurance, maturity benefit, family protection, insurance policies"
+  />
+</Helmet>
+
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
