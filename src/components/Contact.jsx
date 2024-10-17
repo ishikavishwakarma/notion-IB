@@ -3,12 +3,27 @@ import { Button, Input,  CardHeader, Tooltip, Card, Checkbox, CardFooter, CardBo
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
+import {Helmet} from "react-helmet";
 
 
 export function Contact() {
+  
   return (
 // am 
     <>
+<Helmet>
+  <meta charSet="utf-8" />
+  <title>Contact Us - NIB</title>
+  <meta
+    name="description"
+    content="Get in touch with Notion Insurance Broker Pvt. Ltd. (IRDA Licence No. 619). Contact us for expert insurance services, personalized risk management solutions, and support. Licensed by IRDA as a Direct Broker, our license is valid until 02/10/2026."
+  />
+  <meta
+    name="keywords"
+    content="NIB contact, Notion Insurance Broker contact, insurance services, IRDA direct broker, insurance solutions, risk management, insurance experts, contact NIB, insurance broker India, IRDA Licence No. 619, valid till 2026"
+  />
+</Helmet>
+
 
       <section className="md:px-8 py-8 lg:py-16 w-screen">
         <div className="container px-0 mx-auto text-center  rounded-xl">
@@ -91,7 +106,7 @@ export function Contact() {
                     >
                       First Name
                     </Typography> 
-                    <input class="border rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="First Name"/>
+                    <input className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600" type="text" placeholder="First Name" />
                     {/* <Input
                       // color="blue"
                       size="lg"
@@ -116,7 +131,7 @@ export function Contact() {
                     >
                       Last Name
                     </Typography>
-                    <input class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="Last Name"/>
+                    <input className="border border-gray-600 rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600" type="text" placeholder="Last Name"/>
                     {/* <Input
                       // color="blue"
                       size="lg"
@@ -142,7 +157,7 @@ export function Contact() {
                   >
                     Your Email
                   </Typography>
-                  <input class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900" type="text" placeholder="Your Email"/>
+                  <input className="border border-gray-600 rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600" type="text" placeholder="Your Email"/>
                   {/* <Input
                     // color="blue"
                     size="lg"
@@ -166,12 +181,25 @@ export function Contact() {
                   >
                     Your Message
                   </Typography>
+                  
                   <Textarea
+  rows={6}
+  placeholder="Message....."
+  name="message"
+  className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
+  containerProps={{
+    className: "!min-w-full",
+  }}
+  labelProps={{
+    className: "hidden",
+  }}
+/>
+                  {/* <Textarea
                     rows={6}
                     // color="blue"
                     placeholder="Message....." 
                     name="message"
-                   className="border rounded w-full py-2.5  px-3 text-gray-900   !border-t-blue-gray-100 leading-tight  focus:!border-t-gray-900"
+                   className="border border-gray-600 rounded w-full py-2.5  px-3 text-gray-900   !border-t-blue-gray-100 leading-tight  focus:!border-t-gray-900 placeholder-gray-600"
 // class="border rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900"
                     // className="focus:border-t-gray-900"
                     containerProps={{
@@ -180,7 +208,7 @@ export function Contact() {
                     labelProps={{
                       className: "hidden",
                     }}
-                  />
+                  /> */}
                 </div>
                 <Button className="bg-blue-800 border-none p-0 w-[100%] h-[38px] ">
                   Send message

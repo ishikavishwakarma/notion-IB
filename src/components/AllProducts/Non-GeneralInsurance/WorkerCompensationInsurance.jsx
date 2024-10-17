@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
+import { Helmet } from "react-helmet";
 
 const WorkerCompensationInsurance = () => {
   const insuranceOptions = [
@@ -14,6 +15,19 @@ const WorkerCompensationInsurance = () => {
   ];
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Workers' Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Ensure the safety and well-being of your employees with comprehensive workers' insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for workplace injuries, medical expenses, and liability, fostering a secure work environment."
+  />
+  <meta
+    name="keywords"
+    content="workers' insurance, NIB workers' insurance, Notion Insurance Broker workers' insurance, employee insurance, workplace injury coverage, workers' compensation, liability insurance, employee safety, health insurance for workers, occupational insurance"
+  />
+</Helmet>
+
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">

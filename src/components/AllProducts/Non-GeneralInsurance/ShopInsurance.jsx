@@ -1,8 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-
-const ShopOwnerInsurance = () => {
+import { Helmet } from "react-helmet";
+const ShopInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
@@ -15,11 +15,24 @@ const ShopOwnerInsurance = () => {
 
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Shop Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Protect your retail business with comprehensive shop insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer coverage for property damage, theft, liability, and more, ensuring your shop is secure and your business continues to thrive."
+  />
+  <meta
+    name="keywords"
+    content="shop insurance, NIB shop insurance, Notion Insurance Broker shop insurance, retail insurance, business property insurance, liability insurance, theft coverage, shop protection, small business insurance, commercial insurance"
+  />
+</Helmet>
+
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Shop Owner Insurance Plans
+              Top Shop  Insurance Plans
             </Typography>
 
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -31,14 +44,14 @@ const ShopOwnerInsurance = () => {
             <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Shop Owner Insurance
+                  A Guide to Shop  Insurance
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Shop Owner Insurance provides financial protection to retail
+                  Shop  Insurance provides financial protection to retail
                   businesses against various risks, ensuring business continuity
                   and minimizing financial losses.
                   <br />
-                  Shop Owner Insurance offers comprehensive financial protection
+                  Shop  Insurance offers comprehensive financial protection
                   to retail businesses by covering various risks that could
                   disrupt operations. It ensures that property damage to the
                   building, contents, and equipment is covered, allowing
@@ -57,7 +70,7 @@ const ShopOwnerInsurance = () => {
               color="blue-gray"
               className="mb-2 text-center"
             >
-              Core Benefits of Shop Owner Insurance
+              Core Benefits of Shop  Insurance
             </Typography>
             <Typography className="md:px-20 font-medium text-center">
               Key Features That Protect Retail Businesses from Common Risks and
@@ -160,4 +173,4 @@ const ShopOwnerInsurance = () => {
   );
 };
 
-export default ShopOwnerInsurance;
+export default ShopInsurance;

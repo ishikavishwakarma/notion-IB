@@ -62,7 +62,7 @@ const Products = () => {
                     text="2 Wheeler" 
                     subtext="Insurance" 
                     imgSrc="assets/images/Products/bike.gif" 
-                    link="/bike-insurance"
+                    link="/two-wheeler-insurance"
                     />
                 </div>
 

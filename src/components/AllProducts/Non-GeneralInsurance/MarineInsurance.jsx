@@ -1,7 +1,7 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-
+import { Helmet } from "react-helmet";
 const MarineInsurance = () => {
   const insuranceOptions = [
     {
@@ -17,7 +17,19 @@ const MarineInsurance = () => {
   // const displayedOptions = showAll ? insuranceOptions : insuranceOptions.slice(0, 3);
 
   return (
-    <>
+    <><Helmet>
+    <meta charSet="utf-8" />
+    <title>Marine Insurance - NIB</title>
+    <meta
+      name="description"
+      content="Protect your marine assets with comprehensive marine insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."
+    />
+    <meta
+      name="keywords"
+      content="marine insurance, NIB marine insurance, Notion Insurance Broker marine insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
+    />
+  </Helmet>
+  
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">

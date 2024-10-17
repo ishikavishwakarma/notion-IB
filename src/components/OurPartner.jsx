@@ -1,4 +1,6 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
+
 
 const OurPartner = () => {
     const partners = [
@@ -31,6 +33,20 @@ const OurPartner = () => {
   
   return (
     <section className="bg-white py-16">
+ 
+ <Helmet>
+  <meta charSet="utf-8" />
+  <title>Our Partners - NIB</title>
+  <meta
+    name="description"
+    content="Discover the trusted partners of Notion Insurance Broker Pvt. Ltd. We collaborate with leading insurance providers to offer comprehensive risk management and insurance solutions."
+  />
+  <meta
+    name="keywords"
+    content="NIB partners, Notion Insurance Broker partners, insurance partnerships, insurance providers, risk management partners, insurance collaborations, trusted insurance providers, NIB collaborations"
+  />
+</Helmet>
+
     <div className="container mx-auto text-center">
       <h2 className="text-4xl font-bold mb-8">Our Partners</h2>
       <div className="flex flex-wrap justify-center items-center">

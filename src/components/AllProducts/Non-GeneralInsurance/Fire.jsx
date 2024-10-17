@@ -1,7 +1,7 @@
 import { Card, CardBody, Typography } from '@material-tailwind/react'
 import React from 'react'
 import InsuranceCard from '../GeneralInsurance/RelativeComponents/InsuranceCard'
-
+import { Helmet } from 'react-helmet'
 const Fire = () => {
   const insuranceOptions = [
     {
@@ -14,6 +14,19 @@ const Fire = () => {
   ];
   return (
     <>
+    <Helmet>
+  
+  <title>Fire Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Safeguard your property with comprehensive fire insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for damages caused by fire, ensuring financial security and peace of mind for homeowners and businesses alike."
+  />
+  <meta
+    name="keywords"
+    content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
+  />
+</Helmet>
+
     <div>
       <Card className="mt-6 shadow-none md:px-10  bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
         <CardBody className="px-1">
