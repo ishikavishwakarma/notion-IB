@@ -57,7 +57,7 @@ const Hero = () => {
                                             <div className="waves wave-3"></div>
                                         </div>
                                     </div>
-                                    <a className='video text-5xl' frameborder="0" allowfullscreen data-lity ><MdOutlinePlayCircle /></a>
+                                    <a className='video text-5xl' frameBorder="0" allowfullscreen data-lity ><MdOutlinePlayCircle /></a>
 
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                                 className='object-contain overflow-hidden'
                             >
 
-                                <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/NkH_RjW_4Vs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+                                <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/WtTeXHkZ6pI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe>
 
                             </Dialog>
                         </span>
