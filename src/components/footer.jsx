@@ -147,31 +147,7 @@ const Footer = () => {
               </Typography>
             </div>
           </Typography>
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2 ">
-                        {LINKS.map(({ title, items }) => (
-                            <ul key={title}>
-                                <Typography
-                                    variant="h6"
-                                    color="blue-gray"
-                                    className="mb-3  max-w-max opacity-90"
-                                >
-                                    {title}
-                                </Typography>
-                                {items.map((link) => (
-                                    <li key={link}>
-                                        <Typography
-                                            as="a"
-                                            href="#"
-                                            className="py-1.5 text-sm transition-colors text-gray-900 hover:text-blue-gray-900"
-                                        >
-                                            {link}
-                                        </Typography>
-                                    </li>
-                                ))}
-                            </ul>
-                        ))}
-                    </div> */}
-
+         
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
