@@ -174,7 +174,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
+        <div className="mt-10 flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
           <Typography
             variant="small"
             className=" text-center font-normal text-blue-gray-100 md:mb-0"
