@@ -4,9 +4,9 @@ import { CardBody, CardHeader, Typography } from '@material-tailwind/react'; // 
 function ImageTextCard({ heading,subheading ,imageSrc, altText, description }) {
   return (
     <>
-     <Typography variant="h3" color="blue-gray" className="mb-2 pt-8 w-full text-center">
+     <Typography variant="h4" color="blue-gray" className="mb-2 pt-8 w-full text-center">
       {heading}
-      <Typography color="gray" variant="h5" className="mb-10 text-center pt-2 px-3 lg:px-20 font-medium">
+      <Typography color="gray" variant="h6" className="mb-10 text-center pt-2 px-3 lg:px-20 font-medium">
      {subheading}
         </Typography>
       </Typography>

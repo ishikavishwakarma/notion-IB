@@ -53,8 +53,11 @@ const navListMenuItems = [
       { name: "Workers' Compensation", link: "/workers-insurance" },
       { name: "General Liability", link: "/general-liability-insurance" },
       { name: "Cyber Insurance", link: "/cyber-insurance" },
-      { name: "Contractor's Plant & Machinery", link: "/cyber-insurance" },
-      { name: "Professional Indemnity for Doctors", link: "/cyber-insurance" },
+      { name: "Contractor's Plant & Machinery", link: "/contractor-plant-machinery-insurance" },
+      { name: "Professional Indemnity for Doctors", link: "/professional-indemnity-doctors-insurance" },
+      { name: "Professional Indemnity for Companies", link: "/professional-indemnity-companies-insurance" },
+      { name: "Contractor All Risk Insurance", link: "/contractor-risk-insurance" },
+      { name: "Directors and Officers (D&O) Insurance", link: "/director-officers-insurance" },
     ],
   },
   {
@@ -62,11 +65,12 @@ const navListMenuItems = [
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
     sublink: [
-      { name: "Life Insurance Plans", link: "/life-insurance" },
+      { name: "Pension Plans", link: "/pension-plan" },
       { name: "Term Plans", link: "/term-insurance" },
       { name: "Child Saving Plan", link: "/child-insurance" },
       { name: "Endowment Plan", link: "/endowment-insurance" },
       { name: "ULIP Plan", link: "/ulip-insurance" },
+      { name: "Money Back Plan", link: "/money-back-policy" },
 
     ],
   },
@@ -74,11 +78,14 @@ const navListMenuItems = [
     title: "Health Insurance",
 
     sublink: [
-      { name: "Health Insurance ", link: "/health-insurance" },
-      { name: "1 Cr Health Cover", link: "/under-process" },
-      { name: "Cancer Insurance", link: "/under-process" },
+      { name: "Individual Health Insurance ", link: "/individual-health-insurance" },
       { name: "Family Health Insurance", link: "/family-health-insurance" },
-      { name: "Employee Group Health Insurance", link: "/under-process" },
+      { name: "Critical Care Plan", link: "/critical-care-plan" },
+      { name: "Maternity Cover Plan", link: "/maternity-cover" },
+      { name: "Senior Citizen Plan", link: "/senior-citizen-plan" },
+      { name: "1 Cr Health Cover", link: "/one-cr-health-cover" },
+      { name: "Cancer Insurance", link: "/cancer-insurance" },
+      { name: "Employee Group Health Insurance", link: "/employee-group-health-insurance" },
     ],
   },
 ];
@@ -228,7 +235,7 @@ function NavListMenuDesktop() {
           </Typography>
         </MenuHandler>
 
-        <MenuList className="hidden  w-full bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
+        <MenuList className="hidden ml-[12%] w-fit bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
           <div className="w-[70vw] rounded-xl bg-white outline-none lg:block outline-0 border-0 hover:border-0">
             <ul className="grid grid-cols-4  justify-center gap-y-2 outline-none outline-0">
               {renderItems}

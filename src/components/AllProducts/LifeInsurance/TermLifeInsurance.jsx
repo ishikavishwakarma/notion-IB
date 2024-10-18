@@ -48,18 +48,18 @@ const TermLifeInsurance = () => {
   ];
   return (
     <>
-    <Helmet>
-  <meta charSet="utf-8" />
-  <title>Term Insurance - NIB</title>
-  <meta
-    name="description"
-    content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
-  />
-  <meta
-    name="keywords"
-    content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
-  />
-</Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Term Insurance - NIB</title>
+        <meta
+          name="description"
+          content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
+        />
+        <meta
+          name="keywords"
+          content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
+        />
+      </Helmet>
 
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
@@ -84,7 +84,6 @@ const TermLifeInsurance = () => {
                   specified period (term) in exchange for premiums. If the
                   policyholder dies during the term, the insurance company pays
                   a death benefit to beneficiaries.
-                 
                 </Typography>
               </CardBody>
             </Card>
