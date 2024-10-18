@@ -16,18 +16,18 @@ const ChildInsurance = () => {
   ];
   return (
     <>
-     <Helmet>
-  <meta charSet="utf-8" />
-  <title>Child Insurance - NIB</title>
-  <meta
-    name="description"
-    content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
-  />
-  <meta
-    name="keywords"
-    content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
-  />
-</Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Child Insurance - NIB</title>
+        <meta
+          name="description"
+          content="Secure your child's future with comprehensive child insurance from Notion Insurance Broker Pvt. Ltd. Our plans provide financial protection and savings options, ensuring your child's dreams are safeguarded against unforeseen events."
+        />
+        <meta
+          name="keywords"
+          content="child insurance, NIB child insurance, Notion Insurance Broker child insurance, children's future, financial protection, education savings plan, life coverage, family security, child investment, affordable insurance"
+        />
+      </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">

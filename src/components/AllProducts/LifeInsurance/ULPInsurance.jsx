@@ -15,18 +15,18 @@ const ULPInsurance = () => {
   ];
   return (
     <>
-     <Helmet>
-  <meta charSet="utf-8" />
-  <title>ULIP Insurance - NIB</title>
-  <meta
-    name="description"
-    content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
-  />
-  <meta
-    name="keywords"
-    content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
-  />
-</Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>ULIP Insurance - NIB</title>
+        <meta
+          name="description"
+          content="Explore flexible ULIP insurance plans from Notion Insurance Broker Pvt. Ltd. Our policies combine life coverage with investment options, providing financial security for your loved ones while helping you grow your wealth."
+        />
+        <meta
+          name="keywords"
+          content="ULIP insurance, NIB ULIP insurance, Notion Insurance Broker ULIP, unit linked insurance plans, investment insurance, life coverage, financial protection, wealth creation, dual benefit insurance, secure future"
+        />
+      </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">

@@ -4,10 +4,10 @@ import { Card, CardBody, CardFooter, Typography, Button } from '@material-tailwi
 function InsuranceTypes({ title, description, insuranceOptions,showButton = true }) {
   return (
     <div className="pt-8">
-      <Typography variant="h3" color="blue-gray" className="mb-2 text-center">
+      <Typography variant="h4" color="blue-gray" className="mb-2 text-center">
         {title}
       </Typography>
-      <Typography color="gray" className="mb-10 pt-2 lg:px-20 font-normal text-center">
+      <Typography color="gray" variant='h6' className="mb-10 pt-2 lg:px-20 font-normal text-center">
         {description}
       </Typography>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
