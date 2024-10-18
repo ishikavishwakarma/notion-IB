@@ -6,7 +6,7 @@ const CancerInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Marine Insurance ",
+      insurerName: "Cancer Insurance ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
@@ -17,14 +17,14 @@ const CancerInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Marine Insurance - NIB</title>
+        <title>Cancer Insurance - NIB</title>
         <meta
           name="description"
-          content="Secure your health and financial future with specialized Cancer Insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide comprehensive coverage for cancer treatment, including hospitalization, chemotherapy, and consultations, ensuring you receive the best care without financial burden."
+          content="Protect your marine assets with comprehensive Cancer Insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."
         />
         <meta
           name="keywords"
-          content="cancer insurance, NIB cancer insurance, Notion Insurance Broker cancer coverage, cancer treatment insurance, health insurance for cancer, chemotherapy coverage, hospitalization for cancer, critical illness insurance, financial protection against cancer, cancer care insurance"
+          content="Cancer Insurance, NIB Cancer Insurance, Notion Insurance Broker Cancer Insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
         />
       </Helmet>
 
@@ -32,7 +32,7 @@ const CancerInsurance = () => {
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Marine Insurance Plans
+              Top Cancer Insurance
             </Typography>
 
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -44,21 +44,11 @@ const CancerInsurance = () => {
             <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Marine Insurance
+                  A Guide to Cancer Insurance
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Marine insurance provides coverage for the loss or damage of
-                  ships, cargo, terminals, and any transport by which goods are
-                  transferred between points of origin and destination. It
-                  safeguards businesses involved in shipping against financial
-                  losses due to unforeseen events such as accidents, piracy,
-                  natural disasters, or damage during transit.
-                  <br />
-                  By securing a marine insurance policy, companies can protect
-                  their investments and ensure smooth operations, knowing that
-                  any potential risks to their shipments are covered. This type
-                  of insurance is crucial for mitigating the financial impact of
-                  uncertainties in the shipping industry.
+                Cancer Insurance is a specialized insurance product that provides comprehensive coverage for the treatment of various types of cancer. With the rising incidence of cancer cases, this plan offers critical financial support to policyholders during a challenging time, ensuring they can focus on recovery rather than financial concerns.
+              
                 </Typography>
               </CardBody>
             </Card>
@@ -69,28 +59,18 @@ const CancerInsurance = () => {
               color="blue-gray"
               className="mb-2 text-center"
             >
-              Key Features of Marine Insurance
+              Key Features of Cancer Insurance
             </Typography>
-            <Typography className="md:px-20 text-center">
-              Marine insurance is essential for businesses involved in shipping
-              and cargo transport, offering a comprehensive range of coverage.
-              Below are four key features that make marine insurance an
-              indispensable part of global trade.
-            </Typography>
+           
             <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
               <CardBody>
                 <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Comprehensive Coverage for Various Risks :{" "}
+                      Broad Cancer Coverage :{" "}
                       </span>
-                      Marine insurance provides coverage against a wide array of
-                      risks, including loss or damage caused by accidents,
-                      natural disasters, piracy, and even theft. It protects
-                      ships, cargo, and freight during their journey, ensuring
-                      that any unforeseen event does not lead to significant
-                      financial losses.
+                      Covers a wide array of cancer treatments, including chemotherapy, radiation therapy, hospitalization, and surgery, providing complete financial support.
                     </Typography>
                   </li>
                 </ul>
@@ -103,13 +83,9 @@ const CancerInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Types of Coverage Options :{" "}
+                      Early Detection Benefits :{" "}
                       </span>
-                      Marine insurance offers various types of coverage
-                      depending on the needs of the policyholder. The two main
-                      types are Hull Insurance, which covers physical damage to
-                      the ship or vessel, and Cargo Insurance, which protects
-                      the goods being transported.
+                      Provides a lump sum payment upon early diagnosis of cancer, facilitating prompt treatment and increasing chances of successful recovery.
                     </Typography>
                   </li>
                 </ul>
@@ -121,12 +97,8 @@ const CancerInsurance = () => {
                 <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                   <li>
                     <Typography>
-                      <span className="font-bold">Liability Protection : </span>
-                      In addition to covering physical loss or damage, marine
-                      insurance also includes liability protection. This feature
-                      safeguards businesses from third-party claims in case of
-                      damages caused to other ships, cargo, or individuals
-                      during the voyage.
+                      <span className="font-bold">Access to Expert Consultations : </span>
+                      Policyholders can obtain second opinions from renowned cancer specialists, helping them make informed treatment decisions.
                     </Typography>
                   </li>
                 </ul>
@@ -139,14 +111,9 @@ const CancerInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Customizable Policies for Specific Needs :{" "}
+                      Flexible Payout Options :{" "}
                       </span>
-                      Marine insurance policies are highly customizable,
-                      allowing businesses to adapt coverage to specific routes,
-                      cargo types, and transport methods. Whether it's a
-                      one-time shipment or regular sea transport operations,
-                      insurers offer flexible terms to meet the varied demands
-                      of international trade.
+                      Offers flexibility in receiving benefits, allowing policyholders to choose between a lump sum payout or installments to manage their treatment expenses effectively.
                     </Typography>
                   </li>
                 </ul>
