@@ -17,11 +17,11 @@ const OneCrHealthCover = () => {
         <title>Fire Insurance - NIB</title>
         <meta
           name="description"
-          content="Safeguard your property with comprehensive fire insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for damages caused by fire, ensuring financial security and peace of mind for homeowners and businesses alike."
+          content="Protect your health and well-being with our 1 Crore Health Insurance Plan from Notion Insurance Broker Pvt. Ltd. This comprehensive policy offers extensive coverage for medical expenses, hospitalization, and critical illness, ensuring financial security for you and your family."
         />
         <meta
           name="keywords"
-          content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
+          content="1 Crore Health Insurance, NIB 1 Crore Health Plan, Notion Insurance Broker health insurance, comprehensive health coverage, medical expense insurance, hospitalization coverage, critical illness insurance, family health protection, health insurance plans, financial security"
         />
       </Helmet>
 

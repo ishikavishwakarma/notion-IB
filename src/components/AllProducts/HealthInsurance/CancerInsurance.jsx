@@ -20,11 +20,11 @@ const CancerInsurance = () => {
         <title>Marine Insurance - NIB</title>
         <meta
           name="description"
-          content="Protect your marine assets with comprehensive marine insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."
+          content="Secure your health and financial future with specialized Cancer Insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide comprehensive coverage for cancer treatment, including hospitalization, chemotherapy, and consultations, ensuring you receive the best care without financial burden."
         />
         <meta
           name="keywords"
-          content="marine insurance, NIB marine insurance, Notion Insurance Broker marine insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
+          content="cancer insurance, NIB cancer insurance, Notion Insurance Broker cancer coverage, cancer treatment insurance, health insurance for cancer, chemotherapy coverage, hospitalization for cancer, critical illness insurance, financial protection against cancer, cancer care insurance"
         />
       </Helmet>
 

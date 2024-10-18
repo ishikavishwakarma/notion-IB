@@ -20,11 +20,11 @@ const MaternityCover = () => {
         <title>Maternity Cover Plan - NIB</title>
         <meta
           name="description"
-          content="Protect your marine assets with comprehensive marine insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."
+          content="Secure your maternity journey with the Maternity Cover Plan from Notion Insurance Broker Pvt. Ltd. Our policy covers prenatal, delivery, and postnatal expenses, offering comprehensive healthcare protection for both mother and baby."
         />
         <meta
           name="keywords"
-          content="marine insurance, NIB marine insurance, Notion Insurance Broker marine insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
+          content="maternity insurance, NIB maternity insurance, Notion Insurance Broker maternity plan, maternity cover, prenatal care insurance, postnatal coverage, pregnancy insurance, delivery insurance, newborn insurance, maternal health insurance"
         />
       </Helmet>
 
