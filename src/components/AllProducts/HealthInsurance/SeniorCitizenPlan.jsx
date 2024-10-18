@@ -7,26 +7,25 @@ const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
   {
-    point: "Life Coverage",
+    point: "Targeted Health Coverage",
     description:
-      " Provides comprehensive life insurance coverage throughout the policy term, ensuring financial security for your loved ones.",
+      "Specifically crafted to cover a variety of health issues prevalent among senior citizens, such as chronic diseases, surgeries, and rehabilitation.",
   },
   {
-    point: "Survival Benefits",
+    point: "Pre-existing Condition Coverage",
     description:
-      "Policyholders receive periodic payouts at specified intervals, offering financial support for ongoing needs, such as education, medical expenses, or investments.",
+      "Many plans allow for coverage of pre-existing conditions after a defined waiting period, providing essential support for those with ongoing health issues.",
   },
   {
-    point: "Full Death Benefit",
+    point: "Home Healthcare Services",
     description:
-      "In the event of the policyholder's death during the policy term, beneficiaries receive the full sum assured, ensuring that no survival benefits are deducted.",
+      "Offers coverage for medical treatments and assistance provided at home, ensuring comfort and convenience for elderly individuals.",
   },
   {
-    point: "Tax Benefits",
+    point: "Daily Hospital Cash Allowance",
     description:
-      "Premiums paid for the policy are tax-deductible under Section 80C of the Income Tax Act, 1961, allowing policyholders to save on taxes while securing their future.",
+      "Provides a daily cash benefit for hospitalization, helping cover incidental expenses during the hospital stay.",
   },
-  
 ];
 const COLUMN_WIDTHS = [
   "w-[15vw]", // 40% width for Comprehensive Insurance
@@ -36,7 +35,7 @@ const SeniorCitizenPlan = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Money Back Policy ",
+      insurerName: "Senior Citizen Plan ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
@@ -46,14 +45,14 @@ const SeniorCitizenPlan = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Money Back Policy - NIB</title>
+        <title>Senior Citizen Plan - NIB</title>
         <meta
           name="description"
-          content="Secure your financial future with our Money Back Policy at Notion Insurance Broker Pvt. Ltd. Enjoy life coverage along with periodic survival benefits during the policy term, ensuring your family's protection and your peace of mind."
+          content="Ensure quality healthcare for seniors with the Senior Citizen Health Insurance Plan from Notion Insurance Broker Pvt. Ltd. Our policy covers medical expenses, hospitalization, and specialized care for elderly individuals, providing peace of mind in their golden years."
         />
         <meta
           name="keywords"
-          content="Money Back Policy, NIB Money Back Policy, Notion Insurance Broker Money Back Policy, life insurance, survival benefits, financial security, tax benefits, full sum assured, policyholder protection, insurance plans"
+          content="Senior Citizen Health Insurance, NIB Senior Health Plan, Notion Insurance Broker Senior Plan, health insurance for seniors, medical coverage for elderly, senior citizen hospitalization insurance, elderly healthcare, retirement health plans, specialized care for seniors"
         />
       </Helmet>
 
@@ -61,7 +60,7 @@ const SeniorCitizenPlan = () => {
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Money Back Policy Plans
+              Top Senior Citizen Plans
             </Typography>
 
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -72,26 +71,16 @@ const SeniorCitizenPlan = () => {
             <br />
             <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 ">
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Money Back Policy
+                <Typography variant="h4" color="blue-gray" className="mb-2">
+                  A Guide to Senior Citizen Plan
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  A money-back policy is a unique life insurance product
-                  designed to provide both life coverage and financial support
-                  during the policy term. It ensures that policyholders receive
-                  regular payouts, known as survival benefits, at specified
-                  intervals throughout the duration of the policy. This
-                  structure not only offers a safety net for loved ones in the
-                  event of the policyholder&apos;s death but also helps
-                  individuals manage their financial goals and obligations
-                  during their lifetime. In the unfortunate event of the
-                  policyholder&apos;s demise within the policy term, the
-                  beneficiaries receive the full sum assured without any
-                  deductions for previously paid survival benefits, along with
-                  any applicable bonuses. Additionally, premiums paid towards
-                  this policy qualify for tax deductions under Section 80C of
-                  the Income Tax Act, 1961, making it a financially savvy choice
-                  for securing one&apos;s future.
+                  The Senior Citizen Plan provides health insurance tailored to
+                  the needs of older adults. As people age, their healthcare
+                  requirements often become more complex, and this plan
+                  addresses common health issues faced by seniors, ensuring they
+                  receive necessary medical attention without significant
+                  financial stress.
                 </Typography>
               </CardBody>
             </Card>
@@ -103,7 +92,7 @@ const SeniorCitizenPlan = () => {
                 color="blue-gray"
                 className="mb-2 pt-10 w-full text-center"
               >
-                Key Features of Money Back Policy
+                Key Features of Senior Citizen Plan
               </Typography>
               <TableComponent
                 headers={TABLE_HEADERS_PAGE_1}
