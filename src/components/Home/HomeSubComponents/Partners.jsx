@@ -1,16 +1,16 @@
 import React from 'react'
 
 const LOGOS = [
-    <img width='70%' src="assets/images/company/Future generali.jpg" alt="company1" />,
-    <img width='70%' src="assets/images/company/HDFC ERGo.png" alt="company2" />,
-    <img width='70%' src="assets/images/company/ICICI Prudential.jpg" alt="company3" />,
-    <img width='70%' src="assets/images/company/icicibank.jpg" alt="company4" />,
-    <img width='70%' src="assets/images/company/IFCO TOKIO.jpg" alt="company5" />,
-    <img width='70%' src="assets/images/company/liberty.png" alt="company6" />,
-    <img width='70%' src="assets/images/company/Max Life.jpg" alt="company7" />,
-    <img width='70%' src="assets/images/company/National insurance.jpg" alt="company8" />,
-    <img width='70%' src="assets/images/company/Niva Bupa Health in.jpg" alt="company9" />,
-    <img width='70%' src="assets/images/company/oriental.png" alt="company10" />,
+    <img width='70%' src="/assets/images/company/Future generali.jpg" alt="company1" />,
+    <img width='70%' src="/assets/images/company/HDFC ERGo.png" alt="company2" />,
+    <img width='70%' src="/assets/images/company/ICICI Prudential.jpg" alt="company3" />,
+    <img width='70%' src="/assets/images/company/icicibank.jpg" alt="company4" />,
+    <img width='70%' src="/assets/images/company/IFCO TOKIO.jpg" alt="company5" />,
+    <img width='70%' src="/assets/images/company/liberty.png" alt="company6" />,
+    <img width='70%' src="/assets/images/company/Max Life.jpg" alt="company7" />,
+    <img width='70%' src="/assets/images/company/National insurance.jpg" alt="company8" />,
+    <img width='70%' src="/assets/images/company/Niva Bupa Health in.jpg" alt="company9" />,
+    <img width='70%' src="/assets/images/company/oriental.png" alt="company10" />,
 
 ];
 
