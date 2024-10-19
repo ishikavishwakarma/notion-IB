@@ -263,3 +263,6 @@ html {
     margin-top: 0px !important;
   }
 }
+.footer-img{
+  background-image: url('assets/images/footer/footer.png');
+}
