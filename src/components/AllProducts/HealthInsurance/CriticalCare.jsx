@@ -98,8 +98,7 @@ const CriticalCare = () => {
                       </span>
                       Policyholders can select from various coverage amounts and terms, tailoring the plan to fit their specific health needs and financial situation.
                     </Typography>
-                  </li>
-                  
+                  </li> 
                 </ul>
               </CardBody>
             </Card>
