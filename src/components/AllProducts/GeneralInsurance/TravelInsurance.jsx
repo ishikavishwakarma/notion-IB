@@ -3,7 +3,7 @@ import React from 'react'
 import InsuranceCard from './RelativeComponents/InsuranceCard';
 import ImageTextCard from './RelativeComponents/ImageText';
 import InsuranceTypes from './RelativeComponents/TypesInsurance';
-
+import { Helmet } from 'react-helmet';
 const TravelInsurance = () => {
     const insuranceOptions = [
         {
@@ -34,6 +34,19 @@ const TravelInsurance = () => {
   return (
     <>
     <div>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <title>Travel Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Secure your adventures with comprehensive travel insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer coverage for trip cancellations, medical emergencies, lost luggage, and more, ensuring a worry-free travel experience."
+  />
+  <meta
+    name="keywords"
+    content="travel insurance, NIB travel insurance, Notion Insurance Broker travel insurance, trip cancellation insurance, medical emergency insurance, lost luggage coverage, travel protection, overseas insurance, travel safety, travel insurance policies"
+  />
+</Helmet>
+
       <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
         <CardBody className="px-1">
           <Typography variant="h4" color="blue-gray" className="mb-2 ">

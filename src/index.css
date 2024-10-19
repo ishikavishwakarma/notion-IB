@@ -6,6 +6,12 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .buttonbg {
     /* background-image: url("./assets/images/header/image.png"); */
     background-position: center right;
@@ -246,5 +252,14 @@ html {
 @media only screen and (max-width: 768px) {
   .iframe{
     height: 300px;
+  }
+}
+
+.dialogBox{
+  margin-top: -5em !important;
+}
+@media only screen and (min-width: 768px) {
+  .dialogBox{
+    margin-top: 0px !important;
   }
 }

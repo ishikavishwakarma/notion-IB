@@ -35,11 +35,10 @@ const navListMenuItems = [
 
     sublink: [
       { name: "Car Insurance", link: "/car-insurance" },
-      { name: "Two Wheeler Insurance", link: "/bike-insurance" },
+      { name: "Two Wheeler Insurance", link: "/two-wheeler-insurance" },
       { name: "Home Insurance", link: "/home-insurance" },
       { name: "Brand Car Insurance", link: "/bike-insurance" },
       { name: "Travel Insurance", link: "/travel-insurance" },
-
       { name: "Commercial Vehicle", link: "/commercial-vehicle" },
       { name: "Taxi Insurance", link: "/taxi-insurance" },
     ],
@@ -54,6 +53,11 @@ const navListMenuItems = [
       { name: "Workers' Compensation", link: "/workers-insurance" },
       { name: "General Liability", link: "/general-liability-insurance" },
       { name: "Cyber Insurance", link: "/cyber-insurance" },
+      { name: "Contractor's Plant & Machinery", link: "/contractor-plant-machinery-insurance" },
+      { name: "Professional Indemnity for Doctors", link: "/professional-indemnity-doctors-insurance" },
+      { name: "Professional Indemnity for Companies", link: "/professional-indemnity-companies-insurance" },
+      { name: "Contractor All Risk Insurance", link: "/contractor-risk-insurance" },
+      { name: "Directors and Officers (D&O) Insurance", link: "/director-officers-insurance" },
     ],
   },
   {
@@ -61,11 +65,12 @@ const navListMenuItems = [
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
     sublink: [
-      { name: "Life Insurance Plans", link: "/life-insurance" },
+      { name: "Pension Plans", link: "/pension-plan" },
       { name: "Term Plans", link: "/term-insurance" },
-      { name: "Child Saving Plan", link: "/under-process" },
+      { name: "Child Saving Plan", link: "/child-insurance" },
       { name: "Endowment Plan", link: "/endowment-insurance" },
-      { name: "ULIP Plan", link: "/under-process" },
+      { name: "ULIP Plan", link: "/ulip-insurance" },
+      { name: "Money Back Plan", link: "/money-back-policy" },
 
     ],
   },
@@ -73,11 +78,14 @@ const navListMenuItems = [
     title: "Health Insurance",
 
     sublink: [
-      { name: "Health Insurance ", link: "/health-insurance" },
-      { name: "1 Cr Health Cover", link: "/under-process" },
-      { name: "Cancer Insurance", link: "/under-process" },
+      { name: "Individual Health Insurance ", link: "/individual-health-insurance" },
       { name: "Family Health Insurance", link: "/family-health-insurance" },
-      { name: "Employee Group Health Insurance", link: "/under-process" },
+      { name: "Critical Care Plan", link: "/critical-care-plan" },
+      { name: "Maternity Cover Plan", link: "/maternity-cover" },
+      { name: "Senior Citizen Plan", link: "/senior-citizen-plan" },
+      { name: "1 Cr Health Cover", link: "/one-cr-health-cover" },
+      { name: "Cancer Insurance", link: "/cancer-insurance" },
+      { name: "Employee Group Health Insurance", link: "/employee-group-health-insurance" },
     ],
   },
 ];
@@ -227,7 +235,7 @@ function NavListMenuDesktop() {
           </Typography>
         </MenuHandler>
 
-        <MenuList className="hidden  w-full bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
+        <MenuList className="hidden ml-[12%] w-fit bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
           <div className="w-[70vw] rounded-xl bg-white outline-none lg:block outline-0 border-0 hover:border-0">
             <ul className="grid grid-cols-4  justify-center gap-y-2 outline-none outline-0">
               {renderItems}
@@ -254,7 +262,7 @@ function NavListMenuDesktop() {
 function NavList({ closeMenu }) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className=" mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
         variant="small"
@@ -368,27 +376,27 @@ const Header = () => {
         </div>
       </section>
 
-      <Navbar className="max-w-full border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
+      <Navbar className="max-w-full sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Link to='/'>
+          <Link to='/' className="h-16 w-32 md:w-44">
             <img
               src="assets/images/header/logo.png"
               alt="Notion insurance "
-              className="mr-4 py-0 cursor-pointer md:h-28 h-16  lg:ml-2"
+              className="mr-4 py-0 cursor-pointer object-cover  h-full w-full  lg:ml-2"
             />
           </Link>
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex">
+          <div className="hidden h-10 gap-2 lg:flex">
             <Button
-              className="text-base py-0"
+              className="text-sm py-0"
               variant="outlined"
               color="blue"
             >
               Log In
             </Button>
-            <Button variant="gradient" color="blue" className="text-base">
+            <Button variant="gradient" color="blue" className="py-0 text-sm">
               Become a POSP
             </Button>
           </div>
@@ -407,7 +415,7 @@ const Header = () => {
         </div>
         <Collapse open={openNav}>
           <NavList closeMenu={() => setOpenNav(false)} />
-          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+          <div className="flex w-full pb-3 flex-nowrap items-center gap-2 lg:hidden">
             <Button
               variant="outlined"
               size="sm"

@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
-
+import { Helmet } from "react-helmet";
 const TABLE_HEADERS_PAGE_1 = [
     "Point of Difference",
     "Comprehensive Insurance",
@@ -76,7 +76,21 @@ const CommercialVehicle = () => {
     
     return (
         <>
+        <Helmet>
+  <meta charSet="utf-8" />
+  <title>Commercial Vehicle Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Protect your business assets with comprehensive commercial vehicle insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer extensive coverage for vehicles used for business purposes, ensuring financial security and peace of mind."
+  />
+  <meta
+    name="keywords"
+    content="commercial vehicle insurance, NIB commercial vehicle insurance, Notion Insurance Broker commercial vehicle insurance, business vehicle insurance, fleet insurance, commercial auto insurance, vehicle coverage, liability insurance, commercial vehicle protection, truck insurance"
+  />
+</Helmet>
+
             <div>
+
                 <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
                     <CardBody className="px-1">
                         <Typography variant="h4" color="blue-gray" className="mb-2 ">

@@ -2,11 +2,11 @@ import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import { Helmet } from "react-helmet";
-const MarineInsurance = () => {
+const ContractMachineryInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Marine Insurance ",
+      insurerName: "Contractor's Plant & Machinery Insurance ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
@@ -20,14 +20,14 @@ const MarineInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Marine Insurance - NIB</title>
+        <title>Contactor&apos;s Plant & Machinery Insurance - NIB</title>
         <meta
           name="description"
-          content="Protect your marine assets with comprehensive marine insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."
+          content="Secure your construction business with comprehensive Contractor's Plant & Machinery Insurance from Notion Insurance Broker Pvt. Ltd. Our coverage protects against damage, loss, and third-party liability for essential construction equipment, ensuring project continuity."
         />
         <meta
           name="keywords"
-          content="marine insurance, NIB marine insurance, Notion Insurance Broker marine insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
+          content="Contractor's Plant and Machinery Insurance, NIB construction insurance, machinery coverage, plant insurance, construction equipment protection, Notion Insurance Broker construction insurance, contractor insurance, project continuity, machinery risk management"
         />
       </Helmet>
 
@@ -35,7 +35,7 @@ const MarineInsurance = () => {
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Marine Insurance Plans
+              Top Contractor&apos;s Plant & Machinery Insurance Plans
             </Typography>
 
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -47,21 +47,20 @@ const MarineInsurance = () => {
             <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Marine Insurance
+                  A Guide to Contractor&apos;s Plant & Machinery Insurance
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Marine insurance provides coverage for the loss or damage of
-                  ships, cargo, terminals, and any transport by which goods are
-                  transferred between points of origin and destination. It
-                  safeguards businesses involved in shipping against financial
-                  losses due to unforeseen events such as accidents, piracy,
-                  natural disasters, or damage during transit.
+                  Contractor Plant and Machinery Insurance is a comprehensive
+                  policy designed to protect businesses that rely on heavy
+                  equipment and machinery for their construction projects. It
+                  provides essential financial coverage against physical loss,
+                  damage, or destruction of plant and machinery, whether due to
+                  accidents, fire, theft, or other unforeseen circumstances.
                   <br />
-                  By securing a marine insurance policy, companies can protect
-                  their investments and ensure smooth operations, knowing that
-                  any potential risks to their shipments are covered. This type
-                  of insurance is crucial for mitigating the financial impact of
-                  uncertainties in the shipping industry.
+                  This insurance ensures that costly equipment like cranes,
+                  excavators, bulldozers, and other specialized tools remain
+                  protected, minimizing the financial impact of repairs or
+                  replacements.
                 </Typography>
               </CardBody>
             </Card>
@@ -72,13 +71,12 @@ const MarineInsurance = () => {
               color="blue-gray"
               className="mb-2 text-center"
             >
-              Key Features of Marine Insurance
+              Key Features of Contractor&apos;s Plant & Machinery Insurance
             </Typography>
             <Typography className="md:px-20 text-center">
-              Marine insurance is essential for businesses involved in shipping
-              and cargo transport, offering a comprehensive range of coverage.
-              Below are four key features that make marine insurance an
-              indispensable part of global trade.
+              Contractor Plant and Machinery Insurance offers essential
+              financial protection for businesses involved in construction
+              projects.
             </Typography>
             <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
               <CardBody>
@@ -86,14 +84,12 @@ const MarineInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Comprehensive Coverage for Various Risks :{" "}
+                        Coverage for Plant and Machinery :{" "}
                       </span>
-                      Marine insurance provides coverage against a wide array of
-                      risks, including loss or damage caused by accidents,
-                      natural disasters, piracy, and even theft. It protects
-                      ships, cargo, and freight during their journey, ensuring
-                      that any unforeseen event does not lead to significant
-                      financial losses.
+                      This insurance provides protection for heavy-duty
+                      construction machinery, such as excavators, cranes, and
+                      bulldozers, covering damages that may occur on-site due to
+                      unforeseen events.
                     </Typography>
                   </li>
                 </ul>
@@ -106,13 +102,9 @@ const MarineInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Types of Coverage Options :{" "}
+                      Coverage for Equipment and Tools :{" "}
                       </span>
-                      Marine insurance offers various types of coverage
-                      depending on the needs of the policyholder. The two main
-                      types are Hull Insurance, which covers physical damage to
-                      the ship or vessel, and Cargo Insurance, which protects
-                      the goods being transported.
+                      In addition to machinery, the policy extends to cover smaller tools and equipment used in daily construction operations, ensuring comprehensive protection.
                     </Typography>
                   </li>
                 </ul>
@@ -124,12 +116,8 @@ const MarineInsurance = () => {
                 <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
                   <li>
                     <Typography>
-                      <span className="font-bold">Liability Protection : </span>
-                      In addition to covering physical loss or damage, marine
-                      insurance also includes liability protection. This feature
-                      safeguards businesses from third-party claims in case of
-                      damages caused to other ships, cargo, or individuals
-                      during the voyage.
+                      <span className="font-bold">Third-Party Liability Coverage: </span>
+                      This feature covers legal liabilities arising from accidental damage to third-party property or injuries caused by the insured equipment, protecting the business from potentially high legal costs.
                     </Typography>
                   </li>
                 </ul>
@@ -142,14 +130,23 @@ const MarineInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                        Customizable Policies for Specific Needs :{" "}
+                      Business Interruption Coverage :{" "}
                       </span>
-                      Marine insurance policies are highly customizable,
-                      allowing businesses to adapt coverage to specific routes,
-                      cargo types, and transport methods. Whether it's a
-                      one-time shipment or regular sea transport operations,
-                      insurers offer flexible terms to meet the varied demands
-                      of international trade.
+                      If damage to the plant and machinery leads to delays in the project, the policy helps cover financial losses, ensuring minimal disruption to the business.
+                    </Typography>
+                  </li>
+                </ul>
+              </CardBody>
+            </Card>
+            <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
+              <CardBody>
+                <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
+                  <li>
+                    <Typography>
+                      <span className="font-bold">
+                      Additional Costs Coverage :{" "}
+                      </span>
+                      This includes coverage for extra expenses like expediting costs and Architects&apos; or Engineers&apos; fees needed to repair or replace damaged machinery quickly.
                     </Typography>
                   </li>
                 </ul>
@@ -162,4 +159,4 @@ const MarineInsurance = () => {
   );
 };
 
-export default MarineInsurance;
+export default ContractMachineryInsurance;

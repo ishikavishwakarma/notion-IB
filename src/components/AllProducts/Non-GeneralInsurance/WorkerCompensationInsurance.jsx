@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
+import { Helmet } from "react-helmet";
 
 const WorkerCompensationInsurance = () => {
   const insuranceOptions = [
@@ -14,6 +15,19 @@ const WorkerCompensationInsurance = () => {
   ];
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Workers' Insurance - NIB</title>
+        <meta
+          name="description"
+          content="Ensure the safety and well-being of your employees with comprehensive workers' insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for workplace injuries, medical expenses, and liability, fostering a secure work environment."
+        />
+        <meta
+          name="keywords"
+          content="workers' insurance, NIB workers' insurance, Notion Insurance Broker workers' insurance, employee insurance, workplace injury coverage, workers' compensation, liability insurance, employee safety, health insurance for workers, occupational insurance"
+        />
+      </Helmet>
+
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
@@ -37,12 +51,12 @@ const WorkerCompensationInsurance = () => {
                   benefits to employees who suffer work-related injuries or
                   illnesses.
                   <br />
-                  Worker&apos;s Compensation Insurance delivers crucial financial
-                  support to employees who sustain injuries or illnesses as a
-                  result of their work. This insurance ensures that affected
-                  employees receive necessary medical treatment and compensation
-                  for lost wages, allowing them to focus on recovery without the
-                  added stress of financial burden.
+                  Worker&apos;s Compensation Insurance delivers crucial
+                  financial support to employees who sustain injuries or
+                  illnesses as a result of their work. This insurance ensures
+                  that affected employees receive necessary medical treatment
+                  and compensation for lost wages, allowing them to focus on
+                  recovery without the added stress of financial burden.
                 </Typography>
               </CardBody>
             </Card>
@@ -50,11 +64,7 @@ const WorkerCompensationInsurance = () => {
             <br />
             <div className="grid lg:grid-cols-2 gap-3 ">
               <Card className="mt-6 max-w-[600px] mx-auto px-3 md:px-10 py-3 w-full  md:hover:scale-105 duration-300 border">
-                <Typography
-                  variant="h5"
-                  color="blue-gray"
-                  className="mb-2 "
-                >
+                <Typography variant="h5" color="blue-gray" className="mb-2 ">
                   Core Attributes of Worker&apos;s Compensation Insurance
                 </Typography>
                 <Typography className="font-medium pb-3">
@@ -67,7 +77,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Medical Expense Coverage:
                         </span>
-                        Covers medical costs for work-related injuries or illnesses.
+                        Covers medical costs for work-related injuries or
+                        illnesses.
                       </Typography>
                     </li>
                   </ul>
@@ -79,7 +90,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Lost Wages Coverage:
                         </span>
-                        Provides compensation for employees who cannot work due to their injuries.
+                        Provides compensation for employees who cannot work due
+                        to their injuries.
                       </Typography>
                     </li>
                   </ul>
@@ -91,7 +103,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Rehabilitation Coverage:
                         </span>
-                        Supports rehabilitation services to help employees recover and return to work.
+                        Supports rehabilitation services to help employees
+                        recover and return to work.
                       </Typography>
                     </li>
                   </ul>
@@ -100,10 +113,9 @@ const WorkerCompensationInsurance = () => {
                   <ul className="list-disc ">
                     <li>
                       <Typography>
-                        <span className="font-bold mr-1">
-                          Death Benefits:
-                        </span>
-                        Offers financial compensation to beneficiaries in the event of an employee&apos;s work-related death.
+                        <span className="font-bold mr-1">Death Benefits:</span>
+                        Offers financial compensation to beneficiaries in the
+                        event of an employee&apos;s work-related death.
                       </Typography>
                     </li>
                   </ul>
@@ -115,20 +127,16 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Disability Benefits:
                         </span>
-                        Provides income support for employees who become disabled due to work-related incidents.
+                        Provides income support for employees who become
+                        disabled due to work-related incidents.
                       </Typography>
                     </li>
                   </ul>
                 </CardBody>
-
               </Card>
 
               <Card className="mt-6 max-w-[600px] mx-auto px-3 md:px-10 py-3 w-full md:hover:scale-105 duration-300 border">
-                <Typography
-                  variant="h5"
-                  color="blue-gray"
-                  className="mb-2 "
-                >
+                <Typography variant="h5" color="blue-gray" className="mb-2 ">
                   Advantages of Having Worker&apos;s Compensation Insurance
                 </Typography>
                 <Typography className="pb-3 font-medium">
@@ -141,7 +149,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Financial Support for Injured Employees:
                         </span>
-                        Ensures injured workers receive necessary financial assistance during recovery.
+                        Ensures injured workers receive necessary financial
+                        assistance during recovery.
                       </Typography>
                     </li>
                   </ul>
@@ -153,7 +162,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Protection for Employers from Lawsuits:
                         </span>
-                        Shields employers from legal actions related to workplace injuries.
+                        Shields employers from legal actions related to
+                        workplace injuries.
                       </Typography>
                     </li>
                   </ul>
@@ -165,7 +175,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Compliance with Regulatory Requirements:
                         </span>
-                        Helps businesses meet legal obligations regarding employee safety and compensation.
+                        Helps businesses meet legal obligations regarding
+                        employee safety and compensation.
                       </Typography>
                     </li>
                   </ul>
@@ -177,7 +188,8 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Reduced Workplace Injuries and Illnesses:
                         </span>
-                        Encourages a safer work environment, lowering the incidence of injuries.
+                        Encourages a safer work environment, lowering the
+                        incidence of injuries.
                       </Typography>
                     </li>
                   </ul>
@@ -189,12 +201,12 @@ const WorkerCompensationInsurance = () => {
                         <span className="font-bold mr-1">
                           Enhanced Employee Morale and Retention:
                         </span>
-                        Improves employee satisfaction and loyalty by demonstrating care for their well-being.
+                        Improves employee satisfaction and loyalty by
+                        demonstrating care for their well-being.
                       </Typography>
                     </li>
                   </ul>
                 </CardBody>
-
               </Card>
             </div>
           </CardBody>

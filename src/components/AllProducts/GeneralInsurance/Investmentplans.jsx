@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
+import { Helmet } from "react-helmet";
 
 const TABLE_HEADERS_PAGE_1 = [
     "Point of Difference",
@@ -76,6 +77,19 @@ const Investmentplans = () => {
     
     return (
         <>
+        <Helmet>
+  <meta charSet="utf-8" />
+  <title>Investment Plans - NIB</title>
+  <meta
+    name="description"
+    content="Explore diverse investment plans from Notion Insurance Broker Pvt. Ltd. Our tailored solutions help you grow your wealth while providing financial security for your future. Discover options that align with your financial goals and risk appetite."
+  />
+  <meta
+    name="keywords"
+    content="investment plans, NIB investment plans, Notion Insurance Broker investment plans, wealth management, financial security, investment options, financial goals, risk management, savings plans, long-term investments"
+  />
+</Helmet>
+
             <div>
                 <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
                     <CardBody className="px-1">

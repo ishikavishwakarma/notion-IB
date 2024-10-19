@@ -3,44 +3,39 @@ import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
 import { Helmet } from "react-helmet";
-const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
+const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
   {
-    point: "Fixed Premium Payments:",
-    details:
-      "Premiums remain unchanged throughout the policy term, offering cost stability regardless of changes in age or health.",
+    point: "Collective Coverage for Employees",
+    description:
+      "This insurance covers all employees under a single policy, simplifying the administration of health benefits for businesses.",
   },
   {
-    point: "Fixed Term",
-    details:
-      "Coverage is provided for a specific period (e.g., 10, 20, or 30 years), with benefits paid if death occurs during this time.",
+    point: "Cashless Hospitalization Network",
+    description:
+      "Employees can access cashless treatment at a wide network of hospitals, ensuring immediate care without upfront costs.",
   },
   {
-    point: "Death Benefit Payout:",
-    details:
-      "If the insured dies within the policy term, the death benefit is paid to beneficiaries, offering financial support.",
+    point: "Family Inclusion Options",
+    description:
+      " Many plans allow employees to add family members to the policy, extending health benefits to their loved ones.",
   },
   {
-    point: "No Cash Value:",
-    details:
-      "Term insurance doesn't accumulate cash value; it purely provides protection without any investment growth.",
-  },
-  {
-    point: "Renewable/Convertible Options:",
-    details:
-      "Some policies allow renewal or conversion to permanent life insurance without requiring new medical evaluations.",
+    point: "Wellness Programs",
+    description:
+      "Some plans include wellness initiatives, such as health screenings, fitness programs, and mental health support, promoting overall well-being in the workplace.",
   },
 ];
 const COLUMN_WIDTHS = [
   "w-[15vw]", // 40% width for Comprehensive Insurance
   "w-[60vw]", // 40% width for Third-party Insurance
 ];
-const TermLifeInsurance = () => {
+const EmployeeGroupHealthInsurance = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Term Life Insurance ",
+      insurerName: "Employee Group Health Insurance ",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
       link: "/",
@@ -50,14 +45,14 @@ const TermLifeInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Term Insurance - NIB</title>
+        <title>Employee Group Health Insurance - NIB</title>
         <meta
           name="description"
-          content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."
+          content="Provide your employees with comprehensive health protection through our Employee Group Health Insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover medical expenses, hospitalization, and preventive care, ensuring the well-being of your workforce."
         />
         <meta
           name="keywords"
-          content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
+          content="Employee Group Health Insurance, NIB Employee Health Insurance, Notion Insurance Broker employee insurance, group health coverage, employee medical insurance, corporate health plans, employee wellness, hospitalization coverage, employee benefits, business health insurance"
         />
       </Helmet>
 
@@ -65,7 +60,7 @@ const TermLifeInsurance = () => {
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Term Life Insurance Plans
+              Top Employee Group Health Insurance
             </Typography>
 
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -74,16 +69,17 @@ const TermLifeInsurance = () => {
               ))}
             </div>
             <br />
-            <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 ">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Term Life Insurance
+                  A Guide to Employee Group Health Insurance
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Term Life Insurance provides financial protection for a
-                  specified period (term) in exchange for premiums. If the
-                  policyholder dies during the term, the insurance company pays
-                  a death benefit to beneficiaries.
+                  Employee Group Health Insurance is designed for businesses to
+                  provide comprehensive health coverage to their employees,
+                  enhancing employee satisfaction and promoting a healthy
+                  workplace. This plan is a valuable benefit that supports the
+                  well-being of employees and their families.
                 </Typography>
               </CardBody>
             </Card>
@@ -95,7 +91,7 @@ const TermLifeInsurance = () => {
                 color="blue-gray"
                 className="mb-2 pt-10 w-full text-center"
               >
-                Advantages of Having Term Life Insurance
+                Key Features of Employee Group Health Insurance
               </Typography>
               <TableComponent
                 headers={TABLE_HEADERS_PAGE_1}
@@ -110,4 +106,4 @@ const TermLifeInsurance = () => {
   );
 };
 
-export default TermLifeInsurance;
+export default EmployeeGroupHealthInsurance;

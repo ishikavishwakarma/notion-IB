@@ -6,10 +6,11 @@ import {
     Typography,
     Tooltip,
   } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const ModalBox = ({ text, imgSrc, link }) => {
   return (
-    <a href={link} className="no-underline">
+    <Link to={link} className="no-underline">
     <Card className="w-32 h-24 flex flex-col justify-center">
     {/* <CardHeader floated={false} className="h-20"> */}
     <div className="w-full flex justify-center align-middle">
@@ -25,7 +26,7 @@ const ModalBox = ({ text, imgSrc, link }) => {
     </CardBody>
   
   </Card>
-    </a>
+    </Link>
   )
 }
 

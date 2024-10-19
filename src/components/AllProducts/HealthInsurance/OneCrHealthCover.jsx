@@ -2,11 +2,11 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import { Helmet } from "react-helmet";
-const Fire = () => {
+const OneCrHealthCover = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Fire & Burglary Insurance",
+      insurerName: "1 Cr Health Cover",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
     },
@@ -17,11 +17,11 @@ const Fire = () => {
         <title>Fire Insurance - NIB</title>
         <meta
           name="description"
-          content="Safeguard your property with comprehensive fire insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for damages caused by fire, ensuring financial security and peace of mind for homeowners and businesses alike."
+          content="Protect your health and well-being with our 1 Crore Health Insurance Plan from Notion Insurance Broker Pvt. Ltd. This comprehensive policy offers extensive coverage for medical expenses, hospitalization, and critical illness, ensuring financial security for you and your family."
         />
         <meta
           name="keywords"
-          content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
+          content="1 Crore Health Insurance, NIB 1 Crore Health Plan, Notion Insurance Broker health insurance, comprehensive health coverage, medical expense insurance, hospitalization coverage, critical illness insurance, family health protection, health insurance plans, financial security"
         />
       </Helmet>
 
@@ -29,7 +29,7 @@ const Fire = () => {
         <Card className="mt-6 shadow-none md:px-10  bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Fire Insurance Plans
+              Top 1 Cr Health Cover
             </Typography>
 
             <div className="mt-4 grid w-full   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -41,21 +41,11 @@ const Fire = () => {
             <Card className="mt-6 w-full text-center  md:hover:scale-105 duration-300">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Fire & Burglary Insurance
+                  A Guide to 1 Cr Health Cover Insurance
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Fire insurance covers damage or loss to a property because of
-                  fire. It is a specific form of insurance in addition to
-                  homeowner’s or property insurance, and it covers the cost of
-                  replacement and repair or reconstruction above what the
-                  property insurance policy covers. Fire insurance policies
-                  cover damage to the property, and may also cover damage to
-                  nearby structures, personal property and costs because of not
-                  having the capacity to live in or use the property if damages
-                  occur. The policy typically includes additional coverage
-                  against smoke or water damage due to a fire. A fire insurance
-                  policy is usually set up for one year. The policyholder may
-                  renew the policy according to the terms of the policy.
+                The 1 Cr Health Cover is a premium health insurance plan that offers a substantial sum assured of ₹1 crore, providing extensive protection against various medical expenses. This plan is ideal for individuals and families seeking comprehensive health coverage to shield themselves from unforeseen medical costs.
+
                 </Typography>
               </CardBody>
             </Card>
@@ -66,53 +56,40 @@ const Fire = () => {
                 color="blue-gray"
                 className="mb-2 mt-10 text-center"
               >
-                Important Characteristics of Fire Insurance Coverage
+                Important Characteristics of 1 Cr Health Cover
               </Typography>
               <CardBody>
                 <ul className="list-disc ">
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Comprehensive Fire Damage Protection :{" "}
+                      High Sum Assured :{" "}
                       </span>
-                      Covers damages caused by accidental fires to insured
-                      property.
+                      With coverage of ₹1 crore, policyholders can access extensive medical treatments, ensuring financial security during health emergencies.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Flexibility in Customizing Coverage :{" "}
+                      Global Coverage Options :{" "}
                       </span>
-                      Allows tailored coverage options to meet individual risk
-                      and needs.
+                      Many plans include international coverage for emergencies occurring outside India, providing peace of mind for travelers.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Protection Against Allied Perils :{" "}
+                      Preventive Health Check-ups :{" "}
                       </span>
-                      Includes coverage for explosions, lightning, and
-                      firefighting water damage.
+                      Regular health check-ups are often included, promoting early detection and proactive management of health issues.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Loss of Profits Compensation :{" "}
+                      Flexible Premium Payment Plans :{" "}
                       </span>
-                      Compensates businesses for income loss during fire-related
-                      disruptions.
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography>
-                      <span className="font-bold mr-1">
-                        Coverage for Firefighting Expenses :{" "}
-                      </span>
-                      Covers expenses for hiring firefighters and
-                      fire-extinguishing equipment.
+                      Policyholders can choose from various premium payment options, including monthly, quarterly, or annually, allowing for better financial planning.
                     </Typography>
                   </li>
                 </ul>
@@ -125,4 +102,4 @@ const Fire = () => {
   );
 };
 
-export default Fire;
+export default OneCrHealthCover;

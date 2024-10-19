@@ -2,11 +2,11 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import { Helmet } from "react-helmet";
-const Fire = () => {
+const CriticalCare = () => {
   const insuranceOptions = [
     {
       logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Fire & Burglary Insurance",
+      insurerName: "Critical Care Plan",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
     },
@@ -14,7 +14,7 @@ const Fire = () => {
   return (
     <>
       <Helmet>
-        <title>Fire Insurance - NIB</title>
+        <title>Critical Care Plan - NIB</title>
         <meta
           name="description"
           content="Safeguard your property with comprehensive fire insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for damages caused by fire, ensuring financial security and peace of mind for homeowners and businesses alike."
@@ -29,7 +29,7 @@ const Fire = () => {
         <Card className="mt-6 shadow-none md:px-10  bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
-              Top Fire Insurance Plans
+              Top Critical Care Plans
             </Typography>
 
             <div className="mt-4 grid w-full   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
@@ -41,21 +41,18 @@ const Fire = () => {
             <Card className="mt-6 w-full text-center  md:hover:scale-105 duration-300">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  A Guide to Fire & Burglary Insurance
+                  A Guide to Critical Care Plan
                 </Typography>
                 <Typography className="md:px-5 text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  Fire insurance covers damage or loss to a property because of
-                  fire. It is a specific form of insurance in addition to
-                  homeowner’s or property insurance, and it covers the cost of
-                  replacement and repair or reconstruction above what the
-                  property insurance policy covers. Fire insurance policies
-                  cover damage to the property, and may also cover damage to
-                  nearby structures, personal property and costs because of not
-                  having the capacity to live in or use the property if damages
-                  occur. The policy typically includes additional coverage
-                  against smoke or water damage due to a fire. A fire insurance
-                  policy is usually set up for one year. The policyholder may
-                  renew the policy according to the terms of the policy.
+                  The Critical Care Plan is a vital insurance product that
+                  protects policyholders from the high costs associated with
+                  critical illnesses. This plan is designed to cover a range of
+                  severe health conditions, including heart attacks, strokes,
+                  and major surgeries, ensuring individuals receive the
+                  necessary medical care without financial strain. With the
+                  increasing prevalence of life-threatening diseases, this plan
+                  serves as a safety net, allowing for timely treatment and
+                  recovery.
                 </Typography>
               </CardBody>
             </Card>
@@ -66,55 +63,43 @@ const Fire = () => {
                 color="blue-gray"
                 className="mb-2 mt-10 text-center"
               >
-                Important Characteristics of Fire Insurance Coverage
+                Important Characteristics of Critical Care Plan
               </Typography>
               <CardBody>
                 <ul className="list-disc ">
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Comprehensive Fire Damage Protection :{" "}
+                      Extensive Illness Coverage :{" "}
                       </span>
-                      Covers damages caused by accidental fires to insured
-                      property.
+                      This plan covers various life-threatening conditions, ensuring that policyholders have financial protection against serious health issues.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Flexibility in Customizing Coverage :{" "}
+                        Lump Sum Payout :{" "}
                       </span>
-                      Allows tailored coverage options to meet individual risk
-                      and needs.
+                      Upon diagnosis of a covered critical illness, the policyholder receives a one-time lump sum payment, allowing for immediate access to medical treatment and resources.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Protection Against Allied Perils :{" "}
+                      No Claim Bonus :{" "}
                       </span>
-                      Includes coverage for explosions, lightning, and
-                      firefighting water damage.
+                      For every year that passes without a claim, policyholders may receive an increase in their coverage amount, rewarding them for staying healthy.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Loss of Profits Compensation :{" "}
+                      Customizable Policy Terms :{" "}
                       </span>
-                      Compensates businesses for income loss during fire-related
-                      disruptions.
+                      Policyholders can select from various coverage amounts and terms, tailoring the plan to fit their specific health needs and financial situation.
                     </Typography>
                   </li>
-                  <li>
-                    <Typography>
-                      <span className="font-bold mr-1">
-                        Coverage for Firefighting Expenses :{" "}
-                      </span>
-                      Covers expenses for hiring firefighters and
-                      fire-extinguishing equipment.
-                    </Typography>
-                  </li>
+                  
                 </ul>
               </CardBody>
             </Card>
@@ -125,4 +110,4 @@ const Fire = () => {
   );
 };
 
-export default Fire;
+export default CriticalCare;
