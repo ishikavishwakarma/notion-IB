@@ -164,9 +164,9 @@ function NavListMenu({ closeMenu }) {
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>
+      <Collapse open={isMobileMenuOpen}>
           {renderItems}
-
+       
         </Collapse>
       </div>
     </Fragment>
@@ -243,19 +243,7 @@ function NavListMenuDesktop() {
           </div>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>
-          {renderItems}
-          <div className="flex w-full flex-nowrap items-center gap-2">
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className="size">
-              Log In
-            </Button>
-            <Button variant="gradient" size="sm" fullWidth>
-              Become a POSP
-            </Button>
-          </div>
-        </Collapse>
-      </div>
+      
     </Fragment>
   );
 }
@@ -389,16 +377,23 @@ const Header = () => {
             <NavList />
           </div>
           <div className="hidden h-10 gap-2 lg:flex">
+          <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
+           
             <Button
-              className="text-sm py-0"
+              className="text-sm py-2.5"
               variant="outlined"
               color="blue"
             >
               Log In
             </Button>
-            <Button variant="gradient" color="blue" className="py-0 text-sm">
+
+          </Link>
+          <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
+            <Button variant="gradient" color="blue" className="py-2.5 text-sm">
               Become a POSP
             </Button>
+          </Link>
+           
           </div>
           <IconButton
             variant="text"
@@ -415,19 +410,22 @@ const Header = () => {
         </div>
         <Collapse open={openNav}>
           <NavList closeMenu={() => setOpenNav(false)} />
-          <div className="flex w-full pb-3 flex-nowrap items-center gap-2 lg:hidden">
+          <div className="flex  w-full pb-3 flex-nowrap items-center gap-2 lg:hidden">
+          <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outlined"
               size="sm"
               color="blue-gray"
               fullWidth
-              className="size"
             >
               Log In
             </Button>
-            <Button variant="gradient" size="sm" fullWidth>
+          </Link>
+          <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
+            <Button  variant="gradient" size="sm" fullWidth>
               Become a POSP
             </Button>
+          </Link>
           </div>
         </Collapse>
       </Navbar>
