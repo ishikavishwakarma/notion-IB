@@ -8,7 +8,7 @@ import { FcBriefcase } from "react-icons/fc";
 const Workflow = () => {
     return (
       
-            <div className="page-wrapper bg-[url('assets/images/workflow/workflow.png')] bg-cover bg-center bg-no-repeat">
+            <div className="page-wrapper bg-[url('/assets/images/workflow/workflow.png')] bg-cover bg-center bg-no-repeat">
                 <section className="process py-5">
                     <div className="container">
                         <div className="section-title text-center ">

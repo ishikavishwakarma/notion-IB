@@ -40,7 +40,7 @@ const Hero = () => {
                     <div className=' p-5 h-[35vw] align-middle w-auto md:w-[40vw] relative justify-center flex flex-col max-sm:hidden '>
                         <img
                             className='md:h-[30vw] h-[60vw] shadow-xl  w-auto sm:h-[90%] sm:w-[90%] md:w-full'
-                            src="assets/images/hero/hero2.webp"
+                            src="/assets/images/hero/hero2.webp"
                             alt=""
                             style={{
                                 clipPath: 'polygon(29% 0%, 100% 0%, 100% 100%, 25% 100%, 0 50%)'

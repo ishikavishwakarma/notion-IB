@@ -21,7 +21,7 @@ const Products = () => {
                     <LinkButtons
                     text="Life" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/life-balance.gif" 
+                    imgSrc="/assets/images/Products/life-balance.gif" 
                     link="/life-insurance"
                     />
                 </div>
@@ -31,7 +31,7 @@ const Products = () => {
                     <LinkButtons
                     text="Health" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/heartbeat .gif" 
+                    imgSrc="/assets/images/Products/heartbeat .gif" 
                     link="/health-insurance"
                     />
                 </div>
@@ -41,7 +41,7 @@ const Products = () => {
                     <LinkButtons
                     text="Investment Plans" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/advance.gif" 
+                    imgSrc="/assets/images/Products/advance.gif" 
                     link="/investment-plans"
                     />
                 </div>
@@ -51,7 +51,7 @@ const Products = () => {
                     <LinkButtons
                     text="Car" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/jeep.gif" 
+                    imgSrc="/assets/images/Products/jeep.gif" 
                     link="/car-insurance"
                     />
                 </div>
@@ -61,7 +61,7 @@ const Products = () => {
                     <LinkButtons
                     text="2 Wheeler" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/bike.gif" 
+                    imgSrc="/assets/images/Products/bike.gif" 
                     link="/bike-insurance"
                     />
                 </div>
@@ -71,7 +71,7 @@ const Products = () => {
                     <LinkButtons
                     text="Family Health" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/family.gif" 
+                    imgSrc="/assets/images/Products/family.gif" 
                     link="/family-health-insurance"
                     />
                 </div>
@@ -81,7 +81,7 @@ const Products = () => {
                     <LinkButtons
                     text="Travel" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/airplane.gif" 
+                    imgSrc="/assets/images/Products/airplane.gif" 
                     link="/travel-insurance"
                     />
 
@@ -91,7 +91,7 @@ const Products = () => {
                     <LinkButtons
                     text="Fire & Burglary" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/non-general/burning-building.png" 
+                    imgSrc="/assets/images/Products/non-general/burning-building.png" 
                     link="/fire-insurance"
                     />
                 </div>
@@ -100,7 +100,7 @@ const Products = () => {
                     <LinkButtons
                     text="Home" 
                     subtext="Insurance" 
-                    imgSrc="assets/images/Products/home.gif" 
+                    imgSrc="/assets/images/Products/home.gif" 
                     link="/home-insurance"
                     />
 
@@ -113,7 +113,7 @@ const Products = () => {
                     <LinkButtons
                     text="Child" 
                     subtext="Savings Plans" 
-                    imgSrc="assets/images/Products/piggy-bank.gif" 
+                    imgSrc="/assets/images/Products/piggy-bank.gif" 
                     link="/"
                     />
                 </div>
@@ -123,7 +123,7 @@ const Products = () => {
                     <LinkButtons
                     text="Free of Cost" 
                     subtext="Term Plan" 
-                    imgSrc="assets/images/Products/freeterm.svg" 
+                    imgSrc="/assets/images/Products/freeterm.svg" 
                     link="/"
                     />
 

@@ -9,7 +9,7 @@ import {
 const Information = () => {
     return (
         <div className="flex flex-col items-center">
-            <h1 className="text-5xl md:pl-44 font-semibold w-full text-start text-white py-5 h-52 bg-[url('assets/images/about/about_top.jpg')] bg-cover bg-top bg-no-repeat">Know <br /> More About Us</h1>
+            <h1 className="text-5xl md:pl-44 font-semibold w-full text-start text-white py-5 h-52 bg-[url('/assets/images/about/about_top.jpg')] bg-cover bg-top bg-no-repeat">Know <br /> More About Us</h1>
             
             <Card className="information md:hover:scale-105 duration-300 py-10 mt-5 flex items-center justify-between md:flex-row md:w-4/5 md:px-5">
                 <CardBody className="px-5">
