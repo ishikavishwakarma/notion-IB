@@ -37,7 +37,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="mt-1 relative w-full bg-[url('assets/images/footer/footer.png')] bg-cover bg-center pt-3">
+    <footer className="mt-1 relative footer-img w-full  bg-cover bg-center pt-3">
       <div className="mx-auto w-full ">
         <div className="grid grid-cols-1 justify-center gap-3 md:grid-cols-2 lg:grid-cols-5 px-10">
           <Typography className="w-56 my-6  flex flex-col gap-10">
