@@ -1,5 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 const OurPartner = () => {
   const partners = [
@@ -54,6 +55,8 @@ const OurPartner = () => {
           name="keywords"
           content="NIB partners, Notion Insurance Broker partners, insurance partnerships, insurance providers, risk management partners, insurance collaborations, trusted insurance providers, NIB collaborations"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/our-partner" />
+        
       </Helmet>
 
       <div className="container mx-auto text-center">

@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const MaternityCover = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const MaternityCover = () => {
           name="keywords"
           content="maternity insurance, NIB maternity insurance, Notion Insurance Broker maternity plan, maternity cover, prenatal care insurance, postnatal coverage, pregnancy insurance, delivery insurance, newborn insurance, maternal health insurance"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/maternity-cover" />
       </Helmet>
 
       <div>

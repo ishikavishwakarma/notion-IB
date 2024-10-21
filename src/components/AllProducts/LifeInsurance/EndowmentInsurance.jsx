@@ -1,8 +1,7 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
-
+import { Helmet } from "react-helmet-async";
 
 const EndowmentInsurance = () => {
   return (
@@ -18,6 +17,7 @@ const EndowmentInsurance = () => {
           name="keywords"
           content="endowment insurance, NIB endowment insurance, Notion Insurance Broker endowment insurance, savings plan, life cover, financial security, investment insurance, maturity benefit, family protection, insurance policies"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/endowment-insurance" />
       </Helmet>
 
       <div>

@@ -2,8 +2,9 @@ import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import TableComponent from "./RelativeComponents/TableComponent";
 import ImageTextCard from "./RelativeComponents/ImageText";
-import { Helmet } from "react-helmet";
 import InquiryCard from "./RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
   "Comprehensive Insurance",
@@ -65,6 +66,10 @@ const CommercialVehicle = () => {
           name="keywords"
           content="commercial vehicle insurance, NIB commercial vehicle insurance, Notion Insurance Broker commercial vehicle insurance, business vehicle insurance, fleet insurance, commercial auto insurance, vehicle coverage, liability insurance, commercial vehicle protection, truck insurance"
         />
+        <link
+          rel="canonical"
+          href="https://www.notioninsurance.com/commercial-vehicle"
+        />
       </Helmet>
 
       <div>
@@ -77,17 +82,15 @@ const CommercialVehicle = () => {
             <div className="mt-4 flex w-full justify-center gap-4">
               <InquiryCard insurerName="Commercial Vehicle Insurance" />
             </div>
-
-            <div>
-              <ImageTextCard
-                heading="A Guide to Commercial Vehicle Insurance"
-                subheading=" Get commercial vehicle  insurance & protect your vehicle & yourself."
-                imageSrc="assets/images/Products/general/ads.png"
-                altText="Nexon Commercial Vehicle "
-                description="axi insurance, also known as motor insurance or four-wheeler insurance, is a contractual agreement between a commercial vehicle owner and an insurance provider. This policy provides financial protection in the event of damage or loss to the vehicle due to unforeseen incidents like accidents, theft, or natural disasters. More than just a legal requirement, commercial vehicle insurance offers peace of mind by covering repair costs and safeguarding your investment.
+            <ImageTextCard
+              heading="A Guide to Commercial Vehicle Insurance"
+              subheading=" Get commercial vehicle  insurance & protect your vehicle & yourself."
+              imageSrc="assets/images/Products/general/ads.png"
+              altText="Nexon Commercial Vehicle "
+              description="axi insurance, also known as motor insurance or four-wheeler insurance, is a contractual agreement between a commercial vehicle owner and an insurance provider. This policy provides financial protection in the event of damage or loss to the vehicle due to unforeseen incidents like accidents, theft, or natural disasters. More than just a legal requirement, commercial vehicle insurance offers peace of mind by covering repair costs and safeguarding your investment.
 No matter how careful you are on the road, accidents happen, and repair expenses can be overwhelming. Commercial Vehicle insurance steps in to reduce the financial burden of these incidents."
-              />
-            </div>
+            />
+
             <br />
 
             <Card className="mt-6 w-full text-center">

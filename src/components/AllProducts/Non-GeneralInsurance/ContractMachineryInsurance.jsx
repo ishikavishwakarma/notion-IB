@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const ContractMachineryInsurance = () => {
   // const [showAll, setShowAll] = useState(false);
   // const displayedOptions = showAll ? insuranceOptions : insuranceOptions.slice(0, 3);
@@ -19,6 +20,7 @@ const ContractMachineryInsurance = () => {
           name="keywords"
           content="Contractor's Plant and Machinery Insurance, NIB construction insurance, machinery coverage, plant insurance, construction equipment protection, Notion Insurance Broker construction insurance, contractor insurance, project continuity, machinery risk management"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/contractor-plant-machinery-insurance" />
       </Helmet>
 
       <div>

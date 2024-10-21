@@ -3,6 +3,7 @@ import React from "react";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
 import { Helmet } from "react-helmet";
 import InquiryCard from "./RelativeComponents/InquiryCard";
+
 const TravelInsurance = () => {
   const insurancetypes = [
     {
@@ -34,6 +35,10 @@ const TravelInsurance = () => {
           <meta
             name="keywords"
             content="travel insurance, NIB travel insurance, Notion Insurance Broker travel insurance, trip cancellation insurance, medical emergency insurance, lost luggage coverage, travel protection, overseas insurance, travel safety, travel insurance policies"
+          />
+          <link
+            rel="canonical"
+            href="https://www.notioninsurance.com/travel-insurance"
           />
         </Helmet>
 

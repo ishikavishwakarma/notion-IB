@@ -1,6 +1,6 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 const GeneralLiability = () => {
   return (
@@ -16,6 +16,7 @@ const GeneralLiability = () => {
           name="keywords"
           content="general liability insurance, NIB general liability insurance, Notion Insurance Broker general liability insurance, business liability coverage, third-party insurance, property damage insurance, bodily injury insurance, business protection, commercial liability insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/general-liability-insurance" />
       </Helmet>
 
       <div>

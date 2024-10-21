@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const CriticalCare = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const CriticalCare = () => {
           name="keywords"
           content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/critical-care-plan" />
       </Helmet>
 
       <div>

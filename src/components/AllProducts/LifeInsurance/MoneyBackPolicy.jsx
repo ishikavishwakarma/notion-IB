@@ -1,8 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -45,6 +46,7 @@ const MoneyBackPolicy = () => {
           name="keywords"
           content="Money Back Policy, NIB Money Back Policy, Notion Insurance Broker Money Back Policy, life insurance, survival benefits, financial security, tax benefits, full sum assured, policyholder protection, insurance plans"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/money-back-policy" />
       </Helmet>
 
       <div>

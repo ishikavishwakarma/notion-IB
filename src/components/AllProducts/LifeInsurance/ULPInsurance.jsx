@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 
 const ULPInsurance = () => {
   return (
@@ -17,6 +18,7 @@ const ULPInsurance = () => {
           name="keywords"
           content="ULIP insurance, NIB ULIP insurance, Notion Insurance Broker ULIP, unit linked insurance plans, investment insurance, life coverage, financial protection, wealth creation, dual benefit insurance, secure future"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/ulip-insurance" />
       </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

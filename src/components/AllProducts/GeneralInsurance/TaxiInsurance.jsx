@@ -7,8 +7,9 @@ import {
 } from "@material-tailwind/react";
 import TableComponent from "./RelativeComponents/TableComponent";
 import ImageTextCard from "./RelativeComponents/ImageText";
-import { Helmet } from "react-helmet";
 import InquiryCard from "./RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
   "Comprehensive Insurance",
@@ -59,21 +60,23 @@ const COLUMN_WIDTHS = [
 const TaxiInsurance = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Taxi Insurance - NIB</title>
-        <meta
-          name="description"
-          content="Get specialized taxi insurance from Notion Insurance Broker Pvt. Ltd. Our comprehensive policies provide coverage for accidents, liability, and passenger protection, ensuring your taxi business is secure and compliant."
-        />
-        <meta
-          name="keywords"
-          content="taxi insurance, NIB taxi insurance, Notion Insurance Broker taxi insurance, taxi coverage, passenger insurance, commercial vehicle insurance, liability coverage, taxi business insurance, accident protection, taxi fleet insurance"
-        />
-      </Helmet>
+ 
+        <Helmet>
+  <meta charSet="utf-8" />
+  <title>Taxi Insurance - NIB</title>
+  <meta
+    name="description"
+    content="Get specialized taxi insurance from Notion Insurance Broker Pvt. Ltd. Our comprehensive policies provide coverage for accidents, liability, and passenger protection, ensuring your taxi business is secure and compliant."
+  />
+  <meta
+    name="keywords"
+    content="taxi insurance, NIB taxi insurance, Notion Insurance Broker taxi insurance, taxi coverage, passenger insurance, commercial vehicle insurance, liability coverage, taxi business insurance, accident protection, taxi fleet insurance"
+  />
+  <link rel="canonical" href="https://www.notioninsurance.com/taxi-insurance" />
+</Helmet>
 
-      <div>
-        <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
+            <div>
+            <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
           <CardBody className="px-1">
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Taxi Insurance Plans
@@ -82,8 +85,6 @@ const TaxiInsurance = () => {
             <div className="mt-4 flex w-full justify-center gap-4">
               <InquiryCard insurerName="Taxi Insurance" />
             </div>
-
-            <div>
               <ImageTextCard
                 heading="A Guide to Taxi Insurance"
                 subheading=" Get taxi  insurance & protect your vehicle & yourself."
@@ -92,7 +93,6 @@ const TaxiInsurance = () => {
                 description="Taxi insurance, also known as motor insurance or four-wheeler insurance, is a contractual agreement between a taxi owner and an insurance provider. This policy provides financial protection in the event of damage or loss to the vehicle due to unforeseen incidents like accidents, theft, or natural disasters. More than just a legal requirement, taxi insurance offers peace of mind by covering repair costs and safeguarding your investment.
 No matter how careful you are on the road, accidents happen, and repair expenses can be overwhelming. Taxi insurance steps in to reduce the financial burden of these incidents."
               />
-            </div>
             <br />
 
             <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300">

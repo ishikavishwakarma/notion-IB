@@ -1,8 +1,9 @@
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 
 const ChildInsurance = () => {
   return (
@@ -18,6 +19,7 @@ const ChildInsurance = () => {
           name="keywords"
           content="child insurance, NIB child insurance, Notion Insurance Broker child insurance, children's future, financial protection, education savings plan, life coverage, family security, child investment, affordable insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/child-insurance" />
       </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

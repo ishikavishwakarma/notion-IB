@@ -14,8 +14,9 @@ import {
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
-import { Helmet } from "react-helmet";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 
 export function Contact() {
   const location = useLocation();
@@ -78,6 +79,8 @@ export function Contact() {
           name="keywords"
           content="NIB contact, Notion Insurance Broker contact, insurance services, IRDA direct broker, insurance solutions, risk management, insurance experts, contact NIB, insurance broker India, IRDA Licence No. 619, valid till 2026"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/contact" />
+
       </Helmet>
 
       <section className="md:px-8 py-8 lg:py-16 w-full">

@@ -1,8 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -50,6 +51,7 @@ const TermLifeInsurance = () => {
           name="keywords"
           content="term insurance, NIB term insurance, Notion Insurance Broker term insurance, life coverage, financial protection, affordable insurance, insurance plans, temporary life insurance, risk management, family security"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/term-insurance" />
       </Helmet>
 
       <div>

@@ -14,8 +14,8 @@ import {
 } from "@material-tailwind/react";
 import TableComponent from "./RelativeComponents/TableComponent";
 import ImageTextCard from "./RelativeComponents/ImageText";
-import { Helmet } from "react-helmet";
 import InquiryCard from "./RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
 
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
@@ -69,6 +69,10 @@ const Investmentplans = () => {
           name="keywords"
           content="investment plans, NIB investment plans, Notion Insurance Broker investment plans, wealth management, financial security, investment options, financial goals, risk management, savings plans, long-term investments"
         />
+        <link
+          rel="canonical"
+          href="https://www.notioninsurance.com/investment-plans"
+        />
       </Helmet>
 
       <div>
@@ -81,17 +85,14 @@ const Investmentplans = () => {
             <div className="mt-4 flex w-full justify-center gap-4">
               <InquiryCard insurerName="Investment Plans" />
             </div>
-
-            <div>
-              <ImageTextCard
-                heading="A Guide to Investment plans"
-                subheading=" Get Investment plans  insurance & protect your Investment  ."
-                imageSrc="https://static.vecteezy.com/system/resources/thumbnails/014/580/138/small/businessman-in-black-formal-suit-celebrating-with-clenched-fists-in-front-of-positive-growing-bar-chart-with-coin-ornament-3d-rendering-of-business-investment-concept-png.png"
-                altText="Investment plans "
-                description="
+            <ImageTextCard
+              heading="A Guide to Investment plans"
+              subheading=" Get Investment plans  insurance & protect your Investment  ."
+              imageSrc="https://static.vecteezy.com/system/resources/thumbnails/014/580/138/small/businessman-in-black-formal-suit-celebrating-with-clenched-fists-in-front-of-positive-growing-bar-chart-with-coin-ornament-3d-rendering-of-business-investment-concept-png.png"
+              altText="Investment plans "
+              description="
 Investment Plans Insurance is a financial product that combines insurance coverage with an investment component. This type of plan not only provides life insurance protection to the policyholder but also allows them to invest a portion of their premiums into various financial instruments, such as stocks, bonds, or mutual funds."
-              />
-            </div>
+            />
             <br />
 
             <Card className="mt-6 w-full text-center">

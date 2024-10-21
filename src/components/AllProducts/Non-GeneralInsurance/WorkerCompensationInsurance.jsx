@@ -1,6 +1,6 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 
 const WorkerCompensationInsurance = () => {
@@ -18,6 +18,7 @@ const WorkerCompensationInsurance = () => {
           name="keywords"
           content="workers' insurance, NIB workers' insurance, Notion Insurance Broker workers' insurance, employee insurance, workplace injury coverage, workers' compensation, liability insurance, employee safety, health insurance for workers, occupational insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/workers-insurance" />
       </Helmet>
 
       <div>

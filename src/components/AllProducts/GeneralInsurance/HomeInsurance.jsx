@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "./RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const HomeInsurance = () => {
   return (
     <>
@@ -16,6 +17,10 @@ const HomeInsurance = () => {
           <meta
             name="keywords"
             content="home insurance, property insurance, NIB home insurance, Notion Insurance Broker home insurance, house insurance, home coverage, home protection, theft protection, damage coverage, natural disaster insurance, home insurance policies"
+          />
+          <link
+            rel="canonical"
+            href="https://www.notioninsurance.com/home-insurance"
           />
         </Helmet>
 

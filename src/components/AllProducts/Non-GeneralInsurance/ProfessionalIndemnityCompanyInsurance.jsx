@@ -1,6 +1,6 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 
 const ProfessionalIndemnityCompanyInsurance = () => {
@@ -18,6 +18,7 @@ const ProfessionalIndemnityCompanyInsurance = () => {
           name="keywords"
           content="Professional Indemnity Insurance, PII for Companies, business liability insurance, professional negligence coverage, error and omission insurance, client financial loss protection, legal defense for companies, indemnity insurance for businesses, Notion Insurance Broker professional indemnity"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/professional-indemnity-companies-insurance" />
       </Helmet>
 
       <div>

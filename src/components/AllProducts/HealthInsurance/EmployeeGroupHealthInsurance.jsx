@@ -1,8 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -46,6 +47,7 @@ const EmployeeGroupHealthInsurance = () => {
           name="keywords"
           content="Employee Group Health Insurance, NIB Employee Health Insurance, Notion Insurance Broker employee insurance, group health coverage, employee medical insurance, corporate health plans, employee wellness, hospitalization coverage, employee benefits, business health insurance"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/employee-group-health-insurance" />
       </Helmet>
 
       <div>

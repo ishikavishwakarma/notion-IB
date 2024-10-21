@@ -1,6 +1,6 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 
 const ProfessionalIndemnityDoctorsInsurance = () => {
@@ -12,11 +12,12 @@ const ProfessionalIndemnityDoctorsInsurance = () => {
         <meta
           name="description"
           content="Safeguard your medical practice with Professional Indemnity Insurance for Doctors from Notion Insurance Broker Pvt. Ltd. Our policies cover medical negligence, errors, and patient injury claims, ensuring comprehensive protection for healthcare professionals."
-        />
-        <meta
-          name="keywords"
-          content="Professional Indemnity Insurance, PII for Doctors, NIB insurance for doctors, Notion Insurance Broker professional indemnity, medical negligence coverage, healthcare insurance, doctor liability insurance, medical malpractice protection, physician insurance, indemnity coverage"
-        />
+          />
+          <meta
+            name="keywords"
+            content="Professional Indemnity Insurance, PII for Doctors, NIB insurance for doctors, Notion Insurance Broker professional indemnity, medical negligence coverage, healthcare insurance, doctor liability insurance, medical malpractice protection, physician insurance, indemnity coverage"
+          />
+           <link rel="canonical" href="https://www.notioninsurance.com/professional-indemnity-doctors-insurance" />
       </Helmet>
 
       <div>

@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const OneCrHealthCover = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const OneCrHealthCover = () => {
           name="keywords"
           content="1 Crore Health Insurance, NIB 1 Crore Health Plan, Notion Insurance Broker health insurance, comprehensive health coverage, medical expense insurance, hospitalization coverage, critical illness insurance, family health protection, health insurance plans, financial security"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/one-cr-health-cover" />
       </Helmet>
 
       <div>

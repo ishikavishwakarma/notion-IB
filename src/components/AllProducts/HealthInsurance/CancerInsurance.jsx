@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const CancerInsurance = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const CancerInsurance = () => {
           name="keywords"
           content="Cancer Insurance, NIB Cancer Insurance, Notion Insurance Broker Cancer Insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/cancer-insurance" />
       </Helmet>
 
       <div>
