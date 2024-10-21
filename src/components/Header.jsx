@@ -136,7 +136,7 @@ function NavListMenu({ closeMenu }) {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base gap-2 py-2 px-1 font-medium text-gray-900"
+              className="flex items-center text-base gap-2 py-2 pr-4 lg:px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -248,7 +248,7 @@ function NavListMenuDesktop() {
   );
 }
 function NavList({ closeMenu }) {
-  const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
+  const isMobileOrTablet = useMediaQuery({ maxWidth: 958 });
   return (
     <List className=" mb-6  p-0 lg:mt-0 lg:mb-0 lg:flex-row ">
       <Typography
