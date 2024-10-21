@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Input,
@@ -15,8 +15,55 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { Helmet } from "react-helmet";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export function Contact() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    fullName: "",
+    mobileNo: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const insurerName = queryParams.get("subject");
+  
+    if (insurerName && insurerName !== formData.subject) {
+      setFormData((prevData) => ({
+        ...prevData,
+        subject: insurerName,
+      }));
+    }
+    navigate("/contact");
+  }, [location.search, navigate]);
+
+  // General handleChange function
+  const handleChange = (e) => {
+    const { name, value } = e.target; // Destructure name and value from the event target
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value, // Update the specific field based on the name
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    console.log("Form Data:", formData); // Log the form data or send it to your API
+
+    // Clear the form if needed
+    setFormData({
+      fullName: "",
+      mobileNo: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
   return (
     // am
     <>
@@ -49,8 +96,8 @@ export function Contact() {
             hearing from you.
           </Typography>
 
-          <div className="bg-white md:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
-            <div className="md:flex items-center justify-between md:gap-10 md:px-5 w-full ">
+          <div className="bg-white lg:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
+            <div className="lg:flex items-center justify-between md:gap-10 md:px-5 w-full ">
               <Card className=" md:w-[700px] p-0 shadow-none ">
                 <CardBody className="flex flex-col items-center gap-3  py-20  border rounded-xl shadow-xl">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
@@ -101,91 +148,113 @@ export function Contact() {
               </Card>
 
               <form
-                action="#"
-                className="flex flex-col gap-4 md:w-3/4  px-2 py-4"
-              >
-                <Typography variant="h2" color="blue-gray" className="py-2 ">
-                  Fill Up The Form
-                </Typography>
+      onSubmit={handleSubmit} // Attach the submit handler
+      className="flex flex-col gap-4 md:w-3/4  px-2 py-4"
+    >
+      <Typography variant="h2" color="blue-gray" className="py-2">
+        Fill Up The Form
+      </Typography>
 
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <Typography
-                      variant="small"
-                      className="mb-2 text-left font-medium !text-gray-900"
-                    >
-                      First Name
-                    </Typography>
-                    <input
-                      className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-                      type="text"
-                      placeholder="First Name"
-                    />
-                    
-                  </div>
-                  <div>
-                    <Typography
-                      variant="small"
-                      className="mb-2 text-left font-medium !text-gray-900"
-                    >
-                      Last Name
-                    </Typography>
-                    <input
-                      className="border border-gray-600 rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-                      type="text"
-                      placeholder="Last Name"
-                    />
-                   
-                  </div>
-                </div>
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <Typography
+            variant="small"
+            className="mb-2 text-left font-medium !text-gray-900"
+          >
+            Full Name
+          </Typography>
+          <input
+            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+            type="text"
+            placeholder="Enter Full Name"
+            name="fullName" // Set name attribute for identification
+            value={formData.fullName} // Bind input value to fullName state
+            onChange={handleChange} // Use the general handleChange function
+          />
+        </div>
+        <div>
+          <Typography
+            variant="small"
+            className="mb-2 text-left font-medium !text-gray-900"
+          >
+            Mobile No
+          </Typography>
+          <input
+            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+            type="text"
+            placeholder="Enter Mobile Number"
+            name="mobileNo" // Set name attribute for identification
+            value={formData.mobileNo} // Bind input value to mobileNo state
+            onChange={handleChange} // Use the general handleChange function
+          />
+        </div>
+        <div>
+          <Typography
+            variant="small"
+            className="mb-2 text-left font-medium !text-gray-900"
+          >
+            Your Email
+          </Typography>
+          <input
+            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+            type="text"
+            placeholder="Enter Your Email"
+            name="email" // Set name attribute for identification
+            value={formData.email} // Bind input value to email state
+            onChange={handleChange} // Use the general handleChange function
+          />
+        </div>
+        <div>
+          <Typography
+            variant="small"
+            className="mb-2 text-left font-medium !text-gray-900"
+          >
+            Your Subject
+          </Typography>
+          <input
+            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+            type="text"
+            placeholder="Enter Your Subject"
+            name="subject" // Set name attribute for identification
+            value={formData.subject} // Bind input value to subject state
+            onChange={handleChange} // Use the general handleChange function
+          />
+        </div>
+      </div>
 
-                <div>
-                  <Typography
-                    variant="small"
-                    className="mb-2 text-left font-medium !text-gray-900"
-                  >
-                    Your Email
-                  </Typography>
-                  <input
-                    className="border border-gray-600 rounded w-full py-2.5  px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-                    type="text"
-                    placeholder="Your Email"
-                  />
-                 
-                </div>
-                <div>
-                  <Typography
-                    variant="small"
-                    className="mb-2 text-left font-medium !text-gray-900"
-                  >
-                    Your Message
-                  </Typography>
-
-                  <Textarea
-                    rows={6}
-                    placeholder="Message....."
-                    name="message"
-                    className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
-                    containerProps={{
-                      className: "!min-w-full",
-                    }}
-                    labelProps={{
-                      className: "hidden",
-                    }}
-                  />
-                  
-                </div>
-                <Button className="bg-blue-800 border-none p-0 w-[100%] h-[38px] ">
-                  Send message
-                </Button>
-              </form>
+      <div>
+        <Typography
+          variant="small"
+          className="mb-2 text-left font-medium !text-gray-900"
+        >
+          Your Message
+        </Typography>
+        <Textarea
+          rows={6}
+          placeholder="Message....."
+          name="message" // Set name attribute for identification
+          value={formData.message} // Bind textarea value to message state
+          onChange={handleChange} // Use the general handleChange function
+          className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
+          containerProps={{
+            className: "!min-w-full",
+          }}
+          labelProps={{
+            className: "hidden",
+          }}
+        />
+      </div>
+      <Button type="submit" className="bg-blue-800 border-none p-0 w-[100%] h-[38px] ">
+        Send Message
+      </Button>
+    </form>
             </div>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.1539426375944!2d77.44726371271773!3d23.196702225323936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43747f04ada9%3A0x7e9aa8a8f98f0234!2sNOTION%20INSURANCE%20BROKER%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1727776089315!5m2!1sen!2sin"
               width="100%"
               height="250"
-              allowfullscreen=""
+             
               loading="lazy"
             ></iframe>
           </div>

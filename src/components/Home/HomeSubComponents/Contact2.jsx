@@ -14,13 +14,13 @@ const Contact2 = () => {
               <div className="our-cta-box text-center">
                 <div className="our-contract-title mb-6">
                   <h2 className="text-3xl lg:text-5xl font-bold text-white">
-                    Find Your Insurance Agent
+                    For any Enquiry Regarding
                   </h2>
                 </div>
                 <div className="our-contract-body">
                   <p className="mb-4 text-lg text-white animate-fadeInUp">
                     At Notion Insurance Broker Pvt Ltd, we understand that
-                    choosing the right insurance can be overwhelming. That's why
+                    choosing the right insurance can be overwhelming. That&apos;s why
                     we make it easy for you to connect with experienced
                     insurance agents who are committed to finding the best
                     coverage tailored to your needs.

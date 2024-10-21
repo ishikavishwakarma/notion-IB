@@ -1,18 +1,10 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import { Helmet } from "react-helmet";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 
 const DirectorOfficersInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Directors and officers (D&O) Insurance",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      //   link:'https://www.ilgi.co/D2DBB68FAE'
-    },
-  ];
+  
   return (
     <>
       <Helmet>
@@ -33,14 +25,10 @@ const DirectorOfficersInsurance = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Directors and officers Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Director & Officers Plan" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-2 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Directors and officers Insurance
