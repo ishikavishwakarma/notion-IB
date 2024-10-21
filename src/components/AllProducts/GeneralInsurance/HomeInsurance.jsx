@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from '@material-tailwind/react';
 import React from 'react'
 import InsuranceCard from './RelativeComponents/InsuranceCard';
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
+
 const HomeInsurance = () => {
   const insuranceOptions = [
     {
@@ -28,6 +29,7 @@ const HomeInsurance = () => {
     name="keywords"
     content="home insurance, property insurance, NIB home insurance, Notion Insurance Broker home insurance, house insurance, home coverage, home protection, theft protection, damage coverage, natural disaster insurance, home insurance policies"
   />
+  <link rel="canonical" href="https://www.notioninsurance.com/home-insurance" />
 </Helmet>
 
       <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

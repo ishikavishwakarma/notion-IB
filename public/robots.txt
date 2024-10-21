@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /newportal/index/signin/
+Disallow: /private/
+Disallow: /thank-you/
+Allow: /
+
+Sitemap: https://www.notioninsurance.com/sitemap.xml

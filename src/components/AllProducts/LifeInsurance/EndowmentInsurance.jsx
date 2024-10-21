@@ -2,7 +2,8 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -59,6 +60,7 @@ const EndowmentInsurance = () => {
           name="keywords"
           content="endowment insurance, NIB endowment insurance, Notion Insurance Broker endowment insurance, savings plan, life cover, financial security, investment insurance, maturity benefit, family protection, insurance policies"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/endowment-insurance" />
       </Helmet>
 
       <div>

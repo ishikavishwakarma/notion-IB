@@ -2,7 +2,8 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -54,6 +55,7 @@ const SeniorCitizenPlan = () => {
           name="keywords"
           content="Senior Citizen Health Insurance, NIB Senior Health Plan, Notion Insurance Broker Senior Plan, health insurance for seniors, medical coverage for elderly, senior citizen hospitalization insurance, elderly healthcare, retirement health plans, specialized care for seniors"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/senior-citizen-plan" />
       </Helmet>
 
       <div>

@@ -18,7 +18,8 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 const TABLE_HEADERS_PAGE_1 = [
     "Point of Difference",
@@ -88,6 +89,7 @@ const Investmentplans = () => {
     name="keywords"
     content="investment plans, NIB investment plans, Notion Insurance Broker investment plans, wealth management, financial security, investment options, financial goals, risk management, savings plans, long-term investments"
   />
+  <link rel="canonical" href="https://www.notioninsurance.com/investment-plans" />
 </Helmet>
 
             <div>

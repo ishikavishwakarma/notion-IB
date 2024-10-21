@@ -9,7 +9,7 @@ const LINKS = [
       { text: "Home", url: "/" },
       { text: "Insurance", url: "/" },
       { text: "About Us", url: "/about-us" },
-      { text: "Our Partner", url: "/our-partner" },
+      { text: "Our Partners", url: "/our-partners" },
       { text: "Contact Us", url: "/contact" },
     ],
   },

@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 const ProfessionalIndemnityDoctorsInsurance = () => {
   const insuranceOptions = [
@@ -26,6 +27,7 @@ const ProfessionalIndemnityDoctorsInsurance = () => {
             name="keywords"
             content="Professional Indemnity Insurance, PII for Doctors, NIB insurance for doctors, Notion Insurance Broker professional indemnity, medical negligence coverage, healthcare insurance, doctor liability insurance, medical malpractice protection, physician insurance, indemnity coverage"
           />
+           <link rel="canonical" href="https://www.notioninsurance.com/professional-indemnity-doctors-insurance" />
       </Helmet>
 
       <div>

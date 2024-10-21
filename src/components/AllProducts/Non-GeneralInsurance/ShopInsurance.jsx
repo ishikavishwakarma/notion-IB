@@ -1,7 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const ShopInsurance = () => {
   const insuranceOptions = [
     {
@@ -26,6 +27,7 @@ const ShopInsurance = () => {
           name="keywords"
           content="shop insurance, NIB shop insurance, Notion Insurance Broker shop insurance, retail insurance, business property insurance, liability insurance, theft coverage, shop protection, small business insurance, commercial insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/shop-insurance" />
       </Helmet>
 
       <div>

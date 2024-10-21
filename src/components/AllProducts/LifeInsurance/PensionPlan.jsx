@@ -3,7 +3,8 @@ import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import ImageTextCard from "../GeneralInsurance/RelativeComponents/ImageText";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Key Features", "Benefits Offered"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -50,6 +51,7 @@ const PensionPlan = () => {
           name="keywords"
           content="pension plans, retirement savings, NIB pension plans, Notion Insurance Broker pension, financial security, retirement income, long-term investment, retirement planning, secure future, annuities"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/pension-plan" />
       </Helmet>
 
       <div>

@@ -18,7 +18,8 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 const TABLE_HEADERS_PAGE_1 = [
   "Feature/Type",
@@ -104,6 +105,7 @@ const TwoWheelerInsurance = () => {
     name="keywords"
     content="two-wheeler insurance, bike insurance, scooter insurance, NIB two-wheeler insurance, Notion Insurance Broker two-wheeler insurance, two-wheeler insurance coverage, bike accident insurance, scooter theft protection, two-wheeler damage coverage, motorcycle insurance policies"
   />
+  <link rel="canonical" href="https://www.notioninsurance.com/two-wheeler-insurance" />
 </Helmet>
 
         <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

@@ -2,7 +2,8 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = ["Points", "Description"];
 
 const TABLE_ROWS_PAGE_1 = [
@@ -64,6 +65,7 @@ const ContractRiskInsurance = () => {
     name="keywords"
     content="Contractor All Risk Insurance, NIB Contractor All Risk Insurance, Notion Insurance Broker Contractor All Risk Insurance, construction insurance, contract works coverage, machinery insurance, third-party liability insurance, construction risk management, business protection in construction"
   />
+   <link rel="canonical" href="https://www.notioninsurance.com/contractor-risk-insurance" />
       </Helmet>
 
       <div>
