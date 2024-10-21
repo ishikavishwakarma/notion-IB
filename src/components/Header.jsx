@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import { MdEmail, MdLocationPin } from "react-icons/md";
+import { MdAddCall, MdEmail, MdLocationPin } from "react-icons/md";
 import {
   TiSocialFacebook,
   TiSocialPinterest,
@@ -344,13 +344,43 @@ const Header = () => {
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
           <a
             className="flex items-center gap-2 "
-            href="mailto:noreplay@notion.com"
+            href="mailto:info@notioninsurance.com"
           >
             <span className="text-blue-700">
               <MdEmail />
             </span>
-            noreplay@notion.com
-          </a>
+          
+              info@notioninsurance.com
+            </a>
+        
+        </button>
+        <span className="border-l h-3 mx-6 max-sm:hidden"></span>
+        <button type="button" className="text-gray-800 text-xs max-sm:my-2">
+          <a
+            className="flex items-center gap-2 "
+            href="tel:91-9302182475"
+          >
+            <span className="text-blue-700">
+            <MdAddCall />
+            </span>
+          
+              91-9302182475
+            </a>
+        
+        </button>
+        <span className="border-l h-3 mx-6 max-sm:hidden"></span>
+        <button type="button" className="text-gray-800 text-xs max-sm:my-2">
+          <a
+            className="flex items-center gap-2 "
+            href="tel:0755-4911343"
+          >
+            <span className="text-blue-700">
+            <MdAddCall />
+            </span>
+          
+              0755-4911343
+            </a>
+        
         </button>
         <div className="sm:ml-auto text-gray-800">
           <div>
@@ -364,7 +394,7 @@ const Header = () => {
         </div>
       </section>
 
-      <Navbar className="max-w-full sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('assets/images/footer/footer.png')] bg-cover bg-center bg-no-repeat">
+      <Navbar className="max-w-full md:sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/' className="h-16 w-32 md:w-44">
             <img

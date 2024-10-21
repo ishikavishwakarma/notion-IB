@@ -4,15 +4,6 @@ import { Link } from "react-router-dom";
 
 const LINKS = [
   {
-    title: "Licence",
-    items: [
-      { text: "Licence No. 619", url: "/" },
-      { text: "IRDA Direct Broker Code: IRDA/ DB 693/17", url: "/" },
-      { text: "Valid till: 02/10/2026", url: "/" },
-      { text: "CIN: U66010MP2016PTC041677", url: "/" },
-    ],
-  },
-  {
     title: "Our Links",
     items: [
       { text: "Home", url: "/" },
@@ -22,6 +13,8 @@ const LINKS = [
       { text: "Contact Us", url: "/contact" },
     ],
   },
+  
+  
   {
     title: "Legal and Admin Policies",
     items: [
@@ -29,6 +22,15 @@ const LINKS = [
       { text: "Terms & Conditions", url: "/" },
       { text: "FAQ's", url: "/" },
       { text: "Career", url: "/" },
+    ],
+  },
+  {
+    title: "Licence",
+    items: [
+      { text: "Licence No. 619", url: "/" },
+      { text: "IRDA Direct Broker Code: IRDA/ DB 693/17", url: "/" },
+      { text: "Valid till: 02/10/2026", url: "/" },
+      { text: "CIN: U66010MP2016PTC041677", url: "/" },
     ],
   },
 ];
@@ -39,10 +41,123 @@ const Footer = () => {
   return (
     <footer className="mt-1 relative footer-img w-full  bg-cover bg-center pt-3">
       <div className="mx-auto w-full ">
-        <div className="grid grid-cols-1 justify-center gap-3 md:grid-cols-2 lg:grid-cols-5 px-10">
-          <Typography className="w-56 my-6  flex flex-col gap-10">
+        <div className="flex justify-between flex-col lg:flex-row gap-4 items-center px-2 lg:px-4">
+          <Typography className="w-56 my-6 justify-center items-center flex flex-col ">
             <img src="assets/images/header/logo.png" alt="NIB" />
-            <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+            <p className="text-black font-medium text-xs  mb-2">
+            Notion Insurance Broker Pvt. Ltd. delivers customized insurance solutions designed to meet the diverse needs of businesses and individuals. 
+            </p>
+          </Typography>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:w-[80%] md:justify-between lg:grid-cols-4 gap-4 px-4  lg:justify-center ">
+            {LINKS.map(({ title, items }) => (
+              <ul key={title}>
+                <Typography
+                  variant="h6"
+                  className="mb-3 max-w-max text-black opacity-90"
+                >
+                  {title}
+                </Typography>
+                {items.map(({ text, url }) => (
+                  <li key={text}>
+                    <Typography
+                      as="a"
+                      // href={url}
+                      className="py-1.5 text-xs transition-colors font-medium text-gray-900 hover:text-blue-gray-900"
+                    >
+                      <Link to={url}> {text} </Link>
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            ))}
+            <div className="lg:mx-auto text-left ">
+              <Typography
+                variant="h6"
+                className="mb-3 max-w-max text-black opacity-90"
+              >
+                Get In Touch
+              </Typography>
+              {/* <p className="text-black text-xs leading-6 mb-2">
+            If you have any questions, feel free to reach out to us at any time.
+            </p> */}
+              {/* <div>
+                <p className="mb-2 text-sm text-gray-800 flex items-center justify-start">
+                  <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                      <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                    </svg>
+                  </span>
+                  <h5 className="font-bold">Emails</h5>
+                  
+                </p>
+                <ul className="list-none mb-3 mt-2">
+                  <li>
+                    <a
+                      href="mailto:contactus@notioninsurance.com"
+                      className="text-gray-900 text-sm hover:gray-800"
+                    >
+                      contactus@notioninsurance.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:pospsupport@notioninsurance.com"
+                      className="text-gray-900 text-sm hover:gray-800"
+                    >
+                      pospsupport@notioninsurance.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@notioninsurance.com"
+                      className="text-gray-900 text-sm hover:gray-800"
+                    >
+                      info@notioninsurance.com
+                    </a>
+                  </li>
+                </ul>
+                <p className="mb-2 mt-2 text-sm text-gray-800 flex items-center justify-start">
+                  <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <h5 className="font-bold">Mobile No</h5>
+                </p>
+                <ul className="list-none mt-1">
+                  <li>
+                    <a
+                      href="tel:0755-4911343"
+                      className="text-gray-900 text-sm hover:gray-800"
+                    >
+                      0755-4911343
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="tel:9302182475"
+                      className="text-gray-900 text-sm hover:gray-800"
+                    >
+                      91-9302182475
+                    </a>
+                  </li>
+                </ul>
+              </div> */}
+             <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
               <Typography
                 as="a"
                 href="#"
@@ -130,152 +245,9 @@ const Footer = () => {
                 </svg>
               </Typography>
             </div>
-          </Typography>
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2 ">
-                        {LINKS.map(({ title, items }) => (
-                            <ul key={title}>
-                                <Typography
-                                    variant="h6"
-                                    color="blue-gray"
-                                    className="mb-3  max-w-max opacity-90"
-                                >
-                                    {title}
-                                </Typography>
-                                {items.map((link) => (
-                                    <li key={link}>
-                                        <Typography
-                                            as="a"
-                                            href="#"
-                                            className="py-1.5 text-sm transition-colors text-gray-900 hover:text-blue-gray-900"
-                                        >
-                                            {link}
-                                        </Typography>
-                                    </li>
-                                ))}
-                            </ul>
-                        ))}
-                    </div> */}
-
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center col-span-2"> */}
-          {LINKS.map(({ title, items }) => (
-            <ul key={title}>
-              <Typography
-                variant="h6"
-                className="mb-3 max-w-max text-black opacity-90"
-              >
-                {title}
-              </Typography>
-              {items.map(({ text, url }) => (
-                <li key={text}>
-                  <Typography
-                    as="a"
-                   
-                    // href={url}
-                    className="py-1.5 text-xs transition-colors font-medium text-gray-900 hover:text-blue-gray-900"
-                  >
-                    <Link to={url}> {text} </Link>
-                  </Typography>
-                </li>
-              ))}
-            </ul>
-          ))}
-          <div className="lg:mx-auto text-left ">
-            <Typography
-              variant="h6"
-              className="mb-3 max-w-max text-black opacity-90"
-            >
-              Get In Touch
-            </Typography>
-            {/* <p className="text-black text-xs leading-6 mb-2">
-            If you have any questions, feel free to reach out to us at any time.
-            </p> */}
-            <div>
-       
-              <p className="mb-2 text-sm text-gray-800 flex items-center justify-start">
-            <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor">
-              <path
-                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-              <path
-                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-            </svg>
-          </span>
-          <h5 className="font-bold">Emails</h5> 
-      {/* contactus@notioninsurance.com
-      pospsupport@notioninsurance.com
-      info@notioninsurance.com */}
-        </p>
-      <ul className="list-none mb-3 mt-2">
-          <li>
-            <a href="mailto:contactus@notioninsurance.com" className="text-gray-900 hover:gray-800">
-            contactus@notioninsurance.com
-            </a>
-          </li>
-          <li>
-            <a href="mailto:pospsupport@notioninsurance.com" className="text-gray-900 hover:gray-800">
-              pospsupport@notioninsurance.com
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@notioninsurance.com" className="text-gray-900 hover:gray-800">
-              info@notioninsurance.com
-            </a>
-          </li>
-        </ul>    
-        <p className="mb-2 mt-2 text-sm text-gray-800 flex items-center justify-start">
-          <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                clipRule="evenodd" />
-            </svg>
-          </span>
-          <h5 className="font-bold">Mobile No</h5> 
-          
-         
-        </p>
-        <ul className="list-none mt-1">
-          <li>
-            <p  className="text-gray-900 hover:gray-800">
-            + 0755-4911343
-            </p>
-          </li>
-          <li>
-            <p  className="text-gray-900 hover:gray-800">
-            + 91-9302182475
-            </p>
-          </li>
-          
-        </ul>  
-      </div>
-            {/* <a className="flex items-center justify-center gap-2 border border-blue-700 rounded-full py-3 px-6 w-fit lg:mx-0  text-sm text-blue-700 font-semibold transition-all duration-500 hover:bg-indigo-50">
-              Subscribe
-              <svg
-                width="15"
-                height="12"
-                viewBox="0 0 15 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5"
-                  stroke="#3DA1F2"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a> */}
+            </div>
           </div>
         </div>
-        {/* </div> */}
 
         <div className=" flex items-center justify-center w-full border-t bg-gray-700 py-2 ">
           <Typography
