@@ -136,7 +136,7 @@ function NavListMenu({ closeMenu }) {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center text-base gap-2 py-2 px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -216,7 +216,7 @@ function NavListMenuDesktop() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center text-base py-2 gap-2 px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -250,7 +250,7 @@ function NavListMenuDesktop() {
 function NavList({ closeMenu }) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
   return (
-    <List className=" mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className=" mb-6  p-0 lg:mt-0 lg:mb-0 lg:flex-row ">
       <Typography
         as="a"
         variant="small"
@@ -258,7 +258,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          <ListItem className="flex items-center text-base py-2 px-1 ">
             Home
           </ListItem>
         </Link>
@@ -275,7 +275,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/about-us" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
             About Us
           </ListItem>
         </Link>
@@ -299,7 +299,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/under-process" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
             Claim
           </ListItem>
         </Link>
@@ -311,7 +311,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/contact" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
             Contact Us
           </ListItem>
         </Link>
@@ -406,11 +406,11 @@ const Header = () => {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden h-10 gap-2 lg:flex">
+          <div className="hidden  xl:h-10 lg:gap-2  xl:gap-5 lg:flex">
           <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
            
             <Button
-              className="text-sm py-2.5"
+              className="text-sm w-20 lg:px-0 xl:px-2  py-2  "
               variant="outlined"
               color="blue"
             >
@@ -419,7 +419,7 @@ const Header = () => {
 
           </Link>
           <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
-            <Button variant="gradient" color="blue" className="py-2.5 text-sm">
+            <Button variant="gradient" color="blue" className="py-2 w-32 lg:px-0 xl:px-2 text-sm">
               Become a POSP
             </Button>
           </Link>
