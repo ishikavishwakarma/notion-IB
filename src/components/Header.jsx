@@ -286,15 +286,9 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-<<<<<<< HEAD
-        <Link to="/our-partner" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
-            Our Partner
-=======
         <Link to="/our-partners" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
             Our Partners
->>>>>>> 4b15a1806e29bbfd50ad0c3556bcbe14278aa43e
           </ListItem>
         </Link>
       </Typography>
