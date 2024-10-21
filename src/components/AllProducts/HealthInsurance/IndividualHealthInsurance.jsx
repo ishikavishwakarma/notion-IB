@@ -3,7 +3,8 @@ import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard"
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import ImageTextCard from "../GeneralInsurance/RelativeComponents/ImageText";
 import InsuranceTypes from "../GeneralInsurance/RelativeComponents/TypesInsurance";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const HealthInsurance = () => {
   const insurancetypes = [
     {
@@ -44,6 +45,7 @@ const HealthInsurance = () => {
           name="keywords"
           content="health insurance, individual health insurance, NIB health insurance, Notion Insurance Broker, medical insurance, family health cover, hospitalization coverage, preventive care, affordable health plans, comprehensive health coverage, health protection"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/health-insurance" />
       </Helmet>
 
       <div>

@@ -286,9 +286,9 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/our-partner" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
-            Our Partner
+        <Link to="/our-partners" onClick={closeMenu}>
+          <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
+            Our Partners
           </ListItem>
         </Link>
       </Typography>

@@ -18,7 +18,8 @@ import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 
 const TABLE_HEADERS_PAGE_1 = [
@@ -106,6 +107,8 @@ const CarInsurance = () => {
     name="keywords"
     content="car insurance, vehicle insurance, NIB car insurance, Notion Insurance Broker car insurance, car insurance coverage, auto insurance, accident coverage, theft protection, vehicle damage insurance, car insurance policies"
   />
+        <link rel="canonical" href="https://www.notioninsurance.com/car-insurance" />
+
 </Helmet>
 
         <Card className="mt-6 shadow-none px-3 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

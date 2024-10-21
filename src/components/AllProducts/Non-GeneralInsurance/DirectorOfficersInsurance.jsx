@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 const DirectorOfficersInsurance = () => {
   const insuranceOptions = [
@@ -26,6 +27,7 @@ const DirectorOfficersInsurance = () => {
           name="keywords"
           content="D&O insurance, Directors and Officers insurance, NIB D&O insurance, corporate insurance, executive protection, legal defense coverage, fiduciary duty protection, financial security, risk management, liability insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/director-officers-insurance" />
       </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Typography } from "@material-tailwind/react";
 import { Cog8ToothIcon } from "@heroicons/react/24/solid";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 
 const Claim = () => {
@@ -18,6 +19,7 @@ const Claim = () => {
     name="keywords"
     content="insurance claims, NIB claims, Notion Insurance Broker claims, claim support, claim assistance, insurance claim process, claim submission, claim tracking, hassle-free insurance claims"
   />
+    <link rel="canonical" href="https://www.notioninsurance.com/under-process" />
 </Helmet>
     <div>
       <Cog8ToothIcon className="h-20 w-20 mx-auto" />

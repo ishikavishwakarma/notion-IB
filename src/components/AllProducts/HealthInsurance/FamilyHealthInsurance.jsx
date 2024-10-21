@@ -3,7 +3,8 @@ import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponen
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import ImageTextCard from "../GeneralInsurance/RelativeComponents/ImageText";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
   "Individual Insurance",
@@ -68,6 +69,7 @@ const FamilyHealthInsurance = () => {
           name="keywords"
           content="family health insurance, NIB family health insurance, Notion Insurance Broker family health insurance, family medical coverage, health insurance plans, family protection, hospitalization coverage, preventive health care, affordable family health plans"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/family-health-insurance" />
       </Helmet>
 
       <div>
