@@ -136,7 +136,7 @@ function NavListMenu({ closeMenu }) {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base gap-2 py-2 px-1 font-medium text-gray-900"
+              className="flex items-center text-base gap-2 py-2 xl:pr-4 lg:px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -248,7 +248,7 @@ function NavListMenuDesktop() {
   );
 }
 function NavList({ closeMenu }) {
-  const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
+  const isMobileOrTablet = useMediaQuery({ minWidth: 767 });
   return (
     <List className=" mb-6  p-0 lg:mt-0 lg:mb-0 lg:flex-row ">
       <Typography
@@ -394,7 +394,7 @@ const Header = () => {
         </div>
       </section>
 
-      <Navbar className="max-w-full md:sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.png')] bg-cover bg-center bg-no-repeat">
+      <Navbar className="max-w-full lg:sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/' className="h-16 w-32 md:w-44">
             <img
