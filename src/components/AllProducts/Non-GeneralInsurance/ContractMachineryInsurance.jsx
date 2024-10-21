@@ -1,19 +1,9 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 import { Helmet } from "react-helmet-async";
 
 const ContractMachineryInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Contractor's Plant & Machinery Insurance ",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      link: "/",
-    },
-  ];
-
   // const [showAll, setShowAll] = useState(false);
   // const displayedOptions = showAll ? insuranceOptions : insuranceOptions.slice(0, 3);
 
@@ -40,13 +30,10 @@ const ContractMachineryInsurance = () => {
               Top Contractor&apos;s Plant & Machinery Insurance Plans
             </Typography>
 
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Contractor's Plant & Machinery" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-2 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Contractor&apos;s Plant & Machinery Insurance
@@ -104,22 +91,11 @@ const ContractMachineryInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                      Coverage for Equipment and Tools :{" "}
+                        Coverage for Equipment and Tools :{" "}
                       </span>
-                      In addition to machinery, the policy extends to cover smaller tools and equipment used in daily construction operations, ensuring comprehensive protection.
-                    </Typography>
-                  </li>
-                </ul>
-              </CardBody>
-            </Card>
-
-            <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
-              <CardBody>
-                <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
-                  <li>
-                    <Typography>
-                      <span className="font-bold">Third-Party Liability Coverage: </span>
-                      This feature covers legal liabilities arising from accidental damage to third-party property or injuries caused by the insured equipment, protecting the business from potentially high legal costs.
+                      In addition to machinery, the policy extends to cover
+                      smaller tools and equipment used in daily construction
+                      operations, ensuring comprehensive protection.
                     </Typography>
                   </li>
                 </ul>
@@ -132,9 +108,29 @@ const ContractMachineryInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                      Business Interruption Coverage :{" "}
+                        Third-Party Liability Coverage:{" "}
                       </span>
-                      If damage to the plant and machinery leads to delays in the project, the policy helps cover financial losses, ensuring minimal disruption to the business.
+                      This feature covers legal liabilities arising from
+                      accidental damage to third-party property or injuries
+                      caused by the insured equipment, protecting the business
+                      from potentially high legal costs.
+                    </Typography>
+                  </li>
+                </ul>
+              </CardBody>
+            </Card>
+
+            <Card className="mt-6 md:px-10 w-full md:hover:scale-105 duration-300 border">
+              <CardBody>
+                <ul className="list-disc text-justify hyphens-auto  leading-relaxed adjusted-spacing text-md">
+                  <li>
+                    <Typography>
+                      <span className="font-bold">
+                        Business Interruption Coverage :{" "}
+                      </span>
+                      If damage to the plant and machinery leads to delays in
+                      the project, the policy helps cover financial losses,
+                      ensuring minimal disruption to the business.
                     </Typography>
                   </li>
                 </ul>
@@ -146,9 +142,11 @@ const ContractMachineryInsurance = () => {
                   <li>
                     <Typography>
                       <span className="font-bold">
-                      Additional Costs Coverage :{" "}
+                        Additional Costs Coverage :{" "}
                       </span>
-                      This includes coverage for extra expenses like expediting costs and Architects&apos; or Engineers&apos; fees needed to repair or replace damaged machinery quickly.
+                      This includes coverage for extra expenses like expediting
+                      costs and Architects&apos; or Engineers&apos; fees needed
+                      to repair or replace damaged machinery quickly.
                     </Typography>
                   </li>
                 </ul>

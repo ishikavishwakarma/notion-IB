@@ -1,52 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 import { Helmet } from "react-helmet-async";
 
-const TABLE_HEADERS_PAGE_1 = ["Point of Difference", "Individual Insurance"];
-
-const TABLE_ROWS_PAGE_1 = [
-  {
-    point: "Savings Component:",
-    details:
-      "Accumulates cash value over time, offering a savings option alongside insurance, which can be withdrawn or borrowed against.",
-  },
-  {
-    point: "Insurance Component: ",
-    details:
-      "Provides financial protection to beneficiaries through a death benefit if the insured passes away during the policy term.",
-  },
-  {
-    point: "Fixed Term:",
-    details:
-      " Policies come with a set duration (e.g., 10, 15, 20 years), after which the maturity benefit is paid out.",
-  },
-  {
-    point: "Guaranteed Maturity Benefit:",
-    details:
-      "Ensures a payout at the end of the term, regardless of market conditions, making it a safe investment..",
-  },
-  {
-    point: "Optional Riders: ",
-    details:
-      "Additional coverage options like accidental death benefit riders offer extra protection based on specific needs.",
-  },
-];
-const COLUMN_WIDTHS = [
-  "w-[15vw]", // 40% width for Comprehensive Insurance
-  "w-[60vw]", // 40% width for Third-party Insurance
-];
 const EndowmentInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Term Life Insurance ",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      link: "/",
-    },
-  ];
   return (
     <>
       <Helmet>
@@ -69,14 +26,10 @@ const EndowmentInsurance = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Endowment Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Endowment Plan" />
             </div>
-            <br />
-            <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-2 w-full md:text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Endowment Plan

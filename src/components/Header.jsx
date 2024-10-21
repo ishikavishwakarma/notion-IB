@@ -216,7 +216,7 @@ function NavListMenuDesktop() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base py-2 gap-2 px-1 font-medium text-gray-900"
+              className="flex items-center text-base py-2 xl:pr-4 gap-2 lg:px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -258,7 +258,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base py-2 px-1 ">
+          <ListItem className="flex items-center text-base py-2 xl:pr-4 lg:px-1 ">
             Home
           </ListItem>
         </Link>
@@ -275,7 +275,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/about-us" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
+          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
             About Us
           </ListItem>
         </Link>
@@ -286,9 +286,15 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
+<<<<<<< HEAD
+        <Link to="/our-partner" onClick={closeMenu}>
+          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
+            Our Partner
+=======
         <Link to="/our-partners" onClick={closeMenu}>
           <ListItem className="flex items-center text-base gap-2 py-2 pr-4">
             Our Partners
+>>>>>>> 4b15a1806e29bbfd50ad0c3556bcbe14278aa43e
           </ListItem>
         </Link>
       </Typography>
@@ -299,7 +305,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/under-process" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
+          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
             Claim
           </ListItem>
         </Link>
@@ -311,7 +317,7 @@ function NavList({ closeMenu }) {
         className="font-medium"
       >
         <Link to="/contact" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 py-2 px-1 ">
+          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
             Contact Us
           </ListItem>
         </Link>
@@ -342,44 +348,44 @@ const Header = () => {
         </button>
         <span className="border-l h-3 mx-6 max-sm:hidden"></span>
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
-          <a
+          <Link
             className="flex items-center gap-2 "
-            href="mailto:info@notioninsurance.com"
+            to="mailto:info@notioninsurance.com"
           >
             <span className="text-blue-700">
               <MdEmail />
             </span>
           
               info@notioninsurance.com
-            </a>
+            </Link>
         
         </button>
         <span className="border-l h-3 mx-6 max-sm:hidden"></span>
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
-          <a
+          <Link
             className="flex items-center gap-2 "
-            href="tel:91-9302182475"
+            to="tel:91-9302182475"
           >
             <span className="text-blue-700">
             <MdAddCall />
             </span>
           
               91-9302182475
-            </a>
+            </Link>
         
         </button>
         <span className="border-l h-3 mx-6 max-sm:hidden"></span>
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
-          <a
+          <Link
             className="flex items-center gap-2 "
-            href="tel:0755-4911343"
+            to="tel:0755-4911343"
           >
             <span className="text-blue-700">
             <MdAddCall />
             </span>
           
               0755-4911343
-            </a>
+            </Link>
         
         </button>
         <div className="sm:ml-auto text-gray-800">
