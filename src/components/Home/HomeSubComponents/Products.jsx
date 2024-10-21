@@ -22,7 +22,7 @@ const Products = () => {
                     text="Life" 
                     subtext="Insurance" 
                     imgSrc="/assets/images/Products/life-balance.gif" 
-                    link="/life-insurance"
+                    link="/term-insurance"
                     />
                 </div>
 
@@ -32,7 +32,7 @@ const Products = () => {
                     text="Health" 
                     subtext="Insurance" 
                     imgSrc="/assets/images/Products/heartbeat .gif" 
-                    link="/health-insurance"
+                    link="/individual-health-insurance"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const Products = () => {
                     text="2 Wheeler" 
                     subtext="Insurance" 
                     imgSrc="/assets/images/Products/bike.gif" 
-                    link="/bike-insurance"
+                    link="/two-wheeler-insurance"
                     />
                 </div>
 
@@ -121,8 +121,8 @@ const Products = () => {
                 <div>
                    
                     <LinkButtons
-                    text="Free of Cost" 
-                    subtext="Term Plan" 
+                    text="Money Back Plan" 
+                    subtext="life Plan" 
                     imgSrc="/assets/images/Products/freeterm.svg" 
                     link="/"
                     />
