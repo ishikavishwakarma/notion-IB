@@ -1,18 +1,9 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
-const MaternityCover = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Maternity Cover Plan",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      link: "/",
-    },
-  ];
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
 
+const MaternityCover = () => {
   return (
     <>
       <Helmet>
@@ -26,6 +17,7 @@ const MaternityCover = () => {
           name="keywords"
           content="maternity insurance, NIB maternity insurance, Notion Insurance Broker maternity plan, maternity cover, prenatal care insurance, postnatal coverage, pregnancy insurance, delivery insurance, newborn insurance, maternal health insurance"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/maternity-cover" />
       </Helmet>
 
       <div>
@@ -34,14 +26,10 @@ const MaternityCover = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Maternity Cover Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Maternity Cover Plan" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-2 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Maternity Cover Plan

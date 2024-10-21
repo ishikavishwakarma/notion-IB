@@ -10,7 +10,7 @@ const LINKS = [
       { text: "Home", url: "/" },
       { text: "Insurance", url: "/" },
       { text: "About Us", url: "/about-us" },
-      { text: "Our Partner", url: "/our-partner" },
+      { text: "Our Partners", url: "/our-partners" },
       { text: "Contact Us", url: "/contact" },
     ],
   },
@@ -42,7 +42,7 @@ const Footer = () => {
   return (
     <footer className="mt-1 relative footer-img w-full  bg-cover bg-center pt-3">
       <div className="w-full ">
-        <div className="flex justify-between flex-col lg:flex-row gap-4 items-center px-2 lg:px-4">
+        <div className="flex justify-center flex-col lg:flex-row gap-4 items-center px-2 lg:px-4">
           <Typography className="w-56 my-6 justify-center items-center flex flex-col ">
             <img src="assets/images/header/logo.png" alt="NIB" />
             <p className="text-black font-medium text-xs  mb-2">

@@ -1,16 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const CriticalCare = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Critical Care Plan",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-    },
-  ];
   return (
     <>
       <Helmet>
@@ -23,6 +16,7 @@ const CriticalCare = () => {
           name="keywords"
           content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/critical-care-plan" />
       </Helmet>
 
       <div>
@@ -32,13 +26,10 @@ const CriticalCare = () => {
               Top Critical Care Plans
             </Typography>
 
-            <div className="mt-4 grid w-full   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Critical Care Plan" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center  md:hover:scale-105 duration-300">
+            <Card className="mt-2 w-full text-center  md:hover:scale-105 duration-300">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Critical Care Plan
@@ -70,35 +61,40 @@ const CriticalCare = () => {
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                      Extensive Illness Coverage :{" "}
+                        Extensive Illness Coverage :{" "}
                       </span>
-                      This plan covers various life-threatening conditions, ensuring that policyholders have financial protection against serious health issues.
+                      This plan covers various life-threatening conditions,
+                      ensuring that policyholders have financial protection
+                      against serious health issues.
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography>
+                      <span className="font-bold mr-1">Lump Sum Payout : </span>
+                      Upon diagnosis of a covered critical illness, the
+                      policyholder receives a one-time lump sum payment,
+                      allowing for immediate access to medical treatment and
+                      resources.
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography>
+                      <span className="font-bold mr-1">No Claim Bonus : </span>
+                      For every year that passes without a claim, policyholders
+                      may receive an increase in their coverage amount,
+                      rewarding them for staying healthy.
                     </Typography>
                   </li>
                   <li>
                     <Typography>
                       <span className="font-bold mr-1">
-                        Lump Sum Payout :{" "}
+                        Customizable Policy Terms :{" "}
                       </span>
-                      Upon diagnosis of a covered critical illness, the policyholder receives a one-time lump sum payment, allowing for immediate access to medical treatment and resources.
+                      Policyholders can select from various coverage amounts and
+                      terms, tailoring the plan to fit their specific health
+                      needs and financial situation.
                     </Typography>
                   </li>
-                  <li>
-                    <Typography>
-                      <span className="font-bold mr-1">
-                      No Claim Bonus :{" "}
-                      </span>
-                      For every year that passes without a claim, policyholders may receive an increase in their coverage amount, rewarding them for staying healthy.
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography>
-                      <span className="font-bold mr-1">
-                      Customizable Policy Terms :{" "}
-                      </span>
-                      Policyholders can select from various coverage amounts and terms, tailoring the plan to fit their specific health needs and financial situation.
-                    </Typography>
-                  </li> 
                 </ul>
               </CardBody>
             </Card>

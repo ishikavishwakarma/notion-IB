@@ -1,18 +1,8 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import React, { useState } from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 const MarineInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Marine Insurance ",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      link: "/",
-    },
-  ];
-
   // const [showAll, setShowAll] = useState(false);
   // const displayedOptions = showAll ? insuranceOptions : insuranceOptions.slice(0, 3);
 
@@ -29,6 +19,7 @@ const MarineInsurance = () => {
           name="keywords"
           content="marine insurance, NIB marine insurance, Notion Insurance Broker marine insurance, cargo insurance, hull insurance, marine liability insurance, shipping insurance, logistics insurance, maritime coverage, marine risk management"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/marine-insurance" />
       </Helmet>
 
       <div>
@@ -37,14 +28,10 @@ const MarineInsurance = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Marine Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Marine Insurance" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
+            <Card className="mt-2 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Marine Insurance

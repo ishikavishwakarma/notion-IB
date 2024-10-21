@@ -1,19 +1,11 @@
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 
 const ChildInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Child Insurance",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      //   link:'https://www.ilgi.co/D2DBB68FAE'
-    },
-  ];
   return (
     <>
       <Helmet>
@@ -27,6 +19,7 @@ const ChildInsurance = () => {
           name="keywords"
           content="child insurance, NIB child insurance, Notion Insurance Broker child insurance, children's future, financial protection, education savings plan, life coverage, family security, child investment, affordable insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/child-insurance" />
       </Helmet>
       <div>
         <Card className="mt-6 shadow-none md:px-10 bg-white container w-full lg:w-[90%] xl:w-[90%] flex flex-col justify-center">
@@ -34,14 +27,11 @@ const ChildInsurance = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Child Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Child Insurance" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center md:hover:scale-105 duration-300 border">
+
+            <Card className="mt-2 w-full text-center md:hover:scale-105 duration-300 border">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Child Insurance

@@ -1,16 +1,9 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 const Fire = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Fire & Burglary Insurance",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-    },
-  ];
+ 
   return (
     <>
       <Helmet>
@@ -23,6 +16,7 @@ const Fire = () => {
           name="keywords"
           content="fire insurance, NIB fire insurance, Notion Insurance Broker fire insurance, property insurance, fire damage coverage, business fire insurance, home fire insurance, fire protection, financial security, insurance for fire risks"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/fire-insurance" />
       </Helmet>
 
       <div>
@@ -31,14 +25,10 @@ const Fire = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Fire Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Fire Insurance" />
             </div>
-            <br />
-            <Card className="mt-6 w-full text-center  md:hover:scale-105 duration-300">
+            <Card className="mt-2 w-full text-center  md:hover:scale-105 duration-300">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to Fire & Burglary Insurance

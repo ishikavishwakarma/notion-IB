@@ -1,9 +1,10 @@
 import React from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import ImageTextCard from "../GeneralInsurance/RelativeComponents/ImageText";
 import InsuranceTypes from "../GeneralInsurance/RelativeComponents/TypesInsurance";
-import { Helmet } from "react-helmet";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const HealthInsurance = () => {
   const insurancetypes = [
     {
@@ -22,15 +23,7 @@ const HealthInsurance = () => {
         "Our lifestyles are constantly evolving, often leading to new health challenges that require immediate attention. A comprehensive health insurance plan is essential for adapting to these changes, providing coverage for various medical needs that arise from modern living.",
     },
   ];
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Individual Health Insurance",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      // link:'https://www.ilgi.co/D2DBB68FAE'
-    },
-  ];
+
   return (
     <>
       <Helmet>
@@ -44,6 +37,7 @@ const HealthInsurance = () => {
           name="keywords"
           content="health insurance, individual health insurance, NIB health insurance, Notion Insurance Broker, medical insurance, family health cover, hospitalization coverage, preventive care, affordable health plans, comprehensive health coverage, health protection"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/health-insurance" />
       </Helmet>
 
       <div>
@@ -52,11 +46,8 @@ const HealthInsurance = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top Individual Health Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full px-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Individual Health Insurance" />
             </div>
             <br />
             <ImageTextCard

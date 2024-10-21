@@ -7,23 +7,21 @@ import Exam from "./HomeSubComponents/Exam";
 
 import Workflow from "./HomeSubComponents/Workflow";
 import Contact2 from "./HomeSubComponents/Contact2";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div>
+
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Home - NIB</title>
-        <meta
-          name="description"
-          content="Explore NIB Notion Insurance Broker, providing expert insurance services, tailored plans, and dedicated support."
-        />
-        <meta
-          name="keywords"
-          content="NIB, Notion Insurance Broker, insurance services, insurance plans, expert insurance brokers, home insurance, life insurance, health insurance"
-        />
+        <meta name="description" content="Welcome to Notion Insurance Broker. We provide the best insurance services in India." />
+        <meta name="keywords" content="Insurance, Broker, Notion Insurance, Health Insurance, Life Insurance" />
+        <link rel="canonical" href="https://www.notioninsurance.com/" />
       </Helmet>
+
+
 
       <Hero />
       <Products />

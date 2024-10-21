@@ -45,7 +45,7 @@ const Routing = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/our-partner" element={<OurPartner />} />
+        <Route path="/our-partners" element={<OurPartner />} />
         <Route path="/under-process" element={<Claim />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/car-insurance" element={<CarInsurance />} />

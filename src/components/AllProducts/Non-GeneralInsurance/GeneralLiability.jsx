@@ -1,17 +1,8 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React from "react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
 const GeneralLiability = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "General Liability Insurance ",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      link: "/",
-    },
-  ];
   return (
     <>
       <Helmet>
@@ -25,6 +16,7 @@ const GeneralLiability = () => {
           name="keywords"
           content="general liability insurance, NIB general liability insurance, Notion Insurance Broker general liability insurance, business liability coverage, third-party insurance, property damage insurance, bodily injury insurance, business protection, commercial liability insurance"
         />
+         <link rel="canonical" href="https://www.notioninsurance.com/general-liability-insurance" />
       </Helmet>
 
       <div>
@@ -33,14 +25,10 @@ const GeneralLiability = () => {
             <Typography variant="h4" color="blue-gray" className="mb-2 ">
               Top General Liability Insurance Plans
             </Typography>
-
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="General Liability Plan" />
             </div>
-            <br />
-            <Card className="mt-6 w-full md:text-center md:hover:scale-105 duration-300">
+            <Card className="mt-2 w-full md:text-center md:hover:scale-105 duration-300">
               <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   A Guide to General Liability Insurance

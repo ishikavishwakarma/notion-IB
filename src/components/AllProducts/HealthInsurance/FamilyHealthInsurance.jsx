@@ -1,9 +1,9 @@
 import React from "react";
 import TableComponent from "../GeneralInsurance/RelativeComponents/TableComponent";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import InsuranceCard from "../GeneralInsurance/RelativeComponents/InsuranceCard";
-import ImageTextCard from "../GeneralInsurance/RelativeComponents/ImageText";
-import { Helmet } from "react-helmet";
+import InquiryCard from "../GeneralInsurance/RelativeComponents/InquiryCard";
+import { Helmet } from "react-helmet-async";
+
 const TABLE_HEADERS_PAGE_1 = [
   "Point of Difference",
   "Individual Insurance",
@@ -46,15 +46,7 @@ const COLUMN_WIDTHS = [
   "w-[30vw]", // 40% width for Third-party Insurance
 ];
 const FamilyHealthInsurance = () => {
-  const insuranceOptions = [
-    {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
-      insurerName: "Family Insurance",
-      price: "-",
-      keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],
-      //   link: "https://www.ilgi.co/D2DBB68FAE",
-    },
-  ];
+  
   return (
     <>
       <Helmet>
@@ -68,6 +60,7 @@ const FamilyHealthInsurance = () => {
           name="keywords"
           content="family health insurance, NIB family health insurance, Notion Insurance Broker family health insurance, family medical coverage, health insurance plans, family protection, hospitalization coverage, preventive health care, affordable family health plans"
         />
+        <link rel="canonical" href="https://www.notioninsurance.com/family-health-insurance" />
       </Helmet>
 
       <div>
@@ -77,26 +70,11 @@ const FamilyHealthInsurance = () => {
               Top Family Insurance Plans
             </Typography>
 
-            <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {insuranceOptions.map((option, index) => (
-                <InsuranceCard key={index} {...option} />
-              ))}
+            <div className="mt-4 flex w-full justify-center gap-4">
+              <InquiryCard insurerName="Family Insurance" />
             </div>
-            {/* <br /> */}
-            {/* 
-            <div>
-              <ImageTextCard
-                heading="A Guide to Family Insurance"
-                subheading=" Get car insurance & protect your vehicle & yourself."
-                imageSrc="https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80"
-                altText="Nexon Car"
-                description="Car insurance, also referred as Motor or Four-wheeler insurance, is a type of agreement between a car owner and an insurance provider. This contract provides financial protection to the vehicle if the vehicle suffers any damage or loss due to expected events like accidents & natural disasters. 
-               A motor insurance holds more significance than just being a piece of paper to keep in the car’s dashboard and show traffic officials when necessary. This insurance policy gives financial protection to the damages of your vehicle caused in an accident or theft.No matter how careful you are while driving, accidents can happen, and repair costs can be substantial. Car insurance policies are of various types. First type is third-party car insurance. This cover protects you from financial damages if your insured vehicle unintentionally damages a third party's vehicle or property or injures a third party.  "
-              />
-            </div> */}
-
-            {/* <br /> */}
-            <div className="div pt-5">
+            
+            <div className="div pt-2">
               <Typography
                 variant="h3"
                 color="blue-gray"
