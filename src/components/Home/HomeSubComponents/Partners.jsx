@@ -1,16 +1,16 @@
 import React from 'react'
 
 const LOGOS = [
-    <img width='70%' src="/assets/images/company/Future generali.webp" alt="company1" />,
-    <img width='70%' src="/assets/images/company/HDFC ERGo.webp" alt="company2" />,
-    <img width='70%' src="/assets/images/company/ICICI Prudential.webp" alt="company3" />,
+    <img width='70%' src="/assets/images/company/Future generali2.jpg" alt="company1" />,
+    <img width='70%' src="/assets/images/company/HDFC ERGo2.jpg" alt="company2" />,
+    <img width='70%' src="/assets/images/company/ICICI Prudential2.jpg" alt="company3" />,
     <img width='70%' src="/assets/images/company/icicibank.webp" alt="company4" />,
-    <img width='70%' src="/assets/images/company/IFCO TOKIO.webp" alt="company5" />,
-    <img width='70%' src="/assets/images/company/liberty.webp" alt="company6" />,
-    <img width='70%' src="/assets/images/company/Max Life.webp" alt="company7" />,
-    <img width='70%' src="/assets/images/company/National insurance.webp" alt="company8" />,
-    <img width='70%' src="/assets/images/company/Niva Bupa Health in.webp" alt="company9" />,
-    <img width='70%' src="/assets/images/company/oriental.webp" alt="company10" />,
+    <img width='70%' src="/assets/images/company/IFCO TOKIO2.jpg" alt="company5" />,
+    <img width='70%' src="/assets/images/company/liberty2.jpg" alt="company6" />,
+    <img width='70%' src="/assets/images/company/Max Life2.jpg" alt="company7" />,
+    <img width='70%' src="/assets/images/company/National insurance2.jpg" alt="company8" />,
+    <img width='70%' src="/assets/images/company/Niva Bupa Health in2.jpg" alt="company9" />,
+    <img width='70%' src="/assets/images/company/oriental2.jpg" alt="company10" />,
 
 ];
 

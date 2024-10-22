@@ -125,12 +125,13 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%);
 }
 
 .video-main {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .video {
@@ -142,7 +143,7 @@ html {
   background: transparent;
   color: #fff;
   display: inline-block;
-  background: #383838;
+  background: rgba(0, 162, 255, 0.537);
   z-index: 999;
 }
 
@@ -173,7 +174,7 @@ html {
   position: absolute;
   width: 150px;
   height: 150px;
-  background: rgba(66, 25, 0, 0.3);
+  background: rgba(0, 162, 255, 0.537);
   opacity: 0;
   /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
   border-radius: 100%;
@@ -198,41 +199,6 @@ html {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-
-
-.blur-bg-blocks {
-  overflow-x: hidden;
-  overflow-y: hidden
-}
-.blur-bg {
-  z-index: -999;
-  border-radius: 50%;
-  position: absolute;
-  width: 90%;
-  height: 500px;
-  -webkit-filter: blur(100px);
-  filter: blur(100px);
-  opacity: 20%
-}
-.blur-bg-a {
-  left: -4%;
-  top: -10%;
-  background: #0077ffc2
-}
-.blur-bg-b {
-  background: #ff8800;
-  margin: 0 auto;
-  left: -20%;
-  top: 30%
-}
-
-.blur-bg-c {
-  right: 0;
-  top: -10%;
-  background: #0077ffb7
-}
-
-
 
 /* Add this media query to your CSS file */
 
@@ -265,4 +231,29 @@ html {
 }
 .footer-img{
   background-image: url('/assets/images/header/footer.png');
+}
+
+.step:hover{
+  transform: scale(1.1);
+  transition: linear 0.4s all;
+}
+
+.step:hover .count {
+  background-color: orange; /* Change background color to orange */
+  transition: linear 0.3s all;
+}
+
+.step:hover .step-line{
+  width: 10vw;
+  transition: ease-in 0.3s all;
+  
+}
+
+.step:hover .step-icon {
+  transform: scale(0.95); /* Scale down the icon to 0.8 */
+  transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.step {
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
