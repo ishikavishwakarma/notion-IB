@@ -69,7 +69,7 @@ const COLUMN_WIDTHS = [
 const CarInsurance = () => {
   const insuranceOptions = [
     {
-      logo: "/assets/images/company/icicibank.jpg", // Replace with actual image URLs
+      logo: "/assets/images/company/icicibank.webp", // Replace with actual image URLs
       insurerName: "Car Insurance",
       price: "-",
       keyFeatures: ["No Inspection Needed", "Immediate Policy Issurance"],

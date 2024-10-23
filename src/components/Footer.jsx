@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="w-full ">
         <div className="flex justify-center flex-col lg:flex-row gap-4 items-center px-2 lg:px-4">
           <Typography className="w-56 my-6 justify-center items-center flex flex-col ">
-            <img loading="lazy" src="assets/images/header/logo.webp" className="h-fit w-full" alt="NIB" />
+            <img loading="lazy" src="assets/images/header/logo.webp" className="h-full w-full" alt="NIB" />
             <p className="text-black font-medium text-xs  mb-2">
             Notion Insurance Broker Pvt. Ltd. delivers customized insurance solutions designed to meet the diverse needs of businesses and individuals. 
             </p>
