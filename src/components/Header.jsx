@@ -37,7 +37,7 @@ const navListMenuItems = [
       { name: "Car Insurance", link: "/car-insurance" },
       { name: "Two Wheeler Insurance", link: "/two-wheeler-insurance" },
       { name: "Home Insurance", link: "/home-insurance" },
-      { name: "Brand Car Insurance", link: "/bike-insurance" },
+      { name: "Brand Car Insurance", link: "/car-insurance" },
       { name: "Travel Insurance", link: "/travel-insurance" },
       { name: "Commercial Vehicle", link: "/commercial-vehicle" },
       { name: "Taxi Insurance", link: "/taxi-insurance" },
