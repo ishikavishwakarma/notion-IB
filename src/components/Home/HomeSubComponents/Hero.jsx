@@ -40,10 +40,10 @@ const Hero = () => {
                     <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-center flex flex-col max-sm:hidden '>
                        
                         <img
-                            className=' rounded-full h-full shadow-xl w-4/5'
+                            className='rounded-full h-full shadow-xl w-4/5'
                             src="/assets/images/hero/hero.avif"
                             alt=""
-                           loading='lazy'
+                        //    loading='lazy'
                         />
                         
                         <span className='absolute z-9999 top-[50%] left-[50%]'>
