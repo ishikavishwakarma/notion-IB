@@ -113,7 +113,7 @@ const Products = () => {
                     <LinkButtons
                     text="Child" 
                     subtext="Savings Plans" 
-                    imgSrc="/assets/images/Products/piggy3.gif" 
+                    imgSrc="/assets/images/Products/piggy-bank2.gif" 
                     link="/"
                     />
                 </div>

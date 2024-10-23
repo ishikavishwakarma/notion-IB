@@ -37,17 +37,14 @@ const Hero = () => {
 
                     </div>
 
-                    <div className=' p-5 h-[35vw] align-middle w-auto md:w-[40vw] relative justify-center flex flex-col max-sm:hidden '>
+                    <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-center flex flex-col max-sm:hidden '>
                         <img
-                            className='md:h-[30vw] h-[60vw] shadow-xl  w-auto sm:h-[90%] sm:w-[90%] md:w-full'
-                            src="/assets/images/hero/hero2.webp"
+                            className=' rounded-full shadow-xl w-4/5'
+                            src="/assets/images/hero/hero.jpg"
                             alt=""
-                            style={{
-                                clipPath: 'polygon(29% 0%, 100% 0%, 100% 100%, 25% 100%, 0 50%)'
-                            }}
+                           
                         />
-                        <span className='absolute z-9999 top-[50%] left-[50%] '>
-
+                        <span className='absolute z-9999 top-[50%] left-[50%]'>
                             <div onClick={handleOpen} className="wrapper">
                                 <div className="video-main">
                                     <div className="promo-video">
@@ -57,7 +54,7 @@ const Hero = () => {
                                             <div className="waves wave-3"></div>
                                         </div>
                                     </div>
-                                    <a className='video text-5xl' frameBorder="0" allowfullscreen data-lity ><MdOutlinePlayCircle /></a>
+                                    <a className='video text-5xl' frameBorder="0" allowFullScreen data-lity ><MdOutlinePlayCircle /></a>
 
                                 </div>
                             </div>
@@ -72,7 +69,7 @@ const Hero = () => {
                                 className='object-contain overflow-hidden'
                             >
 
-                                <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/WtTeXHkZ6pI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+                                <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/WtTeXHkZ6pI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowFullScreen></iframe>
 
                             </Dialog>
                         </span>

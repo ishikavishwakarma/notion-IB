@@ -161,7 +161,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div> */}
-             <div className="flex gap-3 text-blue-gray-900 ">
+             <div className="flex py-2 gap-3 text-blue-gray-900 ">
               <Typography
                 as="a"
                 href="#"

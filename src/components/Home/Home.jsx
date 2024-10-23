@@ -5,10 +5,10 @@ import Products from "./HomeSubComponents/Products";
 import Partners from "./HomeSubComponents/Partners";
 import Exam from "./HomeSubComponents/Exam";
 
-import Workflow from "./HomeSubComponents/Workflow";
 import Contact2 from "./HomeSubComponents/Contact2";
 // import { Helmet } from "react-helmet";
 import { Helmet } from "react-helmet-async";
+import Work from "./HomeSubComponents/Work";
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
       <Products />
       <Partners />
       <Exam />
-      <Workflow />
+      <Work/>
 
       <Contact2 />
     </div>
