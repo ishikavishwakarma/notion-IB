@@ -110,8 +110,8 @@ function NavListMenu({ closeMenu }) {
             key={sublinkKey}
             className="text-sm text-blue-gray-500"
             onClick={() => {
-              setIsMobileMenuOpen(false);
               closeMenu();
+              setIsMobileMenuOpen(false);
             }}
 
           >
@@ -251,6 +251,10 @@ function NavList({ closeMenu }) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 958 });
   const handleHomeClick = () => {
     closeMenu(); // Close the menu
+    // setIsMobileMenuOpen(false); // Reset mobile menu state
+  };
+  const handleHomeClickNew = () => {
+    closeMenu(); // Close the menu
     setIsMobileMenuOpen(false); // Reset mobile menu state
   };
   return (
@@ -261,7 +265,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/" onClick={handleHomeClick}>
+        <Link to="/" onClick={handleHomeClickNew}>
           <ListItem className="flex items-center text-base py-2 xl:px-4 lg:px-1 ">
             Home
           </ListItem>
@@ -278,7 +282,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/about-us" onClick={handleHomeClick}>
+        <Link to="/about-us" onClick={handleHomeClickNew}>
           <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             About Us
           </ListItem>
@@ -290,7 +294,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/our-partners" onClick={handleHomeClick}>
+        <Link to="/our-partners" onClick={handleHomeClickNew}>
           <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Our Partners
           </ListItem>
@@ -302,7 +306,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/under-process" onClick={handleHomeClick}>
+        <Link to="/under-process" onClick={handleHomeClickNew}>
           <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Claim
           </ListItem>
@@ -314,7 +318,7 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/contact" onClick={handleHomeClick}>
+        <Link to="/contact" onClick={handleHomeClickNew}>
           <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Contact Us
           </ListItem>

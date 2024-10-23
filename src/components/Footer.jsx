@@ -8,7 +8,7 @@ const LINKS = [
     title: "Our Links",
     items: [
       { text: "Home", url: "/" },
-      { text: "Insurance", url: "/" },
+      // { text: "Insurance", url: "/" },
       { text: "About Us", url: "/about-us" },
       { text: "Our Partners", url: "/our-partners" },
       { text: "Contact Us", url: "/contact" },
