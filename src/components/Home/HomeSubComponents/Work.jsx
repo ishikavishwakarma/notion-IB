@@ -3,7 +3,7 @@ import { FcBriefcase, FcBusinessman, FcCollaboration, FcDebt, FcSurvey } from 'r
 
 const Work = () => {
     return (
-        <div className="mx-auto w-full md:px-20 px-5 py-20 bg-[url('/assets/images/workflow/workflow.png')] bg-cover bg-center bg-no-repeat">
+        <div loading='lazy' className="mx-auto w-full md:px-20 px-5 py-20 bg-[url('/assets/images/workflow/workflow.avif')] bg-cover bg-center bg-no-repeat">
             <p className=" text-blue-gray-800 text-center">work process</p>
             <h2 className="font-headline text-2xl font-semibold sm:text-3xl text-center">Our easy work process <br /> in 4 steps</h2>
 

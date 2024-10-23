@@ -17,7 +17,6 @@ import { IoLocation } from "react-icons/io5";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-
 export function Contact() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -32,7 +31,7 @@ export function Contact() {
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const insurerName = queryParams.get("subject");
-  
+
     if (insurerName && insurerName !== formData.subject) {
       setFormData((prevData) => ({
         ...prevData,
@@ -80,28 +79,29 @@ export function Contact() {
           content="NIB contact, Notion Insurance Broker contact, insurance services, IRDA direct broker, insurance solutions, risk management, insurance experts, contact NIB, insurance broker India, IRDA Licence No. 619, valid till 2026"
         />
         <link rel="canonical" href="https://www.notioninsurance.com/contact" />
-
       </Helmet>
 
-      <section className="md:px-8 py-8 lg:py-16 w-full">
-        <div className="container px-0 mx-auto text-center  rounded-xl">
-          <Typography
-            variant="h2"
-            color="blue-gray"
-            className="mb-4 !text-3xl lg:!text-5xl"
-          >
-            We&apos;re Here to Help
-          </Typography>
+      <section className="w-full  bg-white">
+        <div className=" px-0  text-center   rounded-xl">
+          <div className="h-full py-3 bg-[url('/assets/images/contact/contactbg.avif')] w-full bg-cover">
+            <Typography
+              variant="h2"
+              color="blue-gray"
+              className="mb-4  pt-8 lg:pt-10 !text-3xl lg:!text-5xl"
+            >
+              We&apos;re Here to Help
+            </Typography>
 
-          <Typography className="mb-10 font-normal text-md lg:mb-20 mx-auto md:max-w-3xl">
-            Whether you have questions about our services Requesting technical
-            assistance or suggestions for improvement Our team looks forward to
-            hearing from you.
-          </Typography>
+            <Typography className="mb-8 px-2 font-normal text-md lg:mb-12 mx-auto md:max-w-3xl">
+              Whether you have questions about our services Requesting technical
+              assistance or suggestions for improvement Our team looks forward
+              to hearing from you.
+            </Typography>
+          </div>
 
-          <div className="bg-white lg:w-3/2 border flex flex-col md:pt-10 overflow-hidden rounded-xl shadow-xl items-center justify-center gap-10">
-            <div className="lg:flex items-center justify-between md:gap-10 md:px-5 w-full ">
-              <Card className=" md:w-[700px] p-0 shadow-none ">
+          <div className="bg-white container bg lg:w-3/2  flex flex-col lg:pt-8 overflow-hidden  items-center justify-center gap-10">
+            <div className="lg:flex items-center justify-between md:gap-10 lg:flex-row flex-col md:px-5 w-full ">
+              <Card className=" lg:w-1/2 w-full p-0 shadow-none ">
                 <CardBody className="flex flex-col items-center gap-3  py-20  border rounded-xl shadow-xl">
                   <Typography variant="h2" color="blue-gray" className="mb-2">
                     Contact Information
@@ -151,113 +151,115 @@ export function Contact() {
               </Card>
 
               <form
-      onSubmit={handleSubmit} // Attach the submit handler
-      className="flex flex-col gap-4 md:w-3/4  px-2 py-4"
-    >
-      <Typography variant="h2" color="blue-gray" className="py-2">
-        Fill Up The Form
-      </Typography>
+                onSubmit={handleSubmit} // Attach the submit handler
+                className="flex flex-col gap-4 w-full lg:w-1/2  px-3 py-4"
+              >
+                <Typography variant="h2" color="blue-gray" className="py-2">
+                  Fill Up The Form
+                </Typography>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <Typography
-            variant="small"
-            className="mb-2 text-left font-medium !text-gray-900"
-          >
-            Full Name
-          </Typography>
-          <input
-            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-            type="text"
-            placeholder="Enter Full Name"
-            name="fullName" // Set name attribute for identification
-            value={formData.fullName} // Bind input value to fullName state
-            onChange={handleChange} // Use the general handleChange function
-          />
-        </div>
-        <div>
-          <Typography
-            variant="small"
-            className="mb-2 text-left font-medium !text-gray-900"
-          >
-            Mobile No
-          </Typography>
-          <input
-            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-            type="text"
-            placeholder="Enter Mobile Number"
-            name="mobileNo" // Set name attribute for identification
-            value={formData.mobileNo} // Bind input value to mobileNo state
-            onChange={handleChange} // Use the general handleChange function
-          />
-        </div>
-        <div>
-          <Typography
-            variant="small"
-            className="mb-2 text-left font-medium !text-gray-900"
-          >
-            Your Email
-          </Typography>
-          <input
-            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-            type="text"
-            placeholder="Enter Your Email"
-            name="email" // Set name attribute for identification
-            value={formData.email} // Bind input value to email state
-            onChange={handleChange} // Use the general handleChange function
-          />
-        </div>
-        <div>
-          <Typography
-            variant="small"
-            className="mb-2 text-left font-medium !text-gray-900"
-          >
-            Your Subject
-          </Typography>
-          <input
-            className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-            type="text"
-            placeholder="Enter Your Subject"
-            name="subject" // Set name attribute for identification
-            value={formData.subject} // Bind input value to subject state
-            onChange={handleChange} // Use the general handleChange function
-          />
-        </div>
-      </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <Typography
+                      variant="small"
+                      className="mb-2 text-left font-medium !text-gray-900"
+                    >
+                      Full Name
+                    </Typography>
+                    <input
+                      className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+                      type="text"
+                      placeholder="Enter Full Name"
+                      name="fullName" // Set name attribute for identification
+                      value={formData.fullName} // Bind input value to fullName state
+                      onChange={handleChange} // Use the general handleChange function
+                    />
+                  </div>
+                  <div>
+                    <Typography
+                      variant="small"
+                      className="mb-2 text-left font-medium !text-gray-900"
+                    >
+                      Mobile No
+                    </Typography>
+                    <input
+                      className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+                      type="text"
+                      placeholder="Enter Mobile Number"
+                      name="mobileNo" // Set name attribute for identification
+                      value={formData.mobileNo} // Bind input value to mobileNo state
+                      onChange={handleChange} // Use the general handleChange function
+                    />
+                  </div>
+                  <div>
+                    <Typography
+                      variant="small"
+                      className="mb-2 text-left font-medium !text-gray-900"
+                    >
+                      Your Email
+                    </Typography>
+                    <input
+                      className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+                      type="text"
+                      placeholder="Enter Your Email"
+                      name="email" // Set name attribute for identification
+                      value={formData.email} // Bind input value to email state
+                      onChange={handleChange} // Use the general handleChange function
+                    />
+                  </div>
+                  <div>
+                    <Typography
+                      variant="small"
+                      className="mb-2 text-left font-medium !text-gray-900"
+                    >
+                      Your Subject
+                    </Typography>
+                    <input
+                      className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+                      type="text"
+                      placeholder="Enter Your Subject"
+                      name="subject" // Set name attribute for identification
+                      value={formData.subject} // Bind input value to subject state
+                      onChange={handleChange} // Use the general handleChange function
+                    />
+                  </div>
+                </div>
 
-      <div>
-        <Typography
-          variant="small"
-          className="mb-2 text-left font-medium !text-gray-900"
-        >
-          Your Message
-        </Typography>
-        <Textarea
-          rows={6}
-          placeholder="Message....."
-          name="message" // Set name attribute for identification
-          value={formData.message} // Bind textarea value to message state
-          onChange={handleChange} // Use the general handleChange function
-          className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
-          containerProps={{
-            className: "!min-w-full",
-          }}
-          labelProps={{
-            className: "hidden",
-          }}
-        />
-      </div>
-      <Button type="submit" className="bg-blue-800 border-none p-0 w-[100%] h-[38px] ">
-        Send Message
-      </Button>
-    </form>
+                <div>
+                  <Typography
+                    variant="small"
+                    className="mb-2 text-left font-medium !text-gray-900"
+                  >
+                    Your Message
+                  </Typography>
+                  <Textarea
+                    rows={6}
+                    placeholder="Message....."
+                    name="message" // Set name attribute for identification
+                    value={formData.message} // Bind textarea value to message state
+                    onChange={handleChange} // Use the general handleChange function
+                    className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
+                    containerProps={{
+                      className: "!min-w-full",
+                    }}
+                    labelProps={{
+                      className: "hidden",
+                    }}
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  className="bg-blue-800 border-none p-0 w-[100%] h-[38px] "
+                >
+                  Send Message
+                </Button>
+              </form>
             </div>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.1539426375944!2d77.44726371271773!3d23.196702225323936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43747f04ada9%3A0x7e9aa8a8f98f0234!2sNOTION%20INSURANCE%20BROKER%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1727776089315!5m2!1sen!2sin"
               width="100%"
               height="250"
-             
               loading="lazy"
             ></iframe>
           </div>

@@ -21,7 +21,7 @@ const Products = () => {
                     <LinkButtons
                     text="Life" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/life4.gif" 
+                    imgSrc="/assets/images/Products/life-balance2.avif" 
                     link="/term-insurance"
                     />
                 </div>
@@ -31,7 +31,7 @@ const Products = () => {
                     <LinkButtons
                     text="Health" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/heartbeat4.gif" 
+                    imgSrc="/assets/images/Products/heartbeat 2.avif" 
                     link="/individual-health-insurance"
                     />
                 </div>
@@ -41,7 +41,7 @@ const Products = () => {
                     <LinkButtons
                     text="Investment Plans" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/advance4.gif" 
+                    imgSrc="/assets/images/Products/advance.avif" 
                     link="/investment-plans"
                     />
                 </div>
@@ -51,7 +51,7 @@ const Products = () => {
                     <LinkButtons
                     text="Car" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/jeep4.gif" 
+                    imgSrc="/assets/images/Products/jeep2.avif" 
                     link="/car-insurance"
                     />
                 </div>
@@ -61,7 +61,7 @@ const Products = () => {
                     <LinkButtons
                     text="2 Wheeler" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/bike4.gif" 
+                    imgSrc="/assets/images/Products/bike.avif" 
                     link="/two-wheeler-insurance"
                     />
                 </div>
@@ -71,7 +71,7 @@ const Products = () => {
                     <LinkButtons
                     text="Family Health" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/family4.gif" 
+                    imgSrc="/assets/images/Products/family2.avif" 
                     link="/family-health-insurance"
                     />
                 </div>
@@ -81,7 +81,7 @@ const Products = () => {
                     <LinkButtons
                     text="Travel" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/airplane4.gif" 
+                    imgSrc="/assets/images/Products/airplane.avif" 
                     link="/travel-insurance"
                     />
 
@@ -91,7 +91,7 @@ const Products = () => {
                     <LinkButtons
                     text="Fire & Burglary" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/burning-building3.png" 
+                    imgSrc="/assets/images/Products/burning-building.avif" 
                     link="/fire-insurance"
                     />
                 </div>
@@ -100,7 +100,7 @@ const Products = () => {
                     <LinkButtons
                     text="Home" 
                     subtext="Insurance" 
-                    imgSrc="/assets/images/Products/home4.gif" 
+                    imgSrc="/assets/images/Products/home.avif" 
                     link="/home-insurance"
                     />
 
@@ -113,7 +113,7 @@ const Products = () => {
                     <LinkButtons
                     text="Child" 
                     subtext="Savings Plans" 
-                    imgSrc="/assets/images/Products/piggy-bank2.gif" 
+                    imgSrc="/assets/images/Products/piggy-bank.avif" 
                     link="/"
                     />
                 </div>
