@@ -136,7 +136,7 @@ function NavListMenu({ closeMenu }) {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base gap-2 py-2 pr-4 lg:px-1 font-medium text-gray-900"
+              className="flex items-center text-base gap-2 py-2 xl:px-4 lg:px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -216,7 +216,7 @@ function NavListMenuDesktop() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center text-base py-2 xl:pr-4 gap-2 lg:px-1 font-medium text-gray-900"
+              className="flex items-center text-base py-2 xl:px-4 gap-2 lg:px-1 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -249,6 +249,10 @@ function NavListMenuDesktop() {
 }
 function NavList({ closeMenu }) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 958 });
+  const handleHomeClick = () => {
+    closeMenu(); // Close the menu
+    setIsMobileMenuOpen(false); // Reset mobile menu state
+  };
   return (
     <List className=" mb-6  p-0 lg:mt-0 lg:mb-0 lg:flex-row ">
       <Typography
@@ -257,14 +261,14 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base py-2 xl:pr-4 lg:px-1 ">
+        <Link to="/" onClick={handleHomeClick}>
+          <ListItem className="flex items-center text-base py-2 xl:px-4 lg:px-1 ">
             Home
           </ListItem>
         </Link>
       </Typography>
       {isMobileOrTablet ? (
-        <NavListMenu closeMenu={closeMenu} />
+        <NavListMenu closeMenu={handleHomeClick} />
       ) : (
         <NavListMenuDesktop />
       )}
@@ -274,8 +278,8 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/about-us" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
+        <Link to="/about-us" onClick={handleHomeClick}>
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             About Us
           </ListItem>
         </Link>
@@ -286,8 +290,8 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/our-partners" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
+        <Link to="/our-partners" onClick={handleHomeClick}>
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Our Partners
           </ListItem>
         </Link>
@@ -298,8 +302,8 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/under-process" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
+        <Link to="/under-process" onClick={handleHomeClick}>
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Claim
           </ListItem>
         </Link>
@@ -310,8 +314,8 @@ function NavList({ closeMenu }) {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/contact" onClick={closeMenu}>
-          <ListItem className="flex items-center text-base gap-2 xl:pr-4 py-2 lg:px-1 ">
+        <Link to="/contact" onClick={handleHomeClick}>
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
             Contact Us
           </ListItem>
         </Link>
@@ -330,7 +334,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <section className="backdrop-saturate-100 min-h-[40px] border-b bg-white hidden px-4 py-2 sm:px-10 md:flex items-center max-sm:hidden">
+      <section className="backdrop-saturate-100 min-h-[40px] border-b justify-center flex-wrap bg-white hidden px-4 py-2 sm:px-10 md:flex items-center max-sm:hidden">
         <button type="button" className="text-gray-800 text-xs">
           <p className="flex items-center gap-2  ">
             <span className="text-blue-700">
@@ -382,24 +386,16 @@ const Header = () => {
             </Link>
         
         </button>
-        <div className="sm:ml-auto text-gray-800">
-          <div>
-            <span className="flex items-center gap-3 text-xl text-gray-800">
-              <TiSocialFacebook />
-              <TiSocialTwitter />
-              <TiSocialPinterest />
-              <TiSocialYoutube />
-            </span>
-          </div>
-        </div>
+      
       </section>
 
-      <Navbar className="max-w-full md:sticky top-0 z-10 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.png')] bg-cover bg-center bg-no-repeat">
+      <Navbar className="max-w-full md:sticky top-0 z-50 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.webp')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/' className="h-16 w-32 md:w-44">
             <img
-              src="assets/images/header/logo.png"
+              src="assets/images/header/logo.webp"
               alt="Notion insurance "
+              loading='lazy'
               className="mr-4 py-0 cursor-pointer object-cover  h-full w-full  lg:ml-2"
             />
           </Link>

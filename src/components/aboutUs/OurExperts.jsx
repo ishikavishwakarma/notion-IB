@@ -23,15 +23,16 @@ const OurExperts = () => {
 
                 <CardBody className='flex flex-wrap items-center justify-center gap-x-5 gap-y-10 md:gap-x-10 md:flex-row w-full md:px-5 p-1'>
 
-                    <Card color="transparent" className="w-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
+                    <Card color="transparent" className="w-full md:max-w-[15rem] h-full max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
                         <CardHeader className="mx-0 flex flex-col justify-center items-center gap-4 py-4">
                             <Avatar
                                 size="xxl"
                                 variant="circular"
-                                src="assets/images/founder/img3.jpg"
+                                src="/assets/images/founder/img3.jpg"
                                 alt="tania andrew"
+                                loading='lazy'
                             />
-                            <div className="flex w-full items-center flex-col gap-0.5">
+                            <div className="flex w-full h-full items-center flex-col gap-0.5">
                                 <div className="flex items-center justify-between">
                                     <Typography variant="h6" color="blue-gray">
                                         Bharat Shrivastava
@@ -43,15 +44,16 @@ const OurExperts = () => {
 
                     </Card>
 
-                    <Card color="transparent" className="w-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
-                        <CardHeader className="mx-0 flex flex-col justify-center items-center gap-4 py-4">
+                    <Card color="transparent" className="w-full h-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
+                        <CardHeader className="mx-0  flex flex-col justify-center items-center gap-4 py-4">
                             <Avatar
                                 size="xxl"
                                 variant="circular"
-                                src="assets/images/founder/img4.png"
+                                src="/assets/images/founder/img4.png"
                                 alt="tania andrew"
+                                loading='lazy'
                             />
-                            <div className="flex w-full items-center flex-col gap-0.5">
+                            <div className="flex h-full w-full items-center flex-col gap-0.5">
                                 <div className="flex items-center justify-between">
                                     <Typography variant="h6" color="blue-gray">
                                         Suresh G Malviya
@@ -63,15 +65,16 @@ const OurExperts = () => {
 
                     </Card>
 
-                    <Card color="transparent" className="w-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
+                    <Card color="transparent" className="w-full h-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
                         <CardHeader className="mx-0 flex flex-col justify-center items-center gap-4 py-4">
                             <Avatar
                                 size="xxl"
                                 variant="circular"
-                                src="assets/images/founder/img2.jpg"
+                                src="/assets/images/founder/img2.jpg"
                                 alt="tania andrew"
+                                loading='lazy'
                             />
-                            <div className="flex w-full items-center flex-col gap-0.5">
+                            <div className="flex w-full h-full items-center flex-col gap-0.5">
                                 <div className="flex items-center justify-between">
                                     <Typography variant="h6" color="blue-gray">
                                         Arun Gupta
@@ -83,15 +86,16 @@ const OurExperts = () => {
 
                     </Card>
 
-                    <Card color="transparent" className="w-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
+                    <Card color="transparent" className="w-full h-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
                         <CardHeader className="mx-0 flex flex-col justify-center items-center gap-4 py-4">
                             <Avatar
                                 size="xxl"
                                 variant="circular"
-                                src="assets/images/founder/img1.jpg"
+                                src="/assets/images/founder/img1.jpg"
                                 alt="tania andrew"
+                                loading='lazy'
                             />
-                            <div className="flex w-full items-center flex-col gap-0.5">
+                            <div className="flex h-full w-full items-center flex-col gap-0.5">
                                 <div className="flex items-center justify-between">
                                     <Typography variant="h6" color="blue-gray">
                                         Kanchan S Malviya
@@ -103,15 +107,16 @@ const OurExperts = () => {
 
                     </Card>
 
-                    <Card color="transparent" className="w-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
+                    <Card color="transparent" className="w-full h-full md:max-w-[15rem] max-w-[10rem] md:hover:scale-105 duration-300 hover:shadow-2xl py-0.5 pr-0.2">
                         <CardHeader className="mx-0 flex flex-col justify-center items-center gap-4 py-4">
                             <Avatar
                                 size="xxl"
                                 variant="circular"
-                                src="assets/images/founder/img5.png"
+                                src="/assets/images/founder/img5.png"
                                 alt="tania andrew"
+                                loading='lazy'
                             />
-                            <div className="flex w-full items-center flex-col gap-0.5">
+                            <div className="flex w-full h-full items-center flex-col gap-0.5">
                                 <div className="flex items-center justify-between">
                                     <Typography variant="h6" color="blue-gray">
                                         Avinash Gupta

@@ -38,12 +38,14 @@ const Hero = () => {
                     </div>
 
                     <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-center flex flex-col max-sm:hidden '>
+                       
                         <img
-                            className=' rounded-full shadow-xl w-4/5'
-                            src="/assets/images/hero/hero.jpg"
+                            className=' rounded-full h-full shadow-xl w-4/5'
+                            src="/assets/images/hero/hero.avif"
                             alt=""
-                           
+                           loading='lazy'
                         />
+                        
                         <span className='absolute z-9999 top-[50%] left-[50%]'>
                             <div onClick={handleOpen} className="wrapper">
                                 <div className="video-main">
@@ -54,7 +56,7 @@ const Hero = () => {
                                             <div className="waves wave-3"></div>
                                         </div>
                                     </div>
-                                    <a className='video text-5xl' frameBorder="0" allowFullScreen data-lity ><MdOutlinePlayCircle /></a>
+                                    <a className='video text-5xl -mb-2' frameBorder="0" allowFullScreen data-lity ><MdOutlinePlayCircle /></a>
 
                                 </div>
                             </div>
@@ -69,7 +71,7 @@ const Hero = () => {
                                 className='object-contain overflow-hidden'
                             >
 
-                                <iframe className='w-full md:h-[400px] iframe' src="https://www.youtube.com/embed/WtTeXHkZ6pI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowFullScreen></iframe>
+                                <iframe loading='lazy' className='w-full h-full md:h-[400px] iframe' src="https://www.youtube.com/embed/WtTeXHkZ6pI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowFullScreen></iframe>
 
                             </Dialog>
                         </span>
