@@ -89,89 +89,7 @@ const navListMenuItems = [
     ],
   },
 ];
-function NavListMenu({ closeMenu }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const renderItems = navListMenuItems.map(({ title, sublink }, key) => (
-    <Link to="#" className="flex lg:justify-center" key={key}>
-      <div className="">
-        <MenuItem
-          variant="h4"
-          color="blue-gray"
 
-          className="flex items-center text-black bg-transparent hover:bg-transparent text-lg cursor-pointer font-bold"
-        >
-          {title}
-        </MenuItem>
-
-        {sublink.map((sublinkItem, sublinkKey) => (
-          <Link
-            to={sublinkItem.link}
-            key={sublinkKey}
-            className="text-sm text-blue-gray-500"
-            onClick={() => {
-              closeMenu();
-              setIsMobileMenuOpen(false);
-            }}
-
-          >
-            <MenuItem className="flex items-center cursor-pointer gap-3 rounded-lg">
-              {sublinkItem.name}
-            </MenuItem>
-          </Link>
-        ))}
-      </div>
-    </Link>
-  ));
-
-  return (
-    <Fragment>
-      <Menu
-        open={isMenuOpen}
-        handler={setIsMenuOpen}
-        offset={{ mainAxis: 20 }}
-        placement="bottom"
-        allowHover={true}
-      >
-        <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
-            <ListItem
-              className="flex items-center text-base gap-2 py-2 xl:px-4 lg:px-1 font-medium text-gray-900"
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-            >
-              Insurances
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
-                  }`}
-              />
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
-                  }`}
-              />
-            </ListItem>
-          </Typography>
-        </MenuHandler>
-
-        <MenuList className="hidden  w-full bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
-          <div className="w-[70vw] rounded-xl bg-white outline-none lg:block outline-0 border-0 hover:border-0">
-            <ul className="grid grid-cols-4  justify-center gap-y-2 outline-none outline-0">
-              {renderItems}
-            </ul>
-          </div>
-        </MenuList>
-      </Menu>
-      <div className="block lg:hidden">
-      <Collapse open={isMobileMenuOpen}>
-          {renderItems}
-       
-        </Collapse>
-      </div>
-    </Fragment>
-  );
-}
 function NavListMenuDesktop() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -248,6 +166,89 @@ function NavListMenuDesktop() {
   );
 }
 function NavList({ closeMenu }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  function NavListMenu({ closeMenu }) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const renderItems = navListMenuItems.map(({ title, sublink }, key) => (
+      <Link to="#" className="flex lg:justify-center" key={key}>
+        <div className="">
+          <MenuItem
+            variant="h4"
+            color="blue-gray"
+  
+            className="flex items-center text-black bg-transparent hover:bg-transparent text-lg cursor-pointer font-bold"
+          >
+            {title}
+          </MenuItem>
+  
+          {sublink.map((sublinkItem, sublinkKey) => (
+            <Link
+              to={sublinkItem.link}
+              key={sublinkKey}
+              className="text-sm text-blue-gray-500"
+              onClick={() => {
+                closeMenu();
+                setIsMobileMenuOpen(false);
+              }}
+  
+            >
+              <MenuItem className="flex items-center cursor-pointer gap-3 rounded-lg">
+                {sublinkItem.name}
+              </MenuItem>
+            </Link>
+          ))}
+        </div>
+      </Link>
+    ));
+  
+    return (
+      <Fragment>
+        <Menu
+          open={isMenuOpen}
+          handler={setIsMenuOpen}
+          offset={{ mainAxis: 20 }}
+          placement="bottom"
+          allowHover={true}
+        >
+          <MenuHandler>
+            <Typography as="div" variant="small" className="font-medium">
+              <ListItem
+                className="flex items-center text-base gap-2 py-2 xl:px-4 lg:px-1 font-medium text-gray-900"
+                selected={isMenuOpen || isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              >
+                Insurances
+                <ChevronDownIcon
+                  strokeWidth={2.5}
+                  className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                    }`}
+                />
+                <ChevronDownIcon
+                  strokeWidth={2.5}
+                  className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                    }`}
+                />
+              </ListItem>
+            </Typography>
+          </MenuHandler>
+  
+          <MenuList className="hidden  w-full bg-transparent border-0 lg:justify-center shadow-none outline-none outline-0  lg:flex">
+            <div className="w-[70vw] rounded-xl bg-white outline-none lg:block outline-0 border-0 hover:border-0">
+              <ul className="grid grid-cols-4  justify-center gap-y-2 outline-none outline-0">
+                {renderItems}
+              </ul>
+            </div>
+          </MenuList>
+        </Menu>
+        <div className="block lg:hidden">
+        <Collapse open={isMobileMenuOpen}>
+            {renderItems}
+         
+          </Collapse>
+        </div>
+      </Fragment>
+    );
+  }
   const isMobileOrTablet = useMediaQuery({ maxWidth: 958 });
   const handleHomeClick = () => {
     closeMenu(); // Close the menu
@@ -259,6 +260,8 @@ function NavList({ closeMenu }) {
   };
   return (
     <List className=" mb-6  p-0 lg:mt-0 lg:mb-0 lg:flex-row ">
+      {isMobileOrTablet ? (
+        <>
       <Typography
         as="a"
         variant="small"
@@ -271,12 +274,8 @@ function NavList({ closeMenu }) {
           </ListItem>
         </Link>
       </Typography>
-      {isMobileOrTablet ? (
         <NavListMenu closeMenu={handleHomeClick} />
-      ) : (
-        <NavListMenuDesktop />
-      )}
-      <Typography
+        <Typography
         as="a"
         variant="small"
         color="blue-gray"
@@ -324,6 +323,73 @@ function NavList({ closeMenu }) {
           </ListItem>
         </Link>
       </Typography>
+        </>
+      ) : (
+        <>
+        <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to="/" >
+          <ListItem className="flex items-center text-base py-2 xl:px-4 lg:px-1 ">
+            Home
+          </ListItem>
+        </Link>
+      </Typography>
+      <NavListMenuDesktop />
+      <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to="/about-us" >
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
+            About Us
+          </ListItem>
+        </Link>
+      </Typography>
+      <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to="/our-partners" >
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
+            Our Partners
+          </ListItem>
+        </Link>
+      </Typography>
+      <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to="/under-process" >
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
+            Claim
+          </ListItem>
+        </Link>
+      </Typography>
+      <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <Link to="/contact" >
+          <ListItem className="flex items-center text-base gap-2 xl:px-4 py-2 lg:px-1 ">
+            Contact Us
+          </ListItem>
+        </Link>
+      </Typography>
+        </>
+      )}
+      
     </List>
   );
 }
@@ -419,7 +485,7 @@ const Header = () => {
 
           </Link>
           <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
-            <Button variant="gradient" color="blue" className="py-2 w-32 lg:px-0 xl:px-2 text-sm">
+            <Button variant="gradient" color="blue" className="py-2 xl:w-40 lg:w-32 lg:px-0 xl:px-2 text-sm">
               Become a POSP
             </Button>
           </Link>

@@ -116,7 +116,7 @@ const TwoWheelerInsurance = () => {
               Top Bike Insurance Plans
             </Typography>
 
-            <div className="mt-4 grid w-full px-6   grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="mt-4 grid w-full px-6   grid-cols-1  gap-4">
               {insuranceOptions.map((option, index) => (
                 <InsuranceCard key={index} {...option} />
               ))}

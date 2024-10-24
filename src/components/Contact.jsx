@@ -153,6 +153,7 @@ export function Contact() {
                 </Typography>
                 <p  className="mb-7">At Notion Insurance Broker Pvt Ltd, we understand that choosing the right insurance can be overwhelming.</p>
                 <div className="flex lg:flex-row flex-col gap-3">
+                 
                   <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
                     <CardBody className="flex flex-col h-full items-center gap-3  border rounded-xl shadow-xl">
 
@@ -161,9 +162,9 @@ export function Contact() {
                           <Typography variant="h5" color="blue-gray" className="py-3 text-start">
                             Bhopal Branch
                           </Typography>
-                          <ul className="flex flex-col items-start p-2  justify-center gap-2 ">
-                            <li className="flex items-center gap-6">
-                              <span className="text-xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
+                          <ul className="flex flex-col  items-start p-2  justify-center gap-2 ">
+                            <li className="flex items-center gap-4">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <FaPhoneAlt />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 ">
@@ -171,8 +172,8 @@ export function Contact() {
                               </Typography>
                             </li>
 
-                            <li className="flex items-center gap-6">
-                              <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
+                            <li className="flex items-center gap-4">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <MdEmail />
                               </span>
                               <Typography className="font-normal text-lg text-start text-gray-900">
@@ -181,7 +182,7 @@ export function Contact() {
                             </li>
 
                             <li className="flex items-center gap-4">
-                              <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
@@ -199,6 +200,49 @@ export function Contact() {
                     </CardBody>
                   </Card>
                   <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
+                    <CardBody className="flex flex-col h-full items-center gap-3  border rounded-xl shadow-xl">
+
+                      <div className="">
+                        <CardBody className=" p-0">
+                          <Typography variant="h5" color="blue-gray" className="py-3 ml-3 text-start">
+                          Jabalpur Branch
+                          </Typography>
+                          <ul className="flex flex-col items-start p-2  justify-center gap-2 ">
+                            <li className="flex items-center gap-4">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                <FaPhoneAlt />
+                              </span>
+                              <Typography className="font-normal text-lg text-gray-900 ">
+                              +91 982722035 
+                              </Typography>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                <MdEmail />
+                              </span>
+                              <Typography className="font-normal w-[50%] text-lg text-start text-gray-900">
+                              mkrathod@notioninsurance.com
+                              </Typography>
+                            </li>
+
+                            <li className="flex items-center gap-4">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                <IoLocation />
+                              </span>
+                              <Typography className="font-normal text-lg text-gray-900 text-start">
+                              33, JK Complex, 2nd Floor, Gorakhpur, Jabalpur
+                              </Typography>
+                            </li>
+                          </ul>
+
+                        </CardBody>
+
+
+                      </div>
+
+                    </CardBody>
+                  </Card>
+                  {/* <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
                     <CardBody className="flex h-full flex-col items-start gap-3  border rounded-xl shadow-xl">
 
                       <div className="">
@@ -232,7 +276,7 @@ export function Contact() {
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
-                              33, JK Complex, 2nd Floor, Gorakhpur, Jabalpur
+                              
 
                               </Typography>
                             </li>
@@ -244,7 +288,7 @@ export function Contact() {
                       </div>
 
                     </CardBody>
-                  </Card>
+                  </Card> */}
                 </div>
               </div>
 
