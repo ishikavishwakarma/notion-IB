@@ -3,7 +3,7 @@ import React from "react";
 const InsuranceCard = ({ logo, insurerName, price, keyFeatures, link }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mb-4 md:hover:scale-105 duration-300 border hover:shadow-xl">
-      <div className="div grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+      <div className="div grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
         <div className="flex items-center">
           <img src={logo} alt={insurerName} className="h-16 w-20 mr-4" />
           <div className="flex items-center justify-center">
