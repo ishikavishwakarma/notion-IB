@@ -37,7 +37,9 @@ import CancerInsurance from "../components/AllProducts/HealthInsurance/CancerIns
 import EmployeeGroupHealthInsurance from "../components/AllProducts/HealthInsurance/EmployeeGroupHealthInsurance";
 import MaternityCover from "../components/AllProducts/HealthInsurance/MaternityCover";
 import SeniorCitizenPlan from "../components/AllProducts/HealthInsurance/SeniorCitizenPlan";
-
+import Faq from "../components/FAQ/Faq";
+import  TermAndConditions  from "../components/termandconditions/TermAndConditions";
+import Privacy from "../components/privacyPolicy/Privacy";
 const Routing = () => {
   return (
     <div>
@@ -131,7 +133,23 @@ const Routing = () => {
           path="/senior-citizen-plan"
           element={<SeniorCitizenPlan />}
         />
+        <Route
+          path="/frequently-ask-question"
+          element={<Faq/>}
+        />
+         <Route
+          path="/terms-conditions"
+          element={<TermAndConditions/>}
+        />
+         <Route
+          path="/privacy"
+          element={<Privacy/>}
+        />
+
+
       </Routes>
+      
+
     </div>
   );
 };

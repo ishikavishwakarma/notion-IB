@@ -19,9 +19,10 @@ const LINKS = [
   {
     title: "Legal and Admin Policies",
     items: [
-      { text: "Privacy Policy", url: "/privacy-policy" },
-      { text: "Terms & Conditions", url: "/" },
-      { text: "FAQ's", url: "/" },
+      { text: "Privacy Policy", url: "/privacy" },
+      { text: "Terms & Conditions", url: "/terms-conditions" },
+      { text: "FAQ's", url: "/frequently-ask-question" },
+      
       { text: "Career", url: "/" },
     ],
   },
