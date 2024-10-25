@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Hero from "./HomeSubComponents/Hero";
 import Products from "./HomeSubComponents/Products";
@@ -11,6 +11,19 @@ import { Helmet } from "react-helmet-async";
 import Work from "./HomeSubComponents/Work";
 
 const Home = () => {
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  // Function to detect screen width
+  const handleResize = () => {
+    setIsMobileView(window.innerWidth <= 768); // Sets mobile view for screens <= 768px
+  };
+  useEffect(() => {
+    handleResize(); // Check size on initial render
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div>
 
@@ -22,9 +35,17 @@ const Home = () => {
       </Helmet>
 
 
-
-      <Hero />
-      <Products />
+      {isMobileView ? (
+        <>
+          <Products />
+          <Hero />
+        </>
+      ) : (
+        <>
+          <Hero />
+          <Products />
+        </>
+      )}
       <Partners />
       <Exam />
       <Work/>
