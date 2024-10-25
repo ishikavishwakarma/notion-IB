@@ -5,6 +5,16 @@ import { FaFacebook, FaGithub, FaGlobe, FaInstagram, FaTwitter } from "react-ico
 
 const LINKS = [
   {
+    title: "Licence",
+    items: [
+      { text: "Licence No. 619", url: "/" },
+      { text: "IRDA Direct Broker Code: IRDA/ DB 693/17", url: "/" },
+      { text: "Valid till: 02/10/2026", url: "/" },
+      { text: "CIN: U66010MP2016PTC041677", url: "/" },
+    ],
+  },
+  
+  {
     title: "Our Links",
     items: [
       { text: "Home", url: "/" },
@@ -13,8 +23,7 @@ const LINKS = [
       { text: "Our Partners", url: "/our-partners" },
       { text: "Contact Us", url: "/contact" },
     ],
-  },
-  
+  }, 
   
   {
     title: "Legal and Admin Policies",
@@ -26,15 +35,8 @@ const LINKS = [
       { text: "Career", url: "/" },
     ],
   },
-  {
-    title: "Licence",
-    items: [
-      { text: "Licence No. 619", url: "/" },
-      { text: "IRDA Direct Broker Code: IRDA/ DB 693/17", url: "/" },
-      { text: "Valid till: 02/10/2026", url: "/" },
-      { text: "CIN: U66010MP2016PTC041677", url: "/" },
-    ],
-  },
+ 
+ 
 ];
 
 const currentYear = new Date().getFullYear();
@@ -43,8 +45,8 @@ const Footer = () => {
   return (
     <footer className="mt-1 relative footer-img w-full  bg-cover bg-center pt-3">
       <div className="w-full ">
-        <div className="flex justify-center flex-col lg:flex-row gap-4 items-center px-2 lg:px-4">
-          <Typography className="w-56 my-6 justify-center items-center flex flex-col ">
+        <div className="flex justify-center flex-col lg:flex-row gap-6 items-center px-2 lg:px-4">
+          <Typography className="md:w-60 my-6 px-3 justify-center items-center flex flex-col ">
             <img loading="lazy" src="assets/images/header/logo.webp" className="h-full w-full" alt="NIB" />
             <p className="text-black font-medium text-xs  mb-2">
             Notion Insurance Broker Pvt. Ltd. delivers customized insurance solutions designed to meet the diverse needs of businesses and individuals. 

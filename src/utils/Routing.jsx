@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "../components/Home/Home";
 import CarInsurance from "../components/AllProducts/GeneralInsurance/CarInsurance";
 import Contact from "../components/Contact";
@@ -38,7 +38,7 @@ import EmployeeGroupHealthInsurance from "../components/AllProducts/HealthInsura
 import MaternityCover from "../components/AllProducts/HealthInsurance/MaternityCover";
 import SeniorCitizenPlan from "../components/AllProducts/HealthInsurance/SeniorCitizenPlan";
 import Faq from "../components/FAQ/Faq";
-import  TermAndConditions  from "../components/termandconditions/TermAndConditions";
+import TermAndConditions from "../components/termandconditions/TermAndConditions";
 import Privacy from "../components/privacyPolicy/Privacy";
 const Routing = () => {
   return (
@@ -105,51 +105,21 @@ const Routing = () => {
           path="/director-officers-insurance"
           element={<DirectorOfficersInsurance />}
         />
-        <Route
-          path="/money-back-policy"
-          element={<MoneyBackPolicy />}
-        />
-        <Route
-          path="/critical-care-plan"
-          element={<CriticalCare />}
-        />
-        <Route 
-          path="/one-cr-health-cover"
-          element={<OneCrHealthCover />}
-        />
-        <Route
-          path="/cancer-insurance"
-          element={<CancerInsurance />}
-        />
+        <Route path="/money-back-policy" element={<MoneyBackPolicy />} />
+        <Route path="/critical-care-plan" element={<CriticalCare />} />
+        <Route path="/one-cr-health-cover" element={<OneCrHealthCover />} />
+        <Route path="/cancer-insurance" element={<CancerInsurance />} />
         <Route
           path="/employee-group-health-insurance"
           element={<EmployeeGroupHealthInsurance />}
         />
-        <Route
-          path="/maternity-cover"
-          element={<MaternityCover />}
-        />
-        <Route
-          path="/senior-citizen-plan"
-          element={<SeniorCitizenPlan />}
-        />
-        <Route
-          path="/frequently-ask-question"
-          element={<Faq/>}
-        />
-         <Route
-          path="/terms-conditions"
-          element={<TermAndConditions/>}
-        />
-         <Route
-          path="/privacy"
-          element={<Privacy/>}
-        />
-
-
+        <Route path="/maternity-cover" element={<MaternityCover />} />
+        <Route path="/senior-citizen-plan" element={<SeniorCitizenPlan />} />
+        <Route path="/frequently-ask-question" element={<Faq />} />
+        <Route path="/terms-conditions" element={<TermAndConditions />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      
-
     </div>
   );
 };
