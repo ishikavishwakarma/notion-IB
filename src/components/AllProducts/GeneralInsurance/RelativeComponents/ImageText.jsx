@@ -19,7 +19,7 @@ function ImageTextCard({ heading,subheading ,imageSrc, altText, description }) {
         <img
           src={imageSrc}
           alt={altText}
-          className="h-80 w-full object-cover"
+          className="h-72 w-full "
         />
       </CardHeader>
       <CardBody>

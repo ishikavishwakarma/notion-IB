@@ -1,20 +1,10 @@
 import React from "react";
 import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
   Card,
   CardBody,
-  CardFooter,
   Typography,
-  Button,
-  TabPanel,
-  CardHeader,
 } from "@material-tailwind/react";
-import Header from "../../Header";
 import TableComponent from "./RelativeComponents/TableComponent";
-import { Link } from "react-router-dom";
 import InsuranceCard from "./RelativeComponents/InsuranceCard";
 import ImageTextCard from "./RelativeComponents/ImageText";
 import InsuranceTypes from "./RelativeComponents/TypesInsurance";
@@ -124,10 +114,10 @@ const TwoWheelerInsurance = () => {
             <br />
 
             <div>
-              <ImageTextCard
+            <ImageTextCard
                 heading="A Guide to Bike Insurance"
                 subheading="Know all about Two Wheeler Insurance - Definition, Importance, Types of Bike Insurance"
-                imageSrc="https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/bajaj-cng-freedom-125-drum1720422266649.jpg?q=80"
+                imageSrc="assets/images/Products/bike-insurance.webp"
                 altText="Bike"
                 description="Bike insurance, also known as two-wheeler insurance, is a type of insurance policy that provides financial aid to you against the losses incurred to your bike & third-party property/life due to unforeseen events like accidents, natural & man-made disasters, fire, loss, etc. It is mandatory for all bike owners to have at least a third-party bike insurance policy in India. There are three kinds of two-wheeler insurance plans available in the market namely third-party bike insurance, standalone own-damage (OD) insurance, and comprehensive cover for bikes. "
               />

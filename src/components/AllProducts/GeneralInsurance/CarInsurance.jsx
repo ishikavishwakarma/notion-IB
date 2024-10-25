@@ -128,7 +128,7 @@ const CarInsurance = () => {
               <ImageTextCard
                 heading="A Guide to Car Insurance"
                 subheading=" Get car insurance & protect your vehicle & yourself."
-                imageSrc="https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80"
+                imageSrc="assets/images/Products/car-insurance.webp"
                 altText="Nexon Car"
                 description="Car insurance, also referred as Motor or Four-wheeler insurance, is a type of agreement between a car owner and an insurance provider. This contract provides financial protection to the vehicle if the vehicle suffers any damage or loss due to expected events like accidents & natural disasters. 
         A motor insurance holds more significance than just being a piece of paper to keep in the car's dashboard and show traffic officials when necessary. This insurance policy gives financial protection to the damages of your vehicle caused in an accident or theft.No matter how careful you are while driving, accidents can happen, and repair costs can be substantial. Car insurance policies are of various types. First type is third-party car insurance. This cover protects you from financial damages if your insured vehicle unintentionally damages a third party's vehicle or property or injures a third party.  "
