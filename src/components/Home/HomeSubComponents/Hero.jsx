@@ -15,7 +15,7 @@ const Hero = () => {
     return (
         <div className="px-10" >
             <div className="h-full w-full">
-                <div className="grid gap-20 lg:gap-20 md:gap-10 grid-cols-1 md:grid-cols-2   ">
+                <div className="grid gap-10 justify-content-center grid-cols-1 md:grid-cols-2   ">
 
                     <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-4  lg:pl-10'>
                         <div>
@@ -37,16 +37,16 @@ const Hero = () => {
 
                     </div>
 
-                    <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-center flex flex-col max-sm:hidden '>
+                    <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-end flex flex-col max-sm:hidden '>
                        
                         <img
-                            className='rounded-full h-full shadow-xl w-4/5'
+                            className='rounded-full h-full w-full lg:h-[90%] shadow-xl lg:w-3/5'
                             src="/assets/images/hero/hero.avif"
                             alt=""
                         //    loading='lazy'
                         />
                         
-                        <span className='absolute z-9999 top-[50%] left-[50%]'>
+                        <span className='absolute z-9999 top-[50%] left-[50%] lg:left-[70%]'>
                             <div onClick={handleOpen} className="wrapper">
                                 <div className="video-main">
                                     <div className="promo-video">

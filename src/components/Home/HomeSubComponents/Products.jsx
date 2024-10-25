@@ -12,7 +12,7 @@ const Products = () => {
     const handleOpen = () => setOpen(!open);
   
     return (
-        <div className='flex flex-col items-center justify-center py-10 gap-2 max-sm:px-2'>
+        <div className='flex flex-col items-center justify-center py-1 gap-2 max-sm:px-2'>
 
             <div className='relative flex flex-wrap items-center  justify-center max-sm:gap-3 min-md:gap-8 gap-2 sm:w-4/5 max-sm:w-full  py-10 '>
 
