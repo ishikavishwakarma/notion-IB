@@ -21,9 +21,9 @@ const Information = () => {
                 </CardBody>
 
                 <img
-                    className="md:w-1/2 px-5 h-full w-full rounded-xl"
+                    className="md:w-1/2 px-5 h-80 w-full rounded-xl"
                     loading="lazy"
-                    src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                    src="/assets/images/about/about-us.webp"
                     alt="card-image"
                 />
 
