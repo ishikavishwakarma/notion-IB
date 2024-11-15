@@ -119,8 +119,8 @@ const Routing = () => {
         <Route path="/terms-conditions" element={<TermAndConditions />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<Home/>} />
-        <Route path="/javascript" element={<Home/>} />
-        <Route path="/js" element={<Home/>} />
+        <Route path="/javascript" element={<Navigate to="/" replace />} />
+        <Route path="/js" element={<Navigate to="/" replace />} />
 
       </Routes>
     </div>
