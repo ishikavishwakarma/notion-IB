@@ -120,6 +120,7 @@ const Routing = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<Home/>} />
         <Route path="/javascript" element={<Home/>} />
+        <Route path="/js" element={<Home/>} />
 
       </Routes>
     </div>

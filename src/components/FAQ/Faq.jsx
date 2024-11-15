@@ -6,7 +6,6 @@ import {
   Card,
   CardBody,
 } from "@material-tailwind/react";
-
 function Icon({ id, open }) {
   return (
     <svg
@@ -111,7 +110,6 @@ const Faq = () => {
     mount: { scale: 1 },
     unmount: { scale: 0.9 },
   };
-   
   const [open1, setOpen1] = React.useState(0); // For the first set (1 to 10)
   const [open2, setOpen2] = React.useState(0); // For the second set (11+)
 
