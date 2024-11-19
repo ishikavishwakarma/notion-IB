@@ -13,11 +13,11 @@ const Hero = () => {
     const handleOpen = () => setOpen(!open);
 
     return (
-        <div className="px-10" >
+        <div className="container" >
             <div className="h-full w-full">
                 <div className="grid gap-10 justify-content-center grid-cols-1 md:grid-cols-2   ">
 
-                    <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-4  lg:pl-10'>
+                    <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-4 '>
                         <div>
                             <h1 className="py-3 text-5xl lg:text-6xl font-semibold " >Buy Insurance,</h1>
                             <span className="text-4xl lg:text-5xl text-orange-900">
