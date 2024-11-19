@@ -1,12 +1,19 @@
+import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import { FcBriefcase, FcBusinessman, FcCollaboration, FcDebt, FcSurvey } from 'react-icons/fc'
 
 const Work = () => {
     return (
-        <div loading='lazy' className="mx-auto w-full md:px-20 px-5 py-20 bg-[url('/assets/images/workflow/workflow.avif')] bg-cover bg-center bg-no-repeat">
-            <p className=" text-blue-gray-800 text-center">work process</p>
-            <h2 className="font-headline text-2xl font-semibold sm:text-3xl text-center">Our easy work process <br /> in 4 steps</h2>
-
+        <div loading='lazy' className="mx-auto w-full md:px-20 px-5 pt-16 pb-20 bg-[url('/assets/images/workflow/workflow.avif')] bg-cover bg-center bg-no-repeat">
+            {/* <h2 className="font-headline text-2xl font-semibold sm:text-3xl text-center">Our easy work process in 4 steps</h2>
+            <p className=" text-blue-gray-800 text-center">work process</p> */}
+            <Typography variant="h3" className='text-center' color="blue-gray">
+            Our Easy Work Process in 4 Steps
+      </Typography>
+      <Typography variant="p" color="gray" className=" font-normal  text-base text-center">
+      Work process
+      </Typography>
+      <br />
             <div className="grid sm:grid-cols-4 gap-16 sm:gap-8 mt-16">
 
                 <div className="text-center ">

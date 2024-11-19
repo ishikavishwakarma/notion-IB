@@ -14,7 +14,7 @@ import {
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 export function Contact() {
@@ -102,44 +102,56 @@ export function Contact() {
           <div className="container px-2 py-5 mt-10">
             <ul className="grid lg:grid-cols-3 md:grid-cols-2 justify-items-center w-full  gap-5">
               <li className="hover:bg-gray-50 w-full hover:shadow-xl md:hover:scale-105 duration-150 border border-gray-400 rounded-md p-2 px-5">
-                <h1 className="text-2xl font-semibold py-2 text-gray-800">For Information Support</h1>
+                <h1 className="text-2xl font-semibold py-2 text-gray-800">
+                  For Information Support
+                </h1>
                 <span>
-                  <li className="grid grid-cols-1 items-center justify-items-center gap-2">
-                    <span className="text-xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                      <MdEmail />
-                    </span>
-                    <span className="font-normal text-md text-start text-gray-900">
-                      info@notioninsurance.com
-                    </span>
-                  </li>
+                  <Link to="mailto:info@notioninsurance.com">
+                    <li className="grid grid-cols-1 items-center justify-items-center gap-2">
+                      <span className="text-xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                        <MdEmail />
+                      </span>
+                      <span className="font-normal text-md text-start text-gray-900">
+                        info@notioninsurance.com
+                      </span>
+                    </li>
+                  </Link>
                 </span>
               </li>
 
               <li className="hover:bg-gray-50 w-full hover:shadow-xl md:hover:scale-105 duration-150 border border-gray-400 rounded-md p-2 px-5">
-                <h1 className="text-xl font-semibold py-2 text-gray-800">Become A POSP Support</h1>
+                <h1 className="text-xl font-semibold py-2 text-gray-800">
+                  Become A POSP Support
+                </h1>
                 <span>
-                  <li className="grid grid-cols-1 items-center justify-items-center gap-2">
-                    <span className="text-2xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                      <MdEmail />
-                    </span>
-                    <span className="font-normal text-md text-start text-gray-900">
-                      pospsupports@notioninsurance.com
-                    </span>
-                  </li>
+                  <Link to="mailto:pospsupports@notioninsurance.com">
+                    <li className="grid grid-cols-1 items-center justify-items-center gap-2">
+                      <span className="text-2xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                        <MdEmail />
+                      </span>
+                      <span className="font-normal text-md text-start text-gray-900">
+                        pospsupports@notioninsurance.com
+                      </span>
+                    </li>
+                  </Link>
                 </span>
               </li>
 
               <li className="hover:bg-gray-50 w-full hover:shadow-xl md:hover:scale-105 duration-150 border border-gray-400 rounded-md p-2 md:px-5">
-                <h1 className="text-xl font-semibold py-2 text-gray-800">For Claim Support</h1>
+                <h1 className="text-xl font-semibold py-2 text-gray-800">
+                  For Claim Support
+                </h1>
                 <span>
-                  <li className="grid grid-cols-1 items-center justify-items-center gap-2">
-                    <span className="text-2xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                      <MdEmail />
-                    </span>
-                    <span className="font-normal text-md text-start text-gray-900">
-                      claims@notioninsurance.com
-                    </span>
-                  </li>
+                  <Link to="mailto:claims@notioninsurance.com">
+                    <li className="grid grid-cols-1 items-center justify-items-center gap-2">
+                      <span className="text-2xl w-fit text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                        <MdEmail />
+                      </span>
+                      <span className="font-normal text-md text-start text-gray-900">
+                        claims@notioninsurance.com
+                      </span>
+                    </li>
+                  </Link>
                 </span>
               </li>
             </ul>
@@ -151,15 +163,20 @@ export function Contact() {
                 <Typography variant="h2" color="blue-gray">
                   Contact Information
                 </Typography>
-                <p  className="mb-7">At Notion Insurance Broker Pvt Ltd, we understand that choosing the right insurance can be overwhelming.</p>
+                <p className="mb-7">
+                  At Notion Insurance Broker Pvt Ltd, we understand that
+                  choosing the right insurance can be overwhelming.
+                </p>
                 <div className="flex lg:flex-row flex-col gap-3">
-                 
                   <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
                     <CardBody className="flex flex-col h-full items-center gap-3  border rounded-xl shadow-xl">
-
                       <div className="">
                         <CardBody className=" p-0">
-                          <Typography variant="h5" color="blue-gray" className="py-3 text-start">
+                          <Typography
+                            variant="h5"
+                            color="blue-gray"
+                            className="py-3 text-start"
+                          >
                             Bhopal Branch
                           </Typography>
                           <ul className="flex flex-col  items-start p-2  justify-center gap-2 ">
@@ -168,130 +185,95 @@ export function Contact() {
                                 <FaPhoneAlt />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 ">
-                                +91 9302182475 <br /> +91 755-4911343
+                                <Link
+                                  to="tel:9302182475"
+                                >
+                                  
+                                  91-9302182475
+                                </Link>
+                                 <br />
+                                 <Link
+                                  to="tel:755-4911343"
+                                >
+                                 +91 755-4911343
+                                </Link>
+                                 
                               </Typography>
                             </li>
-
-                            <li className="flex items-center gap-4">
-                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                                <MdEmail />
-                              </span>
-                              <Typography className="font-normal text-lg text-start text-gray-900">
-                                info@notioninsurance.com
-                              </Typography>
-                            </li>
+                            <Link to="mailto:info@notioninsurance.com">
+                              <li className="flex items-center gap-4">
+                                <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                  <MdEmail />
+                                </span>
+                                <Typography className="font-normal text-lg text-start text-gray-900">
+                                  info@notioninsurance.com
+                                </Typography>
+                              </li>
+                            </Link>
 
                             <li className="flex items-center gap-4">
                               <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
-                                3 floor lalwani complex, above Axis Bank, Vidya Nagar,
-                                Bhopal, Madhya Pradesh 462026
+                                3 floor lalwani complex, above Axis Bank, Vidya
+                                Nagar, Bhopal, Madhya Pradesh 462026
                               </Typography>
                             </li>
                           </ul>
-
                         </CardBody>
-
-
                       </div>
-
                     </CardBody>
                   </Card>
                   <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
                     <CardBody className="flex flex-col h-full items-center gap-3  border rounded-xl shadow-xl">
-
                       <div className="">
                         <CardBody className=" p-0">
-                          <Typography variant="h5" color="blue-gray" className="py-3 ml-3 text-start">
-                          Jabalpur Branch
-                          </Typography>
-                          <ul className="flex flex-col items-start p-2  justify-center gap-2 ">
-                            <li className="flex items-center gap-4">
-                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                                <FaPhoneAlt />
-                              </span>
-                              <Typography className="font-normal text-lg text-gray-900 ">
-                              +91 982722035 
-                              </Typography>
-                            </li>
-                            <li className="flex items-center gap-3">
-                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                                <MdEmail />
-                              </span>
-                              <Typography className="font-normal w-[50%] text-lg text-start text-gray-900">
-                              mkrathod@notioninsurance.com
-                              </Typography>
-                            </li>
-
-                            <li className="flex items-center gap-4">
-                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
-                                <IoLocation />
-                              </span>
-                              <Typography className="font-normal text-lg text-gray-900 text-start">
-                              33, JK Complex, 2nd Floor, Gorakhpur, Jabalpur
-                              </Typography>
-                            </li>
-                          </ul>
-
-                        </CardBody>
-
-
-                      </div>
-
-                    </CardBody>
-                  </Card>
-                  {/* <Card className=" lg:w-1/2 w-full h-94 p-0 shadow-none ">
-                    <CardBody className="flex h-full flex-col items-start gap-3  border rounded-xl shadow-xl">
-
-                      <div className="">
-                        <CardBody className=" p-0">
-                          <Typography variant="h5" color="blue-gray" className="py-3 text-start">
+                          <Typography
+                            variant="h5"
+                            color="blue-gray"
+                            className="py-3 ml-3 text-start"
+                          >
                             Jabalpur Branch
                           </Typography>
                           <ul className="flex flex-col items-start p-2  justify-center gap-2 ">
-                            <li className="flex items-center gap-6">
-                              <span className="text-xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
-                                <FaPhoneAlt />
-                              </span>
-                              <Typography className="font-normal text-lg text-gray-900 ">
-                              +91 982722035
-
-                              </Typography>
-                            </li>
-
-                            <li className="flex items-center gap-6">
-                              <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
-                                <MdEmail />
-                              </span>
-                              <Typography className="font-normal text-lg text-start text-gray-900">
-                              mkrathod@notioninsurance.com
-
-                              </Typography>
-                            </li>
-
+                            <Link
+                              to="tel:9827220353"
+                            >
+                              <li className="flex items-center gap-4">
+                                <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                  <FaPhoneAlt />
+                                </span>
+                                <Typography className="font-normal text-lg text-gray-900 ">
+                                  +91 9827220353
+                                </Typography>
+                              </li>
+                            </Link>
+                            <Link to="mailto:mkrathod@notioninsurance.com">
+                              <li className="flex items-center gap-3">
+                                <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
+                                  <MdEmail />
+                                </span>
+                                <Typography className="font-normal w-[50%] text-lg text-start text-gray-900">
+                                  mkrathod@notioninsurance.com
+                                </Typography>
+                              </li>
+                            </Link>
                             <li className="flex items-center gap-4">
-                              <span className="text-2xl text-blue-800 border p-2.5 rounded-full shadow-md bg-gray-50">
+                              <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
-                              
-
+                                33, JK Complex, 2nd Floor, Gorakhpur, Jabalpur
                               </Typography>
                             </li>
                           </ul>
-
                         </CardBody>
-
-
                       </div>
-
                     </CardBody>
-                  </Card> */}
+                  </Card>
                 </div>
               </div>
-
               <form
                 onSubmit={handleSubmit} // Attach the submit handler
                 className="flex flex-col gap-4 w-full lg:w-[40vw]  px-3 py-4"

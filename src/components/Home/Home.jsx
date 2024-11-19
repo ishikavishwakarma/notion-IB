@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 import Hero from "./HomeSubComponents/Hero";
 import Products from "./HomeSubComponents/Products";
@@ -9,6 +9,8 @@ import Contact2 from "./HomeSubComponents/Contact2";
 // import { Helmet } from "react-helmet";
 import { Helmet } from "react-helmet-async";
 import Work from "./HomeSubComponents/Work";
+import AllProduct from "./HomeSubComponents/AllProduct";
+import Advantage from "./HomeSubComponents/Advantage";
 
 const Home = () => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -37,17 +39,22 @@ const Home = () => {
 
       {isMobileView ? (
         <>
+          <AllProduct/>
           <Products />
+          <br />
           <Hero />
         </>
       ) : (
         <>
           <Hero />
+          <AllProduct/>
+        
           <Products />
         </>
       )}
       <Partners />
       <Exam />
+      <Advantage/>
       <Work/>
 
       <Contact2 />

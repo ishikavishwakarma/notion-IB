@@ -31,22 +31,22 @@ import { Link } from "react-router-dom";
 
 const navListMenuItems = [
   {
-    title: "General Insurance",
+    title: "Motor Insurance",
 
     sublink: [
       { name: "Car Insurance", link: "/car-insurance" },
       { name: "Two Wheeler Insurance", link: "/two-wheeler-insurance" },
-      { name: "Home Insurance", link: "/home-insurance" },
-      { name: "Brand Car Insurance", link: "/car-insurance" },
+     
       { name: "Travel Insurance", link: "/travel-insurance" },
       { name: "Commercial Vehicle", link: "/commercial-vehicle" },
       { name: "Taxi Insurance", link: "/taxi-insurance" },
     ],
   },
   {
-    title: "Non-General Insurance",
+    title: "Business Insurance",
 
     sublink: [
+      { name: "Home Insurance", link: "/home-insurance" },
       { name: "Marine Insurance", link: "/marine-insurance" },
       { name: "Fire & Burglary", link: "/fire-insurance" },
       { name: "Shop Owner Insurance", link: "/shop-insurance" },
