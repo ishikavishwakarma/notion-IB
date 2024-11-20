@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 const AllProduct = () => {
   return (
     <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 justify-items-center container">
-      <Card className="mt-6 border">
-        <CardBody>
+      <Card className="lg:mt-6  mt-2 border">
+        <CardBody className="py-2 md:py-6 px-1 ">
           <Typography
             variant="h4"
             color="blue-gray"
@@ -39,7 +39,7 @@ const AllProduct = () => {
                 {/* <CardHeader floated={false} className="h-20"> */}
                 <div className="w-full flex justify-center align-middle">
                   <img
-                    src="assets/images/Products/general/ads.png"
+                    src="assets/images/Products/general/ads.webp"
                     className="h-10 w-10 justify-center"
                     alt="profile-picture"
                   />
@@ -60,7 +60,7 @@ const AllProduct = () => {
         </CardBody>
       </Card>
       <Card className="mt-6 border w-full md:w-fit">
-        <CardBody>
+        <CardBody className="py-2 md:py-6 ">
           <Typography
             variant="h4"
             color="blue-gray"
@@ -71,7 +71,7 @@ const AllProduct = () => {
           <div className="grid grid-cols-2 pt-2 max-sm:gap-1 items-start gap-2  justify-between lg:gap-3">
             <ModalBox
               text="Term Insurance"
-              imgSrc="/assets/images/hero/termlife.gif"
+              imgSrc="/assets/images/hero/termlife.avif"
               link="/term-insurance"
             />
               <Link to="/endowment-insurance" className="no-underline">
@@ -79,7 +79,7 @@ const AllProduct = () => {
                 {/* <CardHeader floated={false} className="h-20"> */}
                 <div className="w-full flex justify-center align-middle">
                   <img
-                    src="/assets/images/hero/endowment.gif"
+                    src="/assets/images/hero/endowment.avif"
                     className="h-10 w-10 justify-center"
                     alt="profile-picture"
                   />
@@ -100,7 +100,7 @@ const AllProduct = () => {
         </CardBody>
       </Card>
       <Card className="mt-6 border ">
-        <CardBody >
+        <CardBody className="py-2 md:py-6 px-1">
           <Typography
             variant="h4"
             color="blue-gray"
@@ -108,10 +108,10 @@ const AllProduct = () => {
           >
             Health Insurance
           </Typography>
-          <div className="grid grid-cols-3 pt-2 max-sm:gap-1 items-start  justify-between gap-2 lg:gap-10 xl:gap-5">
+          <div className="grid grid-cols-3 lg:pt-2 max-sm:gap-1 items-start  justify-between gap-2 lg:gap-10 xl:gap-5">
             <ModalBox
               text="Individual Health Insurance"
-              imgSrc="/assets/images/hero/wholelife.gif"
+              imgSrc="/assets/images/hero/wholelife.avif"
               link="/individual-health-insurance"
             />
 
@@ -125,7 +125,7 @@ const AllProduct = () => {
                 {/* <CardHeader floated={false} className="h-20"> */}
                 <div className="w-full flex justify-center align-middle">
                   <img
-                    src="/assets/images/hero/seniorcitizen.gif"
+                    src="/assets/images/hero/seniorcitizen.avif"
                     className="h-10 w-10 justify-center"
                     alt="profile-picture"
                   />
