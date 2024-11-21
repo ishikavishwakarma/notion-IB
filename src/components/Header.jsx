@@ -388,8 +388,7 @@ function NavList({ closeMenu }) {
         </Link>
       </Typography>
         </>
-      )}
-      
+      )} 
     </List>
   );
 }
@@ -423,10 +422,8 @@ const Header = () => {
             <span className="text-blue-700">
               <MdEmail />
             </span>
-          
               info@notioninsurance.com
             </Link>
-        
         </button>
         <span className="border-l h-3 mx-6 max-sm:hidden"></span>
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
@@ -437,10 +434,8 @@ const Header = () => {
             <span className="text-blue-700">
             <MdAddCall />
             </span>
-          
               91-9302182475
             </Link>
-        
         </button>
         <span className="border-l h-3 mx-6 max-sm:hidden"></span>
         <button type="button" className="text-gray-800 text-xs max-sm:my-2">
@@ -451,14 +446,10 @@ const Header = () => {
             <span className="text-blue-700">
             <MdAddCall />
             </span>
-          
               0755-4911343
             </Link>
-        
         </button>
-      
       </section>
-
       <Navbar className="max-w-full md:sticky top-0 z-50 border-none rounded-none px-4 py-0  bg-[url('/assets/images/header/footer.webp')] bg-cover bg-center bg-no-repeat">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to='/' className="h-16 w-32 md:w-44">
@@ -474,7 +465,6 @@ const Header = () => {
           </div>
           <div className="hidden  xl:h-10 lg:gap-2  xl:gap-5 lg:flex">
           <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
-           
             <Button
               className="text-sm w-20 lg:px-0 xl:px-2  py-2  "
               variant="outlined"
@@ -482,14 +472,12 @@ const Header = () => {
             >
               Log In
             </Button>
-
           </Link>
           <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
             <Button variant="gradient" color="blue" className="py-2 xl:w-40 lg:w-32 lg:px-0 xl:px-2 text-sm">
               Become a POSP
             </Button>
-          </Link>
-           
+          </Link> 
           </div>
           <IconButton
             variant="text"
