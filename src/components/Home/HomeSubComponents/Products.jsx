@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 
 import LinkButtons from "../../insuranceModel/LinkButtons";
-import { Carousel, Typography } from "@material-tailwind/react";
+import {  Typography } from "@material-tailwind/react";
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// Import required Swiper modules
+import { Autoplay, Pagination } from 'swiper/modules';
 const items = [
   {
     text: "Life",
@@ -215,52 +224,46 @@ const Products = () => {
         OTHER INSURANCE
       </Typography>
       <hr />
-      <div className="flex justify-center items-center lg:px-28 lg:pe-28 w-full pt-2  md:pt-10 pr-[10px] md:pr-0">
-        <Carousel
-          autoplay={true}
-          autoplayDelay={4000}
-          loop={true}
-          transition={{ type: "tween", duration: 1 }}
-          className="rounded-xl pb-5"
-          navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-              {new Array(length).fill("").map((_, i) => (
-                <span
-                  key={i}
-                  className={`block h-3 w-3 cursor-pointer rounded-full transition-colors content-[''] ${
-                    activeIndex === i ? "bg-blue-500" : "bg-gray-400"
-                  }`}
-                  onClick={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-          )}
-          prevArrow={() => {
-            return <button className="hidden  "></button>;
-          }}
-          nextArrow={() => <button className="hidden "></button>}
-        >
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="grid gap-4 p-3"
-              style={{
-                gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-                gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
-              }}
-            >
-              {slide.map((item, idx) => (
-                <LinkButtons
-                  key={idx}
-                  text={item.text}
-                  subtext={item.subtext}
-                  imgSrc={item.imgSrc}
-                  link={item.link}
-                />
-              ))}
-            </div>
-          ))}
-        </Carousel>
+      <div className="flex justify-center items-center xl:px-28 xl:pe-28 lg:px-10 lg:pe-10 w-full pt-2  md:pt-10 pr-[10px] md:pr-0">
+      
+        <Swiper
+         autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        
+        centeredSlides={true}
+        slidesPerView={1}
+      loop={true} // enable looping
+      speed={1600} // transition duration in ms
+      pagination={{
+        clickable: true,  
+      }}
+      modules={[Pagination,Autoplay]}
+      className="rounded-xl pb-5"
+    >
+      {slides.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <div
+            className="grid gap-4 p-3"
+            style={{
+              gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+              gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
+            }}
+          >
+            {slide.map((item, idx) => (
+              <LinkButtons
+                key={idx}
+                text={item.text}
+                subtext={item.subtext}
+                imgSrc={item.imgSrc}
+                link={item.link}
+              />
+            ))}
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
       </div>
     </>
   );
