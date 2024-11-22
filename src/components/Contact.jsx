@@ -177,7 +177,7 @@ export function Contact() {
                             color="blue-gray"
                             className="py-3 text-start"
                           >
-                            Bhopal Branch
+                            Bhopal (Main Branch)
                           </Typography>
                           <ul className="flex flex-col  items-start p-2  justify-center gap-2 ">
                             <li className="flex items-center gap-4">
@@ -216,7 +216,7 @@ export function Contact() {
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
-                                3 floor lalwani complex, above Axis Bank, Vidya
+                              Plot No. 1 ,<label>3<sup>rd</sup> </label> Floor Lalwani Complex, Above Axis Bank, Vidya
                                 Nagar, Bhopal, Madhya Pradesh 462026
                               </Typography>
                             </li>
@@ -264,7 +264,7 @@ export function Contact() {
                                 <IoLocation />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 text-start">
-                                33, JK Complex, 2nd Floor, Gorakhpur, Jabalpur
+                                33, JK Complex , <label>2<sup>nd</sup> </label> Floor, Gorakhpur, Jabalpur
                               </Typography>
                             </li>
                           </ul>

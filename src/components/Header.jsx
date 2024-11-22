@@ -409,7 +409,7 @@ const Header = () => {
             <span className="text-blue-700">
               <MdLocationPin />
             </span>
-            3 floor lalwani complex, above Axis Bank, Vidya Nagar, Bhopal,
+           Plot No. 1 ,<label>3<sup>rd</sup> </label> Floor Lalwani Complex, Above Axis Bank, Vidya Nagar, Bhopal,
             Madhya Pradesh 462026
           </p>
         </button>
