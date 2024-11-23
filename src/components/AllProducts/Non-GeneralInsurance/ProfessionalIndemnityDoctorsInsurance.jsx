@@ -8,7 +8,7 @@ const ProfessionalIndemnityDoctorsInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Professional Indemnity Insurance For Doctors - NIB</title>
+        <title>Professional Indemnity Insurance For Doctors - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Safeguard your medical practice with Professional Indemnity Insurance for Doctors from Notion Insurance Broker Pvt. Ltd. Our policies cover medical negligence, errors, and patient injury claims, ensuring comprehensive protection for healthcare professionals."

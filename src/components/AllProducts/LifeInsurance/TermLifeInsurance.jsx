@@ -42,7 +42,7 @@ const TermLifeInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Term Insurance - NIB</title>
+        <title>Term Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Get affordable term insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer financial protection for your loved ones in case of unforeseen events, ensuring peace of mind at an economical price."

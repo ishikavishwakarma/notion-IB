@@ -46,16 +46,16 @@ const OurPartner = () => {
     <section className="bg-white py-16">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Our Partners - NIB</title>
+        <title>Our Partners - Notion Insurance Broker PVT. LTD.</title>
         <meta
           name="description"
           content="Discover the trusted partners of Notion Insurance Broker Pvt. Ltd. We collaborate with leading insurance providers to offer comprehensive risk management and insurance solutions."
         />
         <meta
           name="keywords"
-          content="NIB partners, Notion Insurance Broker partners, insurance partnerships, insurance providers, risk management partners, insurance collaborations, trusted insurance providers, NIB collaborations"
+          content="NIB partners, Notion Insurance Broker partners,life insurance , health insurance insurance partnerships, insurance providers, risk management partners, insurance collaborations, trusted insurance providers, NIB collaborations"
         />
-        <link rel="canonical" href="https://www.notioninsurance.com/our-partner" />
+        <link rel="canonical" href="/our-partner" />
         
       </Helmet>
 

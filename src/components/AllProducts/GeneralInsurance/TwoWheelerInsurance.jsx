@@ -85,7 +85,7 @@ const TwoWheelerInsurance = () => {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Two-Wheeler Insurance - NIB</title>
+          <title>Two-Wheeler Insurance - Notion Insurance Broker Pvt. Ltd.</title>
           <meta
             name="description"
             content="Get comprehensive two-wheeler insurance from Notion Insurance Broker Pvt. Ltd. Safeguard your bike or scooter with extensive coverage against accidents, theft, and damage. Enjoy peace of mind on every ride."

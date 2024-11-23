@@ -60,7 +60,7 @@ const Investmentplans = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Investment Plans - NIB</title>
+        <title>Investment Plans - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Explore diverse investment plans from Notion Insurance Broker Pvt. Ltd. Our tailored solutions help you grow your wealth while providing financial security for your future. Discover options that align with your financial goals and risk appetite."

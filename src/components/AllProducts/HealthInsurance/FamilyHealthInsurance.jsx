@@ -51,7 +51,7 @@ const FamilyHealthInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Family Health Insurance - NIB</title>
+        <title>Family Health Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your family's health with comprehensive family health insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer coverage for medical expenses, hospitalization, and preventive care, ensuring your loved ones have access to quality healthcare."

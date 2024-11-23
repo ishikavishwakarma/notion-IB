@@ -107,7 +107,7 @@ const Footer = () => {
                 href="#"
                 className="opacity-80 transition-opacity hover:opacity-100"
               >
-              <FaTwitter onClick={() => window.open("https://www.instagram.com/notioninsurance?igsh=anBoZzJhc2Z0MThh", "_blank", "noopener,noreferrer")} className="text-xl" />
+              <FaTwitter onClick={() => window.open("https://x.com/notioninsurance?t=p-h_nrvLBRe6HwVi5gJsKQ&s=08", "_blank", "noopener,noreferrer")} className="text-xl" />
               </Typography>
               <Typography
                 as="a"

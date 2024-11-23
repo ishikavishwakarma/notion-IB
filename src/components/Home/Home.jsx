@@ -28,15 +28,30 @@ const Home = () => {
   }, []);
   return (
     <div>
+<Helmet>
+  <meta charSet="utf-8" />
+  <title>Home | Notion Insurance Broker Pvt. Ltd. - Health and Life Plans</title>
+  <meta 
+    name="description" 
+    content="Welcome to Notion Insurance Broker Pvt. Ltd., your trusted partner for health insurance, life plans, and comprehensive risk management solutions. Secure your future with us today." 
+  />
+  <meta 
+    name="keywords" 
+    content="Notion Insurance, health insurance, life plan, insurance professional , health plan , life plan , life insurance , insurance broker, Notion Insurance Broker, home insurances, partners claim" 
+  />
+  <link rel="canonical" href="https://www.notioninsurance.com/" />
+  <meta name="robots" content="index, follow" />
 
-      <Helmet>
-        <title>Home - NIB</title>
-        <meta name="description" content="Welcome to Notion Insurance Broker. We provide the best insurance services in India." />
-        <meta name="keywords" content="Insurance, Broker, Notion Insurance, Health Insurance, Life Insurance" />
-        <link rel="canonical" href="https://www.notioninsurance.com/" />
-      </Helmet>
-
-
+  <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd. " />
+  <meta property="og:description" content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner." />
+  <meta property="og:url" content="https://www.notioninsurance.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/header/logo.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Notion Insurance Broker Pvt. Ltd. " />
+  <meta name="twitter:description" content="Find tailored health insurance, life plans, and home insurance solutions with Notion Insurance Broker Pvt. Ltd. Contact us for personalized advice." />
+  <meta name="twitter:image" content="assets/images/header/logo.webp" />
+</Helmet>
       {isMobileView ? (
         <>
           <AllProduct/>

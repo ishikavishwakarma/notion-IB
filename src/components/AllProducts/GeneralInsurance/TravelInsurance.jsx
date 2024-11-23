@@ -27,7 +27,7 @@ const TravelInsurance = () => {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Travel Insurance - NIB</title>
+          <title>Travel Insurance - Notion Insurance Broker Pvt. Ltd.</title>
           <meta
             name="description"
             content="Secure your adventures with comprehensive travel insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer coverage for trip cancellations, medical emergencies, lost luggage, and more, ensuring a worry-free travel experience."

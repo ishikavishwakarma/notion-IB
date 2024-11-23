@@ -11,7 +11,7 @@ const ContractMachineryInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Contactor&apos;s Plant & Machinery Insurance - NIB</title>
+        <title>Contactor&apos;s Plant & Machinery Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Secure your construction business with comprehensive Contractor's Plant & Machinery Insurance from Notion Insurance Broker Pvt. Ltd. Our coverage protects against damage, loss, and third-party liability for essential construction equipment, ensuring project continuity."

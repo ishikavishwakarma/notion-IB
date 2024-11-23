@@ -37,7 +37,7 @@ const SeniorCitizenPlan = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Senior Citizen Plan - NIB</title>
+        <title>Senior Citizen Plan - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Ensure quality healthcare for seniors with the Senior Citizen Health Insurance Plan from Notion Insurance Broker Pvt. Ltd. Our policy covers medical expenses, hospitalization, and specialized care for elderly individuals, providing peace of mind in their golden years."

@@ -9,7 +9,7 @@ const DirectorOfficersInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Directors and officers (D&O) Insurance - NIB</title>
+        <title>Directors and officers (D&O) Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your leadership team with comprehensive D&O Insurance from Notion Insurance Broker Pvt. Ltd. Our policies safeguard directors and officers from financial losses due to legal claims, ensuring peace of mind and robust corporate governance."

@@ -7,7 +7,7 @@ const GeneralLiability = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>General Liability Insurance - NIB</title>
+        <title>General Liability Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your business from unforeseen risks with comprehensive general liability insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover third-party bodily injury, property damage, and personal injury claims, ensuring your business is safeguarded."

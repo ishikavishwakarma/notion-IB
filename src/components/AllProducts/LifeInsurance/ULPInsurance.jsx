@@ -9,7 +9,7 @@ const ULPInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>ULIP Insurance - NIB</title>
+        <title>ULIP Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Explore flexible ULIP insurance plans from Notion Insurance Broker Pvt. Ltd. Our policies combine life coverage with investment options, providing financial security for your loved ones while helping you grow your wealth."

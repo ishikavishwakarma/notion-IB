@@ -8,7 +8,7 @@ const EndowmentInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Endowment Insurance - NIB</title>
+        <title>Endowment Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Achieve your financial goals with endowment insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide a combination of life cover and savings, ensuring you receive a lump sum amount at maturity or to secure your family's future."

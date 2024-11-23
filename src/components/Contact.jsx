@@ -69,16 +69,43 @@ export function Contact() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Contact Us - NIB</title>
+        <title>
+          Contact Us | Notion Insurance Broker Pvt. Ltd. - IRDA Licensed Expert
+        </title>
         <meta
           name="description"
-          content="Get in touch with Notion Insurance Broker Pvt. Ltd. (IRDA Licence No. 619). Contact us for expert insurance services, personalized risk management solutions, and support. Licensed by IRDA as a Direct Broker, our license is valid until 02/10/2026."
+          content="Contact Notion Insurance Broker Pvt. Ltd. (IRDA Licence No. 619). Reach out for professional insurance services, tailored risk management solutions, and support. Licensed as a Direct Broker by IRDA, valid until 02/10/2026."
         />
         <meta
           name="keywords"
-          content="NIB contact, Notion Insurance Broker contact, insurance services, IRDA direct broker, insurance solutions, risk management, insurance experts, contact NIB, insurance broker India, IRDA Licence No. 619, valid till 2026"
+          content="contact Notion Insurance Broker, insurance services India, IRDA Licence No. 619, insurance solutions, risk management, direct broker license, insurance expert support, insurance broker India, NIB contact info"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.notioninsurance.com/contact" />
+        <meta
+          property="og:title"
+          content="Contact Us | Notion Insurance Broker Pvt. Ltd. - IRDA Licensed Expert"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Notion Insurance Broker Pvt. Ltd. for professional insurance services and risk management solutions. Licensed Direct Broker by IRDA (Licence No. 619)."
+        />
+        <meta property="og:url" content="/contact" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="/assets/images/header/logo.webp"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact Us | Notion Insurance Broker Pvt. Ltd. - IRDA Licensed Expert"
+        />
+        <meta
+          name="twitter:description"
+          content="Reach out to Notion Insurance Broker Pvt. Ltd. (IRDA Licence No. 619) for expert insurance services, solutions, and support."
+        />
+        <meta name="twitter:image" content="/assets/images/header/logo.webp" />
       </Helmet>
 
       <section className="w-full  bg-white">
@@ -185,19 +212,11 @@ export function Contact() {
                                 <FaPhoneAlt />
                               </span>
                               <Typography className="font-normal text-lg text-gray-900 ">
-                                <Link
-                                  to="tel:9302182475"
-                                >
-                                  
-                                  91-9302182475
+                                <Link to="tel:9302182475">91-9302182475</Link>
+                                <br />
+                                <Link to="tel:755-4911343">
+                                  +91 755-4911343
                                 </Link>
-                                 <br />
-                                 <Link
-                                  to="tel:755-4911343"
-                                >
-                                 +91 755-4911343
-                                </Link>
-                                 
                               </Typography>
                             </li>
                             <Link to="mailto:info@notioninsurance.com">
@@ -215,8 +234,12 @@ export function Contact() {
                               <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <IoLocation />
                               </span>
-                              <Typography className="font-normal text-lg text-gray-900 text-start">
-                              Plot No. 1 ,<label>3<sup>rd</sup> </label> Floor Lalwani Complex, Above Axis Bank, Vidya
+                              <Typography className="font-normal text-justify text-lg text-gray-900 ">
+                                Plot No. 1 ,
+                                <label>
+                                  3<sup>rd</sup>{" "}
+                                </label>{" "}
+                                Floor Lalwani Complex, Above Axis Bank, Vidya
                                 Nagar, Bhopal, Madhya Pradesh 462026
                               </Typography>
                             </li>
@@ -237,9 +260,7 @@ export function Contact() {
                             Jabalpur Branch
                           </Typography>
                           <ul className="flex flex-col items-start p-2  justify-center gap-2 ">
-                            <Link
-                              to="tel:9827220353"
-                            >
+                            <Link to="tel:9827220353">
                               <li className="flex items-center gap-4">
                                 <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                   <FaPhoneAlt />
@@ -263,8 +284,12 @@ export function Contact() {
                               <span className="text-xl text-blue-800 border p-2 rounded-full shadow-md bg-gray-50">
                                 <IoLocation />
                               </span>
-                              <Typography className="font-normal text-lg text-gray-900 text-start">
-                                33, JK Complex , <label>2<sup>nd</sup> </label> Floor, Gorakhpur, Jabalpur
+                              <Typography className="font-normal text-lg text-gray-900 text-justify">
+                                33, JK Complex ,{" "}
+                                <label>
+                                  2<sup>nd</sup>{" "}
+                                </label>{" "}
+                                Floor, Gorakhpur, Jabalpur
                               </Typography>
                             </li>
                           </ul>

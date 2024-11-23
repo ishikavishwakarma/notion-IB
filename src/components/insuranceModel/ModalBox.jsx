@@ -15,7 +15,7 @@ const ModalBox = ({ text, imgSrc, link }) => {
     {/* <CardHeader floated={false} className="h-20"> */}
     <div className="w-full flex justify-center align-middle">
 
-      <img src={imgSrc} className="h-10 w-10 justify-center" alt="profile-picture" />
+      <img src={imgSrc} alt={text} className="h-10 w-10 justify-center" />
     </div>
     {/* </CardHeader> */}
     <CardBody className="text-center py-1 p-0">

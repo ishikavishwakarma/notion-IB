@@ -28,7 +28,7 @@ const HealthInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Individual Health Insurance - NIB</title>
+        <title>Individual Health Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your health and financial future with individual health insurance from Notion Insurance Broker Pvt. Ltd. Our comprehensive policies cover medical expenses, hospitalization, and preventive care, ensuring you and your loved ones receive top-notch healthcare."
