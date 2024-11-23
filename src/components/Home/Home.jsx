@@ -53,7 +53,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://notion-ib.vercel.app/assets/images/header/logo.webp"
+          content="https://notion-ib.vercel.app/assets/images/header/logo.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -67,7 +67,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://notion-ib.vercel.app/assets/images/header/logo.webp"
+          content="https://notion-ib.vercel.app/assets/images/header/logo.jpg"
         />
       </Helmet>
       {isMobileView ? (
