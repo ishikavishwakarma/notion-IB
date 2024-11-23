@@ -47,7 +47,7 @@ const ContractRiskInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Contractor All Risk Insurance - NIB</title>
+        <title>Contractor All Risk Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your construction projects with Contractor All Risk Insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover contract works, machinery, equipment, and third-party liabilities, ensuring comprehensive coverage against potential risks during construction."

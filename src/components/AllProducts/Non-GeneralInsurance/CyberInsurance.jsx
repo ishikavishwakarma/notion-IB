@@ -41,7 +41,7 @@ const CyberInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Cyber Insurance - NIB</title>
+        <title>Cyber Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your business from cyber threats with comprehensive cyber insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover data breaches, cyber-attacks, and liability, ensuring your business is secure in the digital landscape."

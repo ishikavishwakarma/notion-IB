@@ -98,7 +98,7 @@ const CarInsurance = () => {
       <div>
       <Helmet>
   <meta charSet="utf-8" />
-  <title>Car Insurance - NIB</title>
+  <title>Car Insurance - Notion Insurance Broker PVT. LTD.</title>
   <meta
     name="description"
     content="Protect your vehicle with comprehensive car insurance from Notion Insurance Broker Pvt. Ltd. Our car insurance policies provide extensive coverage, ensuring financial security in case of accidents, theft, or damage."

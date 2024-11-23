@@ -38,7 +38,7 @@ const EmployeeGroupHealthInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Employee Group Health Insurance - NIB</title>
+        <title>Employee Group Health Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Provide your employees with comprehensive health protection through our Employee Group Health Insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover medical expenses, hospitalization, and preventive care, ensuring the well-being of your workforce."

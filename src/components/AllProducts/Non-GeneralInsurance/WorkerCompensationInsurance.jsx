@@ -9,7 +9,7 @@ const WorkerCompensationInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Worker&apos;s Insurance - NIB</title>
+        <title>Worker&apos;s Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Ensure the safety and well-being of your employees with comprehensive workers' insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for workplace injuries, medical expenses, and liability, fostering a secure work environment."

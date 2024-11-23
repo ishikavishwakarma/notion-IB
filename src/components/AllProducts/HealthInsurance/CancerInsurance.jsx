@@ -8,7 +8,7 @@ const CancerInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Cancer Insurance - NIB</title>
+        <title>Cancer Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your marine assets with comprehensive Cancer Insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover cargo, hull, and liability, ensuring your shipping and logistics operations are secure against risks at sea."

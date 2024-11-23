@@ -63,7 +63,7 @@ const TaxiInsurance = () => {
  
         <Helmet>
   <meta charSet="utf-8" />
-  <title>Taxi Insurance - NIB</title>
+  <title>Taxi Insurance - Notion Insurance Broker Pvt. Ltd.</title>
   <meta
     name="description"
     content="Get specialized taxi insurance from Notion Insurance Broker Pvt. Ltd. Our comprehensive policies provide coverage for accidents, liability, and passenger protection, ensuring your taxi business is secure and compliant."

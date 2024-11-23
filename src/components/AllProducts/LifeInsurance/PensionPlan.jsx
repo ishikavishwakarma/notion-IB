@@ -32,7 +32,7 @@ const PensionPlan = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Pension Plans - NIB</title>
+        <title>Pension Plans - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Secure your retirement with comprehensive pension plans from Notion Insurance Broker Pvt. Ltd. Our tailored solutions ensure financial stability and peace of mind, helping you enjoy your golden years without worry."

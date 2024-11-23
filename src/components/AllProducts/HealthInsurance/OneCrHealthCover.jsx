@@ -7,7 +7,7 @@ const OneCrHealthCover = () => {
   return (
     <>
       <Helmet>
-        <title>One Cr Health Insurance - NIB</title>
+        <title>One Cr Health Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your health and well-being with our 1 Crore Health Insurance Plan from Notion Insurance Broker Pvt. Ltd. This comprehensive policy offers extensive coverage for medical expenses, hospitalization, and critical illness, ensuring financial security for you and your family."

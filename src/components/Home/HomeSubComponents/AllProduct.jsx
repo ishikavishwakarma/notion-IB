@@ -41,7 +41,7 @@ const AllProduct = () => {
                   <img
                     src="assets/images/Products/general/ads.webp"
                     className="h-10 w-10 justify-center"
-                    alt="profile-picture"
+                    alt="Commercial Vehicle"
                   />
                 </div>
                 {/* </CardHeader> */}
@@ -81,7 +81,7 @@ const AllProduct = () => {
                   <img
                     src="/assets/images/hero/endowment.avif"
                     className="h-10 w-10 justify-center"
-                    alt="profile-picture"
+                    alt="Endowment Plan"
                   />
                 </div>
                 {/* </CardHeader> */}
@@ -127,7 +127,7 @@ const AllProduct = () => {
                   <img
                     src="/assets/images/hero/seniorcitizen.avif"
                     className="h-10 w-10 justify-center"
-                    alt="profile-picture"
+                    alt="Senior Citizen Plan"
                   />
                 </div>
                 {/* </CardHeader> */}

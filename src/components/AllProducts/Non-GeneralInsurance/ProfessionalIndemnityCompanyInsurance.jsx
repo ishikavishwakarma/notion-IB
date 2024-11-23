@@ -9,7 +9,7 @@ const ProfessionalIndemnityCompanyInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Professional Indemnity Insurance For Companies - NIB</title>
+        <title>Professional Indemnity Insurance For Companies - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your business with Professional Indemnity Insurance for Companies from Notion Insurance Broker Pvt. Ltd. Our policies cover professional negligence, errors, and client financial loss claims, offering comprehensive protection for your organization."

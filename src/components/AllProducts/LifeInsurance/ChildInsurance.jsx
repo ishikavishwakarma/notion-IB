@@ -10,7 +10,7 @@ const ChildInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Child Insurance - NIB</title>
+        <title>Child Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Secure your child's future with comprehensive child insurance from Notion Insurance Broker Pvt. Ltd. Our plans provide financial protection and savings options, ensuring your child's dreams are safeguarded against unforeseen events."

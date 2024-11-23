@@ -9,7 +9,7 @@ const HomeInsurance = () => {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Home Insurance - NIB</title>
+          <title>Home Insurance - Notion Insurance Broker Pvt. Ltd.</title>
           <meta
             name="description"
             content="Protect your home and valuables with comprehensive home insurance from Notion Insurance Broker Pvt. Ltd. Our policies cover damage, theft, and natural disasters, ensuring financial security and peace of mind for your property."
@@ -34,12 +34,12 @@ const HomeInsurance = () => {
               <InquiryCard insurerName="Home Insurance" />
             </div>
             <br />
-            <Card className="mt-0 w-full text-center">
+            <Card className="mt-0 w-full ">
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
                   A Guide to Home Insurance
                 </Typography>
-                <Typography className="md:px-5">
+                <Typography className="md:px-5 text-justify">
                   Home insurance, also commonly called homeowner&apos;s
                   insurance, is a type of property insurance that covers a
                   private residence. It is an insurance policy that combines

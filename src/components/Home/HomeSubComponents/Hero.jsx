@@ -14,13 +14,13 @@ const Hero = () => {
 
     return (
         <div className="container" >
-            <div className="h-full w-full">
+            <div className="h-fit flex justify-center w-full">
                 <div className="grid gap-10 justify-content-center grid-cols-1 md:grid-cols-2   ">
 
                     <div className='max-sm:w-screen h-full flex flex-col items-center md:items-start justify-center gap-4 '>
                         <div>
-                            <h1 className="py-3 text-5xl lg:text-6xl font-semibold " >Buy Insurance,</h1>
-                            <span className="text-4xl lg:text-5xl text-orange-900">
+                            <h1 className="py-3 text-4xl lg:text-5xl font-semibold " >Buy Insurance,</h1>
+                            <span className="text-3xl lg:text-4xl text-orange-900">
                                 <Typewriter
                                     words={['Smart Way', 'Simple and Easy']}
                                     loop={5}
@@ -32,21 +32,21 @@ const Hero = () => {
                                 />
                             </span>
                         </div>
-                        <p className='text-md font-normal text-gray-800'>We are a Professional Organization with dedicated team of qualified Insurance Professionals, to service various Insurance and Risk Management requirements of clients spread across the country.</p>
+                        <p className='md:text-sm text-justify text-sm px-2 md:px-0 lg:text-base font-normal text-gray-800'>We are a professional organization with a dedicated team of qualified insurance professionals, committed to meeting the diverse insurance and risk management needs of clients nationwide. Our team specializes in providing customized solutions for individuals and businesses across various sectors, including life, health, home, and business insurance.We understand that every client has unique requirements, and we work closely with them to identify the best strategies to mitigate risks and protect their assets.With a focus on integrity, transparency, and customer satisfaction, we offer expert guidance and support, ensuring that our clients receive comprehensive coverage tailored to their specific needs. </p>
 
 
                     </div>
 
-                    <div className=' p-5 align-middle w-auto md:w-[40vw] relative justify-center items-end flex flex-col max-sm:hidden '>
+                    <div className=' p-5 align-middle w-auto  relative justify-center items-end flex flex-col max-sm:hidden '>
                        
                         <img
-                            className='rounded-full h-full w-full lg:h-[90%] shadow-xl lg:w-3/5'
+                            className='rounded-full h-full w-full md:w-full md:h-[80%] xl:h-[90%] lg:h-[90%] shadow-xl lg:w-[80%] xl:w-3/4'
                             src="/assets/images/hero/hero.avif"
-                            alt=""
-                        //    loading='lazy'
+                            alt="NIB insurance"
+                           loading='lazy'
                         />
                         
-                        <span className='absolute z-9999 top-[50%] left-[50%] lg:left-[70%]'>
+                        <span className='absolute z-9999 top-[50%] left-[50%] lg:left-[60%]'>
                             <div onClick={handleOpen} className="wrapper">
                                 <div className="video-main">
                                     <div className="promo-video">
@@ -76,8 +76,6 @@ const Hero = () => {
                             </Dialog>
                         </span>
                     </div>
-
-
 
                 </div>
 

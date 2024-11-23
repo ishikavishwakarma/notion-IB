@@ -8,7 +8,7 @@ const ShopInsurance = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Shop Insurance - NIB</title>
+        <title>Shop Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Protect your retail business with comprehensive shop insurance from Notion Insurance Broker Pvt. Ltd. Our policies offer coverage for property damage, theft, liability, and more, ensuring your shop is secure and your business continues to thrive."
@@ -82,7 +82,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">
@@ -99,7 +99,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">
@@ -115,7 +115,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">
@@ -132,7 +132,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">
@@ -148,7 +148,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">
@@ -164,7 +164,7 @@ const ShopInsurance = () => {
                 </ul>
               </CardBody>
               <CardBody>
-                <ul className="list-disc ">
+                <ul className="list-disc text-justify">
                   <li>
                     <Typography>
                       <span className="font-bold">

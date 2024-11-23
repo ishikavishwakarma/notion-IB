@@ -37,7 +37,7 @@ const MoneyBackPolicy = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Money Back Policy - NIB</title>
+        <title>Money Back Policy - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Secure your financial future with our Money Back Policy at Notion Insurance Broker Pvt. Ltd. Enjoy life coverage along with periodic survival benefits during the policy term, ensuring your family's protection and your peace of mind."

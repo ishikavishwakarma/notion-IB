@@ -7,7 +7,7 @@ const Fire = () => {
   return (
     <>
       <Helmet>
-        <title>Fire Insurance - NIB</title>
+        <title>Fire Insurance - Notion Insurance Broker Pvt. Ltd.</title>
         <meta
           name="description"
           content="Safeguard your property with comprehensive fire insurance from Notion Insurance Broker Pvt. Ltd. Our policies provide coverage for damages caused by fire, ensuring financial security and peace of mind for homeowners and businesses alike."
