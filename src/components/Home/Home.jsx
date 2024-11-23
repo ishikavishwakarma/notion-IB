@@ -43,19 +43,20 @@ const Home = () => {
         />
         <link rel="canonical" href="https://notion-ib.vercel.app/" />
         <meta name="robots" content="index, follow" />
+        <meta property="og:image:alt" content="Notion Insurance Broker Logo" />
 
+        <meta property="og:url" content="https://notion-ib.vercel.app/" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd." />
         <meta
           property="og:description"
-          content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner."
+          content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions."
         />
-        <meta property="og:url" content="https://notion-ib.vercel.app/" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:image"
           content="https://notion-ib.vercel.app/assets/images/header/logo.jpg"
         />
-
+ <meta property="fb:pages" content="100063593333050" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
