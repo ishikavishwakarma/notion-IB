@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Hero from "./HomeSubComponents/Hero";
 import Products from "./HomeSubComponents/Products";
@@ -28,33 +28,54 @@ const Home = () => {
   }, []);
   return (
     <div>
-<Helmet>
-  <meta charSet="utf-8" />
-  <title>Home | Notion Insurance Broker Pvt. Ltd. - Health and Life Plans</title>
-  <meta 
-    name="description" 
-    content="Welcome to Notion Insurance Broker Pvt. Ltd., your trusted partner for health insurance, life plans, and comprehensive risk management solutions. Secure your future with us today." 
-  />
-  <meta 
-    name="keywords" 
-    content="Notion Insurance, health insurance, life plan, insurance professional , health plan , life plan , life insurance , insurance broker, Notion Insurance Broker, home insurances, partners claim" 
-  />
-  <link rel="canonical" href="https://www.notioninsurance.com/" />
-  <meta name="robots" content="index, follow" />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Home | Notion Insurance Broker Pvt. Ltd. - Health and Life Plans
+        </title>
+        <meta
+          name="description"
+          content="Welcome to Notion Insurance Broker Pvt. Ltd., your trusted partner for health insurance, life plans, and comprehensive risk management solutions. Secure your future with us today."
+        />
+        <meta
+          name="keywords"
+          content="Notion Insurance, health insurance, life plan, insurance professional, health plan, life insurance, insurance broker, Notion Insurance Broker, home insurances, partners claim"
+        />
+        <link rel="canonical" href="https://www.notioninsurance.com/" />
+        <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd. " />
-  <meta property="og:description" content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner." />
-  <meta property="og:url" content="https://www.notioninsurance.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/header/logo.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Notion Insurance Broker Pvt. Ltd. " />
-  <meta name="twitter:description" content="Find tailored health insurance, life plans, and home insurance solutions with Notion Insurance Broker Pvt. Ltd. Contact us for personalized advice." />
-  <meta name="twitter:image" content="assets/images/header/logo.webp" />
-</Helmet>
+        <meta
+          property="og:title"
+          content="Notion Insurance Broker Pvt. Ltd. - Health and Life Plans"
+        />
+        <meta
+          property="og:description"
+          content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner."
+        />
+        <meta property="og:url" content="https://www.notioninsurance.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.notioninsurance.com/assets/images/header/logo.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Notion Insurance Broker Pvt. Ltd. - Health and Life Plans"
+        />
+        <meta
+          name="twitter:description"
+          content="Find tailored health insurance, life plans, and home insurance solutions with Notion Insurance Broker Pvt. Ltd. Contact us for personalized advice."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.notioninsurance.com/assets/images/header/logo.webp"
+        />
+      </Helmet>
       {isMobileView ? (
         <>
-          <AllProduct/>
+          <AllProduct />
           <Products />
           <br />
           <Hero />
@@ -62,15 +83,15 @@ const Home = () => {
       ) : (
         <>
           <Hero />
-          <AllProduct/>
-        
+          <AllProduct />
+
           <Products />
         </>
       )}
       <Partners />
       <Exam />
-      <Advantage/>
-      <Work/>
+      <Advantage />
+      <Work />
 
       <Contact2 />
     </div>
