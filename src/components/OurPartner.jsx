@@ -55,7 +55,7 @@ const OurPartner = () => {
           name="keywords"
           content="NIB partners, Notion Insurance Broker partners,life insurance , health insurance insurance partnerships, insurance providers, risk management partners, insurance collaborations, trusted insurance providers, NIB collaborations"
         />
-        <link rel="canonical" href="/our-partner" />
+        {/* <link rel="canonical" href="/our-partner" /> */}
         
       </Helmet>
 

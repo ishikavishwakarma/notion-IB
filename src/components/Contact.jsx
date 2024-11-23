@@ -81,7 +81,7 @@ export function Contact() {
           content="contact Notion Insurance Broker, insurance services India, IRDA Licence No. 619, insurance solutions, risk management, direct broker license, insurance expert support, insurance broker India, NIB contact info"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.notioninsurance.com/contact" />
+        {/* <link rel="canonical" href="https://www.notioninsurance.com/contact" /> */}
         <meta
           property="og:title"
           content="Contact Us | Notion Insurance Broker Pvt. Ltd. - IRDA Licensed Expert"
@@ -90,12 +90,12 @@ export function Contact() {
           property="og:description"
           content="Get in touch with Notion Insurance Broker Pvt. Ltd. for professional insurance services and risk management solutions. Licensed Direct Broker by IRDA (Licence No. 619)."
         />
-        <meta property="og:url" content="/contact" />
+        {/* <meta property="og:url" content="/contact" /> */}
         <meta property="og:type" content="website" />
-        <meta
+        {/* <meta
           property="og:image"
           content="/assets/images/header/logo.webp"
-        />
+        /> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -105,7 +105,7 @@ export function Contact() {
           name="twitter:description"
           content="Reach out to Notion Insurance Broker Pvt. Ltd. (IRDA Licence No. 619) for expert insurance services, solutions, and support."
         />
-        <meta name="twitter:image" content="/assets/images/header/logo.webp" />
+        {/* <meta name="twitter:image" content="/assets/images/header/logo.webp" /> */}
       </Helmet>
 
       <section className="w-full  bg-white">
