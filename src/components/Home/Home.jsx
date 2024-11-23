@@ -44,25 +44,22 @@ const Home = () => {
         <link rel="canonical" href="https://www.notioninsurance.com/" />
         <meta name="robots" content="index, follow" />
 
-        <meta
-          property="og:title"
-          content="Notion Insurance Broker Pvt. Ltd. - Health and Life Plans"
-        />
+        <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd." />
         <meta
           property="og:description"
           content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner."
         />
-        <meta property="og:url" content="https://www.notioninsurance.com/" />
+        <meta property="og:url" content="https://notion-ib.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.notioninsurance.com/assets/images/header/logo.webp"
+          content="https://notion-ib.vercel.app/assets/images/header/logo.webp"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Notion Insurance Broker Pvt. Ltd. - Health and Life Plans"
+          content="Notion Insurance Broker Pvt. Ltd."
         />
         <meta
           name="twitter:description"
@@ -70,7 +67,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.notioninsurance.com/assets/images/header/logo.webp"
+          content="https://notion-ib.vercel.app/assets/images/header/logo.webp"
         />
       </Helmet>
       {isMobileView ? (
