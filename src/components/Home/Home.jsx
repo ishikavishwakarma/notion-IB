@@ -41,7 +41,7 @@ const Home = () => {
           name="keywords"
           content="Notion Insurance, health insurance, life plan, insurance professional, health plan, life insurance, insurance broker, Notion Insurance Broker, home insurances, partners claim"
         />
-        <link rel="canonical" href="https://www.notioninsurance.com/" />
+        <link rel="canonical" href="https://notion-ib.vercel.app/" />
         <meta name="robots" content="index, follow" />
 
         <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd." />
