@@ -41,22 +41,27 @@ const Home = () => {
           name="keywords"
           content="Notion Insurance, health insurance, life plan, insurance professional, health plan, life insurance, insurance broker, Notion Insurance Broker, home insurances, partners claim"
         />
-        <link rel="canonical" href="https://notion-ib.vercel.app/" />
+        <link rel="canonical" href="https://www.notioninsurance.com/" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:image:alt" content="Notion Insurance Broker Logo" />
-
-        <meta property="og:url" content="https://notion-ib.vercel.app/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://www.notioninsurance.com/" />
+        <meta
+          property="og:site_name"
+          content="Notion Insurance Broker Pvt. Ltd."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Notion Insurance Broker Pvt. Ltd." />
         <meta
           property="og:description"
-          content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions."
+          content="Explore Notion Insurance Broker Pvt. Ltd. for health insurance, life plans, and home insurance solutions. Your trusted IRDA-licensed partner."
         />
         <meta
           property="og:image"
-          content="https://notion-ib.vercel.app/assets/images/header/logo.jpg"
+          content="https://www.notioninsurance.com/assets/images/header/logo.jpg"
         />
- <meta property="fb:pages" content="100063593333050" />
+        <meta property="og:image:alt" content="Notion Insurance Broker Logo" />
+        <meta property="fb:pages" content="100063593333050" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -68,7 +73,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://notion-ib.vercel.app/assets/images/header/logo.jpg"
+          content="https://www.notioninsurance.com/assets/images/header/logo.jpg"
         />
       </Helmet>
       {isMobileView ? (
