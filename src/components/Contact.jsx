@@ -16,16 +16,20 @@ import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useDataContext } from "../Context/DataContext";
 
 export function Contact() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { sendMail, responseMessage, loading, error } = useDataContext();
   const [formData, setFormData] = useState({
     fullName: "",
-    mobileNo: "",
-    email: "",
-    subject: "",
-    message: "",
+    emailAddress: "",
+    phoneNumber: "",
+    messageSubject: "",
+    messageDetails: "",
   });
 
   useEffect(() => {
@@ -35,7 +39,7 @@ export function Contact() {
     if (insurerName && insurerName !== formData.subject) {
       setFormData((prevData) => ({
         ...prevData,
-        subject: insurerName,
+        messageSubject: insurerName,
       }));
     }
     navigate("/contact");
@@ -51,21 +55,33 @@ export function Contact() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
-    console.log("Form Data:", formData); // Log the form data or send it to your API
-
-    // Clear the form if needed
+    const apiData = {
+      name: formData.fullName,
+      email: formData.emailAddress,
+      mobile: formData.phoneNumber,
+      subject: formData.messageSubject,
+      details: formData.messageDetails,
+    };
+    await sendMail(apiData);
+  };
+  useEffect(() => {
+    if (responseMessage) {
+      toast.success(responseMessage.message + " success");
+    }
+    if (error) {
+      toast.error("Error: " + error);
+    }
     setFormData({
       fullName: "",
-      mobileNo: "",
-      email: "",
-      subject: "",
-      message: "",
+      emailAddress: "",
+      phoneNumber: "",
+      messageSubject: "",
+      messageDetails: "",
     });
-  };
+  }, [responseMessage, error]);
   return (
-    // am
     <>
       <Helmet>
         <meta charSet="utf-8" />
@@ -318,6 +334,8 @@ export function Contact() {
                     <input
                       className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
                       type="text"
+                      id="fullName"
+                      required
                       placeholder="Enter Full Name"
                       name="fullName" // Set name attribute for identification
                       value={formData.fullName} // Bind input value to fullName state
@@ -333,10 +351,12 @@ export function Contact() {
                     </Typography>
                     <input
                       className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-                      type="text"
+                      type="tel"
+                      id="phoneNumber"
                       placeholder="Enter Mobile Number"
-                      name="mobileNo" // Set name attribute for identification
-                      value={formData.mobileNo} // Bind input value to mobileNo state
+                      required
+                      name="phoneNumber" // Set name attribute for identification
+                      value={formData.phoneNumber} // Bind input value to mobileNo state
                       onChange={handleChange} // Use the general handleChange function
                     />
                   </div>
@@ -349,10 +369,12 @@ export function Contact() {
                     </Typography>
                     <input
                       className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
-                      type="text"
+                      type="email"
+                      id="emailAddress"
                       placeholder="Enter Your Email"
-                      name="email" // Set name attribute for identification
-                      value={formData.email} // Bind input value to email state
+                      required
+                      name="emailAddress" // Set name attribute for identification
+                      value={formData.emailAddress} // Bind input value to email state
                       onChange={handleChange} // Use the general handleChange function
                     />
                   </div>
@@ -366,9 +388,11 @@ export function Contact() {
                     <input
                       className="border border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
                       type="text"
+                      required
+                      id="messageSubject"
                       placeholder="Enter Your Subject"
-                      name="subject" // Set name attribute for identification
-                      value={formData.subject} // Bind input value to subject state
+                      name="messageSubject" // Set name attribute for identification
+                      value={formData.messageSubject} // Bind input value to subject state
                       onChange={handleChange} // Use the general handleChange function
                     />
                   </div>
@@ -379,28 +403,26 @@ export function Contact() {
                     variant="small"
                     className="mb-2 text-left font-medium !text-gray-900"
                   >
-                    Your Message
+                    Your message
                   </Typography>
-                  <Textarea
+                  <textarea
                     rows={6}
-                    placeholder="Message....."
-                    name="message" // Set name attribute for identification
-                    value={formData.message} // Bind textarea value to message state
-                    onChange={handleChange} // Use the general handleChange function
-                    className="border border-gray-600 rounded w-full py-2.7 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600 custom-placeholder"
-                    containerProps={{
-                      className: "!min-w-full",
-                    }}
-                    labelProps={{
-                      className: "hidden",
-                    }}
+                    className="border resize-none border-gray-600 rounded w-full py-2.5 px-3 text-gray-900 leading-tight focus:!border-t-gray-900 placeholder-gray-600"
+                    type="text"
+                    required
+                    id="messageDetails"
+                    placeholder="Enter Your Subject"
+                    name="messageDetails" // Set name attribute for identification
+                    value={formData.messageDetails} // Bind input value to subject state
+                    onChange={handleChange}
                   />
                 </div>
                 <Button
                   type="submit"
+                  disabled={loading}
                   className="bg-blue-800 border-none p-0 w-[100%] h-[38px] "
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Submit"}
                 </Button>
               </form>
             </div>
@@ -414,6 +436,8 @@ export function Contact() {
           </div>
         </div>
       </section>
+      {/* Toast Container */}
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar />
     </>
   );
 }

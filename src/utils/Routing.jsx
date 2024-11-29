@@ -40,6 +40,8 @@ import SeniorCitizenPlan from "../components/AllProducts/HealthInsurance/SeniorC
 import Faq from "../components/FAQ/Faq";
 import TermAndConditions from "../components/termandconditions/TermAndConditions";
 import Privacy from "../components/privacyPolicy/Privacy";
+import MandateData from "../components/Mandate/MandateData";
+import Mandate from "../components/Mandate/Mandate";
 const Routing = () => {
   return (
     <div>
@@ -121,7 +123,8 @@ const Routing = () => {
         <Route path="*" element={<Home/>} />
         <Route path="/javascript" element={<Navigate to="/" replace />} />
         <Route path="/js" element={<Navigate to="/" replace />} />
-
+        <Route path="/mandate" element={<Mandate/>} />
+        <Route path="/mandatedata" element={<MandateData/>} />
       </Routes>
     </div>
   );
