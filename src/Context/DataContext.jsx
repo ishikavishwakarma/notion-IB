@@ -1,6 +1,6 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 import axios from "axios";
-const API_BASE_URL= `http://192.168.1.43:8000/api`;
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
 // Create the context
 const DataContext = createContext();
 
@@ -9,7 +9,7 @@ export const DataProvider = ({ children }) => {
   const [responseMessage, setResponseMessage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
+  const [mandates, setMandates] = useState([]);
   // Function to send mail via API
 
   /**
@@ -19,7 +19,7 @@ export const DataProvider = ({ children }) => {
   const sendMail = async (mailData) => {
     setLoading(true);
     try {
-      const response = await axios.post(`${API_BASE_URL}/contact/mail`, mailData);
+      const response = await axios.post(`${apiUrl}/contact/mail`, mailData);
       setResponseMessage(response.data); // Assume API returns a "message" field in the response
       setError(null); // Clear previous errors
     } catch (err) {
@@ -40,7 +40,7 @@ export const DataProvider = ({ children }) => {
       const config = {
         headers: { "Content-Type": "multipart/form-data" },
       };
-      const response = await axios.post(`${API_BASE_URL}/mandates`, mandateData, config);
+      const response = await axios.post(`${apiUrl}/mandates`, mandateData, config);
       setResponseMessage(response.data); // Handle API response
       return null; // No errors
     } catch (err) {
@@ -53,11 +53,56 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  // Fetch mandates from API
+  const fetchMandates = async () => {
+    setLoading(true);
+    try {
+      
+      const response = await axios.get(`${apiUrl}/mandates/getalldata`);
+      setMandates(response.data); // Save data to state
+      setError(null);
+    } catch (err) {
+      console.error("Error fetching mandates:", err); // Log the error
+      setError(err.response?.data?.error || "An error occurred while fetching mandates");
+    } finally {
+      setLoading(false);
+    }
+  };
+  const handleSendEmail = async (id) => {
+    setLoading(true); // Set loading state to true while email is being sent
+    try {
+      const response = await axios.get(`${apiUrl}/mandates/send/${id}`);
+      setError(null);
+      return response;
+    } catch (err) {
+      console.error('There was an error sending the email:', error);
+      setError(err.response?.data?.error || "An error occurred while fetching mandates");
+    } finally {
+      setLoading(false); // Reset loading state
+    }
+  };
+  // Function to delete a mandate
+  const deleteMandate = async (id) => {
+    setLoading(true);
+    try {
+      await axios.delete(`${apiUrl}/mandates/${id}`);
+      setMandates((prevMandates) => prevMandates.filter((mandate) => mandate.id !== id));
+      setError(null);
+    } catch (err) {
+      setError(err.response?.data?.error || "An error occurred while deleting the mandate");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <DataContext.Provider
       value={{
+        handleSendEmail,
         sendMail,
+        mandates,
         submitMandate,
+        deleteMandate,
+        fetchMandates,
         responseMessage,
         loading,
         error,

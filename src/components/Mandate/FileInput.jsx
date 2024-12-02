@@ -1,127 +1,69 @@
-import React, { useState, useRef } from "react";
-import SignatureCanvas from "react-signature-canvas";
-
-const FileInput = ({ label, name, onFileChange, required = false }) => {
-  const [isDrawing, setIsDrawing] = useState(false);
-  const [file, setFile] = useState(null); // Store the file object
-  const signaturePadRef = useRef(null);
-
-  const handleFileChange = (e) => {
-    const uploadedFile = e.target.files[0];
-    if (uploadedFile) {
-      setFile(uploadedFile); // Save the uploaded file to state
-      if (onFileChange) {
-        onFileChange(name, uploadedFile); // Notify parent component
-      }
-    }
-  };
-
-  const saveSignature = () => {
-    if (signaturePadRef.current && !signaturePadRef.current.isEmpty()) {
-      const dataURL = signaturePadRef.current.toDataURL();
-
-      // Convert Data URL to Blob
-      const blob = dataURLToBlob(dataURL);
-
-      // Create a File object from the Blob
-      const signatureFile = new File([blob], "signature.png", { type: "image/png" });
-
-      setFile(signatureFile); // Save the signature file to state
-      setIsDrawing(false); // Exit drawing mode
-
-      if (onFileChange) {
-        onFileChange(name, signatureFile); // Notify parent component
-      }
-    }
-  };
-
-  const clearSignature = () => {
-    if (signaturePadRef.current) {
-      signaturePadRef.current.clear();
-    }
-  };
-
-  const dataURLToBlob = (dataURL) => {
-    const parts = dataURL.split(",");
-    const mimeType = parts[0].match(/:(.*?);/)[1];
-    const byteString = atob(parts[1]);
-    const arrayBuffer = new Uint8Array(byteString.length);
-
-    for (let i = 0; i < byteString.length; i++) {
-      arrayBuffer[i] = byteString.charCodeAt(i);
-    }
-
-    return new Blob([arrayBuffer], { type: mimeType });
-  };
-
+import { Button } from '@material-tailwind/react';
+import React from 'react';
+import SignatureCanvas from 'react-signature-canvas';
+const FileInput = ({
+  isCanvasOpen,
+  handleFileChange,
+  handleSignatureToggle,
+  handleSignatureSave,
+  signaturePadRef,
+  isSignatureSaved,
+  formData,
+}) => {
   return (
-    <div className="text-left flex flex-col md:w-[60vw] xl:w-[30vw] mb-4">
-      <label className="text-sm mb-2">{label}:</label>
-
-      {/* Toggle between Upload and Draw */}
-      <div className="flex space-x-4 mb-4">
-        <button
-          type="button"
-          className={`px-4 py-2 rounded ${!isDrawing ? "bg-blue-600 text-white" : "bg-gray-300"}`}
-          onClick={() => setIsDrawing(false)}
-        >
-          Upload
-        </button>
-        <button
-          type="button"
-          className={`px-4 py-2 rounded ${isDrawing ? "bg-blue-600 text-white" : "bg-gray-300"}`}
-          onClick={() => setIsDrawing(true)}
-        >
-          Draw
-        </button>
-      </div>
-
-      {isDrawing ? (
-        <div>
-          <SignatureCanvas
-            ref={signaturePadRef}
-            penColor="black"
-            canvasProps={{
-              width: 500,
-              height: 200,
-              className: "border border-gray-300",
-            }}
-          />
-          <div className="mt-2 flex space-x-4">
-            <button
-              type="button"
-              className="bg-green-500 text-white px-4 py-2 rounded"
-              onClick={saveSignature}
-            >
-              Save Signature
-            </button>
-            <button
-              type="button"
-              className="bg-red-500 text-white px-4 py-2 rounded"
-              onClick={clearSignature}
-            >
-              Clear
-            </button>
-          </div>
-        </div>
-      ) : (
+    <div className="flex flex-col">
+      <div className="mb-4 text-left flex md:w-[60vw] items-center lg:justify-between w-full xl:w-[30vw]">
+        <label className="text-sm md:w-1/6 w-1/4 xl:w-[20%]">Signature:</label>
         <input
           type="file"
-          name={name}
-          required={required}
-          className="border border-gray-300 p-2 w-full"
+          accept="image/*"
           onChange={handleFileChange}
+          className="ml-2 w-full lg:block hidden"
         />
+
+        <Button
+          type="button"
+          className="px-4 py-2 flex lg:hidden border w-fit bg-blue-600 text-white"
+          onClick={handleSignatureToggle}
+        >
+          {isCanvasOpen ? 'Close Signature Pad' : 'Draw Signature'}
+        </Button>
+      </div>
+
+      {isCanvasOpen && (
+        <div className="mt-4">
+          <SignatureCanvas
+            ref={signaturePadRef}
+            canvasProps={{
+              width: 300,
+              height: 150,
+              className: 'border-2 mb-2 border-gray-400',
+              willReadFrequently: true,
+            }}
+          />
+          <div className="flex md:w-[60vw] justify-between pb-5">
+            <Button
+              type="button"
+              onClick={() => signaturePadRef.current.clear()}
+              className="mt-2 text-sm py-2 px-4"
+            >
+              Clear
+            </Button>
+            <Button
+              type="button"
+              className="mt-2 bg-green-600 text-white py-2 px-4"
+              onClick={handleSignatureSave}
+            >
+              Save Signature
+            </Button>
+          </div>
+        </div>
       )}
 
-      {/* File Info Preview */}
-      {file && (
-        <div className="mt-4">
-          <p>
-            <strong>File Name:</strong> {file.name}
-          </p>
-          <p>
-            <strong>File Type:</strong> {file.type}
+      {formData.sign && (
+        <div className="my-2">
+          <p className="text-sm text-green-500">
+            {isSignatureSaved ? 'Signature saved successfully!' : 'Signature uploaded!'}
           </p>
         </div>
       )}
