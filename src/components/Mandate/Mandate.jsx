@@ -125,7 +125,7 @@ const Mandate = () => {
         <tr className="top ">
           <td colSpan="2">
             <table className="w-full">
-              <tr className='flex md:justify-between justify-start items-start flex-col md:flex-row w-full'>
+              <tr className='flex md:justify-between justify-start items-start md:items-center flex-col md:flex-row w-full'>
                 <td className="title">
                   <img
                     src="/assets/images/header/logo.webp"
@@ -201,7 +201,6 @@ const Mandate = () => {
             ref={fileInputRef}
            className="ml-2  w-full lg:block hidden"
           />
-          
             <Button
               type="button"
               className="px-4 py-2 flex lg:hidden border w-fit bg-blue-600 text-white"

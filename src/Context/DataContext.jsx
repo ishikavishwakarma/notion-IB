@@ -44,8 +44,17 @@ export const DataProvider = ({ children }) => {
       setResponseMessage(response.data); // Handle API response
       return null; // No errors
     } catch (err) {
-      const errorMessages =
-      err.response?.data?.message || "An error occurred while submitting the mandate";
+      // Extract error message from the API response
+    const status = err.response?.status;
+    const errorMessages = err.response?.data?.message || "An error occurred while submitting the mandate";
+
+    // Handle specific conflict errors (e.g., email or mobile number already exists)
+    if (status === 409) {
+      setError("A mandate with the provided email or mobile number already exists.");
+      return ["A mandate with the provided email or mobile number already exists."];
+    }
+
+    // Handle other validation or server errors
     setError(errorMessages);
     return Array.isArray(errorMessages) ? errorMessages : [errorMessages];
     } finally {
