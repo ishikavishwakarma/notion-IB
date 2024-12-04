@@ -46,7 +46,7 @@ export const DataProvider = ({ children }) => {
     } catch (err) {
       const status = err.response?.status;
       const errorMessages = err.response?.data?.message || "An error occurred while submitting the mandate";
-      console.log(errorMessages);
+      // console.log(errorMessages);
       
       // Handle validation errors
       if (status === 422 && errorMessages) {
