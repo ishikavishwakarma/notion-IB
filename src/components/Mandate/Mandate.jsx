@@ -212,7 +212,7 @@ const Mandate = () => {
               className="px-4 py-2 flex lg:hidden border w-fit bg-blue-600 text-white"
               onClick={handleSignatureToggle}
             >
-              {isCanvasOpen ? 'Close' : 'Draw Signature'}
+              {isCanvasOpen ? 'Close' : 'Make Signature'}
             </Button>
          
         </div>
