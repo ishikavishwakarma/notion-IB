@@ -35,32 +35,70 @@ export const DataProvider = ({ children }) => {
    const submitMandate = async (mandateData) => {
     setLoading(true);
     setError(null);
-
+  
     try {
       const config = {
         headers: { "Content-Type": "multipart/form-data" },
       };
       const response = await axios.post(`${apiUrl}/mandates`, mandateData, config);
       setResponseMessage(response.data); // Handle API response
-      return null; // No errors
+      return null; // No errors, mandate created successfully
     } catch (err) {
-      // Extract error message from the API response
-    const status = err.response?.status;
-    const errorMessages = err.response?.data?.message || "An error occurred while submitting the mandate";
-
-    // Handle specific conflict errors (e.g., email or mobile number already exists)
-    if (status === 409) {
-      setError("A mandate with the provided email or mobile number already exists.");
-      return ["A mandate with the provided email or mobile number already exists."];
-    }
-
-    // Handle other validation or server errors
-    setError(errorMessages);
-    return Array.isArray(errorMessages) ? errorMessages : [errorMessages];
+      const status = err.response?.status;
+      const errorMessages = err.response?.data?.message || "An error occurred while submitting the mandate";
+      console.log(errorMessages);
+      
+      // Handle validation errors
+      if (status === 422 && errorMessages) {
+        const errors = [];
+        for (let field in errorMessages) {
+          errorMessages[field].forEach(msg => errors.push(`${field} error: ${msg}`));
+        }
+        setError(errors.join(" "));
+        return errors; // Return the errors
+      }
+  
+      // Handle other server errors
+      setError(errorMessages);
+      return Array.isArray(errorMessages) ? errorMessages : [errorMessages];
     } finally {
       setLoading(false);
     }
   };
+  
+  
+  //  const submitMandate = async (mandateData) => {
+  //   setLoading(true);
+  //   setError(null);
+  
+  //   try {
+  //     const config = {
+  //       headers: { "Content-Type": "multipart/form-data" },
+  //     };
+  //     const response = await axios.post(`${apiUrl}/mandates`, mandateData, config);
+  //     setResponseMessage(response.data); // Handle API response
+  //     return null; // No errors
+  //   } catch (err) {
+  //     const status = err.response?.status;
+  //     const errorMessages = err.response?.data?.message || "An error occurred while submitting the mandate";
+  //     console.log(errorMessages)
+  //     // Handle validation errors
+  //     if (status === 422 && errorMessages) {
+  //       const errors = [];
+  //       for (let field in errorMessages) {
+  //         errorMessages[field].forEach(msg => errors.push(msg));
+  //       }
+  //       setError(errors.join(" "));
+  //       return errors;
+  //     }
+  
+  //     // Handle other server errors
+  //     setError(errorMessages);
+  //     return Array.isArray(errorMessages) ? errorMessages : [errorMessages];
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   // Fetch mandates from API
   const fetchMandates = async () => {

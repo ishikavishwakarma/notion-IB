@@ -76,48 +76,54 @@ const Mandate = () => {
     }
     return new File([byteArray], filename, { type: mimeType });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
     if (!formData.sign) {
       toast.error("Please upload or draw your signature before submitting.");
       return;
     }
+  
     // Prepare FormData
     const form = new FormData();
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("address", formData.address);
     form.append("mobile_number", formData.contact);
-
-    // Add signature: use the file if it's a file, else use Data URL
+  
     if (formData.sign instanceof File) {
       form.append("signature_file", formData.sign);
     } else if (typeof formData.sign === 'string') {
       form.append("signature_data", formData.sign);
     }
-
+  
     form.append("date", formData.till);
-
+  
     try {
-      await submitMandate(form);
-      toast.success("Mandate created successfully!");
-      setFormData({
-        name: "",
-        email: "",
-        address: "",
-        contact: "",
-        sign: null,
-        till: currentDate,
-      });
-    } catch (error) {
-      if (Array.isArray(error)) {
-        error.forEach((msg) => toast.error(msg));
+      // Call submitMandate and handle success
+      const result = await submitMandate(form);
+  
+      if (result) {
+        // If validation errors exist (result is an array), show them in Toastify
+        result.forEach((msg) => toast.error(msg)); // Display each error
       } else {
-        toast.error(error || "Something went wrong, please try again.");
+        toast.success("Mandate created successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          address: "",
+          contact: "",
+          sign: null,
+          till: currentDate,
+        });
       }
+    } catch (error) {
+      // Handle any other errors if needed
+      console.error("Submit mandate error:", error);
+      toast.error(error.message || "Something went wrong, please try again.");
     }
   };
+
   return (
     <div className="max-w-4xl mx-auto py-6 px-4 bg-white border border-gray-300 shadow-lg">
       <LoadingOverlay loading={loading} />
@@ -289,6 +295,7 @@ const Mandate = () => {
             value={formData.contact}
             onChange={handleChange}
           />
+          
         </p>
 
         <p className="text-left mb-4 w-full md:w-[60vw] xl:w-[30vw] flex justify-between">
