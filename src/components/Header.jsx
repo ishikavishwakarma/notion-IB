@@ -464,7 +464,7 @@ const Header = () => {
             <NavList />
           </div>
           <div className="hidden  xl:h-10 lg:gap-2  xl:gap-5 lg:flex">
-          <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.notioninsurance.in/newportal/index/signin" target="_blank" rel="noopener noreferrer">
             <Button
               className="text-sm w-20 lg:px-0 xl:px-2  py-2  "
               variant="outlined"
@@ -473,7 +473,7 @@ const Header = () => {
               Log In
             </Button>
           </Link>
-          <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.notioninsurance.in/newportal/index/signup" target="_blank" rel="noopener noreferrer">
             <Button variant="gradient" color="blue" className="py-2 xl:w-40 lg:w-32 lg:px-0 xl:px-2 text-sm">
               Become a POSP
             </Button>
@@ -495,7 +495,7 @@ const Header = () => {
         <Collapse open={openNav}>
           <NavList closeMenu={() => setOpenNav(false)} />
           <div className="flex  w-full pb-3 flex-nowrap items-center gap-2 lg:hidden">
-          <Link to="https://www.notioninsurance.com/../newportal/index/signin" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.notioninsurance.in/newportal/index/signin" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outlined"
               size="sm"
@@ -505,7 +505,7 @@ const Header = () => {
               Log In
             </Button>
           </Link>
-          <Link to="https://www.notioninsurance.com/../newportal/index/signup" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.notioninsurance.in/newportal/index/signup" target="_blank" rel="noopener noreferrer">
             <Button  variant="gradient" size="sm" fullWidth>
               Become a POSP
             </Button>
