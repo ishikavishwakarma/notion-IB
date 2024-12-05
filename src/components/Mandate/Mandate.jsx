@@ -116,6 +116,17 @@ const Mandate = () => {
           sign: null,
           till: currentDate,
         });
+  
+        // Reset the signature pad and file input after submission
+        if (signaturePadRef.current) {
+          signaturePadRef.current.clear();
+        }
+  
+        if (fileInputRef.current) {
+          fileInputRef.current.value = ""; // Clear the file input
+        }
+  
+        setIsSignatureSaved(false);  // Reset the signature saved state
       }
     } catch (error) {
       // Handle any other errors if needed
