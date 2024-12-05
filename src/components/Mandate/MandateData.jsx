@@ -4,7 +4,9 @@ import { Card, Typography } from '@material-tailwind/react';
 import LoadingOverlay from '../LoadingOverlay';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useLocation } from 'react-router-dom';
 const MandateData = () => {
+  const location = useLocation();
   const { mandates,handleSendEmail, fetchMandates,deleteMandate, loading } = useDataContext(); // Access context values
   const handleEmailClick = async (id) => {
     try {
@@ -23,11 +25,34 @@ const MandateData = () => {
     "Signature",
     "Actions",
   ];
-useEffect(() => {
-  if (mandates.length === 0) {
-    fetchMandates();
-  }
-}, []);
+  
+ 
+  useEffect(() => {
+    // Function to determine if we should fetch mandates
+    const checkAndFetchMandates = () => {
+      if (document.visibilityState === "visible" && location.pathname === "/mandatedata") {
+        fetchMandates();
+      }
+    };
+
+    // Fetch mandates when component first mounts if it's the current route
+    if (location.pathname === "/mandatedata") {
+      fetchMandates();
+    }
+
+    // Add visibility change listener to detect tab switches
+    document.addEventListener("visibilitychange", checkAndFetchMandates);
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.removeEventListener("visibilitychange", checkAndFetchMandates);
+    };
+  }, [location.pathname]);
+// useEffect(() => {
+//   if (mandates.length === 0) {
+//     fetchMandates();
+//   }
+// }, []);
  
   return (
     <div className="container mx-auto px-4 py-6">
