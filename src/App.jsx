@@ -8,7 +8,7 @@ const App = () => {
   const location = useLocation();
 
   // Define routes where Header and Footer should not be displayed
-  const noHeaderFooterRoutes = ["/mandate"];
+  const noHeaderFooterRoutes = ["/mandate","/irda-license"];
 
   // Check if the current path matches any of the noHeaderFooterRoutes
   const shouldHideHeaderFooter = noHeaderFooterRoutes.includes(location.pathname);

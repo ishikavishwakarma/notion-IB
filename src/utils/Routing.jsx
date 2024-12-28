@@ -42,6 +42,7 @@ import TermAndConditions from "../components/termandconditions/TermAndConditions
 import Privacy from "../components/privacyPolicy/Privacy";
 import MandateData from "../components/Mandate/MandateData";
 import Mandate from "../components/Mandate/Mandate";
+import Irda from "../components/Irda/Irda"
 const Routing = () => {
   return (
     <div>
@@ -124,6 +125,8 @@ const Routing = () => {
         <Route path="/javascript" element={<Navigate to="/" replace />} />
         <Route path="/js" element={<Navigate to="/" replace />} />
         <Route path="/mandate" element={<Mandate/>} />
+        <Route path="/irda-license" element={<Irda/>} />
+
         <Route path="/mandatedata" element={<MandateData/>} />
       </Routes>
     </div>
