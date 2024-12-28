@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom';
 const MandateData = () => {
   const location = useLocation();
+const apiUrl = import.meta.env.VITE_API_BASE_URL_image;
   const { mandates,handleSendEmail, fetchMandates,deleteMandate, loading } = useDataContext(); // Access context values
   const handleEmailClick = async (id) => {
     try {
@@ -135,7 +136,7 @@ const MandateData = () => {
                     </td>
                     <td className={classes}>
                       <img
-                        src={`http://127.0.0.1:8000/storage/${mandate.signature_file}`}
+                        src={`${apiUrl}/public/${mandate.signature_file}`}
                         alt="Signature"
                         className="w-24 h-auto"
                       />
