@@ -190,8 +190,7 @@ const Mandate = () => {
         <p className="text-left mb-4">
           <label className="text-base">
             I / We hereby appoint M/s Notion Insurance Broker Pvt. Ltd. as my insurance broker in connection with my General/Life Insurance requirements till{' '}
-            <span>{formData.till}</span> {/* Display the current date */}
-            .
+            <span>{formData.till && formData.till.split('-').reverse().join('-')}</span>.
           </label>
         </p>
 
@@ -210,7 +209,7 @@ const Mandate = () => {
        <div className="flex flex-col">
 
        <div className="mb-4 text-left flex md:w-[60vw] items-center lg:justify-between w-full xl:w-[30vw]">
-          <label className="text-sm md:w-1/6 w-1/4 xl:w-[20%]">Signature :</label>
+          <label className="text-sm md:w-1/6 w-1/4 lg:w-[20%] xl:w-[30%]">Signature :</label>
           <input
             type="file"
             accept="image/*"
@@ -241,7 +240,7 @@ const Mandate = () => {
                 }}
               />
           {/* Save Signature Button */}
-          <div className="flex md:w-[60vw] justify-between pb-5">
+          <div className="flex md:w-full justify-between pb-5">
 
               <div>
                 <Button
@@ -273,36 +272,36 @@ const Mandate = () => {
        </div>
 
         <p className="text-left flex md:w-[60vw] justify-between w-full xl:w-[30vw] mb-4">
-          <label className="text-base md:w-1/6 w-1/4 xl:w-[15%]">Name : </label>
+          <label className="text-base md:w-1/6 w-1/4 lg:w-[15%] xl:w-[20%]">Name : </label>
           <input
             type="text"
             name="name"
             required
-            className="border-b-2 w-full border-black ml-2  xl:w-[85%] text-sm"
+            className="border-b-2 w-full border-black ml-2 focus:outline-none focus:border-b-blue-500 xl:w-[85%] text-sm"
             value={formData.name}
             onChange={handleChange}
           />
         </p>
 
         <p className="text-left mb-4 md:w-[60vw] xl:w-[30vw] flex justify-between">
-          <label className="text-base md:w-1/6 w-1/4 xl:w-[15%]">Address: </label>
+          <label className="text-base md:w-1/6 w-1/4 lg:w-[15%] xl:w-[20%]">Address: </label>
           <input
             type="text"
             name="address"
             required
-            className="border-b-2 border-black ml-2 w-full xl:w-[85%] text-sm"
+            className="border-b-2 border-black focus:outline-none focus:border-b-blue-500 ml-2 w-full xl:w-[85%] text-sm"
             value={formData.address}
             onChange={handleChange}
           />
         </p>
 
         <p className="text-left mb-4 w-full md:w-[60vw] xl:w-[30vw] flex justify-between">
-          <label className="text-base md:w-1/6 w-1/4 xl:w-[15%]">M. No: </label>
+          <label className="text-base md:w-1/6 w-1/4 lg:w-[15%] xl:w-[20%]">M. No: </label>
           <input
             type="text"
             name="contact"
             required
-            className="border-b-2 border-black ml-2 w-full xl:w-[85%] text-sm"
+            className="border-b-2 border-black focus:outline-none focus:border-b-blue-500 ml-2 w-full xl:w-[85%] text-sm"
             value={formData.contact}
             onChange={handleChange}
           />
@@ -310,12 +309,12 @@ const Mandate = () => {
         </p>
 
         <p className="text-left mb-4 w-full md:w-[60vw] xl:w-[30vw] flex justify-between">
-          <label className="text-base md:w-1/6 w-1/4 xl:w-[15%]">Email Id: </label>
+          <label className="text-base md:w-1/6 w-1/4 lg:w-[15%] xl:w-[20%]">Email Id: </label>
           <input
             type="email"
             name="email"
             required
-            className="border-b-2 border-black ml-2 w-full xl:w-[85%] text-sm"
+            className="border-b-2 border-black focus:outline-none focus:border-b-blue-500 ml-2 w-full xl:w-[85%] text-sm"
             value={formData.email}
             onChange={handleChange}
           />
